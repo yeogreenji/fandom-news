@@ -15,8 +15,8 @@ cutoff_time: "09:30"
 extra_holidays: []        # 예: ["2026-12-31"]  (쉬는 날로 처리)
 extra_workdays: []        # 예: ["2026-05-01"]  (공휴일이지만 발행하는 날)
 
-# 검색어 1개당 최대 수집 건수(100 단위, 네이버 API 상한 1000)
-per_query_limit: 300
+# 검색어 1개당 최대 수집 건수(최신순). 그룹별로 queries.yaml의 limit이 우선
+per_query_limit: 100
 
 # ── AI 설정 ─────────────────────────────────────
 # gemini = Google Gemini API 무료 등급(기본, 비용 0원)
@@ -26,7 +26,7 @@ ai_provider: gemini
 models:
   gemini:
     # 'latest' 별칭은 구글이 새 버전으로 자동 교체(2주 전 메일 공지). 무료 등급 대상 모델만 쓸 것
-    triage: "gemini-flash-latest"   # 한도가 넉넉한 Flash-Lite 계열로 바꿔도 됨
+    triage: "gemini-flash-lite-latest"   # 1차 선별은 하루 한도가 넉넉한 Flash-Lite
     review: "gemini-flash-latest"
   claude:
     triage: "claude-haiku-4-5-20251001"
@@ -35,8 +35,16 @@ models:
 # 무료 등급 분당 호출 제한을 넘지 않도록 호출 사이 간격(초)
 call_interval_sec: 6
 
-# 1차 선별 한 번에 묶어 보내는 기사 수 (묶을수록 호출 수↓)
-triage_batch_size: 60
+# 1차 선별 한 번에 묶어 보내는 기사 수 (묶을수록 호출 수↓, 너무 크면 응답이 잘림)
+triage_batch_size: 50
+
+# 1차 선별에 넘기는 섹션별 최대 후보 수 (AI 호출 수 상한 역할, 0 = 제한 없음)
+#   자사는 전부, 나머지는 제목에 검색어가 들어간 기사·동일 보도가 많은 기사부터
+triage_caps:
+  own: 0
+  fandom_music: 250
+  ent_content: 250
+  ai_tech: 60
 
 # 2차(본문 판정·요약) 한 번에 묶어 보내는 기사 수
 review_batch_size: 6

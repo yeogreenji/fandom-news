@@ -18,6 +18,7 @@ groups:
   - name: 자사
     section_hint: own
     snippet_check: false
+    limit: 300
     queries:
       - q: 비마이프렌즈
       - q: 비스테이지
@@ -164,17 +165,16 @@ groups:
   - name: AI & Tech
     section_hint: ai_tech
     snippet_check: true
+    limit: 40           # AI 기사는 양이 매우 많아 검색어당 최신 40건만
     queries:
-      - q: AI 에이전트
-      - q: 오픈AI
-      - q: 챗GPT
-      - q: 앤트로픽
-      - q: 제미나이
-      - q: 메타 AI
-      - q: 엔비디아 AI
-      - q: 생성형 AI 서비스
-      - q: AI 모델 출시
+      - q: 오픈AI 출시
+      - q: 앤트로픽 클로드
+      - q: 구글 제미나이 출시
+      - q: 메타 AI 에이전트
+      - q: AI 에이전트 서비스
       - q: AI 커머스
+      - q: AI 규제 법안
+      - q: AI 저작권
 
 # 영문 해외 매체 (RSS) — 매뉴얼: Billboard, Music Business Worldwide
 rss:
