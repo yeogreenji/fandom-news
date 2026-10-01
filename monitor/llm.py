@@ -99,45 +99,66 @@ def _to_gemini_schema(s: dict) -> dict:
     return out
 
 
+DEADLINE = [None]          # run_daily가 시작할 때 설정 — 이 시각이 지나면 AI 호출 중단
+_THINKING = {"mode": "low"}  # 'low' → 거부되면 'off'(설정 안 보냄)
+
+
+def _retry_delay(text: str, default: float) -> float:
+    m = re.search(r'"retryDelay":\s*"(\d+)(?:\.\d+)?s"', text)
+    return min(float(m.group(1)) + 1, 90) if m else default
+
+
 def _gemini(model: str, system: str, user: str, schema: dict, max_tokens: int) -> dict:
     key = os.environ.get("GEMINI_API_KEY")
     if not key:
         raise RuntimeError("GEMINI_API_KEY 환경변수가 없습니다.")
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-    body = {
-        "systemInstruction": {"parts": [{"text": system}]},
-        "contents": [{"role": "user", "parts": [{"text": user}]}],
-        "generationConfig": {
-            "responseMimeType": "application/json",
-            "responseSchema": _to_gemini_schema(schema),
-            # 최신 Flash는 '생각' 토큰도 출력 한도에 포함될 수 있어 넉넉히(무료 등급이라 비용 영향 없음)
-            "maxOutputTokens": min(max(max_tokens * 3, 8192), 32768),
-            "temperature": 0.2,
-        },
+    gen = {
+        "responseMimeType": "application/json",
+        "responseSchema": _to_gemini_schema(schema),
+        "maxOutputTokens": min(max(max_tokens * 3, 8192), 32768),
+        "temperature": 0.2,
     }
     for attempt in range(4):
+        if DEADLINE[0] and time.time() > DEADLINE[0]:
+            raise QuotaExceeded("AI 처리 시간 예산 초과")
+        body = {"systemInstruction": {"parts": [{"text": system}]},
+                "contents": [{"role": "user", "parts": [{"text": user}]}],
+                "generationConfig": dict(gen)}
+        if _THINKING["mode"] == "low":
+            # 판정·요약에는 긴 '생각'이 필요 없어 속도를 위해 최소화(지원 안 하는 모델이면 자동 해제)
+            body["generationConfig"]["thinkingConfig"] = {"thinkingLevel": "low"}
         STATS["calls"] += 1
+        t0 = time.time()
         try:
-            r = requests.post(url, headers={"x-goog-api-key": key}, json=body, timeout=180)
+            r = requests.post(url, headers={"x-goog-api-key": key}, json=body, timeout=150)
         except requests.RequestException as e:
-            log.warning("Gemini 연결 오류, 재시도 %d: %s", attempt + 1, e)
-            time.sleep(10 * (attempt + 1))
+            log.warning("Gemini 연결 오류/시간 초과, 재시도 %d: %s", attempt + 1, e)
+            STATS["errors"].append(f"연결 오류: {str(e)[:80]}")
+            time.sleep(5)
+            continue
+        STATS.setdefault("seconds", 0)
+        STATS["seconds"] += round(time.time() - t0)
+        if r.status_code == 400 and "thinking" in r.text.lower() and _THINKING["mode"] == "low":
+            log.warning("thinkingConfig 미지원 → 해제 후 재시도")
+            _THINKING["mode"] = "off"
             continue
         if r.status_code == 429:
-            msg = r.text[:300]
+            msg = r.text
             if "PerDay" in msg or "per day" in msg.lower():
                 STATS["quota_day"] += 1
                 STATS["errors"].append("429 하루 한도: " + msg[:150])
                 raise QuotaExceeded("Gemini 하루 무료 한도 소진")
             STATS["rate_wait"] += 1
-            log.warning("Gemini 분당 한도, %ds 대기", 30 * (attempt + 1))
-            time.sleep(30 * (attempt + 1))
+            wait = _retry_delay(msg, 20)
+            log.warning("Gemini 분당 한도, %ds 대기", wait)
+            time.sleep(wait)
             continue
         if r.status_code >= 500:
-            time.sleep(10 * (attempt + 1))
+            STATS["errors"].append(f"{r.status_code} 서버 오류")
+            time.sleep(10)
             continue
         if r.status_code == 404 and model != "gemini-flash-latest":
-            # 모델 이름이 없어졌거나 바뀐 경우 기본 모델로 대체
             log.warning("모델 %s 없음 → gemini-flash-latest로 대체", model)
             STATS["errors"].append(f"모델 없음: {model}")
             return _gemini("gemini-flash-latest", system, user, schema, max_tokens)
@@ -154,11 +175,11 @@ def _gemini(model: str, system: str, user: str, schema: dict, max_tokens: int) -
             STATS["parse_fail"] += 1
             fr = (data.get("candidates") or [{}])[0].get("finishReason", "?")
             log.warning("Gemini 응답 해석 실패(finishReason=%s), 재시도 %d: %s", fr, attempt + 1, e)
-            if len(STATS["errors"]) < 20:
+            if len(STATS["errors"]) < 30:
                 STATS["errors"].append(f"해석 실패 finishReason={fr}")
-            time.sleep(5)
-    # 분당 한도가 계속 걸리면 오늘은 한도 소진으로 간주
-    if STATS["rate_wait"] >= 4 and STATS["ok"] == 0:
+            if attempt >= 1:   # 두 번 연속 실패면 묶음을 쪼개도록 넘김
+                break
+    if STATS["rate_wait"] >= 6 and STATS["ok"] == 0:
         raise QuotaExceeded("Gemini 분당 한도가 풀리지 않음")
     raise RuntimeError("Gemini 응답을 받지 못했습니다")
 

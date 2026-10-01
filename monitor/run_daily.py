@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import time
 import logging
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta
@@ -286,7 +287,13 @@ def main(argv=None):
              since.strftime("%m-%d %H:%M"), until.strftime("%m-%d %H:%M"),
              workdays.days_covered(since, until), cap)
 
+    started = time.time()
     items, stats = collect(since, until, cfg, qcfg)
+    stats["collect_sec"] = round(time.time() - started)
+    # AI 처리 시간 예산: 넘으면 그때까지 결과로 마무리(GitHub 40분 제한 대비)
+    budget = cfg.get("ai_time_budget_min", 25) * 60
+    ai_start = time.time()
+    llm.DEADLINE[0] = ai_start + budget * 0.55   # 1차 선별은 예산의 55%까지만
     stats["unique"] = len(items)
     # 수동 실행(--hours)은 '다시 모으기'라 이전 처리 기록은 무시(이미 게재된 기사와의 중복만 제외)
     items = drop_seen(items, {} if args.hours else state["seen"])
@@ -310,7 +317,10 @@ def main(argv=None):
                 excluded.append(excluded_record(it, "1차", t.get("reason", "")))
         excluded += [excluded_record(it, "1차", "검토 한도 초과") for it in overflow]
         log.info("1차 통과 %d건 (한도 초과 %d건)", len(to_review), len(overflow))
+        llm.DEADLINE[0] = ai_start + budget           # 남은 시간은 본문 판정·요약에
+        stats["triage_sec"] = round(time.time() - ai_start)
         run_review(to_review, cfg)
+        stats["ai_sec"] = round(time.time() - ai_start)
     else:
         to_review = []
 
