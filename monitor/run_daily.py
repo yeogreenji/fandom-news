@@ -39,7 +39,7 @@ def collect(since: datetime, until: datetime, cfg: dict, qcfg: dict) -> tuple[li
         for qd in g["queries"]:
             q = qd["q"]
             try:
-                found = sources.naver_search(q, since, cfg["per_query_limit"])
+                found = sources.naver_search(q, since, qd.get("limit") or g.get("limit") or cfg["per_query_limit"])
             except Exception as e:
                 log.error("검색 실패 %s: %s", q, e)
                 continue
@@ -98,31 +98,70 @@ def _fallback_triage(it: dict, reason: str) -> dict:
     return {"decision": "maybe", "section": it["section_hints"][0], "importance": 2, "reason": reason}
 
 
+SEC_RANK = {"own": 0, "fandom_music": 1, "ent_content": 2, "ai_tech": 3}
+
+
+def prerank(items: list[dict], cfg: dict) -> tuple[list[dict], list[dict]]:
+    """AI 호출 수를 줄이려고 1차 선별 전에 후보를 추림.
+    섹션 우선순위(자사>팬덤·음악>엔터>AI) → 제목에 검색어 포함 → 동일 보도 많은 순, 섹션별 상한 적용."""
+    def sec(it):
+        return min(it["section_hints"], key=lambda h: SEC_RANK.get(h, 9))
+
+    def title_hit(it):
+        t = it["title"].replace(" ", "").lower()
+        return any(all(w.lower() in t for w in q.split()) for q in it.get("queries", []))
+
+    caps = cfg.get("triage_caps", {})
+    keep, drop = [], []
+    for s_name in sorted(SEC_RANK, key=SEC_RANK.get):
+        group = [it for it in items if sec(it) == s_name]
+        group.sort(key=lambda it: (0 if title_hit(it) else 1, -it.get("cluster_size", 1), it["pub_date"]))
+        n = caps.get(s_name, 0) or len(group)
+        keep += group[:n]
+        drop += group[n:]
+    return keep, drop
+
+
 def run_triage(items: list[dict], cfg: dict) -> None:
-    """묶음 단위로 순차 호출(무료 등급 분당 제한 대응). 한도 소진 시 나머지는 AI 없이 보류 처리."""
+    """묶음 단위로 순차 호출(무료 등급 분당 제한 대응). 한도 소진 시 나머지는 AI 없이 보류 처리.
+    응답이 잘려 해석에 실패하면 묶음을 반으로 나눠 한 번 더 시도."""
     bs = cfg["triage_batch_size"]
     quota_out = False
+
+    def ask(batch, depth=0):
+        nonlocal quota_out
+        if quota_out or not batch:
+            return {}
+        try:
+            return llm.triage(batch)
+        except llm.QuotaExceeded as e:
+            log.error("AI 한도 소진(1차): %s", e)
+            quota_out = True
+            return {}
+        except Exception as e:
+            log.error("1차 선별 실패(%d건): %s", len(batch), e)
+            if depth == 0 and len(batch) > 10:
+                half = len(batch) // 2
+                return {**ask(batch[:half], 1), **ask(batch[half:], 1)}
+            return {}
+
     for i in range(0, len(items), bs):
         batch = items[i:i + bs]
-        if quota_out:
-            res = {}
-        else:
-            try:
-                res = llm.triage(batch)
-            except llm.QuotaExceeded as e:
-                log.error("AI 한도 소진(1차): %s", e)
-                quota_out, res = True, {}
-            except Exception as e:
-                log.error("1차 선별 실패(%d건): %s", len(batch), e)
-                res = {}
+        res = ask(batch)
         for it in batch:
-            it["triage"] = res.get(it["id"]) or _fallback_triage(it, "AI 한도" if quota_out else "응답 누락")
+            r = res.get(it["id"])
+            if r:
+                r["ai"] = True
+                it["triage"] = r
+            else:
+                it["triage"] = _fallback_triage(it, "AI 한도" if quota_out else "AI 응답 없음")
             it["triage"].setdefault("importance", 2)
-            it["ai_quota_out"] = quota_out
 
 
 def pick_for_review(items: list[dict], cap: int) -> tuple[list[dict], list[dict]]:
-    cands = [it for it in items if it["triage"]["decision"] != "exclude"]
+    # AI가 실제로 판단한 '포함/보류'만 본문 검토로. AI 판단을 못 받은 기사는 자사만 예외적으로 포함
+    cands = [it for it in items if it["triage"]["decision"] != "exclude"
+             and (it["triage"].get("ai") or "own" in it["section_hints"])]
 
     def key(it):
         t = it["triage"]
@@ -249,7 +288,8 @@ def main(argv=None):
 
     items, stats = collect(since, until, cfg, qcfg)
     stats["unique"] = len(items)
-    items = drop_seen(items, state["seen"])
+    # 수동 실행(--hours)은 '다시 모으기'라 이전 처리 기록은 무시(이미 게재된 기사와의 중복만 제외)
+    items = drop_seen(items, {} if args.hours else state["seen"])
     stats["new"] = len(items)
     items = cluster(items)
     stats["clusters"] = len(items)
@@ -259,6 +299,9 @@ def main(argv=None):
 
     excluded: list[dict] = []
     if items:
+        items, pre_dropped = prerank(items, cfg)
+        stats["triage_candidates"] = len(items)
+        log.info("1차 선별 대상 %d건 (사전 제외 %d건)", len(items), len(pre_dropped))
         run_triage(items, cfg)
         to_review, overflow = pick_for_review(items, review_cap)
         for it in items:
@@ -332,6 +375,7 @@ def main(argv=None):
         "window": {"from": since.isoformat(timespec="minutes"), "to": until.isoformat(timespec="minutes")},
         "cap": cap,
         "stats": {**stats, "kept": len(merged)},
+        "ai": {k: v for k, v in llm.STATS.items()},
         "items": sort_records(merged),
         "excluded": (prev.get("excluded", []) + excluded)[-400:],
     })

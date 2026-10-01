@@ -51,6 +51,10 @@ class QuotaExceeded(RuntimeError):
     """무료 한도 소진 — 남은 기사는 AI 없이 처리."""
 
 
+# 실행 진단용 집계(결과 파일에 저장)
+STATS = {"calls": 0, "ok": 0, "parse_fail": 0, "rate_wait": 0, "quota_day": 0, "errors": []}
+
+
 # ── 공급자 공통 호출 ─────────────────────────────
 _lock = threading.Lock()
 _last_call = [0.0]
@@ -112,6 +116,7 @@ def _gemini(model: str, system: str, user: str, schema: dict, max_tokens: int) -
         },
     }
     for attempt in range(4):
+        STATS["calls"] += 1
         try:
             r = requests.post(url, headers={"x-goog-api-key": key}, json=body, timeout=180)
         except requests.RequestException as e:
@@ -121,23 +126,41 @@ def _gemini(model: str, system: str, user: str, schema: dict, max_tokens: int) -
         if r.status_code == 429:
             msg = r.text[:300]
             if "PerDay" in msg or "per day" in msg.lower():
+                STATS["quota_day"] += 1
+                STATS["errors"].append("429 하루 한도: " + msg[:150])
                 raise QuotaExceeded("Gemini 하루 무료 한도 소진")
+            STATS["rate_wait"] += 1
             log.warning("Gemini 분당 한도, %ds 대기", 30 * (attempt + 1))
             time.sleep(30 * (attempt + 1))
             continue
         if r.status_code >= 500:
             time.sleep(10 * (attempt + 1))
             continue
+        if r.status_code == 404 and model != "gemini-flash-latest":
+            # 모델 이름이 없어졌거나 바뀐 경우 기본 모델로 대체
+            log.warning("모델 %s 없음 → gemini-flash-latest로 대체", model)
+            STATS["errors"].append(f"모델 없음: {model}")
+            return _gemini("gemini-flash-latest", system, user, schema, max_tokens)
         if r.status_code != 200:
+            STATS["errors"].append(f"{r.status_code}: {r.text[:200]}")
             raise RuntimeError(f"Gemini 오류 {r.status_code}: {r.text[:300]}")
         data = r.json()
         try:
             text = "".join(p.get("text", "") for p in data["candidates"][0]["content"]["parts"])
-            return json.loads(_strip_fence(text))
+            out = json.loads(_strip_fence(text))
+            STATS["ok"] += 1
+            return out
         except (KeyError, IndexError, json.JSONDecodeError) as e:
-            log.warning("Gemini 응답 해석 실패, 재시도 %d: %s", attempt + 1, e)
+            STATS["parse_fail"] += 1
+            fr = (data.get("candidates") or [{}])[0].get("finishReason", "?")
+            log.warning("Gemini 응답 해석 실패(finishReason=%s), 재시도 %d: %s", fr, attempt + 1, e)
+            if len(STATS["errors"]) < 20:
+                STATS["errors"].append(f"해석 실패 finishReason={fr}")
             time.sleep(5)
-    raise QuotaExceeded("Gemini 응답을 받지 못했습니다(한도 또는 장애)")
+    # 분당 한도가 계속 걸리면 오늘은 한도 소진으로 간주
+    if STATS["rate_wait"] >= 4 and STATS["ok"] == 0:
+        raise QuotaExceeded("Gemini 분당 한도가 풀리지 않음")
+    raise RuntimeError("Gemini 응답을 받지 못했습니다")
 
 
 def _strip_fence(t: str) -> str:
