@@ -1,0 +1,186 @@
+# ───────────────────────────────────────────────
+#  네이버 뉴스 검색어 목록
+#  (출처: 뉴스 모니터링 클리핑 매뉴얼_20260106 + 9월 4주·10월 1주 위클리 수록 기사 경향)
+#
+#  section_hint : 1차 분류 힌트. 최종 분류는 AI가 기사 내용 보고 결정
+#     own          = [bemyfriends & Dreamus Company]
+#     fandom_music = [Fandom & Music IP business]
+#     ent_content  = [Entertainment & Contents IP business]
+#     ai_tech      = [AI & Tech business]
+#  snippet_check : true면 검색어(또는 must_any 단어)가 제목/요약문에 있어야 후보로 남김
+#                  → 본문 끝에 이름만 나오는 '단순 언급' 기사를 1차로 거름
+#                  자사는 본문 한두 문장 언급도 의미 있을 수 있어 false (AI가 본문 읽고 판단)
+#  must_any      : 제목/요약문에 이 중 하나라도 있어야 함 (동음이의어·범용어 노이즈 제거용)
+# ───────────────────────────────────────────────
+
+groups:
+
+  - name: 자사
+    section_hint: own
+    snippet_check: false
+    queries:
+      - q: 비마이프렌즈
+      - q: 비스테이지
+      - q: 드림어스컴퍼니
+      - q: 드림어스
+      - q: FLO 플로
+      - q: 이기영 드림어스
+      - q: 서우석 비마이프렌즈
+
+  - name: 팬덤 플랫폼 업계
+    section_hint: fandom_music
+    snippet_check: true
+    queries:
+      - q: 위버스
+      - q: 디어유
+      - q: 디어유 버블
+      - q: 베리즈
+      - q: 노머스
+      - q: 엠넷플러스
+      - q: 하이앤드 팬덤
+      - q: 팬딩
+        must_any: [팬딩, 팬덤, 크리에이터]
+      - q: 팬심M
+      - q: 케이타운포유
+      - q: 위드뮤
+      - q: 메이크스타
+      - q: 버프즈
+      - q: 후즈팬
+      - q: 사운드웨이브 음반
+      - q: 팬덤 플랫폼
+      - q: 팬덤 비즈니스
+      - q: 팬덤 이코노미
+      - q: 팬덤 경제
+      - q: 팬덤 소비
+      - q: 팬덤 마케팅
+      - q: 팬 커뮤니티 플랫폼
+
+  - name: 음악 플랫폼 업계
+    section_hint: fandom_music
+    snippet_check: true
+    queries:
+      - q: 멜론 음원
+      - q: 멜론 카카오엔터
+      - q: 바이브 음악
+        must_any: [바이브, VIBE]
+      - q: 지니뮤직
+      - q: 애플뮤직
+      - q: 스포티파이
+      - q: 유튜브뮤직
+      - q: 벅스 음악
+        must_any: [벅스]
+      - q: 음악 플랫폼
+      - q: 음원 플랫폼
+      - q: 음악 스트리밍
+      - q: 음원 차트
+      - q: 비디오 팟캐스트
+      - q: 음악서비스
+
+  - name: 콘텐츠 업계 (유튜브·IP·OTT)
+    section_hint: ent_content
+    snippet_check: true
+    queries:
+      - q: 유튜브 크리에이터
+      - q: 유튜브 쇼츠
+      - q: 유튜브 프리미엄
+      - q: 유튜브 AI
+      - q: 지식재산권 IP 사업
+      - q: 캐릭터 IP
+      - q: K콘텐츠 IP
+      - q: OTT 구독료
+      - q: OTT 요금
+      - q: OTT 가입자
+      - q: 티빙
+        must_any: [티빙]
+      - q: 웨이브 OTT
+      - q: 숏폼 드라마
+      - q: FAST 채널
+
+  - name: 엔터 업계
+    section_hint: ent_content
+    snippet_check: true
+    queries:
+      # 엔터사: 아티스트 소식 말고 기업 이슈(실적·사업·투자·지배구조)만 잡히도록 조합 검색
+      - q: 하이브 실적
+      - q: 하이브 매출
+      - q: 하이브 사업
+      - q: 하이브 투자
+      - q: 하이브 플랫폼
+      - q: 에스엠 실적
+      - q: SM엔터 실적
+      - q: SM엔터 사업
+      - q: 에스엠 사업
+      - q: JYP 실적
+      - q: JYP 사업
+      - q: YG 실적
+      - q: YG 사업
+      - q: 카카오엔터 실적
+      - q: 카카오엔터 사업
+      - q: CJ ENM 실적
+      - q: CJ ENM 음악사업
+      - q: 엔터 실적
+      - q: 엔터사 신사업
+      - q: 엔터 4사
+      - q: 기획사 팬 플랫폼
+      - q: 팬 멤버십
+      - q: 엔터 지분
+      - q: 엔터 경영권
+      - q: 피네이션
+      - q: 타이탄콘텐츠
+      - q: 비욘드뮤직
+      - q: 한국음악저작권협회
+      - q: 음저협
+      - q: 함께하는음악저작인협회
+      - q: 함저협
+      - q: 음원 저작권료
+      - q: K팝 산업
+      - q: 엔터 업계
+      - q: 엔터주
+      - q: 엔터테크
+      - q: 버추얼 아이돌
+      - q: AI 음악
+      - q: AI 아이돌
+      - q: 공연 시장
+      - q: 암표
+      - q: 내한 공연
+      - q: 콘서트 티켓
+
+  - name: 팬덤 커머스
+    section_hint: ent_content
+    snippet_check: true
+    queries:
+      - q: 팬덤 커머스
+      - q: 굿즈 팬덤
+      - q: 아이돌 굿즈
+      - q: 공식 MD 팬
+      - q: 팝업스토어 팬덤
+      - q: 팝업스토어 아이돌
+      - q: 캐릭터 굿즈
+      - q: 포토카드
+      - q: 카페24
+      - q: 쇼피파이
+      - q: 콘텐츠 커머스
+
+  - name: AI & Tech
+    section_hint: ai_tech
+    snippet_check: true
+    queries:
+      - q: AI 에이전트
+      - q: 오픈AI
+      - q: 챗GPT
+      - q: 앤트로픽
+      - q: 제미나이
+      - q: 메타 AI
+      - q: 엔비디아 AI
+      - q: 생성형 AI 서비스
+      - q: AI 모델 출시
+      - q: AI 커머스
+
+# 영문 해외 매체 (RSS) — 매뉴얼: Billboard, Music Business Worldwide
+rss:
+  - name: Music Business Worldwide
+    url: https://www.musicbusinessworldwide.com/feed/
+    section_hint: fandom_music
+  - name: Billboard
+    url: https://www.billboard.com/c/business/feed/
+    section_hint: fandom_music

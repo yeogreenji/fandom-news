@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Fandom & Music IP Trend News</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--BODY-->
+<header class="mast">
+  <div class="wrap">
+    <div>
+      <h1>Fandom &amp; Music IP Business Trend News</h1>
+      <p class="sub">비마이프렌즈 · 드림어스컴퍼니 데일리 뉴스 모니터링</p>
+    </div>
+    <span class="updated" id="updated"></span>
+    <p class="sample-note" id="sampleNote" hidden>미리보기: 9월 4주차 위클리 수록 기사로 채운 샘플 화면입니다. 실제 운영 시 매일 아침 자동으로 채워집니다.</p>
+  </div>
+</header>
+
+<div class="bar">
+  <div class="wrap">
+    <div class="seg" id="mode" role="group" aria-label="보기 방식">
+      <button type="button" data-mode="day" aria-pressed="true">일간</button>
+      <button type="button" data-mode="range" aria-pressed="false">기간</button>
+    </div>
+    <span class="range" id="rangeBox" hidden>
+      <input type="date" id="from" aria-label="시작일"> ~ <input type="date" id="to" aria-label="종료일">
+    </span>
+    <div class="seg" id="tabs" role="group" aria-label="목록" hidden>
+      <button type="button" data-tab="news" aria-pressed="true">클리핑</button>
+      <button type="button" data-tab="excluded" aria-pressed="false">제외된 기사</button>
+    </div>
+    <input class="search" id="q" type="search" placeholder="제목·매체·요약 검색" aria-label="검색">
+    <span class="spacer"></span>
+    <button class="btn" type="button" id="pickAll">전체 선택</button>
+    <button class="btn" type="button" id="pickNone">선택 해제</button>
+    <label class="chk"><input type="checkbox" id="withHeader" checked> 머리말 포함</label>
+    <button class="btn primary" type="button" id="copyBtn" disabled>기사를 체크하면 복사할 수 있어요</button>
+  </div>
+</div>
+
+<div class="wrap grid">
+  <aside class="rail">
+    <div>
+      <h2>날짜</h2>
+      <ul class="days" id="days"></ul>
+    </div>
+    <div class="toc-box">
+      <h2>섹션</h2>
+      <ul class="toc" id="toc"></ul>
+    </div>
+  </aside>
+  <div class="col">
+    <p class="period" id="period"></p>
+    <main id="main" aria-live="polite">
+      <p class="empty">불러오는 중…</p>
+    </main>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" hidden></div>
+<!--/BODY-->
+<script src="app.js"></script>
+</body>
+</html>
