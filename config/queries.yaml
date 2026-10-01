@@ -25,6 +25,7 @@ groups:
       - q: 드림어스컴퍼니
       - q: 드림어스
       - q: FLO 플로
+      - q: 플로집
       - q: 이기영 드림어스
       - q: 서우석 비마이프렌즈
 
@@ -55,6 +56,13 @@ groups:
       - q: 팬덤 소비
       - q: 팬덤 마케팅
       - q: 팬 커뮤니티 플랫폼
+      - q: 팬 플랫폼 구축
+      - q: 공식 팬 플랫폼
+      - q: 스포츠 팬덤
+      - q: 구단 멤버십
+      - q: e스포츠 팬덤
+      - q: 배우 팬덤 플랫폼
+      - q: 팬덤 솔루션
 
   - name: 음악 플랫폼 업계
     section_hint: fandom_music
@@ -175,6 +183,9 @@ groups:
       - q: AI 커머스
       - q: AI 규제 법안
       - q: AI 저작권
+      - q: SaaS 기업
+      - q: 버티컬 SaaS
+      - q: AI SaaS
 
 # 영문 해외 매체 (RSS) — 매뉴얼: Billboard, Music Business Worldwide
 rss:
