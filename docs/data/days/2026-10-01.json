@@ -1,0 +1,3679 @@
+{
+ "date": "2026-10-01",
+ "generated_at": "2026-10-01T13:30+09:00",
+ "window": {
+  "from": "2026-09-30T13:30+09:00",
+  "to": "2026-10-01T13:30+09:00"
+ },
+ "cap": 30,
+ "stats": {
+  "raw": 7064,
+  "rule_dropped": 49,
+  "snippet_dropped": 792,
+  "unique": 3927,
+  "new": 3927,
+  "clusters": 3166,
+  "kept": 3
+ },
+ "items": [
+  {
+   "id": "e9411235f25d",
+   "title": "웹툰 합치고 음악·팬은 연결…카카오엔터, 플랫폼 교통정리로 ‘시너지...",
+   "url": "https://zdnet.co.kr/view/?no=20260930172846",
+   "press": "지디넷코리아",
+   "pub_date": "2026-09-30T17:39:00+09:00",
+   "date_label": "26.09.30",
+   "section": "fandom_music",
+   "subsection": "fan_platform",
+   "importance": 5,
+   "kind": "trend",
+   "must_include": false,
+   "summary": "카카오엔터테인먼트가 플랫폼 사업 경쟁력 강화를 위해 음악 플랫폼 멜론과 팬덤 플랫폼 베리즈 간의 계정 연동을 추진하고 웹툰 플랫폼을 단일화하는 전사적 효율화에 나섰다. 멜론과 베리즈의 연동을 통해 멜론의 스트리밍·다운로드 기록이 베리즈에 반영되어 별도 인증 없이 음방 관람 및 팬 행사에 응모할 수 있는 등 팬 활동 접점을 단일화할 방침이다. 또한 스토리 부문에서는 카카오웹툰을 카카오페이지 중심으로 통합하고 북미 플랫폼 타파스 종료 및 우시아월드 매각을 진행한다. 카카오엔터는 멜론의 해외 차트와 베리즈의 글로벌 이용자 풀을 연계해 글로벌 팬덤 공략을 가속하고, 디즈니코리아와의 IP 파트너십을 통해 K컬처 펀드 조성 등 해외 경쟁력을 키울 계획이다.",
+   "reason": "카카오엔터의 멜론-베리즈 계정 연동 및 플랫폼 시너지 전략",
+   "tags": [],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "95b18d68cd38",
+   "title": "與 이정헌 \"정부 보안점검, 유명무실한 '셀프 점검'…감독 강화해야\"",
+   "url": "https://news.tvchosun.com/site/data/html_dir/2026/09/30/2026093090199.html",
+   "press": "TV조선",
+   "pub_date": "2026-09-30T17:59:00+09:00",
+   "date_label": "26.09.30",
+   "section": "fandom_music",
+   "subsection": "fan_platform",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "정부가 지난해 민간기업 1650개 IT 시스템을 대상으로 실시한 보안 취약점 점검이 기업의 자체 점검 서류만 받는 형식적인 '셀프 점검'에 그쳤다는 지적이 제기됐다. 국회 과기방통위 소속 이정헌 의원이 과기정통부와 KISA로부터 제출받은 자료에 따르면, 정부는 정보 민감성을 이유로 구체적인 취약점 세부 내역을 확인하지 않았다. 점검 완료를 회신했던 기업 중 하이브 자회사 위버스컴퍼니의 팬 플랫폼 위버스에서 40만 건 이상의 개인정보가 유출됐으며, 무신사 29CM에서도 16만여 건의 유출 사고가 발생했다. 이정헌 의원은 자체 점검에서 이상이 없다고 보고한 기업들이 1년도 안 돼 잇따라 해킹 피해를 입은 만큼, 자율 점검 대신 정부 차원의 사전 검증 체계와 사후 감독을 대폭 강화해야 한다고 강조했다.",
+   "reason": "위버스컴퍼니 등 플랫폼 보안 취약점 및 개인정보 유출 점검 이슈",
+   "tags": [],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "c516be1df197",
+   "title": "연습실도 무대가 됐다…투바투가 보여준 4세대의 내공 [가요 뷰]",
+   "url": "https://www.dailian.co.kr/news/view/1696515/?sc=Naver",
+   "press": "데일리안",
+   "pub_date": "2026-10-01T08:23:00+09:00",
+   "date_label": "26.10.01",
+   "section": "fandom_music",
+   "subsection": "fan_platform",
+   "importance": 3,
+   "kind": "trend",
+   "must_include": false,
+   "summary": "투모로우바이투게더(TXT)가 현지 악천후로 취소된 미국 뉴욕 페스티벌 일정을 실내 연습실 위버스 라이브로 대체해 약 63만 회의 조회수를 기록하며 대응력을 입증했다. 팬데믹 시기에 저연차를 보낸 4세대 보이그룹들은 온라인 공연과 자체 영상 콘텐츠로 팬덤과의 접점을 유지하며 온·오프라인 무대 노하우를 다져왔다. 이들은 연차가 쌓임에 따라 여행, 심리 상담, 가상 상황극 등 자체 콘텐츠의 형식을 다변화해 팬들에게 신선한 매력을 제공하고 있다. 가요계 관계자들은 멤버 간 관계성과 공연 노하우를 살린 콘텐츠 다변화가 후배 세대와의 경쟁 속에서도 4세대 그룹의 지속 성장을 뒷받침하는 핵심 경쟁력이라고 분석했다.",
+   "reason": "4세대 아이돌의 팬 플랫폼 활용 및 자체 콘텐츠 전략 분석",
+   "tags": [],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  }
+ ],
+ "excluded": [
+  {
+   "title": "오텍캐리어, 엔비디아 인증 획득한 캐리어 CDU 공급...AI 데이터센터 냉...",
+   "url": "http://www.popcornnews.net/news/articleView.html?idxno=134668",
+   "press": "",
+   "pub_date": "2026-10-01T13:28:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "오텍캐리어 CDU 엔비디아 품질 인증 완료...AIDC 본격 공략",
+   "url": "https://www.etnews.com/20261001000280",
+   "press": "",
+   "pub_date": "2026-10-01T13:18:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "에픽하이, '깐부 회동' 패러디로 콘서트 홍보…싱크로율에 폭소",
+   "url": "http://www.queen.co.kr/news/articleView.html?idxno=464171",
+   "press": "",
+   "pub_date": "2026-10-01T13:16:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "AI 메모리 특수…마이크론 분기매출 73.5조원",
+   "url": "https://www.naeil.com/news/read/603922?ref=naver",
+   "press": "",
+   "pub_date": "2026-10-01T13:08:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "화학사고·폭발현장에 휴머노이드 투입…싱가포르, 2028년 실전 배치",
+   "url": "https://www.etnews.com/20261001000272",
+   "press": "",
+   "pub_date": "2026-10-01T13:05:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "두산 ‘황금알’ 된 전자BG…AI 타고 영업이익률 30% 시대",
+   "url": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065585236872687",
+   "press": "",
+   "pub_date": "2026-10-01T12:58:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "9월 연기금 순매수 1위는 '두산'...엔비디아 업고 전자BG 역대 최대실적...",
+   "url": "http://www.opinionnews.co.kr/news/articleView.html?idxno=145130",
+   "press": "",
+   "pub_date": "2026-10-01T12:44:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "엔비디아, PTFE 대신 HC 무포 CCL 채택 가능성",
+   "url": "https://www.tokenpost.kr/news/breaking/416891",
+   "press": "",
+   "pub_date": "2026-10-01T12:40:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "“진짜 젠슨 황인 줄”…‘깐부 회동’ 사진에 숨겨진 놀라운 반전",
+   "url": "https://www.mk.co.kr/article/12165912",
+   "press": "",
+   "pub_date": "2026-10-01T12:06:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "디에스앤지 \"베라 루빈 NVL72 출하 개시...국내 공급 준비 본격화\"",
+   "url": "https://zdnet.co.kr/view/?no=20261001115949",
+   "press": "",
+   "pub_date": "2026-10-01T12:00:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "마이크론 1년새 5배 실적… 삼전·하닉도 200조 영업익 보인다",
+   "url": "https://www.munhwa.com/article/11620847?ref=naver",
+   "press": "",
+   "pub_date": "2026-10-01T12:00:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "마이크론, \"HBM 2027년 물량 대부분 계약\"…분기 매출 73조원 '사상 최대...",
+   "url": "https://www.econovill.com/news/articleView.html?idxno=752418",
+   "press": "",
+   "pub_date": "2026-10-01T11:58:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "GPU만 뜨는 게 아니다! AI 데이터센터 특수 누리는 일본 기업들",
+   "url": "http://dream.kotra.or.kr/kotranews/cms/news/actionKotraBoardDetail.do?SITE_NO=3&MENU_ID=180&CONTENTS_NO=1&bbsGbn=243&bbsSn=243&pNttSn=244001",
+   "press": "",
+   "pub_date": "2026-10-01T11:49:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "3분기 최대 실적 전망 ‘두산’ 쓸어담았다 [주식 초고수는 지금]",
+   "url": "https://www.sedaily.com/article/20097046?ref=naver",
+   "press": "",
+   "pub_date": "2026-10-01T11:44:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "마이크론, '28년까지 호황 이어질까?...키움證 \"범용 메모리 시장 확신 ...",
+   "url": "http://www.joseilbo.com/news/news_read.php?uid=576669&class=53&grp=",
+   "press": "",
+   "pub_date": "2026-10-01T11:40:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "교보생명·엔비디아, 美 AI 클라우드 기업 'GMI'에 투자",
+   "url": "https://thetracker.co.kr/View.aspx?No=4248244",
+   "press": "",
+   "pub_date": "2026-10-01T11:37:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "마이크론(MU), 어닝 서프라이즈 기록...\"2027년까지 공급 부족 이어진다...",
+   "url": "http://coinreaders.com/261074",
+   "press": "",
+   "pub_date": "2026-10-01T11:36:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "오텍캐리어, 1.3㎿ AI 데이터센터 냉각장치 엔비디아 인증… “2.6㎿ 제...",
+   "url": "https://biz.chosun.com/it-science/ict/2026/10/01/XYDENN2DURAALPE7XITYRPXKTE/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+   "press": "",
+   "pub_date": "2026-10-01T11:33:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "딥시크, 엔비디아 '쿠다' 의존도 낮춘다...화웨이 칩 활용기반 확대",
+   "url": "https://www.mt.co.kr/world/2026/10/01/2026100111321823954",
+   "press": "",
+   "pub_date": "2026-10-01T11:33:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "LG전자, 북미 AI 냉각시장 정조준…미 생산거점 확보",
+   "url": "http://www.newstomato.com/ReadNews.aspx?no=1315365&inflow=N",
+   "press": "",
+   "pub_date": "2026-10-01T11:30:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "KB인베스트먼트·KT 등 국내 투자사, 엔비디아와 함께 미국 GPU 클라우드...",
+   "url": "https://platum.kr/archives/295533",
+   "press": "",
+   "pub_date": "2026-10-01T11:28:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "\"부품 넘어 생태계 주도권 쥔다\" 삼성·LG, AI 인프라 시장 승부수",
+   "url": "https://www.asiaa.co.kr/news/articleView.html?idxno=264750",
+   "press": "",
+   "pub_date": "2026-10-01T11:22:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "'韓·英 140년 인연' 이재용, 한국전쟁 참전용사 직접 챙겼다 \"존경과 감...",
+   "url": "https://www.newsis.com/view/NISX20261001_0003810440",
+   "press": "",
+   "pub_date": "2026-10-01T11:21:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "‘메모리 풍향계’ 마이크론 “내년이 정점? 2028년 메모리 공급 부족 더...",
+   "url": "https://biz.chosun.com/it-science/ict/2026/10/01/HWSV3BYFD5BXVN56BPCPL4YXZ4/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+   "press": "",
+   "pub_date": "2026-10-01T11:19:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "SK하이닉스 \"솔리다임, 주주가치가 유일한 잣대\"",
+   "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=278224",
+   "press": "",
+   "pub_date": "2026-10-01T11:16:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "런던서 이건희컬렉션 개막…이재용 필두 삼성가 총출동",
+   "url": "https://www.hani.co.kr/arti/economy/economy_general/1280350.html",
+   "press": "",
+   "pub_date": "2026-10-01T11:12:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "\"2028년도 공급 빠듯\"…'메모리 바로미터' 마이크론 호실적, 삼전·닉스...",
+   "url": "https://www.ikbc.co.kr/article/view/kbc202610010023",
+   "press": "",
+   "pub_date": "2026-10-01T11:01:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[실적+] 마이크론, 4분기 실적 '사상 최대'…내년 전망도 시장 예상 웃돌...",
+   "url": "https://www.greened.kr/news/articleView.html?idxno=351198",
+   "press": "",
+   "pub_date": "2026-10-01T10:50:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[기술적 분석] 코스피 지수와 주요종목 (10월1일)",
+   "url": "https://www.fntoday.co.kr/news/articleView.html?idxno=394286",
+   "press": "",
+   "pub_date": "2026-10-01T10:46:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "LG, 지분법손익 5996억 회복…하반기 ‘원 LG’ AI 인프라로 확장",
+   "url": "https://sateconomy.co.kr/news/view/1065576155564953",
+   "press": "",
+   "pub_date": "2026-10-01T10:46:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "\"LG전자, 3Q 불리한 환경서 선방…중장기적으론 B2B 전환\"",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4437321",
+   "press": "",
+   "pub_date": "2026-10-01T10:38:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "빌 게이츠 \"AI 업계 자율규제 미친 짓\"…백악관에선 AI 총수들 설전",
+   "url": "https://view.asiae.co.kr/article/2026100109261632271",
+   "press": "",
+   "pub_date": "2026-10-01T10:36:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "\"정부 지원 GPU 70%, 가동률 50% 미만…AI 자원 관리 공백\"",
+   "url": "https://zdnet.co.kr/view/?no=20261001095205",
+   "press": "",
+   "pub_date": "2026-10-01T10:30:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "‘역대최대 실적’ 마이크론 “내년 HBM 대부분 팔려…2028년까지 메모리...",
+   "url": "https://biz.heraldcorp.com/article/10890116?ref=naver",
+   "press": "",
+   "pub_date": "2026-10-01T10:23:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "마이크론 \"2028년까지 메모리 부족\"…'피크아웃' 우려 일축",
+   "url": "https://zdnet.co.kr/view/?no=20261001095211",
+   "press": "",
+   "pub_date": "2026-10-01T10:16:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "에픽하이, 젠슨 황·이재용·정의선 '깐부 회동' 패러디…\"AI 아냐, 목숨...",
+   "url": "https://www.news1.kr/entertain/celebrity-topic/6307161",
+   "press": "",
+   "pub_date": "2026-10-01T10:16:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "슈퍼마이크로 'Vera Rubin NVL72' 출하 개시…디에스앤지, 국내 공급 준비...",
+   "url": "https://www.etnews.com/20261001000133",
+   "press": "",
+   "pub_date": "2026-10-01T10:13:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "마이크론, 2030년 매출 35% 장기계약 확보…“수급 빠듯”",
+   "url": "https://biz.heraldcorp.com/article/10890086?ref=naver",
+   "press": "",
+   "pub_date": "2026-10-01T10:11:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "KB금융, 엔비디아와 맞손 '美 AI 인프라' 투자 [fn마켓워치]",
+   "url": "https://www.fnnews.com/news/202610010924596589",
+   "press": "",
+   "pub_date": "2026-10-01T10:02:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "엔비디아가 찜한 GMI클라우드…KB인베 등 9000억 베팅",
+   "url": "https://dealsite.co.kr/articles/169955",
+   "press": "",
+   "pub_date": "2026-10-01T10:02:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "모레·리벨리온·모티프, 日 네오클라우드 진출…한국 AI ‘첫 매출’",
+   "url": "https://www.sedaily.com/article/20096916?ref=naver",
+   "press": "",
+   "pub_date": "2026-10-01T10:01:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "KB인베, 엔비디아 손잡고 '美 AI 인프라' GMI클라우드 투자",
+   "url": "https://view.asiae.co.kr/article/2026100110003377696",
+   "press": "",
+   "pub_date": "2026-10-01T10:00:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "업스테이지, 소형 AI '솔라 미니 4' 공개…GPU 1장으로 구동",
+   "url": "https://www.news1.kr/it-science/internet-platform/6306927",
+   "press": "",
+   "pub_date": "2026-10-01T09:24:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "'모두의 AI' 10월에 첫선..SKT·카카오·KT 차별화 전략은",
+   "url": "https://www.peoplewatch.co.kr/article/view/ppw202610010003",
+   "press": "",
+   "pub_date": "2026-10-01T09:36:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "LG전자, 美에 칠러 공장 짓는다…국내도 라인 구축",
+   "url": "https://biz.heraldcorp.com/article/10889960?ref=naver",
+   "press": "",
+   "pub_date": "2026-10-01T09:33:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[글로벌 마켓 리포트 10월 1일]",
+   "url": "https://www.newspim.com/news/view/20261001000243",
+   "press": "",
+   "pub_date": "2026-10-01T09:31:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "NH증권, \"NHN, AI 데이터센터 초과 수요…내년 70MW 확대\"",
+   "url": "https://www.m-economynews.com/news/article.html?no=71217",
+   "press": "",
+   "pub_date": "2026-10-01T09:30:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "\"엔비디아 쿠다 벽 넘는다\"…딥시크, 화웨이와 어센드용 '타일랭' 개발",
+   "url": "https://www.ddaily.co.kr/page/view/2026100109255922271",
+   "press": "",
+   "pub_date": "2026-10-01T09:27:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "마이크론, AI 열풍에 실적 4배 가까이 급증…\"HBM 없어서 못 팔아\"",
+   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=704209",
+   "press": "",
+   "pub_date": "2026-10-01T09:24:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "업스테이지, 최신 LLM '솔라 미니4' 선봬…반복 작업 적합",
+   "url": "https://www.ajunews.com/view/20261001091319389",
+   "press": "",
+   "pub_date": "2026-10-01T09:24:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "충주 AI 데이터센터 유치 본궤도… 500MW 전력계통영향평가 접수",
+   "url": "https://www.jbnews.com/news/articleView.html?idxno=1512633",
+   "press": "",
+   "pub_date": "2026-10-01T09:16:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "업스테이지, ‘솔라 미니 4’ 공개…알리바바·엔비디아 동급 모델 제쳐",
+   "url": "https://www.dailian.co.kr/news/view/1696543/?sc=Naver",
+   "press": "",
+   "pub_date": "2026-10-01T08:22:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "어드밴텍, DDR5·M.2 SSD 앞세워 로봇용 산업 메모리 시장 공략",
+   "url": "https://www.etnews.com/20261001000046",
+   "press": "",
+   "pub_date": "2026-10-01T09:09:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[AI MY 증시전망] 코스피, 마이크론 훈풍에 반도체주 주목…외인 수급은...",
+   "url": "https://www.newspim.com/news/view/20261001000046",
+   "press": "",
+   "pub_date": "2026-10-01T08:47:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "네오클라우드 관련 기업, 비중 확대 필요...증권가 \"SKT 등 선호주\"",
+   "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=278169",
+   "press": "",
+   "pub_date": "2026-10-01T08:34:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "마이크론, 또 역대급 실적…2030년까지 매출 35% 이미 계약",
+   "url": "https://www.thelec.kr/news/articleView.html?idxno=63067",
+   "press": "",
+   "pub_date": "2026-10-01T08:34:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "마이크론, 실적 호조에 가이던스도 예상치 상회…시간외서 주가 소폭↑...",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4437255",
+   "press": "",
+   "pub_date": "2026-10-01T08:30:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[뉴욕증시] 물가 둔화 속 장기금리 부담에 혼조세…다우 0.86%↓",
+   "url": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5067617",
+   "press": "",
+   "pub_date": "2026-10-01T08:24:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[오늘 일본은] 日 식품 3153개 품목, 10월 가격 오른다…주류·음료 인상...",
+   "url": "https://www.pointe.co.kr/news/articleView.html?idxno=85406",
+   "press": "",
+   "pub_date": "2026-10-01T08:18:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "마이크론, 매출 4.8배 급증⋯AI 메모리 없어서 못 판다",
+   "url": "https://www.etoday.co.kr/news/view/2631201",
+   "press": "",
+   "pub_date": "2026-10-01T08:18:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[굿모닝! 글로벌 뉴욕증시] PCE는 식었는데 장기금리는 또 뛰었다…기술...",
+   "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=301843",
+   "press": "",
+   "pub_date": "2026-10-01T08:14:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "뉴욕증시, 국채금리 부담으로 혼조 마감",
+   "url": "http://www.issuenbiz.com/news/articleView.html?idxno=80237",
+   "press": "",
+   "pub_date": "2026-10-01T08:14:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "업스테이지, 소형 LLM '솔라 미니 4' 공개···온프레미스 시장 겨냥",
+   "url": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=711778",
+   "press": "",
+   "pub_date": "2026-10-01T08:12:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "\"네오클라우드 기업 비중 확대 필요\"…네이버·SK텔레콤 등 추천",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02660086645608656&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "press": "",
+   "pub_date": "2026-10-01T08:08:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "코스피 7600의 전제···이익이 먼저다",
+   "url": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=711773",
+   "press": "",
+   "pub_date": "2026-10-01T08:08:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "메리츠證 “두산, AI용 CCL 증설로 2028년 성장 가속…목표가 240만원”",
+   "url": "https://www.etoday.co.kr/news/view/2631199",
+   "press": "",
+   "pub_date": "2026-10-01T08:04:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[반도체 대전] 리사 수의 NPU 합종연횡 vs 젠슨 황의 공고한 연대…韓 시...",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=611246",
+   "press": "",
+   "pub_date": "2026-10-01T08:00:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[분석] 각개전투하던 삼성 계열사 ··· 'AI 연합전선' 구축",
+   "url": "https://www.datasom.co.kr/news/articleView.html?idxno=210177",
+   "press": "",
+   "pub_date": "2026-10-01T08:00:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "두산, 공격적 증설에 내후년이 기대된다-메리츠",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02581366645608656&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "press": "",
+   "pub_date": "2026-10-01T07:50:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "다올證 “데이터센터, 건설업 새 먹거리⋯연 9.7조~17.4조 발주”",
+   "url": "https://www.etoday.co.kr/news/view/2631186",
+   "press": "",
+   "pub_date": "2026-10-01T07:46:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "LG전자, 900억 투입 美에 칠러 생산 공장 신설…AI 데이터센터 시장 겨냥",
+   "url": "https://www.news1.kr/industry/general-industry/6306839",
+   "press": "",
+   "pub_date": "2026-10-01T07:46:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "마이크론, 4분기 매출 542억달러…AI발 메모리 수요 급등에 시장 예상 상...",
+   "url": "https://www.newsis.com/view/NISX20261001_0003809757",
+   "press": "",
+   "pub_date": "2026-10-01T07:43:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[마켓 프리뷰] 美 장기국채 금리 부담에 코스피 사흘째 하락 마감",
+   "url": "https://biz.sbs.co.kr/article_hub/20000337685?division=NAVER",
+   "press": "",
+   "pub_date": "2026-10-01T07:35:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[넥스트-샷] 물가 내려 웃었더니 GDP·고용이 찬물···다우 444포인트 ...",
+   "url": "https://www.womaneconomy.co.kr/news/articleView.html?idxno=259229",
+   "press": "",
+   "pub_date": "2026-10-01T07:30:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "K-반도체發 성과급 갈등 대만·미국으로 확산…글로벌 보상 기준 바꾸나",
+   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=703954",
+   "press": "",
+   "pub_date": "2026-10-01T07:30:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "“내년 HBM 물량까지 이미 팔렸다”…마이크론 데이터센터 매출 11배 폭...",
+   "url": "https://www.mk.co.kr/article/12165542",
+   "press": "",
+   "pub_date": "2026-10-01T07:27:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "마이크론, 분기매출 379% 폭증…삼전닉스에 쏠리는 눈",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02030326645608656&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "press": "",
+   "pub_date": "2026-10-01T06:00:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "빌 게이츠 \"AI 자율규제, 미친 짓\"⋯\"인류 최대 위험 방치\"",
+   "url": "https://www.autodaily.co.kr/news/articleView.html?idxno=600823",
+   "press": "",
+   "pub_date": "2026-10-01T07:18:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "美 마이크론, ‘AI 붐’ 타고 실적 5배… 韓 반도체도 청신호",
+   "url": "https://www.chosun.com/economy/tech_it/2026/10/01/2VFCN3U2MJHMXHGFSEKUBK74W4/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+   "press": "",
+   "pub_date": "2026-10-01T07:10:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "미국증시 혼조마감, 장기금리 급등에도 나스닥 지킨 AI와 반도체 투자심...",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16231270",
+   "press": "",
+   "pub_date": "2026-10-01T07:06:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "LG전자, 엔비디아 AI 데이터센터 냉각솔루션 공식 파트너 선정",
+   "url": "https://weekly.donga.com/3/all/11/6402898/1",
+   "press": "",
+   "pub_date": "2026-10-01T07:02:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[기획] AI 데이터센터 경쟁, GPU 넘어 ‘냉각 기술’로",
+   "url": "https://www.sentv.co.kr/article/view/sentv202609290104",
+   "press": "",
+   "pub_date": "2026-10-01T07:02:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[더벨][thebell note] SK하이닉스의 '본질'",
+   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202609281511149000108061",
+   "press": "",
+   "pub_date": "2026-10-01T07:02:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[더벨]네이버, 2주 남은 브룩필드 협상 기한 '완수할 수 있을까'",
+   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202609291507066840108221",
+   "press": "",
+   "pub_date": "2026-10-01T07:02:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[창간기획] AI에 누가 더 크게 베팅했나…4대 그룹 AI 투자 비교",
+   "url": "https://www.ezyeconomy.com/news/articleView.html?idxno=240333",
+   "press": "",
+   "pub_date": "2026-10-01T07:00:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[엣지 인프라 ②] 기업별 주요 솔루션",
+   "url": "https://www.itdaily.kr/news/articleView.html?idxno=241938",
+   "press": "",
+   "pub_date": "2026-10-01T06:56:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "물가 둔화에도 국채금리 부담…美 뉴욕증시, 나스닥만 0.24%↑",
+   "url": "https://news.tf.co.kr/read/economy/2371648.htm",
+   "press": "",
+   "pub_date": "2026-10-01T06:45:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "딥시크, 화웨이와 AI 칩 협력…엔비디아 의존도 낮춘다",
+   "url": "https://www.sedaily.com/article/20096800?ref=naver",
+   "press": "",
+   "pub_date": "2026-10-01T06:30:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "‘세계 최초’ 기술 선보인 中…AI데이터센터 냉각도 넘본다",
+   "url": "https://www.dt.co.kr/article/12086801?ref=naver",
+   "press": "",
+   "pub_date": "2026-10-01T06:30:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "마이크론 실적·전망 예상 상회…AI 데이터센터 매출 11배 폭증(종합)",
+   "url": "https://www.news1.kr/world/international-economy/6306816",
+   "press": "",
+   "pub_date": "2026-10-01T06:20:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "마이크론 \"메모리 공급난 2028년까지\"…2027년 HBM 물량 대부분 계약",
+   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1726294",
+   "press": "",
+   "pub_date": "2026-10-01T06:08:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "“로봇이 배울 3D 데이터 없다…2~3년 내 시장 재편”",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02141846645608656&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "press": "",
+   "pub_date": "2026-10-01T06:08:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "글로벌 공급망 주도권 쥔 삼성… 韓 ‘AI 반도체’ 격전지 부상",
+   "url": "https://www.segye.com/newsView/20260930516522?OutUrl=naver",
+   "press": "",
+   "pub_date": "2026-10-01T06:04:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "반도체 불패론 여전…마이크론, HBM 앞세워 '어닝 서프라이즈'",
+   "url": "https://www.ddaily.co.kr/page/view/2026100105560683816",
+   "press": "",
+   "pub_date": "2026-10-01T06:01:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "마이크론, 4분기 매출 4배 급증 깜짝 실적...1분기 전망도 호조",
+   "url": "https://www.g-enews.com/view.php?ud=202610010554462426e250e8e188_1",
+   "press": "",
+   "pub_date": "2026-10-01T05:58:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[N2 모닝 경제 브리핑-10월 1일] 美 증시, 예상 밑돈 PCE에도 장기금리 ...",
+   "url": "https://www.news2day.co.kr/article/20260930500210",
+   "press": "",
+   "pub_date": "2026-10-01T05:50:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "뉴욕증시 혼조 마감…국채금리 부담 속 나스닥은 기술주 강세로 상승",
+   "url": "https://www.ddaily.co.kr/page/view/2026100105475146265",
+   "press": "",
+   "pub_date": "2026-10-01T05:49:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "美 국채금리, 24년 만에 5.3% 돌파···뉴욕증시 상승분 반납",
+   "url": "https://www.smartbizn.com/news/articleView.html?idxno=155293",
+   "press": "",
+   "pub_date": "2026-10-01T05:48:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "\"脫중국·進미국 가속\"… 화낙 등 日 로봇 공룡, '물리적 AI' 붐 타고 美...",
+   "url": "https://www.g-enews.com/view.php?ud=2026093014451776610c8c1c064d_1",
+   "press": "",
+   "pub_date": "2026-10-01T05:46:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[뉴욕마감]PCE 예상 하회에도 지수별 혼조…S&P·다우 내리고 나스닥 0....",
+   "url": "https://www.news1.kr/world/international-economy/6306809",
+   "press": "",
+   "pub_date": "2026-10-01T05:46:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "마이크론, 예상치 웃도는 실적 전망에 시간외 거래서 2% 가까이 상승......",
+   "url": "http://www.beyondpost.co.kr/view.php?ud=2026100105333728612aaae0046f_30",
+   "press": "",
+   "pub_date": "2026-10-01T05:38:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "미국 물가 둔화에도 국채금리 상승…3대 지수 혼조세[뉴욕마감]",
+   "url": "https://news.mtn.co.kr/news-detail/2026100105313453251",
+   "press": "",
+   "pub_date": "2026-10-01T05:38:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "마이크론, AI 메모리 호황에 매출 379% 급증…전망도 예상 상회",
+   "url": "https://www.fnnews.com/news/202610010501139853",
+   "press": "",
+   "pub_date": "2026-10-01T05:29:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "마이크론 또 어닝서프라이즈…4분기 영업익 61조원 전년비 11배↑",
+   "url": "http://www.4th.kr/news/articleView.html?idxno=2118969",
+   "press": "",
+   "pub_date": "2026-10-01T05:28:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "뉴욕증시, 10월 금리 인상 전망 후퇴 속 혼조 마감…기술주 강세",
+   "url": "https://www.newspim.com/news/view/20261001000018",
+   "press": "",
+   "pub_date": "2026-10-01T05:16:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "“AI 시대에도 다윗이 골리앗 이길수 있어”",
+   "url": "https://www.donga.com/news/People/article/all/20260930/134764035/2",
+   "press": "",
+   "pub_date": "2026-10-01T04:32:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[출근길 포인트] AMD·엔비디아 한국 공략…대호김종서함 진수",
+   "url": "https://www.pointdaily.co.kr/news/articleView.html?idxno=320907",
+   "press": "",
+   "pub_date": "2026-10-01T04:30:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "미 물가 예상보다 낮았다…뉴욕증시 S&P500·나스닥 상승",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=89464",
+   "press": "",
+   "pub_date": "2026-10-01T04:12:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "로빈후드 밈코인, 가격 떨어져도 주식 락업은 급증...토큰화 주식 품고...",
+   "url": "http://coinreaders.com/260999",
+   "press": "",
+   "pub_date": "2026-10-01T04:02:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "\"한국판 코어위브 넘는다\"...'1조 몸값' 엘리스그룹, 코스닥 도전",
+   "url": "https://www.aitimes.com/news/articleView.html?idxno=215816",
+   "press": "",
+   "pub_date": "2026-10-01T03:54:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "AWS GPU 예약 가격, 10월 업데이트 예고됐다",
+   "url": "https://www.tokenpost.kr/news/ai/416684",
+   "press": "",
+   "pub_date": "2026-10-01T03:28:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "美 IPO 시장 급랭…신규주 수익률 1% 아래",
+   "url": "https://www.g-enews.com/view.php?ud=2026093021371751989a1f309431_1",
+   "press": "",
+   "pub_date": "2026-10-01T03:02:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "RTX 5090 240장으로 8B 학습…스마트폰 CPU서 초당 59.6토큰",
+   "url": "https://www.tokenpost.kr/news/ai/416675",
+   "press": "",
+   "pub_date": "2026-10-01T02:58:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "삼성 6개사, 美 AI 인프라 '헬릭스'에 10억달러 투자…데이터센터 생태...",
+   "url": "https://www.webeconomy.co.kr/news/articleView.html?idxno=2321740",
+   "press": "",
+   "pub_date": "2026-10-01T02:36:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "95분 AI 영화, 14일 만에 제작…할리우드 시험대",
+   "url": "https://www.tokenpost.kr/news/ai/416666",
+   "press": "",
+   "pub_date": "2026-10-01T02:28:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "미국증시, PCE 둔화에 나스닥 1%↑…HPE·마이크론 AI주 강세",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16230906",
+   "press": "",
+   "pub_date": "2026-10-01T00:48:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "오텍캐리어·LG전자, 차세대 냉각 기술 선보여",
+   "url": "https://www.chosun.com/economy/tech_it/2026/10/01/DOBGUSQGEBCONCTBTFYZAWPRCM/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+   "press": "",
+   "pub_date": "2026-10-01T00:35:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "엔비디아 베라 루빈, 코어위브 생산 투입…처리량 최대 4.8배",
+   "url": "https://www.tokenpost.kr/news/breaking/416602",
+   "press": "",
+   "pub_date": "2026-10-01T00:24:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[김대호 인물] 엔비디아 젠슨황... 사상최대 규모 \"자사주 노림수\"",
+   "url": "https://www.g-enews.com/view.php?ud=202609290841095432906806b77b_1",
+   "press": "",
+   "pub_date": "2026-09-30T23:56:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "600MW 데이터센터 용량 제시한 세레브라스, AI 확장 한계 논의",
+   "url": "https://www.tokenpost.kr/news/ai/416579",
+   "press": "",
+   "pub_date": "2026-09-30T23:48:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "리사 수 7개월 만에 재방한… 엔비디아·AMD, 한국서 맞붙는다",
+   "url": "https://www.newscj.com/news/articleView.html?idxno=3436911",
+   "press": "",
+   "pub_date": "2026-09-30T22:58:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "엔비디아, 11월 코엑스서 'AI 데이 서울'⋯2000명·20개 파트너 참여",
+   "url": "https://www.autodaily.co.kr/news/articleView.html?idxno=600812",
+   "press": "",
+   "pub_date": "2026-09-30T22:50:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "오믈렛, 엔비디아 인셉션 챌린지 톱10",
+   "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=868931",
+   "press": "",
+   "pub_date": "2026-09-30T22:44:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "경복대 영상미디어콘텐츠과, 마음AI와 피지컬 AI 인재 양성 및 산학협력...",
+   "url": "https://www.cstimes.com/news/articleView.html?idxno=722484",
+   "press": "",
+   "pub_date": "2026-09-30T22:42:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "엔비디아, 11월 서울서 'AI 데이' 개최",
+   "url": "https://www.thelec.kr/news/articleView.html?idxno=63050",
+   "press": "",
+   "pub_date": "2026-09-30T18:34:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[AI MY 뉴스] 뉴욕 반도체주 프리뷰...美 물가 둔화에 일제히 상승",
+   "url": "https://www.newspim.com/news/view/20260930001359",
+   "press": "",
+   "pub_date": "2026-09-30T22:30:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "“고성능 외장 GPU 없어도 고화질 게임 OK?” 윈도 11의 자동 슈퍼 해상...",
+   "url": "https://it.donga.com/109627/",
+   "press": "",
+   "pub_date": "2026-09-30T22:02:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "AI '자율규제' 띄운 트럼프…기업들에 맡긴다",
+   "url": "http://www.yonhapnewstv.co.kr/news/MYH20260930205808lVL",
+   "press": "",
+   "pub_date": "2026-09-30T20:58:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[10월1일자] 비즈니스포스트 아침의 주요기사",
+   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=448356",
+   "press": "",
+   "pub_date": "2026-09-30T20:56:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "제이콥스, AI 데이터센터 디지털 트윈 공개…설계·운영 가상 검증",
+   "url": "https://www.tokenpost.kr/news/ai/416465",
+   "press": "",
+   "pub_date": "2026-09-30T20:14:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "리사 수 AMD 회장, 7개월 만에 다시 인천행 비행기… 국산 NPU 지켜보는 ...",
+   "url": "https://www.econovill.com/news/articleView.html?idxno=752333",
+   "press": "",
+   "pub_date": "2026-09-30T20:08:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "“도우미 넘어 ‘AI 동료’ 시대”…크래프톤, ‘펍지 엘라이’ 실증 공...",
+   "url": "https://www.sentv.co.kr/article/view/sentv202609300116",
+   "press": "",
+   "pub_date": "2026-09-30T20:08:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "‘반도체 풍향계’ 마이크론 실적 드디어 나온다…‘삼전닉스’ 랠리 재...",
+   "url": "https://www.dt.co.kr/article/12086757?ref=naver",
+   "press": "",
+   "pub_date": "2026-09-30T20:00:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "2000억 '국대 AI'는 평가판 다시 짜고…2500억 '모두의 AI'는 비용부터 물...",
+   "url": "https://www.thepublic.kr/news/articleView.html?idxno=320696",
+   "press": "",
+   "pub_date": "2026-09-30T19:34:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "LG CNS, 모듈형 AI 데이터센터 공개 … GPU·전력·냉각 '풀스택' 공략",
+   "url": "http://www.worktoday.co.kr/news/articleView.html?idxno=89907",
+   "press": "",
+   "pub_date": "2026-09-30T19:30:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "‘한국을 내 편으로’…경쟁 붙은 젠슨 황·리사 수",
+   "url": "https://www.dt.co.kr/article/12086796?ref=naver",
+   "press": "",
+   "pub_date": "2026-09-30T19:18:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "에픽하이 깐부회동 포스터 AI 아니었어?..100% 수작업 비하인드 영상 [스...",
+   "url": "https://www.starnewskorea.com/star/2026/09/30/2026093018472679286",
+   "press": "",
+   "pub_date": "2026-09-30T19:13:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "LG CNS, '사전제작 모듈형 데이터센터'로 AI 팩토리 시장 강공",
+   "url": "https://www.datanet.co.kr/news/articleView.html?idxno=214813",
+   "press": "",
+   "pub_date": "2026-09-30T18:36:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "리사 수 AMD CEO 내달 방한…국내 NPU 업체와 회동",
+   "url": "https://www.thelec.kr/news/articleView.html?idxno=63046",
+   "press": "",
+   "pub_date": "2026-09-30T18:34:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "독파모 중단설에 갈팡질팡 혼란에 빠진 ‘국대 AI’ 개발사",
+   "url": "https://www.joongang.co.kr/article/25466097",
+   "press": "",
+   "pub_date": "2026-09-30T18:34:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "456기 원자로·9.6GW 데이터센터 유타에 제안",
+   "url": "https://www.tokenpost.kr/news/ai/416414",
+   "press": "",
+   "pub_date": "2026-09-30T18:26:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "KES 2026 오프닝 키노트, CES Asia Unveiled Seoul과 연계…CES 2027·AI 산...",
+   "url": "http://digitalchosun.dizzo.com/site/data/html_dir/2026/09/30/2026093080054.html",
+   "press": "",
+   "pub_date": "2026-09-30T18:24:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "리사 수 AMD 회장, 다시 한국 찾는다…'AI 동맹' 강화 행보",
+   "url": "https://www.nocutnews.co.kr/news/6585435?utm_source=naver&utm_medium=article&utm_campaign=20260930062301",
+   "press": "",
+   "pub_date": "2026-09-30T18:24:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[강현철의 뉴스 솎아내기] ‘AI 토큰 대출’까지 선보인 중국",
+   "url": "https://www.dt.co.kr/article/12086781?ref=naver",
+   "press": "",
+   "pub_date": "2026-09-30T18:15:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "AI 퍼스트·M&A·신작에 힘쓴 크래프톤, 2분기 비용 111% 늘어…매출 상...",
+   "url": "http://www.fieldnews.kr/news/articleView.html?idxno=31890",
+   "press": "",
+   "pub_date": "2026-09-30T18:04:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[사설]\"한국은 'AI 풀스택' 자산 부국\"… 우리의 강점 제대로 살리자",
+   "url": "https://www.sidae.com/article/2026093016001292258",
+   "press": "",
+   "pub_date": "2026-09-30T18:00:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "2027년 HBM 평균판매가, 무려 121% 뛴다",
+   "url": "https://www.asiatime.co.kr/article/20260930500427",
+   "press": "",
+   "pub_date": "2026-09-30T17:54:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[엣지 인프라 ①] 엣지서 AIDC까지…AI 인프라 생태계 확장",
+   "url": "https://www.itdaily.kr/news/articleView.html?idxno=241932",
+   "press": "",
+   "pub_date": "2026-09-30T17:50:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "美, ESS 큰 시장 열린다…영역 넓히는 K배터리",
+   "url": "https://news.mtn.co.kr/news-detail/2026093016034751931",
+   "press": "",
+   "pub_date": "2026-09-30T17:48:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "日 신생 네오클라우드 사업에 K스타트업 3사 나란히 진출",
+   "url": "https://www.sedaily.com/article/20096727?ref=naver",
+   "press": "",
+   "pub_date": "2026-09-30T17:37:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "‘AI 메모리’ HBM, 내년에도 가격 배 이상 오른다…삼성·SK, 차세대 HBM...",
+   "url": "https://www.ceoscoredaily.com/page/view/2026093013281187601",
+   "press": "",
+   "pub_date": "2026-09-30T17:36:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "빗썸, 고객만족도 가상자산거래소 부문 2년 연속 1위",
+   "url": "https://www.newsis.com/view/NISX20261001_0003810048",
+   "press": "",
+   "pub_date": "2026-10-01T09:11:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "대전 유성구, '어르신 유성 디지털 투어' 운영",
+   "url": "http://www.chungnamilbo.co.kr/news/articleView.html?idxno=912674",
+   "press": "",
+   "pub_date": "2026-10-01T13:20:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "청주시, AI 행정 전반 확대…CCTV 영상 AI 분석 도입",
+   "url": "https://www.ccreview.co.kr/news/articleView.html?idxno=358953",
+   "press": "",
+   "pub_date": "2026-10-01T13:10:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "충북도립대 학생들, 서울서 '옥천형 창업' 아이디어 찾는다",
+   "url": "https://www.inews365.com/news/article.html?no=937873",
+   "press": "",
+   "pub_date": "2026-10-01T13:08:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "청주시, CCTV 영상 AI로 분석한다",
+   "url": "https://www.kmib.co.kr/article/view.asp?arcid=9000018938&cp=nv",
+   "press": "",
+   "pub_date": "2026-10-01T13:07:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "경복대, 상황인지형 경기북부 관광코스 추천서비스 선봬",
+   "url": "https://www.ekn.kr/web/view.php?key=20261001022231069",
+   "press": "",
+   "pub_date": "2026-10-01T12:58:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "용인시, 하반기 일자리박람회 연다",
+   "url": "https://www.job-post.co.kr/news/articleView.html?idxno=230071",
+   "press": "",
+   "pub_date": "2026-10-01T12:56:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "어린이부터 외국인까지…버킷트래블 AI 도슨트 '컬프', 맞춤형 전시 해...",
+   "url": "https://edu.donga.com/news/articleView.html?idxno=112418",
+   "press": "",
+   "pub_date": "2026-10-01T12:50:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "용인시, 14일 하반기 일자리박람회...245명 채용",
+   "url": "https://www.sportsseoul.com/news/read/1638712?ref=naver",
+   "press": "",
+   "pub_date": "2026-10-01T08:46:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "대구대 뷰티학부-코코에이치, ‘AI 뷰티 기술 융합 교육’ 맞손",
+   "url": "https://dhnews.co.kr/news/view/1065580335898598",
+   "press": "",
+   "pub_date": "2026-10-01T11:42:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "AI 검색 확산 속 언론사 유입 급감…구글 트래픽 40% 감소",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16231888",
+   "press": "",
+   "pub_date": "2026-10-01T12:28:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[AI프리뷰] 1일 광주 KIA-KT전, 20일 만에 등판하는 양현종 KIA 스윕패 막...",
+   "url": "https://www.newspim.com/news/view/20261001000525",
+   "press": "",
+   "pub_date": "2026-10-01T12:10:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "안산시, 생성형 AI 민원상담 챗봇 운영...야간·주말에도 24시간 안내",
+   "url": "https://www.kmaeil.com/news/articleView.html?idxno=653208",
+   "press": "",
+   "pub_date": "2026-10-01T09:18:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "현대차, 고객 아이디어로 차량 앱 확장",
+   "url": "http://www.4th.kr/news/articleView.html?idxno=2119017",
+   "press": "",
+   "pub_date": "2026-10-01T12:12:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "AI 추천, ‘한 줄 고지’가 소비자 반응 갈랐다…설명 분량보다 ‘어떤...",
+   "url": "https://kidd.co.kr/news/247589",
+   "press": "",
+   "pub_date": "2026-10-01T12:10:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "현대차, 고객 아이디어로 車앱 만든다…생성형 AI '창밖동화' 대상",
+   "url": "https://www.fnnews.com/news/202610010840535423",
+   "press": "",
+   "pub_date": "2026-10-01T08:47:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "충북교육청, AI·데이터로 교실 바꾼다 ··· KERIS와 맞손",
+   "url": "https://www.ggilbo.com/news/articleView.html?idxno=1184690",
+   "press": "",
+   "pub_date": "2026-10-01T12:00:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "구글, 제로클릭 논란 속 AI 콘텐츠 직접 보상…연 100만달러 사례도",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16231793",
+   "press": "",
+   "pub_date": "2026-10-01T11:54:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "\"개념타령 이젠 그만\"…돈 버는 AI, 한자리서 공개된다",
+   "url": "https://zdnet.co.kr/view/?no=20261001081811",
+   "press": "",
+   "pub_date": "2026-10-01T11:52:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "성평등장관 \"李, 조직 잘 추스르라 당부…정책 흔들림 없이 추진\"(종합...",
+   "url": "https://www.newsis.com/view/NISX20261001_0003810578",
+   "press": "",
+   "pub_date": "2026-10-01T11:50:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[성주·고령 24시] 전화식 성주군수, 지역 핵심사업 경북도 지원 요청",
+   "url": "https://www.sisajournal.com/news/articleView.html?idxno=388841",
+   "press": "",
+   "pub_date": "2026-10-01T11:35:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "NNT, 삼성물산 주거 플랫폼에 AI 콘텐츠 자동화 파이프라인 구축",
+   "url": "https://view.asiae.co.kr/article/2026100109391214488",
+   "press": "",
+   "pub_date": "2026-10-01T09:39:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "“생성형 AI 확인하고 살펴보세요”…방미통위, SNS 캠페인 진행",
+   "url": "https://www.ichannela.com/news/main/news_detailPage.do?publishId=000000553080",
+   "press": "",
+   "pub_date": "2026-10-01T11:31:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "친구가 다녀온 숙소 어딜까…에어비앤비, 신규 기능 업데이트",
+   "url": "https://biz.heraldcorp.com/article/10890340?ref=naver",
+   "press": "",
+   "pub_date": "2026-10-01T11:30:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "현대차 ‘창밖동화’, 플레오스 커넥트 앱 공모전 대상 선정",
+   "url": "http://www.lawissue.co.kr/view.php?ud=20261001111946992067191f6c6e_12",
+   "press": "",
+   "pub_date": "2026-10-01T11:22:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "AI가 바꾼 PC 시장…400만원대 급증",
+   "url": "http://www.smedaily.co.kr/news/articleView.html?idxno=364005",
+   "press": "",
+   "pub_date": "2026-10-01T11:20:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[종합] 원민경 \"靑 비서실장 통해 '성평등부 조직 잘 추스르라' 당부 받...",
+   "url": "https://www.newspim.com/news/view/20261001000573",
+   "press": "",
+   "pub_date": "2026-10-01T11:19:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "네오사피엔스, 320만명·2천개 기업 품은 AI음성…로봇까지 연결하는 피...",
+   "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=278227",
+   "press": "",
+   "pub_date": "2026-10-01T11:18:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "샵다나와 \"400만 원 이상 하이엔드 PC 구매 비중 40%…AI 활용 확산 영향...",
+   "url": "https://www.nextdaily.co.kr/news/articleView.html?idxno=253508",
+   "press": "",
+   "pub_date": "2026-10-01T11:16:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "2026년 폴란드 IT산업 정보",
+   "url": "http://dream.kotra.or.kr/kotranews/cms/news/actionKotraBoardDetail.do?SITE_NO=3&MENU_ID=200&CONTENTS_NO=1&bbsGbn=403&bbsSn=403&pNttSn=244076",
+   "press": "",
+   "pub_date": "2026-10-01T11:13:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "LG의 AI 혁신… 전자 '냉각 HW'·CNS 'SW·AI'로 글로벌 공략",
+   "url": "https://www.newscj.com/news/articleView.html?idxno=3437008",
+   "press": "",
+   "pub_date": "2026-10-01T11:12:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "한국 제조업 미래 진단 프로젝트 ⑤ - Planning이 제조 경쟁력을 다시 가...",
+   "url": "https://www.mfgkr.com/news/articleView.html?idxno=28399",
+   "press": "",
+   "pub_date": "2026-10-01T11:12:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "AX 도시부동산 플랫폼 ‘부피디’, 올해 도시·지역혁신대상에서 최우수...",
+   "url": "https://realty.chosun.com/site/data/html_dir/2026/10/01/2026100101465.html",
+   "press": "",
+   "pub_date": "2026-10-01T11:10:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "청주시, AI전담팀 신설…'지능형 영상 분석' CCTV 8천대",
+   "url": "https://www.newsis.com/view/NISX20261001_0003810464",
+   "press": "",
+   "pub_date": "2026-10-01T11:05:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "AI 인프라 투자 31조 달러 시대, 한국의 새로운 성장 전략 [삼일 이슈 프...",
+   "url": "https://www.hankyung.com/article/202609303153r",
+   "press": "",
+   "pub_date": "2026-10-01T11:03:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "빗썸, 가상자산거래소 고객만족도 1위…AI 서비스·거래 편의 강화",
+   "url": "https://www.kizmom.com/news/articleView.html?idxno=113056",
+   "press": "",
+   "pub_date": "2026-10-01T11:00:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "용인시, 14일 일자리박람회…42개 사 245명 채용 예정",
+   "url": "https://www.yna.co.kr/view/AKR20261001050500061?input=1195m",
+   "press": "",
+   "pub_date": "2026-10-01T09:46:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "충북도립대학, 창업 아이디어 캠프…32명 참여 옥천 특화 모델 모색",
+   "url": "https://www.gukjenews.com/news/articleView.html?idxno=3710273",
+   "press": "",
+   "pub_date": "2026-10-01T10:50:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "대구대 뷰티학부, AI 스마트미러로 미래형 K뷰티 인재 양성",
+   "url": "https://www.mt.co.kr/policy/2026/10/01/2026100110301360132",
+   "press": "",
+   "pub_date": "2026-10-01T10:47:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[증권가로수] 키움증권/하나증권/한투운용/NH아문디/빗썸",
+   "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202610010855074020047",
+   "press": "",
+   "pub_date": "2026-10-01T10:42:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "민선 9기 청주시, 인공지능을 시정 혁신 핵심 수단으로",
+   "url": "https://www.inews365.com/news/article.html?no=937794",
+   "press": "",
+   "pub_date": "2026-10-01T10:40:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "\"현대차의 혁신, 아이들을 위한 '창밖동화' 앱 아이디어 주목\"",
+   "url": "https://www.gokorea.kr/news/articleView.html?idxno=880140",
+   "press": "",
+   "pub_date": "2026-10-01T10:40:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "삼보컴퓨터 PC 업계 최초 'TG AI 보드·TG AI 스테이션' '인공지능제품·...",
+   "url": "https://www.etnews.com/20261001000162",
+   "press": "",
+   "pub_date": "2026-10-01T10:39:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "안산시, AI 민원 챗봇",
+   "url": "http://www.breaknews.com/1240292",
+   "press": "",
+   "pub_date": "2026-10-01T10:38:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "출범 1년 맞은 성평등부⋯원민경 “국민 체감할 성과로 답할 것”",
+   "url": "https://www.etoday.co.kr/news/view/2631330",
+   "press": "",
+   "pub_date": "2026-10-01T10:30:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "성평등부 출범 1년…임신중지약 도입 기반 마련·혼인지원금 추진",
+   "url": "https://www.newsis.com/view/NISX20261001_0003810299",
+   "press": "",
+   "pub_date": "2026-10-01T10:30:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "현대차, 고객 아이디어 반영 '디지털 모빌리티 서비스' 강화",
+   "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=278181",
+   "press": "",
+   "pub_date": "2026-10-01T10:30:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "성평등부 출범 1년…고용평등공시·혼인지원금 추진, '모두의 생리대' ...",
+   "url": "https://www.newspim.com/news/view/20261001000450",
+   "press": "",
+   "pub_date": "2026-10-01T10:30:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "에어비앤비, 2026 가을 업데이트 발표… AI 검색·지인 연계 및 현지 서...",
+   "url": "https://www.discoverynews.kr/news/articleView.html?idxno=1103023",
+   "press": "",
+   "pub_date": "2026-10-01T10:28:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "경복대학교, ‘2026 산학연협력 EXPO’서 상황인지형 경기북부 관광 코스...",
+   "url": "https://www.kgnews.co.kr/news/article.html?no=913646",
+   "press": "",
+   "pub_date": "2026-10-01T10:28:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "현대차, '창밖동화' 앱 아이디어 대상…플레오스 서비스화 검토",
+   "url": "https://www.fetv.co.kr/news/articleView.html?idxno=311072",
+   "press": "",
+   "pub_date": "2026-10-01T10:28:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "현대차, 고객이 만든 '차 안의 동화'…플레오스 커넥트 아이디어 대상 ...",
+   "url": "https://www.businessplus.kr/news/articleView.html?idxno=117545",
+   "press": "",
+   "pub_date": "2026-10-01T10:20:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[인터뷰] 정재필 ㈜이퀼디 대표 “예술과 첨단 기술의 융합, 사람이 행...",
+   "url": "http://dhnews.co.kr/news/view/1065575395792687",
+   "press": "",
+   "pub_date": "2026-10-01T10:18:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "경복대학교 소프트웨어융합학과, '2026 산학연협력 EXPO'서 AI 관광 추천...",
+   "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2476010",
+   "press": "",
+   "pub_date": "2026-10-01T08:00:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "제품 넘어 '경험'으로… 기업들 고객 접점 넓힌다",
+   "url": "https://www.pressman.kr/news/articleView.html?idxno=103844",
+   "press": "",
+   "pub_date": "2026-10-01T10:12:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "KB인베 투자한 AI 올거나이즈…日증시 직행",
+   "url": "https://dealsite.co.kr/articles/169956",
+   "press": "",
+   "pub_date": "2026-10-01T10:06:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "인천시, 생성형 AI 활용 '통합 소음 분석 플랫폼' 자체 개발",
+   "url": "https://www.kmaeil.com/news/articleView.html?idxno=653238",
+   "press": "",
+   "pub_date": "2026-10-01T10:02:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "창원 항공엔진 특화단지…8000명 신규 고용",
+   "url": "https://www.sedaily.com/article/20096909?ref=naver",
+   "press": "",
+   "pub_date": "2026-10-01T10:01:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "\"게이밍PC 넘어 AI PC로\"…샵다나와, 400만원 이상 하이엔드 PC 수요 급증",
+   "url": "https://www.epnc.co.kr/news/articleView.html?idxno=407603",
+   "press": "",
+   "pub_date": "2026-10-01T10:00:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "AI 활용 능력도 겨룬다…'제20회 i-TOP 경진대회' 3일 개최",
+   "url": "https://www.etnews.com/20261001000109",
+   "press": "",
+   "pub_date": "2026-10-01T09:59:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "현대차, 플레오스 커넥트 앱 공모전 마무리…우수작 서비스화 추진",
+   "url": "https://www.dailian.co.kr/news/view/1696658/?sc=Naver",
+   "press": "",
+   "pub_date": "2026-10-01T09:49:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "국립광주과학관, AI 과학교육 이끌 전문 강사 54명 양성",
+   "url": "https://www.etnews.com/20261001000088",
+   "press": "",
+   "pub_date": "2026-10-01T09:47:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "울주군, 행안부 'AI 챔피언 블루' 인증 공무원 배출",
+   "url": "https://www.yna.co.kr/view/AKR20261001052900057?input=1195m",
+   "press": "",
+   "pub_date": "2026-10-01T09:46:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "“창밖 풍경, 동화가 된다”…현대차 아이디어 공모전 대상 ‘창밖동화...",
+   "url": "https://www.mk.co.kr/article/12165666",
+   "press": "",
+   "pub_date": "2026-10-01T09:44:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "\"이런 일 해주는 AI 만들어줘\" 말하면 뚝딱...SK AX, 비개발자용 AI 교육...",
+   "url": "https://news.mtn.co.kr/news-detail/2026100108504065691",
+   "press": "",
+   "pub_date": "2026-10-01T09:44:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "SK AX, 비개발자용 AI 교육 신설",
+   "url": "https://www.smartbizn.com/news/articleView.html?idxno=155304",
+   "press": "",
+   "pub_date": "2026-10-01T09:42:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "\"임직원들도 자연어로 비서 뚝딱\"…SK AX, '부트캠프 바이브' 출시",
+   "url": "https://view.asiae.co.kr/article/2026100109370759872",
+   "press": "",
+   "pub_date": "2026-10-01T09:40:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "현대차, 차량 앱 아이디어 공모…대상에 아반떼 1년 이용권 전달",
+   "url": "https://daily.hankooki.com/news/articleView.html?idxno=1411170",
+   "press": "",
+   "pub_date": "2026-10-01T09:38:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "자동차 AI가 들려주는 동화…현대차 차량용 앱 공모전 대상",
+   "url": "https://www.yna.co.kr/view/AKR20261001044500003?input=1195m",
+   "press": "",
+   "pub_date": "2026-10-01T09:33:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "용인특례시, 14일 하반기 일자리박람회 개최…'반도체 산업관' 첫 신설",
+   "url": "https://www.fnnews.com/news/202610010922108162",
+   "press": "",
+   "pub_date": "2026-10-01T09:28:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "롯데면세점, 자연어 기반 'AI 상품검색' 도입",
+   "url": "http://www.kdfnews.com/news/articleView.html?idxno=188691",
+   "press": "",
+   "pub_date": "2026-10-01T09:28:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "\"아이가 스마트폰에 몰두 안했으면\"..현대차에 제안한 '플레오스 앱' 아...",
+   "url": "https://www.mt.co.kr/industry/2026/10/01/2026100109223487941",
+   "press": "",
+   "pub_date": "2026-10-01T09:28:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "중장년층의 직업 역량 강화...구로구 중장년일드림센터에서 10월 맞춤형...",
+   "url": "https://www.cnbizm.com/news/articleView.html?idxno=316760",
+   "press": "",
+   "pub_date": "2026-10-01T09:22:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "용인특례시, 일자리박람회서 245명 채용 추진",
+   "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2475947",
+   "press": "",
+   "pub_date": "2026-10-01T09:20:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "AI 학습도 저작권 못 피했다…美 항소법원, 톰슨로이터 손 들어줘",
+   "url": "https://www.newsworker.co.kr/news/articleView.html?idxno=506652",
+   "press": "",
+   "pub_date": "2026-10-01T09:18:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "“주행 경로 맞춰 AI가 동화”⋯ 현대차, 플레오스 앱 고객 아이디어 대...",
+   "url": "https://www.viva100.com/article/20261001500267",
+   "press": "",
+   "pub_date": "2026-10-01T09:14:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "우리銀, 수입대금 은행이 먼저 내준다...'우리 송금 USANCE'출시 外",
+   "url": "https://www.rcast.co.kr/news/articleView.html?idxno=31741",
+   "press": "",
+   "pub_date": "2026-10-01T07:28:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "청주시, 2030년까지 AI CCTV 관제환경 구축…262억원 투입",
+   "url": "https://www.gukjenews.com/news/articleView.html?idxno=3710047",
+   "press": "",
+   "pub_date": "2026-10-01T09:10:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "인천보건환경연구원, 생성형AI 활용해 소음원 자동 분류 실무 시연",
+   "url": "https://www.incheontoday.com/news/articleView.html?idxno=324373",
+   "press": "",
+   "pub_date": "2026-10-01T09:08:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "용인특례시, '반도체 산업-지역 일자리' 연결고리 강화한다",
+   "url": "https://www.pointdaily.co.kr/news/articleView.html?idxno=320934",
+   "press": "",
+   "pub_date": "2026-10-01T09:06:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "메드바이즈, 상황·목표·상권·예산 맞춘 병·의원 전문 마케팅 컨설팅...",
+   "url": "https://www.eroun.net/news/articleView.html?idxno=91222",
+   "press": "",
+   "pub_date": "2026-10-01T09:00:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "롯데면세점, 인공지능 상품검색 도입…면세 쇼핑 전 과정 확대",
+   "url": "https://www.m-i.kr/news/articleView.html?idxno=2001550",
+   "press": "",
+   "pub_date": "2026-10-01T08:58:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "제2회 메디컬코리아 국제의료광고제 출품작 공모",
+   "url": "http://www.whosaeng.com/174093",
+   "press": "",
+   "pub_date": "2026-10-01T08:56:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "\"창밖 풍경이 동화로\"…현대차, 차세대 커넥트 앱 아이디어 발굴",
+   "url": "https://view.asiae.co.kr/article/2026100108522284398",
+   "press": "",
+   "pub_date": "2026-10-01T08:52:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "4분기 AI메모리 가격 최대 20% 오른다⋯ D램 가격 상승률은 둔화",
+   "url": "https://www.autodaily.co.kr/news/articleView.html?idxno=600829",
+   "press": "",
+   "pub_date": "2026-10-01T08:50:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "'버스부터 민원까지' 청주, 일상 속 AI 행정 넓힌다",
+   "url": "https://www.bzeronews.com/news/articleView.html?idxno=823299",
+   "press": "",
+   "pub_date": "2026-10-01T08:46:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "부품 가격 상승·AI 열풍에...400만원 이상 PC 수요 급증",
+   "url": "https://zdnet.co.kr/view/?no=20261001084206",
+   "press": "",
+   "pub_date": "2026-10-01T08:43:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "금융사들, 핵심 업무에 AI 속속 도입…대출 심사보고서 초안부터 광고 ...",
+   "url": "https://www.raonnews.com/news/article.html?no=61539",
+   "press": "",
+   "pub_date": "2026-10-01T08:40:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "아마존, 美 원전서 20년간 전력 받는다… AI가 바꾼 '원전의 몸값'",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=491688",
+   "press": "",
+   "pub_date": "2026-10-01T08:40:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "롯데면세점, AI 기반 상품 탐색 기능 도입",
+   "url": "http://www.lawissue.co.kr/view.php?ud=202610010832342503204ead0791_12",
+   "press": "",
+   "pub_date": "2026-10-01T08:34:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "바이브코딩 확산에 후속 개발 수요 ↑…배포·안정화 문의 집중",
+   "url": "https://www.epnc.co.kr/news/articleView.html?idxno=407590",
+   "press": "",
+   "pub_date": "2026-10-01T08:20:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "기아, 인도 쏘렌토에 '차세대 AI 비서' 전격 탑재…\"헤이 기아\"로 지능화...",
+   "url": "https://www.theguru.co.kr/news/article.html?no=107733",
+   "press": "",
+   "pub_date": "2026-10-01T08:16:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "\"아키스케치 2년 연속 수상\" AI가 3D 공간을 이해하는 시대 연다",
+   "url": "https://www.econovill.com/news/articleView.html?idxno=752366",
+   "press": "",
+   "pub_date": "2026-10-01T08:12:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "\"빗썸 고객만족 2년 연속 1위\" AI가 바꾼 투자 환경이 평가받았다",
+   "url": "https://www.econovill.com/news/articleView.html?idxno=752365",
+   "press": "",
+   "pub_date": "2026-10-01T08:12:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "하이퍼앰코리아, 루츠앤윙스 합병…AI·데이터 기반 통합 마케팅 강화",
+   "url": "https://www.ddaily.co.kr/page/view/2026100108104462200",
+   "press": "",
+   "pub_date": "2026-10-01T08:11:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "\"투자 환경 개선·보안 고도화 통했다\"…빗썸, KCSI 가상자산거래소 2년...",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=89477",
+   "press": "",
+   "pub_date": "2026-10-01T08:08:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "AI로 지급결제까지 '척척'…카드업계 생태계 '지각변동' 본격화",
+   "url": "https://www.youthdaily.co.kr/news/article.html?no=227779",
+   "press": "",
+   "pub_date": "2026-10-01T08:02:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "\"AI부터 신뢰·관리까지\"…KCSI 장기 1위 기업들이 이끈 '고객만족'",
+   "url": "https://www.youthdaily.co.kr/news/article.html?no=227749",
+   "press": "",
+   "pub_date": "2026-10-01T08:00:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "\"반도체부터 로봇까지\" 일자리 넘치는 용인... 하반기 일자리박람회 개...",
+   "url": "https://www.tournews21.com/news/articleView.html?idxno=144701",
+   "press": "",
+   "pub_date": "2026-10-01T07:46:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "AI가 끌어올린 미국 전력 수요… PJM 6.8GW 확보 계획 다시 짠다",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=491651",
+   "press": "",
+   "pub_date": "2026-10-01T07:36:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "경복대 소프트웨어융합학과, AI 기반 경기북부 맞춤형 관광 서비스 공개",
+   "url": "https://view.asiae.co.kr/article/2026100107335171445",
+   "press": "",
+   "pub_date": "2026-10-01T07:33:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[사회복지, ESG로 진화하다] 좋은 일자리가 좋은 서비스를 만든다",
+   "url": "https://www.lecturernews.com/news/articleView.html?idxno=211368",
+   "press": "",
+   "pub_date": "2026-10-01T07:10:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "고객·환자·학생에게 맞는다…폭력행위 산재 62% '폭증'",
+   "url": "https://www.hankyung.com/article/202609304101i",
+   "press": "",
+   "pub_date": "2026-10-01T07:01:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "\"AI 물리적 세계 적용하려면 새 접근법 필요…다음 숙제 효율화\"",
+   "url": "https://www.news1.kr/industry/general-industry/6306688",
+   "press": "",
+   "pub_date": "2026-10-01T07:00:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "4Q 공모주 달력 다시 빼곡…AI·로봇이 몰려온다[클릭e시장]",
+   "url": "https://view.asiae.co.kr/article/2026093017481997850",
+   "press": "",
+   "pub_date": "2026-10-01T07:00:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[모빌로그] 현대차그룹, 도로공사와 차세대 충전·AI 협력 外",
+   "url": "https://news.dealsitetv.com/articles/176547",
+   "press": "",
+   "pub_date": "2026-10-01T13:14:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "삼성전자, 포토샵 탑재한 '갤럭시 탭 S12' 공개...클립형 이어폰-아이폰...",
+   "url": "https://www.techm.kr/news/articleView.html?idxno=155762",
+   "press": "",
+   "pub_date": "2026-10-01T11:30:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "현대차 아이오닉 V vs BYD 씰 06 EV…2000만원대 中 전기차 시장 정면승...",
+   "url": "http://www.dailypop.kr/news/articleView.html?idxno=102987",
+   "press": "",
+   "pub_date": "2026-10-01T11:20:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "빌 게이츠 “AI 자율규제는 미친 짓⋯1억명 죽은 뒤 소송할 건가”",
+   "url": "https://www.etoday.co.kr/news/view/2631407",
+   "press": "",
+   "pub_date": "2026-10-01T11:08:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "갤럭시 탭 S12 울트라 가격 '껑충'…전작보다 최대 25% 인상",
+   "url": "https://www.mt.co.kr/tech/2026/10/01/2026100110264919929",
+   "press": "",
+   "pub_date": "2026-10-01T11:05:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "배터리 엣지 AI 시장 노리는 8.9달러 초소형 IoT 보드 출시",
+   "url": "https://www.goodkyung.com/news/articleView.html?idxno=291925",
+   "press": "",
+   "pub_date": "2026-10-01T11:04:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "케르브라트 로빈후드 크립토 총괄 “韓반도체·AI 주식 수요 주목…협업...",
+   "url": "https://www.dt.co.kr/article/12086905?ref=naver",
+   "press": "",
+   "pub_date": "2026-10-01T10:57:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "시각장애인용 AI 단말기 엠브이아이, 아이콘빌더 투자 유치…시니어 돌...",
+   "url": "https://platum.kr/archives/295517",
+   "press": "",
+   "pub_date": "2026-10-01T10:56:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "CS쉐어링 \"BPO 운영방식 넓힌다\" 업무량 중심 CS에 AI 결합",
+   "url": "http://www.newsprime.co.kr/news/article.html?no=749596",
+   "press": "",
+   "pub_date": "2026-10-01T10:56:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "삼성전자, ‘갤럭시 탭 S12’ 공개…7일 전 세계 출시",
+   "url": "https://www.inthenews.co.kr/news/article.html?no=92547",
+   "press": "",
+   "pub_date": "2026-10-01T10:32:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "현대차, 중국 전용 '아이오닉 V' 출시…2000만원대 가격으로 현지 시장 ...",
+   "url": "http://www.press9.kr/news/articleView.html?idxno=83560",
+   "press": "",
+   "pub_date": "2026-10-01T10:46:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[인터뷰] ㈜이미팅스퀘어 김재민·한고니 대표 “첨단 AI 기술, 산업 현...",
+   "url": "https://dhnews.co.kr/news/view/1065575893425756",
+   "press": "",
+   "pub_date": "2026-10-01T10:40:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "로빈후드 \"현재 한국 진출 계획 없어…시장 상황 계속 주시\"",
+   "url": "https://www.straightnews.co.kr/news/articleView.html?idxno=312287",
+   "press": "",
+   "pub_date": "2026-10-01T10:38:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "베이징현대, 첫 고급 전기차 '아이오닉V' 출시, 약 2천만원부터",
+   "url": "https://www.newspim.com/news/view/20261001000484",
+   "press": "",
+   "pub_date": "2026-10-01T10:35:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "삼성전자, 얇고 가벼워진 '갤럭시 탭 S12' 공개…최대 23시간 사용",
+   "url": "https://www.fnnews.com/news/202610011001499329",
+   "press": "",
+   "pub_date": "2026-10-01T10:32:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "삼성전자, ‘갤럭시 탭 S12’ 공개…울트라 NPU 성능 61% 높여",
+   "url": "https://www.seoultimes.news/news/article.html?no=2000100432",
+   "press": "",
+   "pub_date": "2026-10-01T10:29:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "아이콘빌더, 엠브이아이(MVI)에 투자 집행 완료",
+   "url": "http://www.koreastocknews.com/news/articleView.html?idxno=121538",
+   "press": "",
+   "pub_date": "2026-10-01T10:10:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[분석] 원스토어 품은 넥써쓰, 반등 관건은 '앱마켓·웹3' 시너지",
+   "url": "https://www.tleaves.co.kr/news/articleView.html?idxno=9909",
+   "press": "",
+   "pub_date": "2026-10-01T10:06:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "KH바텍, 내년 이후 '전장, AIDC, 로봇' 사업 다각화",
+   "url": "http://www.newsfc.co.kr/news/articleView.html?idxno=81447",
+   "press": "",
+   "pub_date": "2026-10-01T10:04:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "삼성 '갤럭시탭 S12' 공개…23시간 배터리·포토샵 첫 탑재",
+   "url": "https://www.news1.kr/it-science/mobile/6306975",
+   "press": "",
+   "pub_date": "2026-10-01T09:51:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "한컴, 사내 AI 적용 800건 노하우 수출…美 3042만 사업체에 'AI팀' 판다",
+   "url": "https://www.upkoreanews.kr/news/articleView.html?idxno=100458",
+   "press": "",
+   "pub_date": "2026-10-01T09:34:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "\"소상공인 대출 문턱 낮춘다\"…토스-제주은행, 포용금융 MOU",
+   "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=89501",
+   "press": "",
+   "pub_date": "2026-10-01T09:26:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "일레븐랩스, 차세대 음성 모델 '일레븐 v4' 출시 ··· 다국어·다자간...",
+   "url": "https://www.datanet.co.kr/news/articleView.html?idxno=214816",
+   "press": "",
+   "pub_date": "2026-10-01T09:26:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "한미약품, 국산 1호 비만약 '에페'에 AI 코치 붙인다",
+   "url": "https://www.insight.co.kr/news/576031",
+   "press": "",
+   "pub_date": "2026-10-01T09:22:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "삼성, 갤럭시 탭S12 뭐가 달라졌나… 울트라는 성능, 플러스는 화면 키...",
+   "url": "https://www.ddaily.co.kr/page/view/2026100109094335388",
+   "press": "",
+   "pub_date": "2026-10-01T09:19:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[단독] 삼성전자, AI 웨어러블 로봇 특허 글로벌 공개…'인공신경망'으...",
+   "url": "https://www.theguru.co.kr/news/article.html?no=107730",
+   "press": "",
+   "pub_date": "2026-10-01T09:06:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "덴컴, 치과 AI 플랫폼 ‘덴트허브 1.0’ 공개",
+   "url": "https://www.sentv.co.kr/article/view/sentv202609300211",
+   "press": "",
+   "pub_date": "2026-10-01T09:02:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[창간 특집][SK텔레콤] 15GW AI DC부터 대국민 서비스까지…'풀스택 AI' 승...",
+   "url": "https://www.thebigdata.co.kr/view.php?ud=2026092915590465020a47484cf8_23",
+   "press": "",
+   "pub_date": "2026-10-01T09:02:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "갤럭시 탭 S 시리즈도 300만원 시대…S12 울트라 최대 301만8400원",
+   "url": "https://kbench.com/?q=node/282257",
+   "press": "",
+   "pub_date": "2026-10-01T09:00:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "모픽, AI 영상 에디터 ‘컴포즈’ 출시⋯“타임라인 레이어도 직접 제어...",
+   "url": "https://www.viva100.com/article/20261001500153",
+   "press": "",
+   "pub_date": "2026-10-01T08:52:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "삼성전자, 한층 얇고 강력해진 '갤럭시 탭 S12' 시리즈 출시",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=491677",
+   "press": "",
+   "pub_date": "2026-10-01T08:28:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[COVER STORY] \"충전 스트레스 지웠다\"...현대차 싼타페·제네시스 GV70부...",
+   "url": "https://www.g-enews.com/view.php?ud=20260928152048674031a5c2dd38_1",
+   "press": "",
+   "pub_date": "2026-10-01T08:20:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[오늘의 신문] 물가에 깎인 월급, 불어난 대출이자…대미투자·AI 안전성...",
+   "url": "http://kor.theasian.asia/archives/412191",
+   "press": "",
+   "pub_date": "2026-10-01T07:42:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "플러그링크, 글로벌 무대서 전기차 충전 기술 경쟁력 알려",
+   "url": "http://www.ikld.kr/news/articleView.html?idxno=341561",
+   "press": "",
+   "pub_date": "2026-10-01T07:36:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[기획연재] 수소 기반 에너지 생태계 구축하는 '현대자동차' 현대차는 ...",
+   "url": "https://www.gasnews.com/news/articleView.html?idxno=126993",
+   "press": "",
+   "pub_date": "2026-10-01T07:28:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "“AI 장난감 쏟아지는데”…K완구는 ‘수천만원 인증’, 中 직구는 무방...",
+   "url": "https://www.dailian.co.kr/news/view/1696283/?sc=Naver",
+   "press": "",
+   "pub_date": "2026-10-01T07:01:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[운용 & Now] IBK자산운용, 한미 대표기업에 채권 더한 ETF 출시 등",
+   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1726274",
+   "press": "",
+   "pub_date": "2026-10-01T06:46:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "케이글로잉, K-뷰티 이어 K-푸드 카테고리 확장",
+   "url": "https://www.forbeskorea.co.kr/news/articleView.html?idxno=402644",
+   "press": "",
+   "pub_date": "2026-10-01T11:34:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "황금연휴 열리자 유통가 '쇼핑 대전'",
+   "url": "https://www.pressman.kr/news/articleView.html?idxno=103854",
+   "press": "",
+   "pub_date": "2026-10-01T11:34:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "고려대학교 임희석 교수팀, 작지만 강한 한국어 검색 AI 'KURE-v2' 공개…...",
+   "url": "https://www.lecturernews.com/news/articleView.html?idxno=211325",
+   "press": "",
+   "pub_date": "2026-10-01T11:30:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "애경산업 AGE20'S, 팩트 넘어 피부 중심 메이크업으로",
+   "url": "http://www.4th.kr/news/articleView.html?idxno=2118997",
+   "press": "",
+   "pub_date": "2026-10-01T11:24:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "배민, 쿠팡 떠난 자리 채우며 新성장전략…양대 플랫폼 지리적 변화",
+   "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=278219",
+   "press": "",
+   "pub_date": "2026-10-01T11:08:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "LS증권 \"네이버 목표주가 하향, 단기 수익성 부담에 3분기 실적 컨센서...",
+   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=448369",
+   "press": "",
+   "pub_date": "2026-10-01T10:42:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "KT, '하하하 캠페인'으로 고객 혜택 늘리고 소상공인 상생 나선다",
+   "url": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065575694221960",
+   "press": "",
+   "pub_date": "2026-10-01T10:16:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[유통갤러리] 롯데홈쇼핑, 10월 ‘더블 쇼핑어택’ 전개 外",
+   "url": "https://theviewers.co.kr/View.aspx?No=4248039",
+   "press": "",
+   "pub_date": "2026-10-01T09:58:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "G마켓, 10월 '월첫세일'…식품·뷰티 최대 60% 할인",
+   "url": "https://www.etnews.com/20261001000105",
+   "press": "",
+   "pub_date": "2026-10-01T09:58:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[단독] '수은크림' 소송 당한 네이버 포시마크…월마트 합의가 불편한 ...",
+   "url": "https://www.tfmedia.co.kr/news/article.html?no=207574",
+   "press": "",
+   "pub_date": "2026-10-01T09:50:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "핀다, 안중현 전 넥써스 부사장 최고제품책임자 선임",
+   "url": "https://view.asiae.co.kr/article/2026100109444375864",
+   "press": "",
+   "pub_date": "2026-10-01T09:44:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "핀다, 첫 최고제품책임자에 안중현 선임…AI·데이터 혁신 강화",
+   "url": "https://www.fetv.co.kr/news/articleView.html?idxno=311055",
+   "press": "",
+   "pub_date": "2026-10-01T09:42:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "핀다, ‘핀테크 전문가’ 안중현 CPO 선임⋯AIㆍ데이터 혁신에 속도",
+   "url": "https://www.etoday.co.kr/news/view/2631305",
+   "press": "",
+   "pub_date": "2026-10-01T09:34:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[미르의 글로벌 레이더]LG전자, 美 첫 ‘AI 데이터센터 에어컨’ 공장 짓...",
+   "url": "https://www.mediapen.com/news/view/1127111",
+   "press": "",
+   "pub_date": "2026-10-01T09:16:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "핀다, 첫 CPO에 안중현 선임…AI 금융서비스 강화",
+   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1726321",
+   "press": "",
+   "pub_date": "2026-10-01T09:02:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[모닝 리포트] \"네이버, 목표가 하향…AI팩토리 매출은 2027년부터\"",
+   "url": "https://www.newspim.com/news/view/20261001000055",
+   "press": "",
+   "pub_date": "2026-10-01T08:48:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "핀다, 첫 CPO에 안중현···AI 금융 전환 속도낸다",
+   "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=869237",
+   "press": "",
+   "pub_date": "2026-10-01T08:46:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "LS證 \"네이버, 하반기 비용 부담 확대…목표가 29만3000원으로 하향\"",
+   "url": "https://www.ajunews.com/view/20261001081821090",
+   "press": "",
+   "pub_date": "2026-10-01T08:22:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "\"네이버, 단기적으로 마진율 하락 불가피…목표가 ↓\"-LS",
+   "url": "https://www.mt.co.kr/stock/2026/10/01/2026100108180151157",
+   "press": "",
+   "pub_date": "2026-10-01T08:19:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "실증 넘은 AI 결제...카드업계 '표준' 선점전",
+   "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=868968",
+   "press": "",
+   "pub_date": "2026-10-01T08:12:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "엔씨디지텍, 삼성 가전 구독 런칭 2주년 프로모션 진행…최대 20% 할인과...",
+   "url": "http://www.sisunnews.co.kr/news/articleView.html?idxno=246930",
+   "press": "",
+   "pub_date": "2026-10-01T08:00:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "넥스트페이먼츠, 매장 데이터 연결로 오프라인 커머스 AX 추진 [서울AI허...",
+   "url": "https://it.chosun.com/news/articleView.html?idxno=2023092171158",
+   "press": "",
+   "pub_date": "2026-10-01T08:00:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "LS證 “네이버, 하반기 수익성 부담 커져…3분기 실적 기대치 하회 전망...",
+   "url": "https://biz.chosun.com/stock/stock_general/2026/10/01/VCJEEVOHXVAKHOLWCZDVXFYA4Y/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+   "press": "",
+   "pub_date": "2026-10-01T08:00:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "LG전자, 美에 첫 칠러 공장…AI 데이터센터 '심장부' 공략",
+   "url": "http://www.inews24.com/view/2010702",
+   "press": "",
+   "pub_date": "2026-10-01T07:55:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[단독] LG전자, 美 버지니아에 860억 투자…첫 '칠러 공장' 짓는다",
+   "url": "https://www.the-today.com/news/articleView.html?idxno=91024",
+   "press": "",
+   "pub_date": "2026-10-01T06:36:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "열일 하는 콜봇·챗봇… LGU+‘대기 없는 AI 고객센터’ 만든다",
+   "url": "https://www.segye.com/newsView/20260930516757?OutUrl=naver",
+   "press": "",
+   "pub_date": "2026-10-01T06:03:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "아르투, 오픈AI서 GPT 큐레이터 성료",
+   "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=868973",
+   "press": "",
+   "pub_date": "2026-09-30T19:34:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[통신 풍향계] SKT '고객만족도 1위'·KT '달.달.혜택'·LGU+ 'AI 네이티브...",
+   "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=855225",
+   "press": "",
+   "pub_date": "2026-09-30T19:02:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[통신 풍향계] SKT '개인정보 보호 실천 캠페인'·KT '에이블스쿨' 10기·...",
+   "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=855226",
+   "press": "",
+   "pub_date": "2026-09-30T19:02:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "제주 화장품, 원료부터 수출까지 기업 지원 생태계 강화",
+   "url": "https://www.headlinejeju.co.kr/news/articleView.html?idxno=599772",
+   "press": "",
+   "pub_date": "2026-09-30T15:00:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[단독] 온라인몰 구축업체, AI 데이터 가공업체로 변신",
+   "url": "https://www.hankyung.com/article/2026093055621",
+   "press": "",
+   "pub_date": "2026-09-30T17:35:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "삼성전자, KCSI 25년 연속 최다 부문 1위…SKT, 고객만족도 조사 그랜드...",
+   "url": "https://www.sisaon.co.kr/news/articleView.html?idxno=204834",
+   "press": "",
+   "pub_date": "2026-09-30T17:32:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "검색창 대신 대화창 연다… 마이크로소프트가 본 리테일 AI 과제",
+   "url": "https://byline.network/?p=9004111222621794",
+   "press": "",
+   "pub_date": "2026-09-30T17:28:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "AI 코딩 확산 속 '서비스 완성' 난제… 배포·오류 수정 전문 개발자 수...",
+   "url": "https://www.discoverynews.kr/news/articleView.html?idxno=1102971",
+   "press": "",
+   "pub_date": "2026-09-30T17:24:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "제주 화장품, K-뷰티 수출거점 조성 해외시장 공략",
+   "url": "https://www.jejumaeil.net/news/articleView.html?idxno=405176",
+   "press": "",
+   "pub_date": "2026-09-30T17:10:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "네이버, 스마트스토어 10년 분석…\"성숙기 판매자는 판로 중시\"",
+   "url": "https://www.m-i.kr/news/articleView.html?idxno=2001294",
+   "press": "",
+   "pub_date": "2026-09-30T16:54:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "테더 미국 CEO \"스테이블코인 다음 무대는 AI 에이전트 거래\"[KBW2026]",
+   "url": "https://www.fnnews.com/news/202609301625267718",
+   "press": "",
+   "pub_date": "2026-09-30T16:37:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "섹타나인 한순욱 대표 선임…가맹점·소비자 접점 디지털화 강화",
+   "url": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5067101",
+   "press": "",
+   "pub_date": "2026-09-30T16:10:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "47초 기다리던 전화 5초면 연결…LG유플러스, “고객센터 2030년 대기시간...",
+   "url": "https://www.mk.co.kr/article/12164935",
+   "press": "",
+   "pub_date": "2026-09-30T15:52:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "아르투, 오픈AI 본사서 GPT 큐레이터 선보여…AI 미술 탐색·구매 경험 ...",
+   "url": "https://www.hellot.net/news/article.html?no=115220",
+   "press": "",
+   "pub_date": "2026-09-30T15:46:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "G마켓, '퀵커머스' 본격 등판…핵심 인재 확보 착수",
+   "url": "https://www.etnews.com/20260930000148",
+   "press": "",
+   "pub_date": "2026-09-30T15:32:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "스마트스토어 판매자, 초기엔 수수료·정산을 보고 성숙기엔 판로를 본...",
+   "url": "https://platum.kr/archives/295440",
+   "press": "",
+   "pub_date": "2026-09-30T15:28:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "KT, 10월 ‘달.달.혜택’ 선봬...외식·테마파크 등 나들이 할인 강화",
+   "url": "https://www.thebigdata.co.kr/view.php?ud=2026093014510699490a47484cf8_23",
+   "press": "",
+   "pub_date": "2026-09-30T14:54:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "NAVER 장중 저가 19만2800원…AI 투자 수익화 시점 주목",
+   "url": "https://www.job-post.co.kr/news/articleView.html?idxno=229922",
+   "press": "",
+   "pub_date": "2026-09-30T14:46:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "제주도 지역 화장품 산업 육성 전 주기 원스톱 지원 강화",
+   "url": "http://www.samdailbo.com/news/articleView.html?idxno=270826",
+   "press": "",
+   "pub_date": "2026-09-30T14:46:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "상담대기 5초로 줄인 LG유플러스 AICC, 2030년 매출 2000억원 정조준",
+   "url": "https://www.etnews.com/20260930000316",
+   "press": "",
+   "pub_date": "2026-09-30T14:43:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[TOP's Pick] [통신] LG유플러스, 'AI 네이티브 컨택센터' 선봬 外",
+   "url": "https://www.topdaily.kr/articles/112157",
+   "press": "",
+   "pub_date": "2026-09-30T13:59:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "KT, 10월 멤버십 혜택 공개…도미노피자·롯데리아 최대 50% 할인",
+   "url": "https://www.dailian.co.kr/news/view/1696247/?sc=Naver",
+   "press": "",
+   "pub_date": "2026-09-30T13:56:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "Oasis archive recordings pulled from auction as band take legal action against former sound engineer",
+   "url": "https://www.musicbusinessworldwide.com/oasis-live-recordings-pulled-from-auction-as-band-take-legal-action-against-former-sound-engineer/",
+   "press": "Music Business Worldwide",
+   "pub_date": "2026-10-01T03:56:04+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "Key Songs In The Life Of… Michael Nash",
+   "url": "https://www.musicbusinessworldwide.com/key-songs-in-the-life-of-michael-nash/",
+   "press": "Music Business Worldwide",
+   "pub_date": "2026-10-01T02:11:35+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "Warner sells EMP, the merch business it acquired for $180M in 2018, to whynow, owned by Mick Jagger’s son Gabe Jagger",
+   "url": "https://www.musicbusinessworldwide.com/embargoed-warner-sells-emp-the-merch-business-it-acquired-for-180m-in-2018-to-whynow-owned-by-mick-jaggers-son-gabe-jagger/",
+   "press": "Music Business Worldwide",
+   "pub_date": "2026-10-01T01:51:48+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "Ivan Chen named CEO of BandLab Technologies as co-founder Meng Ru Kuok transitions to Executive Chairman",
+   "url": "https://www.musicbusinessworldwide.com/bandlab-technologies-appoints-ivan-chen-ceo-as-co-founder-meng-ru-kuok-transitions-to-executive-chairman/",
+   "press": "Music Business Worldwide",
+   "pub_date": "2026-09-30T23:00:47+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "Absolute Label Services opens AI-powered Anthology business management ‘Music OS’ to indie sector: ‘Infrastructure is the next logical thing to democratize’",
+   "url": "https://www.musicbusinessworldwide.com/absolute-label-services-opens-ai-powered-anthology-business-management-music-os-to-indie-sector-infrastructure-is-the-next-logical-thing-to-democratize/",
+   "press": "Music Business Worldwide",
+   "pub_date": "2026-09-30T21:10:48+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "US prosecutors want man who pocketed $8M using AI songs imprisoned for 4 years, saying he stole from ‘hard-working’ songwriters",
+   "url": "https://www.musicbusinessworldwide.com/prosecutors-want-man-who-pocketed-8m-using-ai-songs-and-bot-streams-imprisoned-for-at-least-46-months-saying-he-stole-from-hard-working-songwriters/",
+   "press": "Music Business Worldwide",
+   "pub_date": "2026-09-30T20:22:41+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "US appeals court rejects ‘fair use’ defense over AI training – as Thomson Reuters wins copyright case backed by RIAA and NMPA",
+   "url": "https://www.musicbusinessworldwide.com/us-appeals-court-rejects-fair-use-defense-over-ai-training-as-thomson-reuters-wins-copyright-case-backed-by-riaa-and-nmpa/",
+   "press": "Music Business Worldwide",
+   "pub_date": "2026-09-30T19:19:48+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "NoCopyrightSounds wins £1.4M interim payment from former distributor AEI Music, as High Court orders interim accounts",
+   "url": "https://www.musicbusinessworldwide.com/nocopyrightsounds-wins-1-4m-interim-payment-from-former-distributor-aei-music-as-high-court-orders-interim-accounts/",
+   "press": "Music Business Worldwide",
+   "pub_date": "2026-09-30T19:17:42+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "Indie publishers set out seven principles for AI licensing: ‘The song must be properly valued.’",
+   "url": "https://www.musicbusinessworldwide.com/indie-publishers-set-out-seven-principles-for-ai-licensing-the-song-must-be-properly-valued/",
+   "press": "Music Business Worldwide",
+   "pub_date": "2026-09-30T19:10:02+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "Audio AI firm Modulate, which runs an AI music detection tool, raises $25M",
+   "url": "https://www.musicbusinessworldwide.com/audio-ai-firm-modulate-which-runs-an-ai-music-detection-tool-raises-25m/",
+   "press": "Music Business Worldwide",
+   "pub_date": "2026-09-30T18:29:18+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "Pandora’s MLC Royalties Lawsuit Heads to Trial as Judge Declines to Sift Through ‘Corpulent’ Case File",
+   "url": "https://www.billboard.com/pro/pandora-streaming-lawsuit-trial-judge-declines-rule/",
+   "press": "Billboard",
+   "pub_date": "2026-10-01T08:05:07+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "ElevenLabs Valued at $22 Billion After Tender Offer",
+   "url": "https://www.billboard.com/pro/elevenlabs-ai-startup-valued-22-billion-tender-offer/",
+   "press": "Billboard",
+   "pub_date": "2026-10-01T04:41:12+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "Terrorism Plotter at Taylor Swift Concert Can’t Sue Disney for ‘End of an Era’ Series, Judge Rules: Report",
+   "url": "https://www.billboard.com/pro/taylor-swift-eras-tour-terrorism-cant-sue-disney/",
+   "press": "Billboard",
+   "pub_date": "2026-10-01T04:32:08+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "Billboard’s Music Industry Events Calendar",
+   "url": "https://www.billboard.com/pro/music-industry-events-calendar-festivals-awards-conferences/",
+   "press": "Billboard",
+   "pub_date": "2026-10-01T02:13:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "How San Francisco’s Bill Graham Civic Auditorium Carries Namesake’s Independent Spirit",
+   "url": "https://www.billboard.com/pro/indie-venue-of-the-month-bill-graham-civic-san-francisco/",
+   "press": "Billboard",
+   "pub_date": "2026-10-01T02:01:39+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "Hilary Duff to Receive Outstanding Pop Tour of the Year Award at 2026 Billboard Live Music Summit",
+   "url": "https://www.billboard.com/business/touring/hilary-duff-2026-billboard-live-music-summit-award-1236350432/",
+   "press": "Billboard",
+   "pub_date": "2026-10-01T02:00:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "‘Failed to Issue a Single Refund’: New York AG Sues Music Festival That Allegedly Ghosted Fans",
+   "url": "https://www.billboard.com/pro/new-york-sues-edm-music-festival-that-refused-refunds/",
+   "press": "Billboard",
+   "pub_date": "2026-10-01T01:30:08+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "New Label 7cult Is on a Mission to Use Data to Achieve ‘100% Certainty’ in its Impact for Artists",
+   "url": "https://www.billboard.com/pro/independent-record-label-7cult-launches/",
+   "press": "Billboard",
+   "pub_date": "2026-10-01T01:00:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "Oasis Sues to Block Auction of Unheard Recordings Held by Former Sound Engineer",
+   "url": "https://www.billboard.com/pro/oasis-sues-to-block-auction-of-unheard-recordings/",
+   "press": "Billboard",
+   "pub_date": "2026-09-30T23:52:45+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "How Much Is Garth Brooks’ Music Catalog Worth?",
+   "url": "https://www.billboard.com/pro/garth-brooks-music-catalog-how-much-worth/",
+   "press": "Billboard",
+   "pub_date": "2026-09-30T23:39:46+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "솔로·싱어송라이터·신인 걸밴드까지…10월 첫날 장식할 신곡들",
+   "url": "https://www.raonnews.com/news/article.html?no=61551",
+   "press": "",
+   "pub_date": "2026-10-01T12:52:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 신곡 발매 단순 나열 단신",
+   "section": "own"
+  },
+  {
+   "title": "다이닝브랜즈그룹 대학생 봉사단, 영케어러 대상 가을 문화체험 진행",
+   "url": "http://www.biztribune.co.kr/news/articleView.html?idxno=359872",
+   "press": "비즈트리뷴",
+   "pub_date": "2026-10-01T11:06:00+09:00",
+   "stage": "2차",
+   "reason": "외식 프랜차이즈 사회공헌 단신",
+   "section": "own"
+  },
+  {
+   "title": "[유통갤러리] 롯데월드타워 \"개천절 밤하늘, 잠실에 태극기 수놓는다\" ...",
+   "url": "https://theviewers.co.kr/View.aspx?No=4247962",
+   "press": "뷰어스",
+   "pub_date": "2026-10-01T08:58:00+09:00",
+   "stage": "2차",
+   "reason": "일반 유통 할인 프로모션 모음 단신",
+   "section": "ai_tech"
+  },
+  {
+   "title": "롯데월드타워, 10월 밤하늘에 대형 태극기 띄운다…공익 캠페인 전개",
+   "url": "http://www.newsdream.kr/news/articleView.html?idxno=119158",
+   "press": "뉴스드림",
+   "pub_date": "2026-10-01T08:48:00+09:00",
+   "stage": "2차",
+   "reason": "매체명 오검색 및 단순 외벽 점등 홍보",
+   "section": "own"
+  },
+  {
+   "title": "[에듀픽] '휴넷 CEO포럼'·위버스 '장동선 박사 인터뷰 영상'",
+   "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=855284",
+   "press": "뉴스웍스",
+   "pub_date": "2026-10-01T11:22:00+09:00",
+   "stage": "2차",
+   "reason": "팬덤 플랫폼 위버스와 무관한 교육 단신",
+   "section": "ent_content"
+  },
+  {
+   "title": "위버스마인드, AI 일본어 회화 학습기 ‘톡이즈 일본어’ 출시",
+   "url": "https://edu.chosun.com/site/data/html_dir/2026/09/30/2026093080110.html",
+   "press": "조선일보",
+   "pub_date": "2026-09-30T14:52:00+09:00",
+   "stage": "2차",
+   "reason": "팬덤 플랫폼 위버스와 무관한 어학기 출시",
+   "section": "fandom_music"
+  },
+  {
+   "title": "에스파 윈터도 걸린 대상포진…발진 전 ‘이 통증’ 먼저 올 수도 [그들...",
+   "url": "https://biz.heraldcorp.com/article/10890144?ref=naver",
+   "press": "헤럴드경제",
+   "pub_date": "2026-10-01T10:29:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 건강 이슈 및 위버스 단순 언급",
+   "section": "fandom_music"
+  },
+  {
+   "title": "에스파 윈터, 대상포진 진단에 美 댈러스 공연 불참…\"건강 회복 최선\"",
+   "url": "https://www.news1.kr/entertain/celebrity-topic/6306459",
+   "press": "뉴스1",
+   "pub_date": "2026-09-30T16:53:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 건강 이상 및 공연 불참 단신",
+   "section": "fandom_music"
+  },
+  {
+   "title": "빌리 츠키, 건강 문제로 30일 대학 축제 무대 불참…\"회복 집중 예정\"",
+   "url": "https://www.news1.kr/entertain/music/6306302",
+   "press": "뉴스1",
+   "pub_date": "2026-09-30T16:48:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 축제 불참 관련 단순 연예 단신",
+   "section": "fandom_music"
+  },
+  {
+   "title": "빌리 츠키, 건강 이상으로 대학 축제 무대 불참 \"건강 회복 최선 다할 것...",
+   "url": "http://www.stoo.com/article.php?aid=109159776820",
+   "press": "Stoo",
+   "pub_date": "2026-09-30T16:40:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 축제 불참 관련 단순 연예 단신",
+   "section": "fandom_music"
+  },
+  {
+   "title": "빌리 츠키, 오늘 대학 축제 무대 못 오른다… 건강상 이유",
+   "url": "https://www.bntnews.co.kr/article/view/bnt202609300258",
+   "press": "bnt뉴스",
+   "pub_date": "2026-09-30T16:30:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 건강 이슈 및 축제 불참 단순 연예 뉴스",
+   "section": "fandom_music"
+  },
+  {
+   "title": "빌리 츠키, 건강 문제로 대학행사 빠진다 “휴식과 회복에 집중”",
+   "url": "https://sports.khan.co.kr/article/202609301607013?pt=nv",
+   "press": "경향신문",
+   "pub_date": "2026-09-30T16:08:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 건강 및 불참 단순 연예 뉴스 (위버스 단순 언급)",
+   "section": "fandom_music"
+  },
+  {
+   "title": "기업 셀프 확인서로 보안 점검(?)… 과기정통부 보안정책의 민낯[줌인I...",
+   "url": "https://it.chosun.com/news/articleView.html?idxno=2023092171100",
+   "press": "IT조선",
+   "pub_date": "2026-09-30T16:04:00+09:00",
+   "stage": "2차",
+   "reason": "동일 국감 이슈 중복 기사 (디지털투데이 기사 우선 채택)",
+   "section": "fandom_music"
+  },
+  {
+   "title": "빌리 츠키, 건강상 이유로 대학 축제 빠진다…\"회복에 집중\"",
+   "url": "https://www.tenasia.co.kr/article/2026093052074",
+   "press": "텐아시아",
+   "pub_date": "2026-09-30T16:01:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 건강 및 불참 단순 연예 뉴스 (위버스 단순 언급)",
+   "section": "fandom_music"
+  },
+  {
+   "title": "빌리 츠키, 30일 건강 문제로 대학 축제 불참 “회복에 집중”[공식]",
+   "url": "https://www.mk.co.kr/article/12164931",
+   "press": "매일경제",
+   "pub_date": "2026-09-30T15:49:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 일정 불참 단순 연예 단신 (위버스 공지 언급)",
+   "section": "fandom_music"
+  },
+  {
+   "title": "[똑똑한교육] 교원 빨간펜, 대교에듀캠프, 인스콜라리, 아이스크림에듀...",
+   "url": "https://www.ekn.kr/web/view.php?key=20260930026210519",
+   "press": "",
+   "pub_date": "2026-09-30T15:30:00+09:00",
+   "stage": "2차",
+   "reason": "팬덤 플랫폼 위버스와 무관한 교육업체 기사",
+   "section": "fandom_music"
+  },
+  {
+   "title": "위버스마인드, AI 일본어 회화 학습기 '톡이즈 일본어' 선봬",
+   "url": "https://www.enetnews.co.kr/news/articleView.html?idxno=54873",
+   "press": "이넷뉴스",
+   "pub_date": "2026-09-30T15:12:00+09:00",
+   "stage": "2차",
+   "reason": "팬덤 플랫폼 위버스와 무관한 교육업체 기사",
+   "section": "fandom_music"
+  },
+  {
+   "title": "[공시] 10월 1일, 코스닥 상장사 63개 종목 자사주 매수 신청",
+   "url": "https://www.newstnt.com/news/articleView.html?idxno=720932",
+   "press": "뉴스티앤티",
+   "pub_date": "2026-09-30T20:58:00+09:00",
+   "stage": "2차",
+   "reason": "디어유 등 단순 종목 나열 주식 공시 단신",
+   "section": "fandom_music"
+  },
+  {
+   "title": "'이관개방증 악화' 아이유, 콘서트 취소·컴백 연기 속사정…\"저 하나 때...",
+   "url": "https://www.sportschosun.com/entertainment/2026-10-01/202610010100007040000191",
+   "press": "",
+   "pub_date": "2026-10-01T11:47:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 신변·스타일링 해명 및 플랫폼 단순언급",
+   "section": "fandom_music"
+  },
+  {
+   "title": "헤메스·신곡 홍보 불만 나오자 팬들에게 직접 해명 나선 아이유",
+   "url": "https://www.nocutnews.co.kr/news/6585671?utm_source=naver&utm_medium=article&utm_campaign=20261001111810",
+   "press": "노컷뉴스",
+   "pub_date": "2026-10-01T11:19:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 개인 심경 토로 및 플랫폼 단순언급",
+   "section": "fandom_music"
+  },
+  {
+   "title": "아이유, 유애나 불만에 입 열었다…“홍보·스타일링 전부 내 책임”[스...",
+   "url": "https://sports.khan.co.kr/article/202610011037003?pt=nv",
+   "press": "경향신문",
+   "pub_date": "2026-10-01T10:38:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 개인 심경 토로 및 플랫폼 단순언급",
+   "section": "fandom_music"
+  },
+  {
+   "title": "[뮤즈이슈] “어쩌면 무거울 수 있는 얘기” 아이유, 대체 무슨 일이길...",
+   "url": "https://www.heraldmuse.com/article/10890072?ref=naver",
+   "press": "",
+   "pub_date": "2026-10-01T10:05:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 스타일링·프로모션 해명 단신 및 플랫폼 단순 언급",
+   "section": "fandom_music"
+  },
+  {
+   "title": "아이유, 팬들 우려에 직접 해명 \"접촉성 알레르기 탓..헤메스에 제약 多...",
+   "url": "https://www.starnewskorea.com/star/2026/10/01/2026100109125194490",
+   "press": "스타뉴스",
+   "pub_date": "2026-10-01T09:23:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 스타일링·프로모션 해명 단신 및 플랫폼 단순 언급",
+   "section": "fandom_music"
+  },
+  {
+   "title": "아이유, 소속사 향한 불만에 결국 입 열었다 \"부족했다면 내 책임…더 ...",
+   "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1010691",
+   "press": "",
+   "pub_date": "2026-10-01T08:58:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 스타일링·프로모션 해명 단신 및 플랫폼 단순 언급",
+   "section": "fandom_music"
+  },
+  {
+   "title": "[전문] \"다 제 책임, 오해 풀고파\"…아이유, 결국 입 열었다 '스타일링 ...",
+   "url": "https://www.tenasia.co.kr/article/2026100162604",
+   "press": "텐아시아",
+   "pub_date": "2026-10-01T08:30:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 스타일링·프로모션 해명 단신 및 플랫폼 단순 언급",
+   "section": "fandom_music"
+  },
+  {
+   "title": "아이유, 팬 불만에 직접 해명",
+   "url": "https://www.bntnews.co.kr/article/view/bnt202610010021",
+   "press": "bnt뉴스",
+   "pub_date": "2026-10-01T07:30:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 스타일링·프로모션 해명 단신 및 플랫폼 단순 언급",
+   "section": "fandom_music"
+  },
+  {
+   "title": "아이유 '헤메스' 논란 전면 해명… 접촉성 알레르기 고충과 팬들 불만 ...",
+   "url": "https://www.ftimes.kr/news/articleView.html?idxno=40067",
+   "press": "FT스포츠",
+   "pub_date": "2026-09-30T20:44:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 스타일링·프로모션 해명 단신 및 플랫폼 단순 언급",
+   "section": "fandom_music"
+  },
+  {
+   "title": "아이유 “신곡 홍보·스타일링 부족? 다 제 책임”",
+   "url": "https://biz.heraldcorp.com/article/10889579?ref=naver",
+   "press": "헤럴드경제",
+   "pub_date": "2026-09-30T20:26:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트의 팬 커뮤니티 글 관련 단순 연예 신변잡기",
+   "section": "fandom_music"
+  },
+  {
+   "title": "[이슈] 아이유, 소속사·팬 모두 감싼 '프로'…”부족했다면 제 책임”",
+   "url": "https://news.jtbc.co.kr/article/NB12320788?influxDiv=NAVER",
+   "press": "JTBC",
+   "pub_date": "2026-09-30T20:23:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 개인 소통 내용 관련 연예 보도",
+   "section": "fandom_music"
+  },
+  {
+   "title": "팬 쓴소리 품고, 스태프 감쌌다…아이유가 보여준 소통의 방식 [셀럽이...",
+   "url": "http://www.celuvmedia.com/article.php?aid=1790759140528556007",
+   "press": "www.celuvmedia.com",
+   "pub_date": "2026-09-30T18:54:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 개인 소통 관련 연예 가십 분석 기사",
+   "section": "fandom_music"
+  },
+  {
+   "title": "아이유, ‘헤메스’·홍보 부족 지적에 장문 심경…“아쉬웠다면 다 내...",
+   "url": "https://isplus.com/article/view/isp202609300217",
+   "press": "일간스포츠",
+   "pub_date": "2026-09-30T18:17:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 개인 소통 글 인용 연예 단신",
+   "section": "fandom_music"
+  },
+  {
+   "title": "[전문] 아이유 \"오해 꼭 풀고 싶었다, 난 불효녀 고객\"…헤어·메이크업...",
+   "url": "https://www.xportsnews.com/article/2202564",
+   "press": "엑스포츠뉴스",
+   "pub_date": "2026-09-30T17:00:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 개인 입장문 전재 연예 단신",
+   "section": "fandom_music"
+  },
+  {
+   "title": "“프로모션 아쉬웠다면 내 책임”…아이유, 팬들 지적에 직접 답했다",
+   "url": "https://www.mk.co.kr/article/12165129",
+   "press": "매일경제",
+   "pub_date": "2026-09-30T17:30:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 개인의 팬 소통 글 단순 보도",
+   "section": "fandom_music"
+  },
+  {
+   "title": "아이유, 팬들 우려에 장문으로 해명 \"더 잘 살피고 더 깊이 생각하겠다...",
+   "url": "http://www.celuvmedia.com/article.php?aid=1790756507528549007",
+   "press": "www.celuvmedia.com",
+   "pub_date": "2026-09-30T17:30:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 개인의 팬 소통 글 단순 보도",
+   "section": "fandom_music"
+  },
+  {
+   "title": "\"다 내 책임\" 아이유, 소속사 향한 비난에 직접 입 열었다",
+   "url": "https://mhnse.com/news/articleView.html?idxno=1564969",
+   "press": "",
+   "pub_date": "2026-09-30T17:20:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 개인의 팬 소통 글 단순 보도",
+   "section": "fandom_music"
+  },
+  {
+   "title": "아이유, 신곡 프로모션 부족 지적에 \"소속사 잘못 아냐…내 의견 반영\"",
+   "url": "https://www.news1.kr/entertain/celebrity-topic/6306386",
+   "press": "뉴스1",
+   "pub_date": "2026-09-30T16:51:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 개인의 팬 소통 글 단순 보도",
+   "section": "fandom_music"
+  },
+  {
+   "title": "아이유 “일 못한다” 욕받이 된 소속사 스태프들 감쌌다 “난 까다로운...",
+   "url": "https://www.newsen.com/news_view.php?uid=202609301540340410",
+   "press": "뉴스엔",
+   "pub_date": "2026-09-30T16:01:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 개인의 팬 소통 글 단순 보도",
+   "section": "fandom_music"
+  },
+  {
+   "title": "1650개 IT 시스템 점검한다더니…민간기업은 '셀프 점검'",
+   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=703968",
+   "press": "디지털투데이",
+   "pub_date": "2026-09-30T16:00:00+09:00",
+   "section": "fandom_music",
+   "stage": "중복",
+   "reason": "같은 사안: 與 이정헌 \"정부 보안점검, 유명무실한 '셀프 점검'…감독 강화해야\""
+  },
+  {
+   "title": "흩어진 강점 '연결' 택한 카카오엔터…1.6만 IP·글로벌 팬덤 묶는다",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=04198406645585368&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "press": "이데일리",
+   "pub_date": "2026-09-30T15:00:00+09:00",
+   "section": "fandom_music",
+   "stage": "중복",
+   "reason": "같은 사안: 웹툰 합치고 음악·팬은 연결…카카오엔터, 플랫폼 교통정리로 ‘시너지..."
+  }
+ ]
+}
