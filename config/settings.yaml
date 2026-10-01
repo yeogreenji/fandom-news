@@ -33,18 +33,21 @@ models:
     review: "claude-sonnet-5-5"
 
 # 무료 등급 분당 호출 제한을 넘지 않도록 호출 사이 간격(초)
-call_interval_sec: 6
+call_interval_sec: 5
+
+# AI 처리에 쓸 최대 시간(분). 넘으면 그때까지 판정된 기사로 마무리 (GitHub 실행 제한 40분)
+ai_time_budget_min: 25
 
 # 1차 선별 한 번에 묶어 보내는 기사 수 (묶을수록 호출 수↓, 너무 크면 응답이 잘림)
-triage_batch_size: 50
+triage_batch_size: 40
 
 # 1차 선별에 넘기는 섹션별 최대 후보 수 (AI 호출 수 상한 역할, 0 = 제한 없음)
 #   자사는 전부, 나머지는 제목에 검색어가 들어간 기사·동일 보도가 많은 기사부터
 triage_caps:
   own: 0
-  fandom_music: 250
-  ent_content: 250
-  ai_tech: 60
+  fandom_music: 150
+  ent_content: 150
+  ai_tech: 40
 
 # 2차(본문 판정·요약) 한 번에 묶어 보내는 기사 수
 review_batch_size: 6
