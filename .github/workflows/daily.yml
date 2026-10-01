@@ -1,0 +1,69 @@
+name: Daily monitor
+
+on:
+  schedule:
+    - cron: "30 0 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      hours:
+        description: "수집 범위(시간). 비워두면 영업일 기준 구간"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: monitor
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: collect
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          NAVER_API_MODE: ${{ vars.NAVER_API_MODE || 'hub' }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -n "${{ github.event.inputs.hours }}" ]; then
+            python -m monitor.run_daily --hours "${{ github.event.inputs.hours }}"
+          else
+            python -m monitor.run_daily
+          fi
+      - name: save
+        run: |
+          git config user.name "news-monitor-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/data state
+          git diff --cached --quiet || git commit -m "monitor: $(TZ=Asia/Seoul date +%F_%H%M)"
+          git push
+
+  deploy:
+    needs: collect
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.pages.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - id: pages
+        uses: actions/deploy-pages@v4
