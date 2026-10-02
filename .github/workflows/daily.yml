@@ -52,7 +52,10 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add docs/data state
           git diff --cached --quiet || git commit -m "monitor: $(TZ=Asia/Seoul date +%F_%H%M)"
-          git push
+          for i in 1 2 3; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push && break
+            sleep 5
+          done
 
   deploy:
     needs: collect
