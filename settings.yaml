@@ -1,0 +1,82 @@
+# ───────────────────────────────────────────────
+#  기본 설정 — 숫자만 바꾸면 동작이 달라집니다
+# ───────────────────────────────────────────────
+
+site_title: "Fandom & Music IP Business Trend News"
+timezone: "Asia/Seoul"
+
+# ── 수집 구간 ───────────────────────────────────
+# 영업일 기준시각부터 다음 영업일 기준시각까지 묶어서 수집
+#   평일: 전날 09:30 ~ 오늘 09:30
+#   월요일: 금 09:30 ~ 월 09:30
+#   연휴 다음 날: 연휴 직전 영업일 09:30 ~ 오늘 09:30
+# 한국 공휴일·대체공휴일·선거일은 자동 반영. 회사 휴무일 등은 아래에 추가
+cutoff_time: "09:30"
+
+# 실험 기간용: true면 주말·공휴일 없이 매일 실행(매일 전날 09:30 ~ 당일 09:30, 24시간 단위)
+# 기준이 다 맞춰지면 false로 바꾸면 평일 운영(월요일·연휴 뒤 묶음)으로 돌아감
+run_every_day: true
+extra_holidays: []        # 예: ["2026-12-31"]  (쉬는 날로 처리)
+extra_workdays: []        # 예: ["2026-05-01"]  (공휴일이지만 발행하는 날)
+
+# 검색어 1개당 최대 수집 건수(최신순). 그룹별로 queries.yaml의 limit이 우선
+per_query_limit: 100
+
+# ── AI 설정 ─────────────────────────────────────
+# gemini = Google Gemini API 무료 등급(기본, 비용 0원)
+# claude = Anthropic Claude API(유료, 판정·요약 품질↑) — 바꾸려면 ANTHROPIC_API_KEY 등록 후 여기만 수정
+ai_provider: gemini
+
+models:
+  gemini:
+    # 'latest' 별칭은 구글이 새 버전으로 자동 교체(2주 전 메일 공지). 무료 등급 대상 모델만 쓸 것
+    triage: "gemini-flash-lite-latest"   # 1차 선별은 하루 한도가 넉넉한 Flash-Lite
+    review: "gemini-flash-latest"
+  claude:
+    triage: "claude-haiku-4-5-20251001"
+    review: "claude-sonnet-5-5"
+
+# 무료 등급 분당 호출 제한을 넘지 않도록 호출 사이 간격(초)
+call_interval_sec: 5
+
+# AI 처리에 쓸 최대 시간(분). 넘으면 그때까지 판정된 기사로 마무리 (GitHub 실행 제한 40분)
+ai_time_budget_min: 25
+
+# 1차 선별 한 번에 묶어 보내는 기사 수 (묶을수록 호출 수↓, 너무 크면 응답이 잘림)
+triage_batch_size: 40
+
+# 1차 선별에 넘기는 섹션별 최대 후보 수 (AI 호출 수 상한 역할, 0 = 제한 없음)
+#   자사는 전부, 나머지는 제목에 검색어가 들어간 기사·동일 보도가 많은 기사부터
+triage_caps:
+  own: 0
+  fandom_music: 150
+  ent_content: 150
+  ai_tech: 40
+
+# 2차(본문 판정·요약) 한 번에 묶어 보내는 기사 수
+review_batch_size: 6
+
+# ── 게재 상한 ───────────────────────────────────
+# 묶인 일수에 따라 올라감: 1일 30 / 2일 40 / 3일(월요일) 50 / 4일 60 / 5일 이상 70
+cap_base: 30
+cap_per_extra_day: 10
+cap_max: 70
+# 상한은 '최대치'일 뿐 채우지 않음. 중요도가 이 값 미만이면 싣지 않음(1~5)
+min_importance: 3
+# 상한을 넘겨도 싣는 '꼭 실어야 할' 기사 최대 추가 건수
+must_include_overflow: 5
+# 본문 검토(2차)는 상한의 몇 배까지 볼지
+review_ratio: 1.4
+
+# 섹션별 하루 최대 게재 건수 (0 = 제한 없음)
+section_caps:
+  own: 0
+  fandom_music: 0
+  ent_content: 0
+  ai_tech: 4
+
+# 본문에서 AI에게 보낼 최대 글자 수
+max_body_chars: 4500
+
+# 이미 다룬 기사 URL을 기억하는 기간(일)
+seen_retention_days: 21

@@ -1,0 +1,76 @@
+name: Daily monitor
+
+on:
+  schedule:
+    # GitHub 예약 실행은 가끔 누락되므로 여러 번 예약. 이미 처리했으면 스크립트가 바로 건너뜀
+    - cron: "37 0 * * *"    # 매일 09:37 KST (평일만 운영할 땐 스크립트가 주말·공휴일을 건너뜀)
+    - cron: "7 1 * * *"     # 10:07 KST
+    - cron: "37 1 * * *"    # 10:37 KST
+    - cron: "17 3 * * *"    # 12:17 KST (최후 보루)
+  workflow_dispatch:
+    inputs:
+      hours:
+        description: "수집 범위(시간, 지금 기준). 비워두면 영업일 기준 구간"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: monitor
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: 수집·판정·요약
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          NAVER_API_MODE: ${{ vars.NAVER_API_MODE || 'hub' }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # 유료 Claude로 바꿀 때만 필요
+        run: |
+          if [ -n "${{ github.event.inputs.hours }}" ]; then
+            python -m monitor.run_daily --hours "${{ github.event.inputs.hours }}"
+          else
+            python -m monitor.run_daily
+          fi
+      - name: 결과 저장
+        run: |
+          git config user.name "news-monitor-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/data state
+          git diff --cached --quiet || git commit -m "monitor: $(TZ=Asia/Seoul date +%F_%H%M)"
+          for i in 1 2 3; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push && break
+            sleep 5
+          done
+
+  deploy:
+    needs: collect
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.pages.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - id: pages
+        uses: actions/deploy-pages@v4
