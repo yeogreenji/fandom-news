@@ -1,0 +1,1382 @@
+{
+ "date": "2026-10-02",
+ "generated_at": "2026-10-02T15:48+09:00",
+ "window": {
+  "from": "2026-10-01T09:30+09:00",
+  "to": "2026-10-02T09:30+09:00"
+ },
+ "cap": 30,
+ "stats": {
+  "raw": 4230,
+  "rule_dropped": 31,
+  "snippet_dropped": 617,
+  "collect_sec": 144,
+  "unique": 1232,
+  "new": 893,
+  "clusters": 796,
+  "triage_candidates": 342,
+  "triage_sec": 159,
+  "ai_sec": 179,
+  "kept": 30
+ },
+ "ai": {
+  "calls": 13,
+  "ok": 9,
+  "parse_fail": 0,
+  "rate_wait": 0,
+  "quota_day": 2,
+  "errors": [
+   "503 서버 오류",
+   "503 서버 오류",
+   "429 하루 한도: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on t",
+   "429 하루 한도: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on t"
+  ],
+  "seconds": 150
+ },
+ "items": [
+  {
+   "id": "eabb4e161759",
+   "title": "SK하이닉스·바이오팜 쾌속 질주… SK그룹, 혼조세 속 강세 마감",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=491955",
+   "press": "핀포인트뉴스",
+   "pub_date": "2026-10-01T16:10:00+09:00",
+   "date_label": "26.10.01",
+   "section": "own",
+   "subsection": "own",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "SK스퀘어와 SK디스커버리, SK가스, SK리츠, 드림어스컴퍼니도 상승 흐름에 동참했다. 금융과 로봇, 헬스케어 관련 계열사도 강세를 보였다. SK증권은 증권업황 개선 기대가 반영됐으며, 엠엑스로보틱스는 로봇용 부품과...",
+   "reason": "AI 미판정",
+   "tags": [
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "9d02a4b82f45",
+   "title": "'카카오도 묶었다' 카카오 멤버십, 네이버보다 경쟁력 있을까",
+   "url": "https://bizhankook.com/articles/kakao-integrates-services-new-membership.html",
+   "press": "비즈한국",
+   "pub_date": "2026-10-01T14:10:00+09:00",
+   "date_label": "26.10.01",
+   "section": "fandom_music",
+   "subsection": "fan_platform",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "네이버는 △넷플릭스 광고형 스탠다드 △스포티파이 프리미엄 베이직 △PC 게임패스 △웹툰·시리즈 쿠키 49개 가운데 하나를 매달 선택할 수 있다. 이와 별도로 MYBOX 80GB와 쿠키 10개도 제공한다. 최대 3명을 패밀리...",
+   "reason": "AI 미판정",
+   "tags": [
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "727868a26c26",
+   "title": "카카오 월 4900원 멤버십⋯ 네이버보다 6년 지각한 ‘구독’ 승부",
+   "url": "https://www.viva100.com/article/20261001501080",
+   "press": "브릿지경제",
+   "pub_date": "2026-10-01T14:14:00+09:00",
+   "date_label": "26.10.01",
+   "section": "fandom_music",
+   "subsection": "fan_platform",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "나아가 넷플릭스·스포티파이를 비롯해 다양한 국내 라이프스타일 브랜드와 제휴해 혜택을 제공 중이다. 카카오가 뒤늦게 멤버십을 꺼낸 배경에는 카카오톡 신규 이용자 확대가 쉽지 않은 데다 광고·커머스 등 기존...",
+   "reason": "AI 미판정",
+   "tags": [
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "a449a3ebc7b8",
+   "title": "카카오도 ‘멤버십 전쟁’ 참전…네이버·쿠팡 락인 시장에 도전장",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=04398486645608656&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "press": "이데일리",
+   "pub_date": "2026-10-01T15:03:00+09:00",
+   "date_label": "26.10.01",
+   "section": "fandom_music",
+   "subsection": "fan_platform",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "넷플릭스·스포티파이 등 콘텐츠 혜택을 결합했다. 강력한 생태계 구축 덕에 지난해 멤버십 구독료 매출은... 네이버가 넷플릭스·스포티파이 등 외부 서비스를 끌어들인 것과 달리 카카오는 이모티콘·톡클라우드...",
+   "reason": "AI 미판정",
+   "tags": [
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "0ee39ea1de0f",
+   "title": "[단독]엑소 첸백시, 11월 다시 법정으로..전속계약 소송 스타트",
+   "url": "https://www.starnewskorea.com/music/2026/10/01/2026100115560052720",
+   "press": "스타뉴스",
+   "pub_date": "2026-10-01T16:05:00+09:00",
+   "date_label": "26.10.01",
+   "section": "fandom_music",
+   "subsection": "fan_platform",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "차가원 대표는 자신이 운영하는 기획사 소속 연예인의 지식재산권(IP)을 이용한 사업을 주식회사 노머스에 제안해 계약을 체결한 뒤 거액의 선급금을 받았으나 실제 사업을 이행하지 않은 혐의를 받고 있다.",
+   "reason": "AI 미판정",
+   "tags": [
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "e0335e484c51",
+   "title": "“가입하면 주식 준다” 멤버십 내놓은 카카오, 네이버에 도전하는 멤버...",
+   "url": "https://www.joongang.co.kr/article/25466415",
+   "press": "중앙일보",
+   "pub_date": "2026-10-01T16:38:00+09:00",
+   "date_label": "26.10.01",
+   "section": "fandom_music",
+   "subsection": "fan_platform",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "또 음악 스트리밍 서비스 멜론에서 쓸 수 있는 6000원 상당 캐시도 준다. 미성년자에겐 주식 대신 5000원 상당의 올리브영 할인쿠폰을 지급한다. 카카오의 멤버십 출시는 네이버가 2020년 ‘네이버플러스 멤버십’을...",
+   "reason": "AI 미판정",
+   "tags": [
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "b7c62d50b677",
+   "title": "'K리그 아카데미' 2026년 제2차 마케팅 과정 개최…이틀간 교육에 약 70명...",
+   "url": "https://www.mediapen.com/news/view/1127338",
+   "press": "미디어펜",
+   "pub_date": "2026-10-01T16:40:00+09:00",
+   "date_label": "26.10.01",
+   "section": "fandom_music",
+   "subsection": "fan_platform",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "이번 마케팅 과정은 최근 스포츠 분야에서 캐릭터와 IP를 활용한 비즈니스가 확대되는 흐름을 반영해, 캐릭터 IP를 활용한 고객 관계 확장부터 팬덤 기반 라이선싱, 브랜드 협업, IP 모니터링, 캐릭터의 자산화 및...",
+   "reason": "AI 미판정",
+   "tags": [
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "5af2cd5f1f38",
+   "title": "섞일수록 매혹적이다…엔하이픈·르세라핌으로 보는 하이브식 패밀리십",
+   "url": "https://sports.donga.com/ent/article/all/20261001/134769501/1",
+   "press": "동아일보",
+   "pub_date": "2026-10-01T16:52:00+09:00",
+   "date_label": "26.10.01",
+   "section": "fandom_music",
+   "subsection": "fan_platform",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "하이브에 따르면 해당 곡 발표 이후 세 팀의 위버스 커뮤니티 가입자는 평균 12.7% 급증했고, 세 커뮤니티 모두에 가입한 교차 가입자 역시 5.23% 늘어났다. 지표로 입증된 이 시너지는 곧 과거 대형 기획사들의 기존...",
+   "reason": "AI 미판정",
+   "tags": [
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "d7d1bb1ade50",
+   "title": "[포커스] 임영웅의 10년, 트로트 넘어 넓힌 음악의 지평",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=611622",
+   "press": "CBC뉴스 | CBCNEWS",
+   "pub_date": "2026-10-01T17:18:00+09:00",
+   "date_label": "26.10.01",
+   "section": "fandom_music",
+   "subsection": "fan_platform",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "중장년층이 음원 플랫폼과 유튜브, 공연장으로 유입됐고, 팬덤 문화는 더 이상 10대와 20대의 전유물이 아니게 됐다. 그러나 붐에는 늘 뒤따르는 질문이 있다. 방송이 만든 스타가 방송의 열기가 식은 뒤에도 가수로 남을...",
+   "reason": "AI 미판정",
+   "tags": [
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "3b64a72e26fc",
+   "title": "국민 10명 중 6명 “OTT·스트리밍·AI 구독료 비싸”",
+   "url": "https://www.dt.co.kr/article/12087047?ref=naver",
+   "press": "디지털타임스",
+   "pub_date": "2026-10-01T17:19:00+09:00",
+   "date_label": "26.10.01",
+   "section": "fandom_music",
+   "subsection": "fan_platform",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "음악 스트리밍은 41.8%, 커머스 서비스는 38.1%, AI 서비스는 29.4%였다. 주요 플랫폼의 구독료는 최근 수년간 상승세를 보이고 있고, 기존 무료 서비스를 유료로 전환하는 움직임도 확산하고 있다. 최근 해외 주요국에서...",
+   "reason": "AI 미판정",
+   "tags": [
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "5b5b84811498",
+   "title": "신사업 제동 걸린 카카오, 멤버십 첫 선…본진 수익성 짜내기 통할까",
+   "url": "https://news.mtn.co.kr/news-detail/2026100116372616069",
+   "press": "MTN",
+   "pub_date": "2026-10-01T17:44:00+09:00",
+   "date_label": "26.10.01",
+   "section": "fandom_music",
+   "subsection": "fan_platform",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "네이버 멤버십은 넷플릭스, 마켓컬리, 스포티파이 등 외부 기업과 연계로, 서비스 바운더리를 넓혀왔습니다. 인하우스 콘텐츠로만 출발하는 카카오 멤버십도 향후 외부 서비스와 연결할 예정입니다. 카카오 관계자는...",
+   "reason": "AI 미판정",
+   "tags": [
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "67ced63dc5a8",
+   "title": "배달의민족, 결제시 최대 5% 적립 '배민클럽 에디션 2' 공개",
+   "url": "https://www.pointe.co.kr/news/articleView.html?idxno=85429",
+   "press": "포인트경제",
+   "pub_date": "2026-10-01T13:48:00+09:00",
+   "date_label": "26.10.01",
+   "section": "ent_content",
+   "subsection": "fandom_commerce",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "제휴와 OTT 결합 상품 등으로 혜택을 다각화해온 데 이어, 이번 에디션 2를 통해 포인트 적립 항목을 새롭게 추가했다. 결제 수단 따라 최대 5% 적립…기존 이용자 선택권 유지 신규 출시된 배민클럽 에디션 2의 월 구독료는...",
+   "reason": "AI 미판정",
+   "tags": [
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "bd62c3359c4e",
+   "title": "[기고] 틱톡은 더 이상 춤추는 플랫폼이 아니다",
+   "url": "https://www.m-i.kr/news/articleView.html?idxno=2001784",
+   "press": "매일일보",
+   "pub_date": "2026-10-01T14:14:00+09:00",
+   "date_label": "26.10.01",
+   "section": "ent_content",
+   "subsection": "fandom_commerce",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "따라서 크리에이터와 기업 모두 특정 플랫폼 자체보다 플랫폼을 통해 확보한 콘텐츠와 팬덤을 어떻게 자산화할 것인지 고민해야 한다. 틱톡의 의미도 여기에 있다. 틱톡은 단순히 짧은 영상을 보는 앱이 아니다. 콘텐츠를...",
+   "reason": "AI 미판정",
+   "tags": [
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "ddb640e75b75",
+   "title": "카톡·페이·멜론 다 묶었다…멤버십 전쟁 뛰어든 카카오",
+   "url": "https://www.fnnews.com/news/202610011312537331",
+   "press": "파이낸셜뉴스",
+   "pub_date": "2026-10-01T14:32:00+09:00",
+   "date_label": "26.10.01",
+   "section": "ent_content",
+   "subsection": "fandom_commerce",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "네이버는 쇼핑·예약 등의 결제금액을 최대 5% 적립해주는 것을 기반으로 넷플릭스·스포티파이 등 콘텐츠와 컬리N마트 등 외부 파트너와의 제휴를 확대하고 있다. 참여 스토어에서 구매한 제품을 90일 이내 재구매할 때...",
+   "reason": "AI 미판정",
+   "tags": [
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 2
+  },
+  {
+   "id": "2a38fe6dca65",
+   "title": "유튜브 타고 K-커머스 영토 넓힌다… 카페24, 글로벌 실적 고공행진 예...",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=491914",
+   "press": "핀포인트뉴스",
+   "pub_date": "2026-10-01T15:22:00+09:00",
+   "date_label": "26.10.01",
+   "section": "ent_content",
+   "subsection": "fandom_commerce",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "카페24는 유튜브 쇼핑 전용 스토어 연동 서비스를 발판으로 크리에이터와 쇼핑몰 간의 협업을 확대하며 플랫폼 내 거래액(GMV)을 가파르게 늘리고 있다. 여기에 K-컬처 열풍과 맞물려 글로벌 쇼핑몰 구축 인프라를 통한...",
+   "reason": "AI 미판정",
+   "tags": [
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "64c618c60f39",
+   "title": "웨이브, 국내 OTT 최초 골프 'AI 시청' 기능 출시",
+   "url": "https://enter.etoday.co.kr/news/view/303165",
+   "press": "이투데이",
+   "pub_date": "2026-10-01T15:30:00+09:00",
+   "date_label": "26.10.01",
+   "section": "ent_content",
+   "subsection": "fandom_commerce",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "온라인 동영상 서비스(OTT) 웨이브가 이용자의 자연어 명령에 맞춰 골프 하이라이트를 즉각 편집해 제공하는 기술을 선보인다. 웨이브는 1일 인공지능(AI) 영상 기술 기업 세븐미닛과 손잡고 시청자가 원하는 장면을 직접...",
+   "reason": "AI 미판정",
+   "tags": [
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "05899981b596",
+   "title": "[카카오 인사 전망]① 정신아는 카카오AI, 김도영은 카카오X… 둘로 나뉘...",
+   "url": "https://www.newsclaim.co.kr/news/articleView.html?idxno=3077042",
+   "press": "뉴스클레임",
+   "pub_date": "2026-10-01T15:44:00+09:00",
+   "date_label": "26.10.01",
+   "section": "ent_content",
+   "subsection": "fandom_commerce",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "멜론과 카카오페이지, 베리즈 등 플랫폼 서비스 고도화를 맡았다. 고 대표가 합류하기 전인 지난해 카카오엔터테인먼트 매출은 전년보다 줄었다. 2년 연속 매출이 감소한 상황에서 새 공동대표 체제가 플랫폼 통합과...",
+   "reason": "AI 미판정",
+   "tags": [
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "6f0a8877c885",
+   "title": "[정구민의 테크읽기] 플랫폼 주도권 경쟁을 가속하는 AI에이전트의 진화",
+   "url": "https://www.etnews.com/20261001000139",
+   "press": "전자신문",
+   "pub_date": "2026-10-01T16:01:00+09:00",
+   "date_label": "26.10.01",
+   "section": "ent_content",
+   "subsection": "fandom_commerce",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "아마존이 지난달 20일 뮤즈의 접근을 차단하기는 했지만, 월마트·베스트바이·쇼피파이·인스타카트 등 쇼핑 관련 업체와 익스피디아(여행)·스포티파이(음악) 등 서비스 회사가 협력하고 있다. 소비자 측면에서 '결제...",
+   "reason": "AI 미판정",
+   "tags": [
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "c29dc90730f6",
+   "title": "[카카오, 일상을 묶다] 카카오도 뛰어든 멤버십 경쟁...네이버·쿠팡과...",
+   "url": "https://www.techm.kr/news/articleView.html?idxno=155784",
+   "press": "테크M",
+   "pub_date": "2026-10-01T16:18:00+09:00",
+   "date_label": "26.10.01",
+   "section": "ent_content",
+   "subsection": "fandom_commerce",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "카카오톡 안에서 이용할 수 있는 선물하기와 이모티콘뿐 아니라 결제·금융의 카카오페이·카카오페이증권, 음원의 멜론, 웹툰·웹소설의 카카오페이지 등 이용 목적이 서로 다른 서비스를 두루 보유한 만큼 이들을 하나의...",
+   "reason": "AI 미판정",
+   "tags": [
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "6f91e867ead2",
+   "title": "카카오멤버십의 4900원 실험...네이버플러스와 플랫폼 영토전쟁 개막",
+   "url": "https://www.newspim.com/news/view/20261001001111",
+   "press": "뉴스핌",
+   "pub_date": "2026-10-01T16:23:00+09:00",
+   "date_label": "26.10.01",
+   "section": "ent_content",
+   "subsection": "fandom_commerce",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "네이버플러스 멤버십 구독 시 넷플릭스 광고형 스탠다드, 스포티파이 프리미엄 베이직, Xbox PC Game Pass 등의 디지털 콘텐츠 혜택을 선택할 수 있다. 배달과 카셰어링 등 생활 영역으로도 제휴 범위를 넓히고 있다. 앞선...",
+   "reason": "AI 미판정",
+   "tags": [
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "83b452faf2b7",
+   "title": "방탄소년단, 월드투어 누적 매출 5억달러 돌파… 팝 그룹 역사상 최초",
+   "url": "https://www.mt.co.kr/stock/2026/10/01/2026100116032680567",
+   "press": "머니투데이",
+   "pub_date": "2026-10-01T16:25:00+09:00",
+   "date_label": "26.10.01",
+   "section": "ent_content",
+   "subsection": "fandom_commerce",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "빌보드는 방탄소년단의 월드투어가 향후 전 세계 주요 도시에서 약 40회의 공연을 남겨두고 있어, 최종 누적 투어 매출이 10억달러(약 1조3600억원)에 육박할 것으로 내다봤다. 한편 하이브는 방탄소년단을 필두로...",
+   "reason": "AI 미판정",
+   "tags": [
+    "동일 보도 4건",
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 4
+  },
+  {
+   "id": "cda9aeeeb0b7",
+   "title": "'월 4900원' 다른 듯 닮은 멤버십 서비스⋯네이버 vs 카카오 격돌[종합]",
+   "url": "http://www.inews24.com/view/2011101",
+   "press": "아이뉴스24",
+   "pub_date": "2026-10-01T16:45:00+09:00",
+   "date_label": "26.10.01",
+   "section": "ent_content",
+   "subsection": "fandom_commerce",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "카카오톡에서 쓰는 쇼핑 서비스 적립을 비롯해 음원(멜론), 콘텐츠(카카오페이지), 디지털 금융(페이증권) 등 여러 서비스를 한데 모았다. 월 구독료는 네이버와 같은 4900원으로 선보이면서 멤버십 경쟁이 한층 치열하게...",
+   "reason": "AI 미판정",
+   "tags": [
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "258ccee3ea44",
+   "title": "[서병기 문화인사이트]“AI음악 등록 방식 정교함 필요” AI 음악의 저작...",
+   "url": "http://www.inews24.com/view/2010785",
+   "press": "아이뉴스24",
+   "pub_date": "2026-10-01T16:48:00+09:00",
+   "date_label": "26.10.01",
+   "section": "ent_content",
+   "subsection": "fandom_commerce",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "먼저 AI를 활용해 수십만곡의 노래를 만든 뒤 매크로(자동화 프로그램)를 이용해 스포티파이 등의 스트리밍 플랫폼에서 수십억회 재생하는 방법으로 120억원을 벌어들인 미국 남성이 ‘사기’ 혐의를 인정한 사례를...",
+   "reason": "AI 미판정",
+   "tags": [
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "f0138fde3778",
+   "title": "네이버 ‘쇼핑 적립’ vs 카카오 ‘메신저 록인’…‘월 4900원’ 통합구...",
+   "url": "https://www.ceoscoredaily.com/page/view/2026100116353969829",
+   "press": "CEOSCOREDAILY",
+   "pub_date": "2026-10-01T16:54:00+09:00",
+   "date_label": "26.10.01",
+   "section": "ent_content",
+   "subsection": "fandom_commerce",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "여기에 넷플릭스, 스포티파이 등 킬러 콘텐츠 파트너사와의 제휴를 지속적으로 강화한다는 방침이다. 업계에서는 네이버와 쿠팡이 강력한 ‘쇼핑 적립’과 ‘무료 배송’이라는 명확한 커머스 혜택으로 시장을...",
+   "reason": "AI 미판정",
+   "tags": [
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "01117e73063d",
+   "title": "숏드라마 300만 시대 열렸지만…韓은 '중국 앱' 천하 [엔터코노미]",
+   "url": "https://news.mtn.co.kr/news-detail/2026092910464866553",
+   "press": "MTN",
+   "pub_date": "2026-10-01T17:04:00+09:00",
+   "date_label": "26.10.01",
+   "section": "ent_content",
+   "subsection": "fandom_commerce",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "다만 급성장한 국내 시장의 이용자 상당수를 중국계 플랫폼이 선점하면서, 이제 막 사업 확장에 나선 국내... 업계에서는 과거 이른바 '포천청' 팬덤 등 중장년층을 중심으로 형성됐던 국내 중국 드라마 소비층이 최근...",
+   "reason": "AI 미판정",
+   "tags": [
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "67548b35e46b",
+   "title": "카카오 멤버십 드디어 출격…'카톡 생활권' 묶기 통할까",
+   "url": "https://www.newsway.co.kr/news/view?ud=2026100116363215921",
+   "press": "뉴스웨이",
+   "pub_date": "2026-10-01T17:06:00+09:00",
+   "date_label": "26.10.01",
+   "section": "ent_content",
+   "subsection": "fandom_commerce",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "쿠팡 와우는 배송·반품·배달처럼 이용자가 비용 절감 효과를 즉각 체감할 수 있는 혜택이 강점이고, 네이버플러스는 쇼핑과 함께 넷플릭스·스포티파이 등 외부 콘텐츠까지 선택지를 넓히고 있다. 반면 카카오는 자체...",
+   "reason": "AI 미판정",
+   "tags": [
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "7513dad8458f",
+   "title": "STO 시장 열리면 뭐가 뜰까…“IP·K콘텐츠 주목”",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=05490726645608656&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "press": "이데일리",
+   "pub_date": "2026-10-01T17:28:00+09:00",
+   "date_label": "26.10.01",
+   "section": "ent_content",
+   "subsection": "fandom_commerce",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "내년 2월 열릴 토큰증권 시장의 새로운 상품으로 지식재산권(IP)과 K콘텐츠 등에 주목할 필요가 있다는... 이어 “이 경우 사업자가 자산을 먼저 확보하고 일부 물량까지 보유해야 해 자금 부담이 커질 수 있다”며...",
+   "reason": "AI 미판정",
+   "tags": [
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "ce243b45eb1e",
+   "title": "\"월 4900원의 맞대결\" 카카오멤버십 출시…네이버 아성 넘을까",
+   "url": "https://www.widedaily.com/news/articleView.html?idxno=301657",
+   "press": "와이드경제",
+   "pub_date": "2026-10-01T17:34:00+09:00",
+   "date_label": "26.10.01",
+   "section": "ent_content",
+   "subsection": "fandom_commerce",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "가입자는 글로벌 인기 플랫폼인 넷플릭스와 스포티파이 중 하나를 골라 혜택을 누릴 수 있다. 스포티파이 프리미엄 베이직은 단독 구독보다 월 3790원, 넷플릭스 광고형 스탠다드는 월 2100원 저렴하게 즐길 수 있다. 월...",
+   "reason": "AI 미판정",
+   "tags": [
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "7a9074b7eb99",
+   "title": "구글, 최상위 AI '제미나이 4 아르곤' 공개…일반 이용은 제한",
+   "url": "https://www.ccdailynews.com/news/articleView.html?idxno=2444296",
+   "press": "충청일보",
+   "pub_date": "2026-10-01T17:34:00+09:00",
+   "date_label": "26.10.01",
+   "section": "ai_tech",
+   "subsection": "ai_tech",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "구글은 지난달 30일(현지시간) 차세대 AI 모델 '제미나이 4 아르곤'을 출시했다고 밝혔다. 구글이 최상위 모델을 내놓은 것은 지난 2월 '제미나이 3.1 프로' 이후 약 7개월 만이다. 구글은 제미나이 4 아르곤이 복잡하고...",
+   "reason": "AI 미판정",
+   "tags": [
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "e183437c4a33",
+   "title": "구글, 3.5 접고 ‘제미나이4’ 공개...보안 합격점, 코딩성능은 물음표",
+   "url": "https://www.sedaily.com/article/20097282?ref=naver",
+   "press": "서울경제",
+   "pub_date": "2026-10-01T17:44:00+09:00",
+   "date_label": "26.10.01",
+   "section": "ai_tech",
+   "subsection": "ai_tech",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "구글은 올 5월 개발자 행사에서 제미나이 3.5 프로를 6월에 내놓겠다고 밝혔지만 출시를 포기한 뒤 아예 다음 버전을 공개한 것이다. 구글은 아르곤이 금융·법률·세무 등 전문 지식 업무나 사이버 보안 등의 분야에서...",
+   "reason": "AI 미판정",
+   "tags": [
+    "AI 미판정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  }
+ ],
+ "excluded": [
+  {
+   "title": "버추얼 아이돌 비그릿츠, 정식 데뷔 전 자카르타부터…퍼포먼스 최초 공...",
+   "url": "https://www.nocutnews.co.kr/news/6586170?utm_source=naver&utm_medium=article&utm_campaign=20261001064114",
+   "press": "",
+   "pub_date": "2026-10-01T18:42:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "아이브, 스포티파이 손잡고 새 EP 팝업·라이브 연다",
+   "url": "https://www.newsis.com/view/NISX20261001_0003811483",
+   "press": "",
+   "pub_date": "2026-10-01T19:10:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "빅크, 스포츠 팬덤으로 확장…日 니시다 삼형제 ‘스페이스’ 열어",
+   "url": "https://sports.khan.co.kr/article/202610020908018?pt=nv",
+   "press": "",
+   "pub_date": "2026-10-02T09:09:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "이스타항공, 엔믹스와 손잡고 해외 팬덤 공략…K-팝 연계 마케팅 강화",
+   "url": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065571663811126",
+   "press": "",
+   "pub_date": "2026-10-02T09:10:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "방탄소년단, 콜롬비아 '명예 외빈' 지정… \"단순한 밴드 그 이상\"",
+   "url": "https://mhnse.com/news/articleView.html?idxno=1569071",
+   "press": "",
+   "pub_date": "2026-10-02T07:09:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "한국프로축구연맹, 'K리그 아카데미' 2026년 제2차 마케팅 과정 개최",
+   "url": "https://www.besteleven.com/news/articleView.html?idxno=312713",
+   "press": "",
+   "pub_date": "2026-10-01T14:43:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "이정헌 의원실 “플랫폼 이용자 10명 중 7명 요금 인상·광고 전송 규제...",
+   "url": "https://byline.network/?p=9004111222621966",
+   "press": "",
+   "pub_date": "2026-10-01T16:24:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "조폐공사, '젠지' 선수 담은 LCK 우승 기념 순금카드 출시",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=491734",
+   "press": "",
+   "pub_date": "2026-10-01T09:38:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "[허프 사람&말] '주술회전' 성우가 틱톡 상대 소송서 '목소리 퍼블리시...",
+   "url": "https://www.huffingtonpost.kr/article/260912",
+   "press": "",
+   "pub_date": "2026-10-01T13:50:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "세계 정복한 K-콘텐츠의 지속 성장 조건…신간 <슈퍼 IP : K-콘텐츠, 히트...",
+   "url": "http://www.yonhapnewstv.co.kr/news/AKR20261001141852wQg",
+   "press": "",
+   "pub_date": "2026-10-01T14:19:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "인티큐브, 110억 수주 기반 '실적형 AX' 전환…200여 고객에 AI 심는다",
+   "url": "https://view.asiae.co.kr/article/2026100114220877443",
+   "press": "",
+   "pub_date": "2026-10-01T14:22:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "점포 줄이고 공연·야구까지…멀티플렉스, 흥행 회복 속 생존전략 바꾼...",
+   "url": "http://www.dailypop.kr/news/articleView.html?idxno=102957",
+   "press": "",
+   "pub_date": "2026-10-01T14:56:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "월 500달러 ChatGPT…AI '락인' 경쟁 본격화",
+   "url": "https://www.mstoday.co.kr/news/articleView.html?idxno=200034",
+   "press": "",
+   "pub_date": "2026-10-01T15:34:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "\"화장품부터 팝업까지\"… 초이락, 올리브영과 10월 '호빵맨' 전사 협업",
+   "url": "https://www.mt.co.kr/living/2026/10/01/2026100115312166880",
+   "press": "",
+   "pub_date": "2026-10-01T15:39:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "아이유, '헤메스' 우려 반응에 직접 해명 \"접촉성 알레르기 때문에...\"",
+   "url": "https://www.sportsworldi.com/newsView/20261001515006",
+   "press": "",
+   "pub_date": "2026-10-01T15:50:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "피피비스튜디오스는 아일릿 원희와 '츄렌즈' 어떻게 키울까",
+   "url": "https://zdnet.co.kr/view/?no=20261001150909",
+   "press": "",
+   "pub_date": "2026-10-01T16:06:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "NC, '아스오라' CBT서 흥행 타진…서브컬처 시장 정조준",
+   "url": "http://www.iminju.net/news/articleView.html?idxno=170270",
+   "press": "",
+   "pub_date": "2026-10-01T16:10:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "로카티, 그 의미에 대하여",
+   "url": "https://kookbang.dema.mil.kr/newsWeb/20261002/1/ATCE_CTGR_0050040000/view.do",
+   "press": "",
+   "pub_date": "2026-10-01T16:14:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "'송현아'가 10년 쌓는 동안…롯데·신세계·이랜드는 어디까지 왔나",
+   "url": "http://www.incheonin.com/news/articleView.html?idxno=121013",
+   "press": "",
+   "pub_date": "2026-10-01T16:16:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "리사·트와이스·캣츠아이…빅시 런웨이가 케이팝을 사랑한 이유",
+   "url": "https://sports.donga.com/ent/article/all/20261001/134769343/1",
+   "press": "",
+   "pub_date": "2026-10-01T16:36:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "고성서 AI 활용 음악축제 첫선…명태축제와 연계해 나흘간 진행",
+   "url": "https://www.discoverynews.kr/news/articleView.html?idxno=1103097",
+   "press": "",
+   "pub_date": "2026-10-01T16:50:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "비그릿츠, 데뷔 전부터 아시아 공략…인도네시아 ‘ICC 2026’ 참가",
+   "url": "https://www.mk.co.kr/article/12166256",
+   "press": "",
+   "pub_date": "2026-10-01T17:04:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "컴투스, 레드아이스스튜디오와 컴투스엔 지분 양수도 계약",
+   "url": "https://www.cnbnews.com/news/articleView.html?idxno=1017796",
+   "press": "",
+   "pub_date": "2026-10-01T17:06:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "넥슨·엔씨·카카오·펄어비스, 각자 다른 10월의 반격 나서",
+   "url": "https://www.gamevu.co.kr/news/articleView.html?idxno=61153",
+   "press": "",
+   "pub_date": "2026-10-01T17:42:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "대사관에 CDPR까지 지스타 채우는 폴란드…\"해외 협력 공들여\"",
+   "url": "https://view.asiae.co.kr/article/2026100118210286721",
+   "press": "",
+   "pub_date": "2026-10-01T18:21:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "티빙, AWS 손잡고 클라우드 보안 고도화…위협 대응 체계 강화",
+   "url": "https://www.sentv.co.kr/article/view/sentv202610020014",
+   "press": "",
+   "pub_date": "2026-10-02T08:52:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "카페24, 우정사업본부 손잡고 소상공인 물류·금융 부담 낮춘다",
+   "url": "https://www.etnews.com/20261001000388",
+   "press": "",
+   "pub_date": "2026-10-01T15:15:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "\"14만원 티켓이 90만원\"…장한별 첫 단독콘서트, 피켓팅에 암표 극성",
+   "url": "https://www.sportschosun.com/entertainment/2026-10-01/202610010100009040000311",
+   "press": "",
+   "pub_date": "2026-10-01T15:33:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "\"OTT, 요금 인상 사전고지해야\" 70.8%",
+   "url": "https://www.mediaus.co.kr/news/articleView.html?idxno=318297",
+   "press": "",
+   "pub_date": "2026-10-01T16:58:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "글로벌 기준 맞춰 보안 재정비…티빙, 클라우드 보안 체계 강화",
+   "url": "https://biz.heraldcorp.com/article/10891285?ref=naver",
+   "press": "",
+   "pub_date": "2026-10-02T08:45:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "딜라이브TV, 중남미 콘텐츠 시장 진출…브라질·멕시코 공략",
+   "url": "https://www.yna.co.kr/view/AKR20261001173200017?input=1195m",
+   "press": "",
+   "pub_date": "2026-10-01T17:11:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "LG CNS, 美 투자사와 AI·SW 유망주 찾는다",
+   "url": "https://www.sedaily.com/article/20097317?ref=naver",
+   "press": "",
+   "pub_date": "2026-10-01T18:00:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[단독]‘청불’ 숏폼 그대로 노출…해외 플랫폼 등급분류 ‘구멍’",
+   "url": "https://www.donga.com/news/Culture/article/all/20261001/134768312/1",
+   "press": "",
+   "pub_date": "2026-10-01T16:58:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "킨텍스, 하이브리드 스포츠 페스티벌 ‘BEATEMPO’ 첫 개최",
+   "url": "https://www.m-economynews.com/news/article.html?no=71242",
+   "press": "",
+   "pub_date": "2026-10-01T17:22:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "유현준 \"공원 없어져 JYP 신사옥 철수 가능\"…서울시 반박",
+   "url": "https://www.newsis.com/view/NISX20261001_0003811530",
+   "press": "",
+   "pub_date": "2026-10-01T19:46:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "메가MGC커피, 4500호점 돌파… 커피 프랜차이즈 최다 매장",
+   "url": "https://biz.chosun.com/distribution/food/2026/10/02/25EWQKJFJNFY7LI2IISNREKBYI/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+   "press": "",
+   "pub_date": "2026-10-02T09:11:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "[IT는 지금] 카카오, 카카오멤버십 출시…월 구독료 4900원 外",
+   "url": "https://dealsite.co.kr/articles/169977",
+   "press": "",
+   "pub_date": "2026-10-01T14:14:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "배달의민족 새 구독상품 '배민클럽 에디션2' 출시, 무료배달에 적립 혜...",
+   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=448424",
+   "press": "",
+   "pub_date": "2026-10-01T14:50:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "[탐사경] 정권의 퇴진 압박에도 꺼지지 않았던 한류의 불씨…CJ가 30년 ...",
+   "url": "https://www.moneystorm.kr/news/articleView.html?idxno=6953",
+   "press": "",
+   "pub_date": "2026-10-01T14:53:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "KBS N·원밀리언, 맞손…‘키즈 맞춤형 K-댄스 IP’ 공동사업 본격화",
+   "url": "https://sports.khan.co.kr/article/202610011453003?pt=nv",
+   "press": "",
+   "pub_date": "2026-10-01T14:55:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "“보고 싶은 골프 장면 말하면 AI가 편집”…웨이브, AI 시청 선봬",
+   "url": "https://www.etnews.com/20261001000373",
+   "press": "",
+   "pub_date": "2026-10-01T14:57:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "플레이브, 레이싱 슈트 입고 질주…신보 콘셉트 포토 추가 공개",
+   "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1010801",
+   "press": "",
+   "pub_date": "2026-10-01T15:01:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "“원하는 장면 말하면 영상으로”…웨이브, 골프 ‘AI 시청’ 도입",
+   "url": "https://www.sentv.co.kr/article/view/sentv202610010148",
+   "press": "",
+   "pub_date": "2026-10-01T15:06:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "[골프소식] 쇼골프, 골프산업 청년 인재 발굴 팔 걷었다 등",
+   "url": "https://www.joongang.co.kr/article/25466369",
+   "press": "",
+   "pub_date": "2026-10-01T15:08:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "[Telecom & Now] SKT, 자급제 요금제 '에어' 1주년 기념 특가 프로모션 등",
+   "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1726427",
+   "press": "",
+   "pub_date": "2026-10-01T15:22:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "SKT '에어' 출시 1주년, '월 1만원대' 요금제 프로모션 진행",
+   "url": "http://www.whitepaper.co.kr/news/articleView.html?idxno=267413",
+   "press": "",
+   "pub_date": "2026-10-01T15:22:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "밀리의서재, 오리지널 IP로 웹툰·웹소설 키운다… “점유율 20% 목표”",
+   "url": "https://biz.chosun.com/it-science/ict/2026/10/01/F2SCEFGZBJHKPO2ZVMO57HT7SU/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+   "press": "",
+   "pub_date": "2026-10-01T15:25:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "배현진, '박진영 무보수 봉사라더니 월 200만 원'-국감으로",
+   "url": "https://www.mediafine.co.kr/news/articleView.html?idxno=91382",
+   "press": "",
+   "pub_date": "2026-10-01T15:36:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "“월 5만8000원 요금제 1만9999원에”…SKT, ‘에어’ 1주년 기념 할인 나...",
+   "url": "https://www.mk.co.kr/article/12166128",
+   "press": "",
+   "pub_date": "2026-10-01T15:37:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "컴투스·넥써쓰, 개발자 위한 플랫폼 구축 '삼매경'",
+   "url": "https://www.smartbizn.com/news/articleView.html?idxno=155334",
+   "press": "",
+   "pub_date": "2026-10-01T16:32:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "기습 인상·동의 없는 광고…이용자 10명 중 7명 \"플랫폼 규제해야\"",
+   "url": "http://www.newsian.co.kr/news/articleView.html?idxno=96381",
+   "press": "",
+   "pub_date": "2026-10-01T16:40:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "딜라이브TV, 자체 제작 콘텐츠로 브라질·멕시코 공략 나서",
+   "url": "https://www.etnews.com/20261001000442",
+   "press": "",
+   "pub_date": "2026-10-01T16:41:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "CJ올리브영, 중소 브랜드 육성 'K-슈퍼루키' 3기…30개사로 확대",
+   "url": "https://www.newsinside.kr/news/articleView.html?idxno=5014117",
+   "press": "",
+   "pub_date": "2026-10-01T16:42:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "서울시, 유튜브 계정 공유 피해 주의 당부… 구글에 다양한 요금제 도입...",
+   "url": "https://www.discoverynews.kr/news/articleView.html?idxno=1103098",
+   "press": "",
+   "pub_date": "2026-10-01T16:52:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "유현준, JYP 신사옥 앞 부지 용도변경 비판…\"미래세대 위해 공원 남겨...",
+   "url": "https://www.newsis.com/view/NISX20261001_0003810982",
+   "press": "",
+   "pub_date": "2026-10-01T16:54:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "앤트로픽 클로드, 美 연방기관 속으로…정부 전용 AI 출시",
+   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=704496",
+   "press": "",
+   "pub_date": "2026-10-02T08:50:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "美캘리포니아주, 오픈AI에 소환장…AI해킹·안전성 조사",
+   "url": "https://www.yna.co.kr/view/AKR20261002005300091?input=1195m",
+   "press": "",
+   "pub_date": "2026-10-02T05:04:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "\"中해커들, 美 AI정책 당국자·앤트로픽 간부 사칭 스파이 공작\"",
+   "url": "https://www.yna.co.kr/view/AKR20261002010000091?input=1195m",
+   "press": "",
+   "pub_date": "2026-10-02T06:22:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "'제미나이4' 공개에도…실제성능 두고 구글 내부 엇갈려",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=05877766645608656&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "press": "",
+   "pub_date": "2026-10-01T18:55:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "말로만 속도 조절…구글 ‘제미나이 4’ 공개",
+   "url": "https://www.khan.co.kr/article/202610012057035",
+   "press": "",
+   "pub_date": "2026-10-01T20:57:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "“구글 제미나이 누가 씁니까” 했는데…최상위모델 ‘아르곤’ 반전노...",
+   "url": "https://www.mk.co.kr/article/12166532",
+   "press": "",
+   "pub_date": "2026-10-01T21:25:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "배달의민족, 포인트 적립 강화한 '배민클럽 에디션 2' 출시",
+   "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=278387",
+   "press": "",
+   "pub_date": "2026-10-01T16:56:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "배달·장보기 결제하면 최대 5% 적립…배민클럽 새단장",
+   "url": "https://www.sportsseoul.com/news/read/1638937?ref=naver",
+   "press": "",
+   "pub_date": "2026-10-01T17:46:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "포켓몬 카드에 다시 돈 몰린다…번개장터 컬렉터블 거래액 1년 새 2배",
+   "url": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065597054363734",
+   "press": "",
+   "pub_date": "2026-10-01T16:18:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "효성티앤씨, '에스엠타운 런 클럽' 공식 의류 스폰서 참여",
+   "url": "https://www.hg-times.com/news/articleView.html?idxno=305743",
+   "press": "",
+   "pub_date": "2026-10-01T16:22:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "bhc, 2026 신한 SOL KBO 포스트시즌 스폰서…구단 선택하면 1000원 할인쿠...",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=491968",
+   "press": "",
+   "pub_date": "2026-10-01T16:26:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "[똑똑한유통] CU, GS25, 롯데면세점, CJ온스타일, 우아한형제들, 신세계...",
+   "url": "https://www.ekn.kr/web/view.php?key=20261001020351214",
+   "press": "",
+   "pub_date": "2026-10-01T16:40:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "구글, 차세대 AI '제미나이4 아르곤' 공개…오픈AI·앤트로픽과 정면승...",
+   "url": "https://www.jemin.com/news/articleView.html?idxno=843702",
+   "press": "제민일보",
+   "pub_date": "2026-10-01T18:42:00+09:00",
+   "section": "ai_tech",
+   "stage": "2차",
+   "reason": "섹션 한도 초과"
+  },
+  {
+   "title": "오픈AI \"中문샷이 추론정보 추출시도\"…美·中 AI \"탈취 VS 수성 전쟁\"",
+   "url": "https://www.hankyung.com/article/202610018799i",
+   "press": "한국경제",
+   "pub_date": "2026-10-01T20:58:00+09:00",
+   "section": "ai_tech",
+   "stage": "2차",
+   "reason": "섹션 한도 초과"
+  },
+  {
+   "title": "메가데스·키라라·아도(Ado)…부산록페·광주 ACC XMF·인천 XMF 주말 달...",
+   "url": "https://www.newsis.com/view/NISX20260930_0003808238",
+   "press": "뉴시스",
+   "pub_date": "2026-10-01T17:49:00+09:00",
+   "section": "ent_content",
+   "stage": "선별",
+   "reason": "게재 상한 30건 (중요도 4)"
+  },
+  {
+   "title": "[단독] 메타 뮤즈, 한국서 쇼핑 못한다…AI-이커머스 전면전",
+   "url": "https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202610010130&t=NNv",
+   "press": "한국경제TV",
+   "pub_date": "2026-10-01T17:58:00+09:00",
+   "section": "ai_tech",
+   "stage": "선별",
+   "reason": "게재 상한 30건 (중요도 4)"
+  },
+  {
+   "title": "“제2의 한한령 왔다” 첸백시·알디원·트레저까지, 중국 K팝 줄취소 [...",
+   "url": "https://sports.khan.co.kr/article/202610011807013?pt=nv",
+   "press": "경향신문",
+   "pub_date": "2026-10-01T18:08:00+09:00",
+   "section": "fandom_music",
+   "stage": "선별",
+   "reason": "게재 상한 30건 (중요도 4)"
+  },
+  {
+   "title": "첸백시, INB100 상대 전속계약 분쟁…11월 첫 변론",
+   "url": "https://www.tvreport.co.kr/breaking/article/1079921/",
+   "press": "",
+   "pub_date": "2026-10-01T18:26:00+09:00",
+   "section": "ent_content",
+   "stage": "선별",
+   "reason": "게재 상한 30건 (중요도 4)"
+  },
+  {
+   "title": "SM C&C, ‘우리들의 발라드2’로 음원 IP 사업 강화",
+   "url": "https://biz.chosun.com/industry/business-venture/2026/10/01/4PBVBMEJQNCHJCRDVZ55ZAIFTM/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+   "press": "조선비즈",
+   "pub_date": "2026-10-01T18:39:00+09:00",
+   "section": "ent_content",
+   "stage": "선별",
+   "reason": "게재 상한 30건 (중요도 4)"
+  },
+  {
+   "title": "K팝·K드라마 다음은 K크리에이터…유튜브 CEO가 말하는 한국 문화의 힘...",
+   "url": "https://www.mk.co.kr/article/12166507",
+   "press": "매일경제",
+   "pub_date": "2026-10-01T20:43:00+09:00",
+   "section": "ent_content",
+   "stage": "선별",
+   "reason": "게재 상한 30건 (중요도 4)"
+  },
+  {
+   "title": "K팝 덕질 묶는다...카카오엔터, 멜론·베리즈 연동 왜? [엔터코노미]",
+   "url": "https://news.mtn.co.kr/news-detail/2026100110105791444",
+   "press": "MTN",
+   "pub_date": "2026-10-02T06:06:00+09:00",
+   "section": "ent_content",
+   "stage": "선별",
+   "reason": "게재 상한 30건 (중요도 4)"
+  },
+  {
+   "title": "기업가치 7조 AI 작곡 수노, 시·연설에도 배경음악 입힌다",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02650246645608984&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "press": "이데일리",
+   "pub_date": "2026-10-02T07:57:00+09:00",
+   "section": "ai_tech",
+   "stage": "선별",
+   "reason": "게재 상한 30건 (중요도 4)"
+  },
+  {
+   "title": "아이들 소연, '퇴사할게여'로 '엠카' 첫 1위…음원 이어 음방까지 접수",
+   "url": "http://www.tvdaily.co.kr/read.php3?aid=17908995771804406010",
+   "press": "",
+   "pub_date": "2026-10-02T09:08:00+09:00",
+   "section": "own",
+   "stage": "선별",
+   "reason": "게재 상한 30건 (중요도 3)"
+  },
+  {
+   "title": "“콘텐츠가 돈이 된다”…CJ온스타일, 크리에이터 커머스 페스티벌 연다",
+   "url": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065598679679925",
+   "press": "메가경제",
+   "pub_date": "2026-10-01T16:40:00+09:00",
+   "section": "ent_content",
+   "stage": "선별",
+   "reason": "게재 상한 30건 (중요도 3)"
+  }
+ ]
+}
