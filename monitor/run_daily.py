@@ -197,10 +197,10 @@ def run_review(items: list[dict], cfg: dict) -> None:
 
 
 def no_ai_review(it: dict) -> dict | None:
-    """AI를 못 쓴 경우: 자사 또는 1차에서 '포함'이 확실했던 기사만 네이버 요약문으로 게재."""
+    """AI 본문 판정을 못 받은 경우: 자사 기사만 네이버 요약문으로 게재(다른 기사는 품질 때문에 싣지 않음)."""
     t = it.get("triage", {})
     own = "own" in it["section_hints"] or t.get("section") == "own"
-    if not (own or t.get("decision") == "include"):
+    if not own:
         return None
     sec = "own" if own else t.get("section", it["section_hints"][0])
     return {"keep": True, "reason": "AI 미판정", "section": sec, "subsection": llm.SUBSECTIONS[sec][0],
@@ -282,6 +282,11 @@ def main(argv=None):
         since, until = now - timedelta(hours=args.hours), now
     else:
         since, until = workdays.window(now, cfg, state.get("last_window_end"))
+        # 자동 실행은 하루 여러 번 예약돼 있음(GitHub 예약 누락 대비) → 오늘 분이 이미 끝났으면 건너뜀
+        le = state.get("last_window_end")
+        if le and datetime.fromisoformat(le) >= until:
+            log.info("오늘(%s) 분은 이미 처리됨 — 건너뜀", until.strftime("%m-%d %H:%M"))
+            return
     cap, review_cap = workdays.caps(since, until, cfg)
     log.info("수집 범위: %s ~ %s (%d일치) · 게재 상한 %d건",
              since.strftime("%m-%d %H:%M"), until.strftime("%m-%d %H:%M"),

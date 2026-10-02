@@ -74,14 +74,33 @@ def _criteria() -> str:
             + load_text("criteria.md"))
 
 
+EXHAUSTED: set = set()   # 오늘 하루 한도가 바닥난 모델
+
+
 def call_json(task: str, guide: str, user: str, schema: dict, max_tokens: int) -> dict:
     cfg = settings()
     provider = cfg.get("ai_provider", "gemini")
-    model = cfg["models"][provider][task]
-    _pace(cfg.get("call_interval_sec", 5))
-    if provider == "gemini":
-        return _gemini(model, _criteria() + "\n\n" + guide, user, schema, max_tokens)
-    return _claude(model, _criteria(), guide, user, schema, max_tokens)
+    if provider != "gemini":
+        _pace(cfg.get("call_interval_sec", 5))
+        return _claude(cfg["models"][provider][task], _criteria(), guide, user, schema, max_tokens)
+    # 지정 모델 → 한도가 바닥나면 다른 무료 모델로 넘어가며 시도
+    order = [cfg["models"]["gemini"][task]] + cfg.get("gemini_fallback_models",
+                                                      ["gemini-flash-lite-latest", "gemini-flash-latest"])
+    tried = []
+    for model in order:
+        if model in EXHAUSTED or model in tried:
+            continue
+        tried.append(model)
+        _pace(cfg.get("call_interval_sec", 5))
+        try:
+            return _gemini(model, _criteria() + "\n\n" + guide, user, schema, max_tokens)
+        except QuotaExceeded as e:
+            if "시간 예산" in str(e):
+                raise
+            log.warning("모델 %s 오늘 한도 소진 → 다른 모델로 전환", model)
+            EXHAUSTED.add(model)
+            STATS.setdefault("exhausted", []).append(model)
+    raise QuotaExceeded("모든 무료 모델 한도 소진")
 
 
 def _to_gemini_schema(s: dict) -> dict:
@@ -278,9 +297,10 @@ REVIEW_GUIDE = """[작업] 2차 판정. 기사마다 본문을 읽고 클리핑 
 - 요약은 줄바꿈 없이 한 단락. 입력된 모든 id에 대해 답한다.
 - 사이트에는 하루치 기준 30건만 실리고(월요일·연휴 뒤는 더 많음), 중요도 3 미만은 싣지 않는다. importance를 엄격하게 매긴다:
   5 = 비마프·드림어스 사업에 직접 영향(자사 실질 기사, 경쟁 팬덤·음악 플랫폼의 주요 발표, 엔터사 실적·핵심 사업 전략)
-  4 = 업계 흐름을 보여주는 기획·분석 기사, 주요 플레이어의 의미 있는 사업 발표
-  3 = 참고할 만한 업계 소식
-  2 이하 = 일반 소식(게재 가능성 낮음)
+  4 = 팬덤 플랫폼·음악 플랫폼·엔터 산업의 흐름을 보여주는 기획·분석 기사, 주요 플레이어의 의미 있는 사업 발표
+  3 = 팬덤·음악·엔터 산업과 직접 관련된 참고 소식
+  2 이하 = 관련성 기준을 통과하지 못하거나 간접적인 기사 → keep=false
+  대부분의 기사는 3이다. 4·5는 정말 그럴 때만 준다. 관련성 기준이 애매하면 keep=false.
 - must_include=true는 아주 드물게만: 자사 핵심 기사(신규 사업·실적·대형 제휴), 업계 판도를 바꾸는 발표(경쟁 플랫폼 출시·종료·인수합병, 주요 엔터사 실적·지배구조 변화, 음원 유통·저작권 제도 변경). 하루 0~2건이 정상.
 """ + SUB_DESC
 
