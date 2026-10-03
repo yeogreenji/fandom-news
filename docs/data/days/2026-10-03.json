@@ -1,0 +1,1097 @@
+{
+ "date": "2026-10-03",
+ "generated_at": "2026-10-03T14:39+09:00",
+ "window": {
+  "from": "2026-10-02T09:30+09:00",
+  "to": "2026-10-03T09:30+09:00"
+ },
+ "cap": 30,
+ "stats": {
+  "raw": 3155,
+  "rule_dropped": 25,
+  "snippet_dropped": 486,
+  "collect_sec": 160,
+  "unique": 1422,
+  "new": 1420,
+  "clusters": 1232,
+  "triage_candidates": 347,
+  "triage_sec": 54,
+  "ai_sec": 273,
+  "kept": 11
+ },
+ "ai": {
+  "calls": 26,
+  "ok": 15,
+  "parse_fail": 0,
+  "rate_wait": 0,
+  "quota_day": 0,
+  "errors": [
+   "503 서버 오류",
+   "503 서버 오류",
+   "503 서버 오류",
+   "503 서버 오류",
+   "503 서버 오류",
+   "503 서버 오류",
+   "503 서버 오류",
+   "503 서버 오류",
+   "503 서버 오류",
+   "503 서버 오류",
+   "503 서버 오류"
+  ],
+  "seconds": 156
+ },
+ "items": [
+  {
+   "id": "a5b397b78bba",
+   "title": "고양국제박람회재단, '2026 콘텐츠 유니버스 코리아' 10월 16일 개최… 콘...",
+   "url": "https://www.discoverynews.kr/news/articleView.html?idxno=1103191",
+   "press": "디스커버리뉴스",
+   "pub_date": "2026-10-02T13:16:00+09:00",
+   "date_label": "26.10.02",
+   "section": "own",
+   "subsection": "own",
+   "importance": 5,
+   "kind": "news",
+   "must_include": false,
+   "summary": "고양국제박람회재단이 오는 10월 16일과 17일 고양꽃전시관에서 '2026 콘텐츠 유니버스 코리아'를 개최한다. 이번 행사는 '콘텐츠 이코노미'를 주제로 크리에이터, 팬덤, IP, 콘텐츠 관광으로 이어지는 비즈니스 생태계를 조망한다. **행사 첫날 개막식과 함께 진행되는 기조강연에는 비마이프렌즈 서우석 대표가 엔터테인먼트 사회학자 나카야마 아츠오 등과 함께 강연자로 나선다.** 아울러 슈퍼팬 기반 팬덤 비즈니스를 다루는 트랙과 IP/플랫폼 트랙 등 다양한 전문가 세션과 AI 미디어 아트 등 전시 공간도 함께 운영될 예정이다.",
+   "reason": "비마이프렌즈 서우석 대표 기조강연 및 팬덤 세션 참여",
+   "tags": [],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "cae8a7e08129",
+   "title": "SOOP, 디플러스 기아 월즈 출정식 생중계…팬 200명 초청",
+   "url": "https://www.dailian.co.kr/news/view/1697230/?sc=Naver",
+   "press": "데일리안",
+   "pub_date": "2026-10-02T09:38:00+09:00",
+   "date_label": "26.10.02",
+   "section": "own",
+   "subsection": "own",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "SOOP이 오는 10월 7일 디플러스 기아(DK)의 '월즈 2026' 출정식을 현장과 온라인으로 생중계한다. 출정식 현장은 선수단 소감 발표, 유니폼 최초 공개 및 런웨이, 미니게임과 Q&A 등 팬 소통 프로그램으로 구성된다. **현장에는 DK 멤버십 b.stage Shop 내 티켓 구매자와 SOOP 방송국 구독자 중 초청된 인원을 포함해 총 200명의 팬이 참여한다.** 현장에 참석하지 못하는 팬들은 SOOP DK 공식 방송국 생중계를 통해 실시간으로 함께할 수 있다.",
+   "reason": "고객사 디플러스 기아의 비스테이지 숍 티켓 활용 언급",
+   "tags": [
+    "동일 보도 5건"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 5
+  },
+  {
+   "id": "1bdf2cc8f969",
+   "title": "자사주 취득·소각에 신사업도...디어유, 물 들어올 때 노 젓기 [엔터코...",
+   "url": "https://news.mtn.co.kr/news-detail/2026093010134243213",
+   "press": "MTN",
+   "pub_date": "2026-10-02T11:10:00+09:00",
+   "date_label": "26.10.02",
+   "section": "fandom_music",
+   "subsection": "fan_platform",
+   "importance": 4,
+   "kind": "trend",
+   "must_include": false,
+   "summary": "디어유가 150억 원 규모의 자기주식취득 신탁계약을 체결하고 전량 소각을 결정하며 기업가치 제고에 나섰다. 디어유는 올 2분기 매출 233억 원, 영업이익 94억 원으로 호실적을 기록했으며, 720명 이상의 IP와 평균 197만 명의 구독자를 확보한 '버블'이 핵심 수익원으로 자리 잡았다. 회사는 웹 결제(PG) 전환 및 구독권 가격 인상으로 수익성을 강화한 데 이어 지난 3월 잡화, 화장품, 식품 유통, 캐릭터 개발 등 17개 사업목적을 대거 추가했다. 확보된 슈퍼팬 풀을 활용해 구독 모델을 넘어 팬덤 커머스 및 콘텐츠 영역으로 사업을 확장하려는 전략으로 풀이된다.",
+   "reason": "경쟁사 디어유의 실적 및 MD/콘텐츠 신사업 전략 분석",
+   "tags": [],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "35fb33980b27",
+   "title": "The Game’s Label Sues UMG for Under-Promoting His 2022 Album: ‘Diminished Commercial Performance’",
+   "url": "https://www.billboard.com/pro/the-game-lawsuit-umg-under-promoting-2022-album/",
+   "press": "Billboard",
+   "pub_date": "2026-10-02T10:22:31+09:00",
+   "date_label": "26.10.02",
+   "section": "fandom_music",
+   "subsection": "global_music",
+   "importance": 3,
+   "kind": "news",
+   "must_include": false,
+   "summary": "래퍼 더 게임(The Game)의 독립 레이블 100 엔터테인먼트가 유니버설 뮤직 그룹(UMG)과 산하 버진 뮤직 그룹을 상대로 계약 위반 소송을 제기했다. 100 엔터테인먼트는 2022년 발매된 앨범 'Drillmatic'의 독점 유통 계약 당시 UMG가 약속했던 50만 달러의 마케팅 예산 중 17만 9000달러만 집행했다고 주장했다. 레이블 측은 프로모션 부족으로 앨범의 상업적 성과가 저하되어 스트리밍 및 판매 수익 손실을 입었다며 50만 달러 이상의 손해배상을 요구했다. UMG와 버진 측은 앞선 커뮤니케이션에서 계약 위반 사실을 부인한 것으로 알려졌다. 이는 주요 글로벌 음반 유통사의 인디 레이블 마케팅 이행 의무와 유통 계약 분쟁 사례를 보여주는 움직임으로 볼 수 있다.",
+   "reason": "글로벌 대형 배급사 UMG의 마케팅 소송",
+   "tags": [
+    "영문"
+   ],
+   "series": null,
+   "lang": "en",
+   "cluster_size": 1
+  },
+  {
+   "id": "68df9f9dc211",
+   "title": "AI 작곡·보컬 노래가 결국 음원차트 1위가 됐다 ①",
+   "url": "https://isplus.com/article/view/isp202610020003",
+   "press": "일간스포츠",
+   "pub_date": "2026-10-03T06:00:00+09:00",
+   "date_label": "26.10.03",
+   "section": "fandom_music",
+   "subsection": "music_ai_rights",
+   "importance": 4,
+   "kind": "trend",
+   "must_include": false,
+   "summary": "생성형 AI 수노(Suno)로 제작된 머무르의 '꿈꾸던 어른이 되었나요?'가 유튜브 쇼츠 등 SNS 배경음악 인기를 타고 벅스 실시간 차트 1위, 멜론 톱 100 29위까지 오르며 음원 플랫폼 내 AI 음악 이슈가 수면 위로 떠올랐다. 대중적 공감 댓글이 쏟아지는 반면, 음원차트 댓글 창에서는 기존 창작물 학습에 대한 반감과 AI 음원 필터링 및 표기 의무화, AI 전용 차트 신설 필요성을 요구하는 목소리가 이어졌다. 업계에 따르면 텐센트뮤직의 신규 등록 곡 중 AI 음악 비중이 올해 상반기 44.1%에 달하는 등 AI 음악의 유입은 급증하는 추세다. 음원 플랫폼 관계자는 플랫폼 자체 규정보다는 신탁단체나 정부의 AI 창작물 분류 기준 및 가이드라인 확립이 선행돼야 하며 등록 표기 기준을 논의 중이라고 밝혔다. 기성 제작 현장에서도 비용 절감과 리스크 없는 매니지먼트 대안으로 AI 음원 제작이 빠르게 늘어날 것으로 전망하고 있다.",
+   "reason": "AI 생성 음원의 차트 1위와 제도적 쟁점",
+   "tags": [],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "ac254ec99820",
+   "title": "플랫폼 사던 카카오엔터, 이제 IP에 집중...북미 사업 다시 짠다",
+   "url": "https://www.insight.co.kr/news/576283",
+   "press": "인사이트",
+   "pub_date": "2026-10-02T11:16:00+09:00",
+   "date_label": "26.10.02",
+   "section": "ent_content",
+   "subsection": "ent_biz",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "카카오엔터테인먼트가 북미 웹소설 플랫폼 우시아월드를 창업자에게 매각하고, 웹툰 플랫폼 타파스 서비스를 2027년 중 종료하며 북미 사업 체질 개선에 나섰다. 플랫폼 직접 운영 부담을 줄이는 대신 웹툰·웹소설 지식재산권(IP)의 유통과 드라마·게임 등 2차 창작 사업에 주력한다는 방침이다. 북미 오리지널 IP인 '끝이 아닌 시작'은 글로벌 애니메이션으로 제작 유통되며 가시적 성과를 거둔 바 있다. 국내에서는 카카오페이지와 카카오웹툰을 통합해 1만6000여 개 IP와 이용자 데이터를 결집하고, 카카오픽코마와의 글로벌 시너지를 도모할 계획이다.",
+   "reason": "카카오엔터 북미 플랫폼 매각 및 IP 사업 재편",
+   "tags": [],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "0f175d5f095a",
+   "title": "카카오엔터 '템빨', TV 애니메이션 나온다…한일 동시 방영",
+   "url": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=492165",
+   "press": "핀포인트뉴스",
+   "pub_date": "2026-10-02T10:04:00+09:00",
+   "date_label": "26.10.02",
+   "section": "ent_content",
+   "subsection": "ent_biz",
+   "importance": 3,
+   "kind": "news",
+   "must_include": false,
+   "summary": "카카오엔터테인먼트의 대표 지식재산권(IP) ‘템빨’이 TV 애니메이션으로 제작돼 2일부터 한국과 일본에서 동시 방영된다. 웹소설과 웹툰을 합쳐 국내 누적 조회수 약 13억회를 기록한 판타지 작품으로, 일본 애니메이션 스튜디오 J.C.STAFF가 총 12화 규모로 제작을 맡았다. 국내에서는 애니플러스와 애니맥스, 라프텔, 넷플릭스 등에서 방영되며 일본에서는 TOKYO MX 등에서 방영된다. 아울러 원작 IP를 기반으로 한 넥슨의 신작 MMORPG ‘템빨: 오버기어드’도 연내 한국과 중화권 지역에 PC·모바일 크로스플랫폼으로 출시될 예정이다. 카카오엔터 측은 작품 자체의 힘과 팬덤을 입증한 스토리를 바탕으로 다양한 콘텐츠 확장을 이어가며 IP 비즈니스 경쟁력을 넓혀가겠다고 밝혔다.",
+   "reason": "카카오엔터 웹툰 IP 애니·게임 확장",
+   "tags": [],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "98cb7102e069",
+   "title": "드림에이지, 게임사 본연 ‘코어’ 힘으로 글로벌 확장 가속",
+   "url": "https://www.fntimes.com/html/view.php?ud=2026100213565936697492587736_18",
+   "press": "한국금융신문",
+   "pub_date": "2026-10-02T14:16:00+09:00",
+   "date_label": "26.10.02",
+   "section": "ent_content",
+   "subsection": "ent_biz",
+   "importance": 3,
+   "kind": "news",
+   "must_include": false,
+   "summary": "하이브의 게임 사업 법인 드림에이지가 기존 모회사의 아티스트 팬덤 의존형 캐주얼 게임에서 벗어나 코어 게임 IP 중심의 글로벌 확장 전략으로 체질을 개선하고 있다. 최근 출시한 대형 MMORPG '아키텍트'는 대만, 홍콩, 필리핀 등 아시아 주요국 앱마켓 상위권에 안착하며 코어 유저 결집에 성공했다. 또한 차기작인 PvP 액션 RPG '알케론' 퍼블리싱과 함께 대규모 개발 인력 채용을 통한 자체 코어 IP 발굴에 속도를 내고 있다. 이는 단순 엔터 IP 연계 수준을 넘어 독자적 IP 자산을 축적해 수익성과 기업 가치를 극대화하려는 전략적 행보로 풀이된다.",
+   "reason": "하이브 게임 자회사의 IP 전략 변화 분석",
+   "tags": [],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "13b53c4fad1d",
+   "title": "[강대호의 대중문화 읽기] '팬덤만 소비하는 장르' 트로트가 놓치고 있...",
+   "url": "http://www.opinionnews.co.kr/news/articleView.html?idxno=145190",
+   "press": "오피니언뉴스",
+   "pub_date": "2026-10-03T09:30:00+09:00",
+   "date_label": "26.10.03",
+   "section": "ent_content",
+   "subsection": "ent_market",
+   "importance": 3,
+   "kind": "column",
+   "must_include": false,
+   "summary": "트로트 장르가 K-POP 아이돌 산업 구조와 팬덤 문화를 흡수하면서 지상파 음악방송 1위를 달성하고 있지만 음원 차트 성적과는 괴리를 보이고 있다. 임영웅과 영탁 등이 지상파 1위를 차지했음에도 멜론 등 주요 음원 플랫폼 종합 차트에서는 일부 곡을 제외하고 존재감이 미미해 '팬덤만 소비하는 장르'로 고립되고 있다는 분석이다. 반면 걸그룹 리센느 멤버 제나가 유튜브에 공개한 트로트 메들리 영상이 1400만 뷰를 넘어서며 원곡 역주행을 이끈 사례는 대중이 기교보다 보편적인 음악적 재미를 원하고 있음을 보여준다. 트로트 시장이 팬덤의 음반 구매와 스트리밍 화력에 의존하는 유토피아를 넘어 대중적 보편성을 확보해야 한다는 지적이 나온다.",
+   "reason": "트로트 장르의 팬덤 소비 쏠림 현상 분석",
+   "tags": [],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "eafafd01b087",
+   "title": "플로어도 남은 아일릿 공연…연속 흥행에 섣부른 무대 확장 [가요 뷰]",
+   "url": "https://www.dailian.co.kr/news/view/1697051/?sc=Naver",
+   "press": "데일리안",
+   "pub_date": "2026-10-02T11:08:00+09:00",
+   "date_label": "26.10.02",
+   "section": "ent_content",
+   "subsection": "live_ticket",
+   "importance": 4,
+   "kind": "trend",
+   "must_include": false,
+   "summary": "그룹 아일릿이 첫 서울 공연 매진 이후 무대를 인천 인스파이어 아레나로 넓혔으나, 상층부뿐만 아니라 플로어석조차 3분의 1가량 비어 있어 예매 한도를 1인 1매에서 2매로 완화했다. 4월 발매한 앨범 초동 41만 장 및 멜론 차트 1위 등의 음원 성과에도 불구하고, 고가 티켓 정책과 원거리 이동 부담이 관객 유입의 장벽으로 작용했다는 분석이다. 이번 공연 일반석은 16만 5000원, 밋앤그릿 포함 좌석은 25만 3000원으로 신인 그룹 대비 상한선에 위치하며, 영종도 아레나의 까다로운 접근성과 멤버 모카의 공백도 악재로 작용했다. 업계 관계자들은 음원 차트 흥행과 음반 판매량이 오프라인 티켓 구매 수요로 직결되지 않는 만큼, 공연장 규모와 가격 책정에 신중한 기획이 선행되어야 한다고 지적했다.",
+   "reason": "공연 티켓 가격 및 모객 수요 분석 기획",
+   "tags": [],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "ba605b251f2c",
+   "title": "'걸리면 징역' 중국부터 '되팔이' 허용한 뉴욕까지…암표관리 살펴보니",
+   "url": "https://www.mt.co.kr/culture/2026/10/03/2026093014452053709",
+   "press": "머니투데이",
+   "pub_date": "2026-10-03T07:00:00+09:00",
+   "date_label": "26.10.03",
+   "section": "ent_content",
+   "subsection": "live_ticket",
+   "importance": 4,
+   "kind": "trend",
+   "must_include": false,
+   "summary": "한국대중음악공연산업협회의 해외 암표 규제 비교 보고서에 따르면 세계 각국이 실명제, 형사처벌, 리셀 상한제 등을 통해 공연 티켓 암표 문제에 대응하고 있다. 대만은 실명제를 적용하고 액면가 초과 판매 시 최대 50배의 벌금과 매크로 구매에 대해 최대 3년 징역을 부과하며 정부 차원의 신고 사이트를 운영한다. 중국은 5000명 이상 대형 공연에 '1인 1증 1표'를 도입하고 현장 신분증 검사를 진행하며, 일본은 공식 정가 거래 플랫폼 외 불법 전매에 대해 형사처벌을 규정하고 있다. 영국은 리셀 플랫폼에 서비스 이용료 수준 외 프리미엄 금지와 모니터링 의무를 부과하고, 축구 경기의 경우 비공인 재판매를 범죄로 강력 처벌한다. 반면 미국은 연방법 차원에서 매크로만 금지하며 텍사스와 뉴욕 등 일부 주에서는 리셀 플랫폼의 영업 자유를 인정해 가격 상한 없는 재판매를 허용하고 있다.",
+   "reason": "해외 주요국의 공연 티켓 암표 규제 비교",
+   "tags": [],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  }
+ ],
+ "excluded": [
+  {
+   "title": "SOOP, 디플러스 기아와 '월즈 2026' 출정식 10월 7일 개최",
+   "url": "https://www.thisisgame.com/articles/430607",
+   "press": "",
+   "pub_date": "2026-10-02T14:23:00+09:00",
+   "stage": "1차",
+   "reason": "중복 기사",
+   "section": "fandom_music"
+  },
+  {
+   "title": "디플러스 기아, 잠실 DN 콜로세움서 '월즈 2026' 출사표",
+   "url": "https://www.gamechosun.co.kr/webzine/article/view.php?no=225932",
+   "press": "",
+   "pub_date": "2026-10-02T11:22:00+09:00",
+   "stage": "1차",
+   "reason": "중복 기사",
+   "section": "fandom_music"
+  },
+  {
+   "title": "최대 100연속 무료 뽑기…WFS ‘헤븐 번즈 레드’ ‘엔젤 비츠!’ 콜라보...",
+   "url": "https://www.gamechosun.co.kr/webzine/article/view.php?no=225975",
+   "press": "",
+   "pub_date": "2026-10-02T20:44:00+09:00",
+   "stage": "1차",
+   "reason": "단순 게임 이벤트",
+   "section": "own"
+  },
+  {
+   "title": "NCT 태용, 해질녘 산자락에서 보낸 휴식…새 정규 'WYLD' 이후 여유",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16235454",
+   "press": "",
+   "pub_date": "2026-10-02T22:20:00+09:00",
+   "stage": "1차",
+   "reason": "아티스트 개인 활동 단신",
+   "section": "fandom_music"
+  },
+  {
+   "title": "아이들 소연, '퇴사할게여'도 통했다..\"정말 낭만적인 활동\" 음방 첫 1위",
+   "url": "https://www.starnewskorea.com/music/2026/10/02/2026100216540951280",
+   "press": "",
+   "pub_date": "2026-10-02T17:17:00+09:00",
+   "stage": "1차",
+   "reason": "중복 기사",
+   "section": "fandom_music"
+  },
+  {
+   "title": "메가MGC커피, 4500호점 달성…매장당 매출 3년 전 대비 약 18% 증가",
+   "url": "http://www.sisacast.kr/news/articleView.html?idxno=100641",
+   "press": "",
+   "pub_date": "2026-10-02T09:58:00+09:00",
+   "stage": "1차",
+   "reason": "중복 기사",
+   "section": "ent_content"
+  },
+  {
+   "title": "'EWC' 이어 '월즈' 우승 노린다... 디플러스 기아 '월즈' 출정식 7일 진행",
+   "url": "https://gamefocus.co.kr/detail.php?number=179551",
+   "press": "",
+   "pub_date": "2026-10-02T11:10:00+09:00",
+   "stage": "1차",
+   "reason": "중복 기사",
+   "section": "ent_content"
+  },
+  {
+   "title": "[오늘의 게임·IT 소식] 비댁스, KRW1·USDC 온체인 FX 시연 外",
+   "url": "https://dealsite.co.kr/articles/170050",
+   "press": "",
+   "pub_date": "2026-10-02T11:34:00+09:00",
+   "stage": "1차",
+   "reason": "중복 기사",
+   "section": "ent_content"
+  },
+  {
+   "title": "엔터테인먼트 상장기업 2026년 10월 브랜드평판...하이브, 카카오, JYP 順",
+   "url": "https://www.energy-news.co.kr/news/articleView.html?idxno=228736",
+   "press": "",
+   "pub_date": "2026-10-02T12:18:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "'트릭컬 리바이브', 한국 매출 3위 등극 \"최고기록 또 경신\"",
+   "url": "https://www.gamevu.co.kr/news/articleView.html?idxno=61170",
+   "press": "",
+   "pub_date": "2026-10-02T12:20:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "[유통레이더] 일동후디스, CJ온스타일, 롯데리아, 롯데마트, 쿠팡, 신세...",
+   "url": "https://daily.hankooki.com/news/articleView.html?idxno=1411629",
+   "press": "",
+   "pub_date": "2026-10-02T13:02:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "캣츠아이, 'Hootie Frutti' 브라질 펑크 리믹스로 글로벌 흥행 잇는다",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16234160",
+   "press": "",
+   "pub_date": "2026-10-02T13:14:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "거래소 신종증권시장은 미뤄졌는데…토큰증권 하위법규는 입법예고",
+   "url": "http://www.dailypop.kr/news/articleView.html?idxno=103051",
+   "press": "",
+   "pub_date": "2026-10-02T13:20:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "'팬 채팅' 버블 시작한 이광수, 아침 7시부터 깨워 \"얘들아 일어나라\"",
+   "url": "https://www.insight.co.kr/news/576318",
+   "press": "",
+   "pub_date": "2026-10-02T13:36:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "[가수 브랜드 리포트] 임영웅, '또또'에서 전곡으로 번진 소비",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16234228",
+   "press": "",
+   "pub_date": "2026-10-02T13:36:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "아일릿 'Magnetic', 日 3억 스트리밍 돌파…해외 여성 아티스트 최단",
+   "url": "https://www.slist.kr/news/articleView.html?idxno=770594",
+   "press": "",
+   "pub_date": "2026-10-02T13:38:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "아일릿, 놀라운 日 인기! '마그네틱' 트리플 플래티넘 획득 \"해외 女가수...",
+   "url": "https://www.sportschosun.com/entertainment/2026-10-02/202610020100014900000699",
+   "press": "",
+   "pub_date": "2026-10-02T13:45:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "[가수 브랜드 리포트] 김희재, '안녕은 정말 싫어' 춤으로 번졌다",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16234247",
+   "press": "",
+   "pub_date": "2026-10-02T13:52:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "[이 주의 책]질주하는 세계 外",
+   "url": "https://view.asiae.co.kr/article/2026100113462531126",
+   "press": "",
+   "pub_date": "2026-10-02T13:58:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "캣츠아이 ‘후티 프루티’, 브라질 펑크로 재탄생",
+   "url": "https://www.bntnews.co.kr/article/view/bnt202610020221",
+   "press": "",
+   "pub_date": "2026-10-02T13:58:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "아일릿 '마그네틱', 일본서 3억 스트리밍 달성…해외 女 아티스트 중 최...",
+   "url": "https://www.mydaily.co.kr/page/view/2026100213525993442",
+   "press": "",
+   "pub_date": "2026-10-02T13:58:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "폭풍오열 하차 2년만…데이식스 영케이 ‘키스더라디오’ DJ 컴백",
+   "url": "https://www.newsen.com/news_view.php?uid=202610021340080410",
+   "press": "",
+   "pub_date": "2026-10-02T13:58:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "아이유 인성 증명 \"프로모션 아쉬움 다 제 책임\"",
+   "url": "https://www.mediafine.co.kr/news/articleView.html?idxno=91468",
+   "press": "",
+   "pub_date": "2026-10-02T14:02:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "카카오엔터 인기 IP '템빨', 한·일 동시 애니메이션 방영",
+   "url": "https://news.bbsi.co.kr/news/articleView.html?idxno=4110055",
+   "press": "",
+   "pub_date": "2026-10-02T14:10:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "사운드나루, 콜라보 뮤직비디오 제작 다큐 공개...한일 인디 뮤지션 ‘...",
+   "url": "http://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202610020079&t=NN",
+   "press": "",
+   "pub_date": "2026-10-02T14:20:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "[가수 브랜드 리포트] 방탄소년단, 'SWIM' 넘어 앨범으로 번진 소비",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16234294",
+   "press": "",
+   "pub_date": "2026-10-02T14:24:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "추석 암표 35건 수사의뢰·회원 8명 강제탈퇴…생성형AI 위조 적발",
+   "url": "https://www.yna.co.kr/view/AKR20261002114300063?input=1195m",
+   "press": "",
+   "pub_date": "2026-10-02T14:53:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "티빙, AWS와 클라우드 보안 체계 강화",
+   "url": "https://www.sedaily.com/article/20097516?ref=naver",
+   "press": "",
+   "pub_date": "2026-10-02T11:23:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "상상인증권 \"YG엔터테인먼트 목표주가 상향, 베이비몬스터가 실적 견인...",
+   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=448504",
+   "press": "",
+   "pub_date": "2026-10-02T10:58:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "유재석 사칭 AI 유튜브 채널 등장…커지는 AI 사칭 계정에 연예인들 ‘...",
+   "url": "https://www.newsen.com/news_view.php?uid=202610021759182610",
+   "press": "",
+   "pub_date": "2026-10-03T06:04:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "[2026 국감-IT] 티빙 최주희, 6일·13일 연달아 증인대…윤상현 제외",
+   "url": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5068240",
+   "press": "",
+   "pub_date": "2026-10-03T07:10:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "3954만 계정 털린 티빙, 국감서 답할 질문 무엇무엇 [엔터코노미]",
+   "url": "https://news.mtn.co.kr/news-detail/2026100213273019926",
+   "press": "",
+   "pub_date": "2026-10-03T09:04:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "방탄소년단, 콜롬비아 첫 완전체 공연에…보고타 들썩였다 '명예 외빈'...",
+   "url": "https://www.xportsnews.com/article/2203263",
+   "press": "",
+   "pub_date": "2026-10-02T09:48:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "BTS, 보고타 ‘명예 외빈’ 됐다…콘서트 경제효과 400억 원 전망",
+   "url": "https://www.sedaily.com/article/20097702?ref=naver",
+   "press": "",
+   "pub_date": "2026-10-03T07:01:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "유튜브 광고 보는 데도 내 데이터 쓴다…'광고 데이터' 공개 추진",
+   "url": "https://www.newsis.com/view/NISX20261002_0003812594",
+   "press": "",
+   "pub_date": "2026-10-02T14:24:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "한국앤컴퍼니그룹 레이싱 다큐멘터리 더 퍼스트 4 공개",
+   "url": "https://www.newsclaim.co.kr/news/articleView.html?idxno=3077236",
+   "press": "",
+   "pub_date": "2026-10-02T10:50:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "GF코퍼레이션 \"빈그룹 계열 VEC와 손잡고 베트남 K팝 공연시장 공략\"",
+   "url": "https://www.fnnews.com/news/202610021605202569",
+   "press": "",
+   "pub_date": "2026-10-02T17:05:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "BTS 보러 국경 넘는다…보고타, 406억 관광 소비 기대에 '들썩'",
+   "url": "https://www.tenasia.co.kr/article/2026100294654",
+   "press": "",
+   "pub_date": "2026-10-02T09:30:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "와이지엔터, 베이비몬스터 덕분에 목표주가 6만3000원으로",
+   "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=278470",
+   "press": "",
+   "pub_date": "2026-10-02T09:32:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "이세돌 vs 이세계아이돌, 두 번째 맞대결 성사…1대5 구도에 '흑막' 추리...",
+   "url": "https://www.xportsnews.com/article/2203213",
+   "press": "",
+   "pub_date": "2026-10-02T09:36:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "갤럭시코퍼레이션, 'GD 회사' 넘어 美 증시로… 최용호 \"로봇서 이미 수...",
+   "url": "https://www.greened.kr/news/articleView.html?idxno=351292",
+   "press": "",
+   "pub_date": "2026-10-02T09:38:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "[월드IT뷰] 구글, AI 브레이크 논쟁 한복판에 신모델 '투척'…TPU 수요엔...",
+   "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=855400",
+   "press": "",
+   "pub_date": "2026-10-02T09:58:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "포테이토넷, FIX 2026서 악성 URL 탐지 플랫폼 '올빼미' 선보여… \"딥웹...",
+   "url": "https://kr.aving.net/news/articleView.html?idxno=1814983",
+   "press": "",
+   "pub_date": "2026-10-02T10:20:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "캘리포니아주, 스마트글라스 촬영 규제법 거부…산업용 AR 확산 주목",
+   "url": "https://www.chosun.com/economy/tech_it/2026/10/02/VCLSWZR4CNBY7GRSUNCWKD5UVQ/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+   "press": "",
+   "pub_date": "2026-10-02T10:34:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "프론티어 모델의 그늘에서 벗어나는 로컬 LLM…올라마 완전 정복",
+   "url": "https://www.itworld.co.kr/article/4229879/프론티어-모델의-그늘에서-벗어나는-로컬-llm-올라마.html",
+   "press": "",
+   "pub_date": "2026-10-02T11:46:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "앤트로픽 2025년 순손실 420억 달러…구글·아마존 투자 평가액 급등이...",
+   "url": "https://www.itdaily.kr/news/articleView.html?idxno=241982",
+   "press": "",
+   "pub_date": "2026-10-02T11:54:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "에버퓨어, 대규모 AI 운영 위한 새로운 데이터 관리 기능 발표",
+   "url": "https://byline.network/?p=9004111222622131",
+   "press": "",
+   "pub_date": "2026-10-02T13:12:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "“앤트로픽 11월 상장 추진”…지분투자·사업협력 SKT에 시선",
+   "url": "https://www.asiatoday.co.kr/kn/view.php?key=20261002010000635",
+   "press": "",
+   "pub_date": "2026-10-02T13:36:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "AI 모델 공개 이후 성능 변했나…추적 벤치마크 '리브너프' 등장",
+   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=704653",
+   "press": "",
+   "pub_date": "2026-10-02T14:04:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "英 바클레이스, 전사에 클로드 확대…\"운영 효율성 향상 및 고객 경험 개...",
+   "url": "https://www.aitimes.kr/news/articleView.html?idxno=42171",
+   "press": "",
+   "pub_date": "2026-10-02T14:10:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "다음 달 드디어 나온다…삼성 첫 스마트 안경 11월 출시 전망",
+   "url": "https://kbench.com/?q=node/282323",
+   "press": "",
+   "pub_date": "2026-10-02T14:14:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "크몽, AI로 코드는 만들었는데 출시는 막혔다…‘바이브코딩 후속 개발...",
+   "url": "https://www.venturesquare.net/1117623/",
+   "press": "",
+   "pub_date": "2026-10-02T14:22:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "50팀 모집에 147팀 몰렸다…대구 ‘피지컬 AI 챌린지’ 흥행",
+   "url": "https://www.kbmaeil.com/article/20261002500170",
+   "press": "",
+   "pub_date": "2026-10-02T14:34:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "\"커머스·금융 마케팅의 늪, 네이버는 과연 위기를 기회로 바꿀까\"",
+   "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=302003",
+   "press": "",
+   "pub_date": "2026-10-02T14:38:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "​GF코퍼레이션, 베트남 VEC와 맞손…K팝 상설 인프라 구축",
+   "url": "https://enter.etoday.co.kr/news/view/303197",
+   "press": "",
+   "pub_date": "2026-10-02T10:02:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "방탄소년단 방문에 콜롬비아 ‘들썩’… 공연 경제효과 406억원 전망",
+   "url": "https://www.bntnews.co.kr/article/view/bnt202610020172",
+   "press": "",
+   "pub_date": "2026-10-02T10:08:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "fandom_music"
+  },
+  {
+   "title": "진선미 “심의 숏폼 70.9%가 중국산…청불 심의 인력 턱없이 부족”",
+   "url": "https://www.betanews.net/article/view/beta202610020023",
+   "press": "",
+   "pub_date": "2026-10-02T10:12:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "폴라리스오피스, AI 클라우드 빅테크 참가…에이전트 친화형 SaaS 전략 발...",
+   "url": "https://www.newsis.com/view/NISX20261002_0003812064",
+   "press": "",
+   "pub_date": "2026-10-02T10:06:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "로민, CSAP 표준등급 획득…\"공공 문서 업무에 다큐먼트 AI SaaS 공급 본격...",
+   "url": "https://www.epnc.co.kr/news/articleView.html?idxno=407750",
+   "press": "",
+   "pub_date": "2026-10-02T14:46:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "폴라리스오피스, 'AI가 일하는 SaaS' 전략 구체화…공공·기업 시장 공략",
+   "url": "https://view.asiae.co.kr/article/2026100209551194025",
+   "press": "",
+   "pub_date": "2026-10-02T09:55:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "로민, 'CSAP 표준등급' 획득 ··· 공공 다큐먼트 AI SaaS 시장 정조준",
+   "url": "https://www.datanet.co.kr/news/articleView.html?idxno=214879",
+   "press": "",
+   "pub_date": "2026-10-02T15:06:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "“AI로 만든 음악, 유튜브 플레이리스트로 올려도 될까?”…사이클해커...",
+   "url": "https://www.gosiweek.com/article/1065573853362716",
+   "press": "",
+   "pub_date": "2026-10-02T09:46:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "DK 월즈 유니폼 첫선 SOOP이 출정 순간 생중계로 전한다",
+   "url": "https://www.econovill.com/news/articleView.html?idxno=752582",
+   "press": "ER 이코노믹리뷰",
+   "pub_date": "2026-10-02T10:46:00+09:00",
+   "stage": "2차",
+   "reason": "디플러스 기아 출정식 동일 보도 중복 건",
+   "section": "own"
+  },
+  {
+   "title": "아이들 소연 '퇴사할게여', 음원 차트 이어 음방도 1위",
+   "url": "https://enter.etoday.co.kr/news/view/303210",
+   "press": "이투데이",
+   "pub_date": "2026-10-02T15:20:00+09:00",
+   "stage": "2차",
+   "reason": "단순 음원 차트 1위 및 아티스트 활동 단신",
+   "section": "fandom_music"
+  },
+  {
+   "title": "롤 디플러스 기아 월즈 출정식, DN 콜로세움서 열린다",
+   "url": "https://www.gamemeca.com/mv.php?inflow=naver_s&gid=1781280",
+   "press": "Game_Meca",
+   "pub_date": "2026-10-02T10:25:00+09:00",
+   "stage": "2차",
+   "reason": "디플러스 기아 출정식 동일 보도 중복 건",
+   "section": "ent_content"
+  },
+  {
+   "title": "[안용범 교수의 뮤직 핫플] BTS의 아리랑 앨범의 세계관과 의미 / 그들은...",
+   "url": "http://topclass.chosun.com/news/articleView.html?idxno=36873",
+   "press": "조선일보",
+   "pub_date": "2026-10-02T10:04:00+09:00",
+   "stage": "2차",
+   "reason": "단순 앨범 해설 및 아티스트 세계관 칼럼",
+   "section": "fandom_music"
+  },
+  {
+   "title": "임영웅 1위, 이찬원 934점 차 추격 안성훈 박서진 345점 접전 (39주차 빅...",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16233816",
+   "press": "톱스타뉴스",
+   "pub_date": "2026-10-02T10:48:00+09:00",
+   "stage": "2차",
+   "reason": "단순 연예인 빅데이터 순위 나열 단신",
+   "section": "fandom_music"
+  },
+  {
+   "title": "앳하트, K팝 세계관 OTT로 확장…드라마 '3+4!' 미드폼 공개",
+   "url": "https://www.fnnews.com/news/202610021102081600",
+   "press": "파이낸셜뉴스",
+   "pub_date": "2026-10-02T11:05:00+09:00",
+   "stage": "2차",
+   "reason": "AI 판정 못 함(한도·오류)",
+   "section": "ent_content"
+  },
+  {
+   "title": "홈마 사진으로 포카·굿즈 만들면 처벌될까…직캠·티켓까지 권리 총정...",
+   "url": "https://lawtalknews.co.kr/article/VVUJLDZ1IWUC",
+   "press": "로톡뉴스",
+   "pub_date": "2026-10-02T11:26:00+09:00",
+   "stage": "2차",
+   "reason": "AI 판정 못 함(한도·오류)",
+   "section": "ent_content"
+  },
+  {
+   "title": "검증된 IP에 '새로운 즐거움' 더한다...네이버시리즈·카카오엔터, 인기...",
+   "url": "https://www.techm.kr/news/articleView.html?idxno=155801",
+   "press": "테크M",
+   "pub_date": "2026-10-02T12:40:00+09:00",
+   "stage": "2차",
+   "reason": "AI 판정 못 함(한도·오류)",
+   "section": "fandom_music"
+  },
+  {
+   "title": "조 마쉬 T1 대표 “e스포츠, 아시안게임서 빠진다면 잘못된 결정”",
+   "url": "https://www.etnews.com/20261002000136",
+   "press": "전자신문",
+   "pub_date": "2026-10-02T12:44:00+09:00",
+   "stage": "2차",
+   "reason": "AI 판정 못 함(한도·오류)",
+   "section": "ent_content"
+  },
+  {
+   "title": "[현장] 호요버스 5개 IP 한자리에…'호요랜드2026' 개막, 지스타 전 팬심...",
+   "url": "http://www.popcornnews.net/news/articleView.html?idxno=134827",
+   "press": "팝콘뉴스",
+   "pub_date": "2026-10-02T12:50:00+09:00",
+   "stage": "2차",
+   "reason": "AI 판정 못 함(한도·오류)",
+   "section": "fandom_music"
+  },
+  {
+   "title": "다시 도는 코넥스 상장 시계…모비콘텐츠테크, 예심 청구",
+   "url": "https://www.mk.co.kr/article/12167067",
+   "press": "매일경제",
+   "pub_date": "2026-10-02T13:59:00+09:00",
+   "stage": "2차",
+   "reason": "AI 판정 못 함(한도·오류)",
+   "section": "ent_content"
+  },
+  {
+   "title": "빅뱅·블랙핑크 이름 딴 숲 생겼다…멜론, ‘숲;트리밍’ 누적 25곳 조성",
+   "url": "https://biz.chosun.com/it-science/ict/2026/10/02/B7AVAI4WMFHXJLGP36HKLXLAFE/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+   "press": "조선비즈",
+   "pub_date": "2026-10-02T10:42:00+09:00",
+   "stage": "2차",
+   "reason": "음악 플랫폼의 단순 친환경 ESG 캠페인 소식",
+   "section": "fandom_music"
+  },
+  {
+   "title": "‘2026 KGMA’, 오늘 티켓 오픈… 고척돔 달굴 40팀 총출동",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=03073366645608984&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "press": "이데일리",
+   "pub_date": "2026-10-02T10:19:00+09:00",
+   "stage": "2차",
+   "reason": "시상식 일정 및 라인업 소개 단신",
+   "section": "fandom_music"
+  },
+  {
+   "title": "13억뷰 ‘템빨’, 애니메이션으로…2일부터 韓·日 동시 방영",
+   "url": "https://biz.chosun.com/it-science/ict/2026/10/02/MBAESAS6XZCILNC6R62KUPW3PQ/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+   "press": "조선비즈",
+   "pub_date": "2026-10-02T09:32:00+09:00",
+   "stage": "2차",
+   "reason": "개별 웹툰 IP의 애니메이션 방영 단신",
+   "section": "ent_content"
+  },
+  {
+   "title": "메가MGC커피, ‘밀양시청점’ 오픈으로 4500호점 돌파",
+   "url": "https://www.inthenews.co.kr/news/article.html?no=92638",
+   "press": "인더뉴스 인터넷신문",
+   "pub_date": "2026-10-02T09:52:00+09:00",
+   "stage": "2차",
+   "reason": "식음료 프랜차이즈 매장 확대 일반 홍보 기사",
+   "section": "ent_content"
+  },
+  {
+   "title": "이스타항공, 엔믹스와 공동 마케팅... 탑승권에 멤버 사진 적용",
+   "url": "https://www.e-science.co.kr/news/articleView.html?idxno=136580",
+   "press": "이코노미사이언스",
+   "pub_date": "2026-10-02T10:02:00+09:00",
+   "stage": "2차",
+   "reason": "AI 판정 못 함(한도·오류)",
+   "section": "ent_content"
+  },
+  {
+   "title": "덱스터픽쳐스, '너에게 다이브' 방영 첫 주 글로벌 흥행 청신호",
+   "url": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2476486",
+   "press": "이뉴스투데이",
+   "pub_date": "2026-10-02T10:20:00+09:00",
+   "stage": "2차",
+   "reason": "AI 판정 못 함(한도·오류)",
+   "section": "ent_content"
+  },
+  {
+   "title": "엔씨, 서브컬처 신작 '아스트라에 오라티오' 글로벌 CBT 돌입",
+   "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=86909",
+   "press": "인더스트리뉴스",
+   "pub_date": "2026-10-02T14:34:00+09:00",
+   "stage": "2차",
+   "reason": "AI 판정 못 함(한도·오류)",
+   "section": "ent_content"
+  },
+  {
+   "title": "엔믹스가 비행기에…이스타항공, 11월 ‘래핑 항공기’ 띄운다",
+   "url": "https://www.ddaily.co.kr/page/view/2026100209145260548",
+   "press": "디지털데일리",
+   "pub_date": "2026-10-02T09:31:00+09:00",
+   "stage": "2차",
+   "reason": "AI 판정 못 함(한도·오류)",
+   "section": "fandom_music"
+  },
+  {
+   "title": "멜론 '숲트리밍' 빅뱅·샤이니 등 이름 딴 숲 조성",
+   "url": "https://view.asiae.co.kr/article/2026100209452726623",
+   "press": "아시아경제",
+   "pub_date": "2026-10-02T09:45:00+09:00",
+   "stage": "2차",
+   "reason": "AI 판정 못 함(한도·오류)",
+   "section": "fandom_music"
+  },
+  {
+   "title": "이스타항공 탑승권에 ‘엔믹스’ 뜬다…11월엔 래핑 항공기도 운항",
+   "url": "https://biz.heraldcorp.com/article/10891403?ref=naver",
+   "press": "헤럴드경제",
+   "pub_date": "2026-10-02T09:52:00+09:00",
+   "stage": "2차",
+   "reason": "AI 판정 못 함(한도·오류)",
+   "section": "fandom_music"
+  },
+  {
+   "title": "제3회 KGMA, 오늘 티켓 예매 개시…11월 7·8일 고척돔 개최",
+   "url": "https://www.newsis.com/view/NISX20261002_0003811919",
+   "press": "뉴시스",
+   "pub_date": "2026-10-02T09:56:00+09:00",
+   "stage": "2차",
+   "reason": "단순 시상식 티켓 예매 일정 안내 단신",
+   "section": "fandom_music"
+  },
+  {
+   "title": "\"하루 몇 마디가 적당한건데\"… 이광수, 버블 입성 → 팬들과 티키타카...",
+   "url": "http://www.tvdaily.co.kr/read.php3?aid=17909031111804416002",
+   "press": "",
+   "pub_date": "2026-10-02T10:06:00+09:00",
+   "stage": "2차",
+   "reason": "연예인 버블 이용 에피소드 중심 기사",
+   "section": "fandom_music"
+  },
+  {
+   "title": "이광수, 버블 중독됐다…‘소통왕’ 탄생",
+   "url": "https://sports.khan.co.kr/article/202610021007003?pt=nv",
+   "press": "경향신문",
+   "pub_date": "2026-10-02T10:08:00+09:00",
+   "stage": "2차",
+   "reason": "연예인 개인의 버블 이용 화제 단신",
+   "section": "fandom_music"
+  },
+  {
+   "title": "이스타항공, 아이돌 그룹 '엔믹스'와 공동 마케팅 전개",
+   "url": "http://www.inews24.com/view/2011280",
+   "press": "아이뉴스24",
+   "pub_date": "2026-10-02T10:11:00+09:00",
+   "stage": "2차",
+   "reason": "기업과 아이돌의 단순 프로모션 제휴",
+   "section": "fandom_music"
+  },
+  {
+   "title": "“스벅, 긴장되네”...4500호점 낸 메가커피, 질주 시작됐다",
+   "url": "https://www.mk.co.kr/article/12166916",
+   "press": "매일경제",
+   "pub_date": "2026-10-02T10:22:00+09:00",
+   "stage": "2차",
+   "reason": "일반 프랜차이즈 출점 실적 기사",
+   "section": "fandom_music"
+  },
+  {
+   "title": "검색에 스트리밍·브라우저도… 네이버, AI·콘텐츠로 사용자 경험 혁신",
+   "url": "https://www.newscj.com/news/articleView.html?idxno=3437343",
+   "press": "천지일보",
+   "pub_date": "2026-10-02T10:44:00+09:00",
+   "stage": "2차",
+   "reason": "팬덤/음악 사업과 무관한 포털 기능 개편",
+   "section": "fandom_music"
+  },
+  {
+   "title": "아이덴티티, 11월 멕시코·칠레로 간다…LATAM 프로모션 일정 공개",
+   "url": "https://mhnse.com/news/articleView.html?idxno=1569327",
+   "press": "",
+   "pub_date": "2026-10-02T10:48:00+09:00",
+   "stage": "2차",
+   "reason": "단순 아티스트 해외 프로모션 및 투어 단신",
+   "section": "fandom_music"
+  },
+  {
+   "title": "이스타항공, '엔믹스' 래핑기 띄운다…탑승권·콘텐츠에도 이미지 적용",
+   "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=855429",
+   "press": "뉴스웍스",
+   "pub_date": "2026-10-02T11:04:00+09:00",
+   "stage": "2차",
+   "reason": "팬덤과 무관한 일반 항공사 마케팅 단신",
+   "section": "fandom_music"
+  },
+  {
+   "title": "그룹 앳하트, 드라마 주연까지…'3+4!' 미드폼 버전으로 세계관 확장",
+   "url": "https://www.thedailypost.kr/news/articleView.html?idxno=115986",
+   "press": "데일리포스트",
+   "pub_date": "2026-10-02T11:28:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 웹드라마 출연 관련 단순 홍보",
+   "section": "ent_content"
+  },
+  {
+   "title": "엔터테인먼트 상장기업 브랜드평판 10월 빅데이터 분석결과…1위 하이브...",
+   "url": "https://www.cbci.co.kr/news/articleView.html?idxno=611907",
+   "press": "CBC뉴스 | CBCNEWS",
+   "pub_date": "2026-10-02T11:32:00+09:00",
+   "stage": "2차",
+   "reason": "단순 브랜드평판 순위 나열 단신",
+   "section": "fandom_music"
+  }
+ ]
+}
