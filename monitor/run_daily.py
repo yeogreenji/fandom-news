@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import math
 import time
 import logging
 from concurrent.futures import ThreadPoolExecutor
@@ -173,27 +174,83 @@ def pick_for_review(items: list[dict], cap: int) -> tuple[list[dict], list[dict]
     return cands[:cap], cands[cap:]
 
 
-def run_review(items: list[dict], cfg: dict) -> None:
+def _chunks(xs: list, n: int):
+    for i in range(0, len(xs), n):
+        yield xs[i:i + n]
+
+
+def run_review(items: list[dict], cfg: dict) -> bool:
+    """본문 판정·요약. 오류로 판정을 못 받은 기사는 작은 묶음으로 한 번 더 시도한다.
+    반환값: AI 한도·시간 예산 소진 여부"""
+    todo = [it for it in items if not it.get("body_fetched")]
     with ThreadPoolExecutor(max_workers=8) as ex:
-        list(ex.map(fetch_article, items))
-    bs = cfg["review_batch_size"]
-    quota_out = False
-    for i in range(0, len(items), bs):
-        batch = items[i:i + bs]
-        res = {}
-        if not quota_out:
-            try:
-                res = llm.review_batch(batch, cfg["max_body_chars"])
-            except llm.QuotaExceeded as e:
-                log.error("AI 한도 소진(2차): %s", e)
-                quota_out = True
-            except Exception as e:
-                log.error("2차 판정 실패(%d건): %s", len(batch), e)
+        list(ex.map(fetch_article, todo))
+    for it in todo:
+        it["body_fetched"] = True
+    state = {"quota_out": False}
+
+    def ask(batch):
+        if state["quota_out"]:
+            return {}
+        try:
+            return llm.review_batch(batch, cfg["max_body_chars"])
+        except llm.QuotaExceeded as e:
+            log.error("AI 한도 소진(2차): %s", e)
+            state["quota_out"] = True
+        except Exception as e:
+            log.error("2차 판정 실패(%d건): %s", len(batch), e)
+        return {}
+
+    failed = []
+    for batch in _chunks(items, cfg["review_batch_size"]):
+        res = ask(batch)
         for it in batch:
-            r = res.get(it["id"])
-            if r is None and (quota_out or res == {}):
-                r = no_ai_review(it)
-            it["review"] = r
+            it["review"] = res.get(it["id"])
+            if it["review"] is None:
+                failed.append(it)
+    # 서버 과부하(503) 등으로 빠진 기사 재시도: 잠깐 쉬고 3건씩
+    if failed and not state["quota_out"]:
+        log.info("2차 판정 실패 %d건 재시도", len(failed))
+        time.sleep(20)
+        still = []
+        for batch in _chunks(failed, 3):
+            res = ask(batch)
+            for it in batch:
+                it["review"] = res.get(it["id"])
+                if it["review"] is None:
+                    still.append(it)
+        failed = still
+    for it in failed:
+        it["review"] = no_ai_review(it)
+    return state["quota_out"]
+
+
+def fix_short_summaries(items: list[dict], cfg: dict) -> int:
+    """요약이 기준보다 짧은 기사는 한 번 다시 쓰게 함(판정은 그대로, 요약만 교체)."""
+    min_chars = cfg.get("summary_min_chars", 300)
+    short = [it for it in items
+             if (r := it.get("review")) and r.get("keep") and not r.get("no_ai")
+             and it.get("body_ok") and r.get("kind") != "disclosure"
+             and len((r.get("summary") or "").strip()) < min_chars]
+    fixed = 0
+    for batch in _chunks(short, 3):
+        try:
+            res = llm.review_batch(batch, cfg["max_body_chars"],
+                                   note="앞서 쓴 요약이 기준보다 짧았다. keep·섹션·중요도 판단은 그대로 두고, "
+                                        "summary만 기준 8번 분량(일반 330~420자, 기획·칼럼·인터뷰 450~650자)에 맞춰 다시 쓴다.")
+        except llm.QuotaExceeded:
+            break
+        except Exception as e:
+            log.error("요약 보완 실패(%d건): %s", len(batch), e)
+            continue
+        for it in batch:
+            new = ((res.get(it["id"]) or {}).get("summary") or "").strip()
+            if len(new) > len((it["review"].get("summary") or "").strip()):
+                it["review"]["summary"] = new
+                fixed += 1
+    if short:
+        log.info("짧은 요약 %d건 중 %d건 보완", len(short), fixed)
+    return fixed
 
 
 def no_ai_review(it: dict) -> dict | None:
@@ -320,11 +377,26 @@ def main(argv=None):
             t = it["triage"]
             if t["decision"] == "exclude" and ("own" in it["section_hints"] or t.get("importance", 1) >= 3):
                 excluded.append(excluded_record(it, "1차", t.get("reason", "")))
-        excluded += [excluded_record(it, "1차", "검토 한도 초과") for it in overflow]
         log.info("1차 통과 %d건 (한도 초과 %d건)", len(to_review), len(overflow))
         llm.DEADLINE[0] = ai_start + budget           # 남은 시간은 본문 판정·요약에
         stats["triage_sec"] = round(time.time() - ai_start)
-        run_review(to_review, cfg)
+        quota_out = run_review(to_review, cfg)
+        # 게재 가능 건수가 상한보다 적으면 검토 대기(한도 초과) 기사를 이어서 검토
+        min_imp = cfg.get("min_importance", 3)
+        for rnd in range(cfg.get("backfill_rounds", 2)):
+            ok = sum(1 for it in to_review if (r := it.get("review")) and r.get("keep")
+                     and r.get("importance", 0) >= min_imp)
+            if quota_out or not overflow or ok >= cap:
+                break
+            n = min(len(overflow), max(6, math.ceil((cap - ok) * 1.5)))
+            more, overflow = overflow[:n], overflow[n:]
+            log.info("추가 검토 %d회차: 게재 가능 %d건 < 상한 %d건 → %d건 더 검토", rnd + 1, ok, cap, len(more))
+            quota_out = run_review(more, cfg)
+            to_review += more
+            stats["backfill"] = stats.get("backfill", 0) + len(more)
+        excluded += [excluded_record(it, "1차", "검토 한도 초과") for it in overflow]
+        if not quota_out:
+            stats["summary_fixed"] = fix_short_summaries(to_review, cfg)
         stats["ai_sec"] = round(time.time() - ai_start)
     else:
         to_review = []

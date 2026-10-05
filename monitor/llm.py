@@ -51,6 +51,10 @@ class QuotaExceeded(RuntimeError):
     """무료 한도 소진 — 남은 기사는 AI 없이 처리."""
 
 
+class ServerBusy(RuntimeError):
+    """모델 서버 과부하(5xx)가 계속됨 — 다른 모델로 넘겨서 시도."""
+
+
 # 실행 진단용 집계(결과 파일에 저장)
 STATS = {"calls": 0, "ok": 0, "parse_fail": 0, "rate_wait": 0, "quota_day": 0, "errors": []}
 
@@ -86,7 +90,7 @@ def call_json(task: str, guide: str, user: str, schema: dict, max_tokens: int) -
     # 지정 모델 → 한도가 바닥나면 다른 무료 모델로 넘어가며 시도
     order = [cfg["models"]["gemini"][task]] + cfg.get("gemini_fallback_models",
                                                       ["gemini-flash-lite-latest", "gemini-flash-latest"])
-    tried = []
+    tried, busy = [], False
     for model in order:
         if model in EXHAUSTED or model in tried:
             continue
@@ -100,6 +104,11 @@ def call_json(task: str, guide: str, user: str, schema: dict, max_tokens: int) -
             log.warning("모델 %s 오늘 한도 소진 → 다른 모델로 전환", model)
             EXHAUSTED.add(model)
             STATS.setdefault("exhausted", []).append(model)
+        except ServerBusy:
+            log.warning("모델 %s 서버 과부하 지속 → 다른 모델로 시도", model)
+            busy = True
+    if busy:
+        raise RuntimeError("모든 모델 서버 과부하(5xx) — 이 묶음은 나중에 다시 시도")
     raise QuotaExceeded("모든 무료 모델 한도 소진")
 
 
@@ -138,6 +147,7 @@ def _gemini(model: str, system: str, user: str, schema: dict, max_tokens: int) -
         "maxOutputTokens": min(max(max_tokens * 3, 8192), 32768),
         "temperature": 0.2,
     }
+    server_err = 0
     for attempt in range(4):
         if DEADLINE[0] and time.time() > DEADLINE[0]:
             raise QuotaExceeded("AI 처리 시간 예산 초과")
@@ -175,7 +185,10 @@ def _gemini(model: str, system: str, user: str, schema: dict, max_tokens: int) -
             continue
         if r.status_code >= 500:
             STATS["errors"].append(f"{r.status_code} 서버 오류")
-            time.sleep(10)
+            server_err += 1
+            if server_err >= 3:          # 같은 모델이 계속 과부하면 기다리지 말고 다른 모델로
+                raise ServerBusy(f"{model} {r.status_code}")
+            time.sleep(10 * 2 ** (server_err - 1))   # 10초 → 20초
             continue
         if r.status_code == 404 and model != "gemini-flash-latest":
             log.warning("모델 %s 없음 → gemini-flash-latest로 대체", model)
@@ -283,7 +296,7 @@ REVIEW_ITEM = {
         "press": {"type": "string", "description": "언론사명(한글 공식 표기, 영문 매체는 영문)"},
         "press_release_guess": {"type": "boolean", "description": "자사가 낸 보도자료 기사로 보이면 true"},
         "must_include": {"type": "boolean", "description": "하루 상한을 넘겨서라도 반드시 실어야 할 기사면 true (드물게)"},
-        "summary": {"type": "string", "description": "keep=true일 때만. 기준의 요약 작성 방식 준수"},
+        "summary": {"type": "string", "description": "keep=true일 때만. 일반 330~420자, 기획·칼럼·인터뷰 450~650자. 기준 8번 준수"},
     },
     "required": ["id", "keep", "reason", "section", "subsection", "importance", "kind", "press"],
 }
@@ -295,6 +308,7 @@ REVIEW_GUIDE = """[작업] 2차 판정. 기사마다 본문을 읽고 클리핑 
 - 엔터사 기사는 기업 이슈(실적·사업·투자·지배구조·플랫폼 전략)일 때만 포함한다.
 - 본문을 가져오지 못해 요약문만 있는 경우, 확인 가능한 범위에서만 요약하고 지어내지 않는다.
 - 요약은 줄바꿈 없이 한 단락. 입력된 모든 id에 대해 답한다.
+- 요약 분량은 기준 8번을 반드시 지킨다: 일반 기사 330~420자(7~9문장), 기획·분석·칼럼·인터뷰 450~650자(9~12문장). 짧게 끝내지 말고 본문의 배경·수치·발언·향후 계획까지 담는다. 지어내서 채우지는 않는다.
 - 사이트에는 하루치 기준 30건만 실리고(월요일·연휴 뒤는 더 많음), 중요도 3 미만은 싣지 않는다. importance를 엄격하게 매긴다:
   5 = 비마프·드림어스 사업에 직접 영향(자사 실질 기사, 경쟁 팬덤·음악 플랫폼의 주요 발표, 엔터사 실적·핵심 사업 전략)
   4 = 팬덤 플랫폼·음악 플랫폼·엔터 산업의 흐름을 보여주는 기획·분석 기사, 주요 플레이어의 의미 있는 사업 발표
@@ -305,7 +319,7 @@ REVIEW_GUIDE = """[작업] 2차 판정. 기사마다 본문을 읽고 클리핑 
 """ + SUB_DESC
 
 
-def review_batch(items: list[dict], max_chars: int, force: bool = False) -> dict[str, dict]:
+def review_batch(items: list[dict], max_chars: int, force: bool = False, note: str = "") -> dict[str, dict]:
     docs = []
     for it in items:
         docs.append({
@@ -318,7 +332,9 @@ def review_batch(items: list[dict], max_chars: int, force: bool = False) -> dict
     user = json.dumps(docs, ensure_ascii=False)
     if force:
         user += "\n※ 담당자가 직접 추가한 기사다. keep=true로 두고 요약을 작성한다."
-    out = call_json("review", REVIEW_GUIDE, user, REVIEW_SCHEMA, max_tokens=900 * len(items) + 500)
+    if note:
+        user += "\n※ " + note
+    out = call_json("review", REVIEW_GUIDE, user, REVIEW_SCHEMA, max_tokens=1400 * len(items) + 500)
     return {r["id"]: r for r in out.get("results", []) if "id" in r}
 
 
