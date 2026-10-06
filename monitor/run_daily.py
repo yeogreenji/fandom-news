@@ -262,7 +262,7 @@ def fix_summary_length(items: list[dict], cfg: dict) -> dict:
             f"id {it['id']}: 지금 {len(it['review'].get('summary') or '')}자 → 목표 {_len_range(it['review'].get('kind','news'), cfg)[0]}~{_len_range(it['review'].get('kind','news'), cfg)[1]}자"
             for it in batch)
         try:
-            res = llm.review_batch(batch, cfg["max_body_chars"],
+            res = llm.review_batch(batch, cfg["max_body_chars"], task="rewrite",
                                    note="앞서 쓴 요약의 분량이 기준을 벗어났다. keep·섹션·중요도 판단은 그대로 두고 summary만 "
                                         "목표 글자 수에 맞춰 다시 쓴다. 본문에 있는 사실만 쓰고, 분량을 채우려고 평가·전망·의미 부여 "
                                         "문장을 덧붙이지 않는다. " + guide)
@@ -437,6 +437,17 @@ def main(argv=None):
             quota_out = run_review(more, cfg)
             to_review += more
             stats["backfill"] = stats.get("backfill", 0) + len(more)
+        # 1차에서 중요도가 높게 나온 후보는 게재 건수와 관계없이 본문 검토(상한 넘어도 실을 기사 찾기)
+        pmax = cfg.get("priority_review_max", 12)
+        if not quota_out and overflow and pmax:
+            pri = [it for it in overflow if it["triage"].get("importance", 0) >= 4][:pmax]
+            if pri:
+                ids = {it["id"] for it in pri}
+                overflow = [it for it in overflow if it["id"] not in ids]
+                log.info("중요 후보 %d건 추가 검토", len(pri))
+                quota_out = run_review(pri, cfg)
+                to_review += pri
+                stats["priority_review"] = len(pri)
         excluded += [excluded_record(it, "1차", "검토 한도 초과") for it in overflow]
         if not quota_out:
             res = fix_summary_length(to_review, cfg)
@@ -492,7 +503,7 @@ def main(argv=None):
     # 상한을 넘겨도 '꼭 실어야 할' 기사는 추가(최대 must_include_overflow건)
     already_over = sum(1 for r in prev["items"] if "상한 초과 게재" in r.get("tags", []))
     room = max(0, cfg.get("must_include_overflow", 5) - already_over)
-    extra = [r for r in rest if r.get("must_include")][:room]
+    extra = [r for r in rest if r.get("must_include") or r["importance"] >= 5][:room]
     for r in extra:
         r["tags"].append("상한 초과 게재")
     extra_urls = {r["url"] for r in extra}

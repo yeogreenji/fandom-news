@@ -86,9 +86,11 @@ def call_json(task: str, guide: str, user: str, schema: dict, max_tokens: int) -
     provider = cfg.get("ai_provider", "gemini")
     if provider != "gemini":
         _pace(cfg.get("call_interval_sec", 5))
-        return _claude(cfg["models"][provider][task], _criteria(), guide, user, schema, max_tokens)
+        models = cfg["models"][provider]
+        return _claude(models.get(task, models["review"]), _criteria(), guide, user, schema, max_tokens)
     # 지정 모델 → 한도가 바닥나면 다른 무료 모델로 넘어가며 시도
-    order = [cfg["models"]["gemini"][task]] + cfg.get("gemini_fallback_models",
+    gm = cfg["models"]["gemini"]
+    order = [gm.get(task, gm["review"])] + cfg.get("gemini_fallback_models",
                                                       ["gemini-flash-lite-latest", "gemini-flash-latest"])
     tried, busy = [], False
     for model in order:
@@ -320,7 +322,8 @@ REVIEW_GUIDE = """[작업] 2차 판정. 기사마다 본문을 읽고 클리핑 
 """ + SUB_DESC
 
 
-def review_batch(items: list[dict], max_chars: int, force: bool = False, note: str = "") -> dict[str, dict]:
+def review_batch(items: list[dict], max_chars: int, force: bool = False, note: str = "",
+                 task: str = "review") -> dict[str, dict]:
     docs = []
     for it in items:
         docs.append({
@@ -335,7 +338,7 @@ def review_batch(items: list[dict], max_chars: int, force: bool = False, note: s
         user += "\n※ 담당자가 직접 추가한 기사다. keep=true로 두고 요약을 작성한다."
     if note:
         user += "\n※ " + note
-    out = call_json("review", REVIEW_GUIDE, user, REVIEW_SCHEMA, max_tokens=1400 * len(items) + 500)
+    out = call_json(task, REVIEW_GUIDE, user, REVIEW_SCHEMA, max_tokens=1400 * len(items) + 500)
     return {r["id"]: r for r in out.get("results", []) if "id" in r}
 
 
