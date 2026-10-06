@@ -28,9 +28,11 @@ models:
     # 'latest' 별칭은 구글이 새 버전으로 자동 교체(2주 전 메일 공지). 무료 등급 대상 모델만 쓸 것
     triage: "gemini-flash-lite-latest"   # 1차 선별은 하루 한도가 넉넉한 Flash-Lite
     review: "gemini-flash-latest"
+    rewrite: "gemini-flash-lite-latest"  # 요약 분량 다시 쓰기는 Flash-Lite로(Flash 하루 한도는 판정에 아껴 씀)
   claude:
     triage: "claude-haiku-4-5-20251001"
     review: "claude-sonnet-5-5"
+    rewrite: "claude-haiku-4-5-20251001"
 
 # 무료 등급 분당 호출 제한을 넘지 않도록 호출 사이 간격(초)
 call_interval_sec: 5
@@ -59,8 +61,10 @@ cap_per_extra_day: 10
 cap_max: 70
 # 상한은 '최대치'일 뿐 채우지 않음. 중요도가 이 값 미만이면 싣지 않음(1~5)
 min_importance: 3
-# 상한을 넘겨도 싣는 '꼭 실어야 할' 기사 최대 추가 건수
-must_include_overflow: 5
+# 상한을 넘겨도 싣는 기사(꼭 실어야 할 기사 + 중요도 5) 최대 추가 건수
+must_include_overflow: 10
+# 검토 한도에 걸렸어도 1차 중요도 4 이상이면 본문 검토까지 보내는 최대 건수 (0 = 끄기)
+priority_review_max: 12
 # 본문 검토(2차)는 상한의 몇 배까지 볼지
 review_ratio: 2.0
 
