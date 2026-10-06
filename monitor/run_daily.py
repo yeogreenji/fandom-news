@@ -187,6 +187,15 @@ def run_review(items: list[dict], cfg: dict) -> bool:
         list(ex.map(fetch_article, todo))
     for it in todo:
         it["body_fetched"] = True
+    # 본문이 너무 짧아 요약할 내용이 없는 기사는 AI에 보내지 않고 제외(자사 기사는 예외)
+    min_body = cfg.get("min_body_chars", 0)
+    if min_body:
+        thin = [it for it in items if not _is_own(it) and len(it.get("body") or "") < min_body]
+        for it in thin:
+            it["review"] = {"keep": False, "reason": f"본문 내용 부족({len(it.get('body') or '')}자)", "thin": True}
+        if thin:
+            log.info("본문 부족 %d건 제외(기준 %d자)", len(thin), min_body)
+        items = [it for it in items if not (it.get("review") or {}).get("thin")]
     state = {"quota_out": False}
 
     def ask(batch):
@@ -225,38 +234,72 @@ def run_review(items: list[dict], cfg: dict) -> bool:
     return state["quota_out"]
 
 
-def fix_short_summaries(items: list[dict], cfg: dict) -> int:
-    """요약이 기준보다 짧은 기사는 한 번 다시 쓰게 함(판정은 그대로, 요약만 교체)."""
-    min_chars = cfg.get("summary_min_chars", 300)
-    short = [it for it in items
-             if (r := it.get("review")) and r.get("keep") and not r.get("no_ai")
-             and it.get("body_ok") and r.get("kind") != "disclosure"
-             and len((r.get("summary") or "").strip()) < min_chars]
-    fixed = 0
-    for batch in _chunks(short, 3):
+def _is_own(it: dict) -> bool:
+    t = it.get("triage") or {}
+    return "own" in it.get("section_hints", []) or t.get("section") == "own"
+
+
+def _len_range(kind: str, cfg: dict) -> tuple[int, int]:
+    lens = cfg.get("summary_len", {"news": [440, 500], "long": [550, 650]})
+    return tuple(lens["long"] if kind in ("trend", "column", "interview") else lens["news"])
+
+
+def fix_summary_length(items: list[dict], cfg: dict) -> dict:
+    """요약이 목표 분량을 벗어나면 한 번 다시 쓰게 함(판정은 그대로, 요약만 교체).
+    다시 써도 목표 하한에 크게 못 미치면 '요약할 내용 부족'으로 제외(자사·꼭 실을 기사 예외)."""
+    tol = cfg.get("summary_len_tolerance", 20)
+    def off(it):
+        r = it["review"]
+        lo, hi = _len_range(r.get("kind", "news"), cfg)
+        n = len((r.get("summary") or "").strip())
+        return n < lo - tol or n > hi + tol
+    targets = [it for it in items
+               if (r := it.get("review")) and r.get("keep") and not r.get("no_ai")
+               and r.get("kind") != "disclosure" and off(it)]
+    fixed, tried, dropped = 0, set(), 0
+    for batch in _chunks(targets, 3):
+        guide = "; ".join(
+            f"id {it['id']}: 지금 {len(it['review'].get('summary') or '')}자 → 목표 {_len_range(it['review'].get('kind','news'), cfg)[0]}~{_len_range(it['review'].get('kind','news'), cfg)[1]}자"
+            for it in batch)
         try:
             res = llm.review_batch(batch, cfg["max_body_chars"],
-                                   note="앞서 쓴 요약이 기준보다 짧았다. keep·섹션·중요도 판단은 그대로 두고, "
-                                        "summary만 기준 8번 분량(일반 330~420자, 기획·칼럼·인터뷰 450~650자)에 맞춰 다시 쓴다.")
+                                   note="앞서 쓴 요약의 분량이 기준을 벗어났다. keep·섹션·중요도 판단은 그대로 두고 summary만 "
+                                        "목표 글자 수에 맞춰 다시 쓴다. 본문에 있는 사실만 쓰고, 분량을 채우려고 평가·전망·의미 부여 "
+                                        "문장을 덧붙이지 않는다. " + guide)
         except llm.QuotaExceeded:
             break
         except Exception as e:
-            log.error("요약 보완 실패(%d건): %s", len(batch), e)
+            log.error("요약 분량 보정 실패(%d건): %s", len(batch), e)
             continue
         for it in batch:
+            tried.add(it["id"])
             new = ((res.get(it["id"]) or {}).get("summary") or "").strip()
-            if len(new) > len((it["review"].get("summary") or "").strip()):
+            if not new:
+                continue
+            lo, hi = _len_range(it["review"].get("kind", "news"), cfg)
+            mid = (lo + hi) / 2
+            old = (it["review"].get("summary") or "").strip()
+            if abs(len(new) - mid) < abs(len(old) - mid):
                 it["review"]["summary"] = new
                 fixed += 1
-    if short:
-        log.info("짧은 요약 %d건 중 %d건 보완", len(short), fixed)
-    return fixed
+    floor_gap = cfg.get("summary_floor_gap", 80)
+    for it in targets:
+        r = it["review"]
+        lo, _ = _len_range(r.get("kind", "news"), cfg)
+        n = len((r.get("summary") or "").strip())
+        if it["id"] in tried and n < lo - floor_gap and not _is_own(it) and not r.get("must_include"):
+            r["keep"] = False
+            r["reason"] = f"요약할 내용 부족(요약 {n}자)"
+            dropped += 1
+    if targets:
+        log.info("분량 벗어난 요약 %d건 중 %d건 보정, %d건 내용 부족 제외", len(targets), fixed, dropped)
+    return {"fixed": fixed, "dropped": dropped, "targets": len(targets)}
 
 
 def no_ai_review(it: dict) -> dict | None:
     """AI 본문 판정을 못 받은 경우: 자사 기사만 네이버 요약문으로 게재(다른 기사는 품질 때문에 싣지 않음)."""
     t = it.get("triage", {})
-    own = "own" in it["section_hints"] or t.get("section") == "own"
+    own = _is_own(it)
     if not own:
         return None
     sec = "own" if own else t.get("section", it["section_hints"][0])
@@ -396,7 +439,8 @@ def main(argv=None):
             stats["backfill"] = stats.get("backfill", 0) + len(more)
         excluded += [excluded_record(it, "1차", "검토 한도 초과") for it in overflow]
         if not quota_out:
-            stats["summary_fixed"] = fix_short_summaries(to_review, cfg)
+            res = fix_summary_length(to_review, cfg)
+            stats["summary_fixed"], stats["summary_thin_dropped"] = res["fixed"], res["dropped"]
         stats["ai_sec"] = round(time.time() - ai_start)
     else:
         to_review = []
