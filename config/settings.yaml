@@ -65,6 +65,9 @@ min_importance: 3
 must_include_overflow: 10
 # 검토 한도에 걸렸어도 1차 중요도 4 이상이면 본문 검토까지 보내는 최대 건수 (0 = 끄기)
 priority_review_max: 12
+# 섹션별 최소 본문 검토 건수(다른 섹션에 밀려 통째로 빠지지 않게)
+review_reserve:
+  ai_tech: 8
 # 본문 검토(2차)는 상한의 몇 배까지 볼지
 review_ratio: 2.0
 
@@ -77,10 +80,11 @@ summary_len:
   long: [550, 650]
 # 목표에서 이 글자 수 넘게 벗어나면(짧거나 길거나) 한 번 다시 쓰게 함
 summary_len_tolerance: 20
-# 다시 써도 목표 하한보다 이만큼 이상 짧으면 '요약할 내용 부족'으로 제외 (자사·꼭 실을 기사 예외)
-summary_floor_gap: 80
+# 다시 써도 요약이 이 글자 수보다 짧으면 '요약할 내용 부족'으로 제외 (자사·꼭 실을 기사 예외)
+# 기사에 없는 말로 채우지 않으므로, 이보다 길면 목표보다 짧아도 싣는다
+summary_drop_below: 250
 # 본문이 이 글자 수보다 짧으면 AI 판정 없이 제외 (자사 기사 예외, 0 = 끄기)
-min_body_chars: 800
+min_body_chars: 500
 # 요약 사실 검증: 한 문장이 본문과 겹치는 표현 비율이 이보다 낮으면 근거 없는 문장으로 보고 지움
 ground_min_coverage: 0.55
 
