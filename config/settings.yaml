@@ -81,6 +81,8 @@ summary_len_tolerance: 20
 summary_floor_gap: 80
 # 본문이 이 글자 수보다 짧으면 AI 판정 없이 제외 (자사 기사 예외, 0 = 끄기)
 min_body_chars: 800
+# 요약 사실 검증: 한 문장이 본문과 겹치는 표현 비율이 이보다 낮으면 근거 없는 문장으로 보고 지움
+ground_min_coverage: 0.55
 
 # 섹션별 하루 최대 게재 건수 (0 = 제한 없음)
 section_caps:
