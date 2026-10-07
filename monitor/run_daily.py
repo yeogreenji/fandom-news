@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import math
+import re
 import time
 import logging
 from concurrent.futures import ThreadPoolExecutor
@@ -234,6 +235,72 @@ def run_review(items: list[dict], cfg: dict) -> bool:
     return state["quota_out"]
 
 
+# ── 요약 사실 검증: 기사 본문에 근거가 없는 문장은 지운다 ──
+# 회사 관계(자회사 등)·평가·전망 표현은 본문에 같은 말이 있을 때만 허용
+_RISK_TERMS = ["자회사", "모회사", "계열사", "손자회사", "관계사", "산하", "지분", "인수", "합병",
+               "전망", "기대된다", "평가할", "평가된다", "시사점", "풀이된다", "분석된다", "관측된다",
+               "주목받", "본격적", "한층", "청신호", "발판", "입지를", "의미가 크", "의미 있는"]
+_SENT_RE = re.compile(r".+?[.!?](?:\*\*)?(?=\s+|$)", re.S)
+
+
+def _gram2(text: str) -> set:
+    t = re.sub(r"[^0-9A-Za-z가-힣]", "", text)
+    return {t[i:i + 2] for i in range(len(t) - 1)}
+
+
+def _norm_num(text: str) -> str:
+    return re.sub(r"(?<=\d),(?=\d)", "", text)
+
+
+def check_sentence(sent: str, ref: str, ref_grams: set, cfg: dict) -> str:
+    """문제 없으면 "", 있으면 사유."""
+    plain = sent.replace("**", "").strip()
+    for term in _RISK_TERMS:
+        if term in plain and term not in ref:
+            return f"본문에 없는 표현 '{term}'"
+    for num in re.findall(r"\d+(?:\.\d+)?", _norm_num(plain)):
+        if len(num) >= 2 and num not in ref:
+            return f"본문에 없는 숫자 {num}"
+    g = _gram2(plain)
+    if len(g) >= 12:
+        cov = len(g & ref_grams) / len(g)
+        if cov < cfg.get("ground_min_coverage", 0.55):
+            return f"본문과 겹치는 표현이 적음({cov:.0%})"
+    return ""
+
+
+def verify_summaries(items: list[dict], cfg: dict) -> tuple[int, dict]:
+    """게재 후보 요약을 문장 단위로 본문과 대조해 근거 없는 문장을 지운다. (영문 기사는 맥락 문장이 있어 건너뜀)"""
+    removed, issues = 0, {}
+    for it in items:
+        r = it.get("review") or {}
+        if not r.get("keep") or not r.get("summary") or it.get("lang", "ko") != "ko":
+            continue
+        ref = _norm_num(" ".join([it.get("title", ""), it.get("description", ""), it.get("body", "")]))
+        if len(ref) < 100:
+            continue
+        grams = _gram2(ref)
+        text = r["summary"].strip()
+        ms = list(_SENT_RE.finditer(text))
+        sents = [m.group().strip() for m in ms if m.group().strip()]
+        tail = text[ms[-1].end():].strip() if ms else text
+        if tail:
+            sents.append(tail)
+        keep, bad = [], []
+        for sent in sents:
+            why = check_sentence(sent, ref, grams, cfg)
+            (bad if why else keep).append((sent, why))
+        if not bad:
+            continue
+        if not keep:  # 전부 걸리면 판단 보류(본문 추출 실패 가능성) — 그대로 둠
+            continue
+        r["summary"] = " ".join(x.strip() for x, _ in keep)
+        issues[it["id"]] = [f"{why}: {x.strip()[:60]}" for x, why in bad]
+        removed += len(bad)
+        log.info("근거 없는 문장 %d개 삭제 [%s] %s", len(bad), it.get("title", "")[:30], "; ".join(w for _, w in bad))
+    return removed, issues
+
+
 def _is_own(it: dict) -> bool:
     t = it.get("triage") or {}
     return "own" in it.get("section_hints", []) or t.get("section") == "own"
@@ -244,9 +311,10 @@ def _len_range(kind: str, cfg: dict) -> tuple[int, int]:
     return tuple(lens["long"] if kind in ("trend", "column", "interview") else lens["news"])
 
 
-def fix_summary_length(items: list[dict], cfg: dict) -> dict:
+def fix_summary_length(items: list[dict], cfg: dict, issues: dict | None = None) -> dict:
     """요약이 목표 분량을 벗어나면 한 번 다시 쓰게 함(판정은 그대로, 요약만 교체).
-    다시 써도 목표 하한에 크게 못 미치면 '요약할 내용 부족'으로 제외(자사·꼭 실을 기사 예외)."""
+    issues: 사실 검증에서 지운 문장 사유(다시 쓸 때 같은 실수를 하지 않도록 알려줌)."""
+    issues = issues or {}
     tol = cfg.get("summary_len_tolerance", 20)
     def off(it):
         r = it["review"]
@@ -260,12 +328,14 @@ def fix_summary_length(items: list[dict], cfg: dict) -> dict:
     for batch in _chunks(targets, 3):
         guide = "; ".join(
             f"id {it['id']}: 지금 {len(it['review'].get('summary') or '')}자 → 목표 {_len_range(it['review'].get('kind','news'), cfg)[0]}~{_len_range(it['review'].get('kind','news'), cfg)[1]}자"
+            + (f" (본문 근거가 없어 지운 문장: {' / '.join(issues[it['id']])} — 이런 내용은 다시 쓰지 말 것)" if it["id"] in issues else "")
             for it in batch)
         try:
             res = llm.review_batch(batch, cfg["max_body_chars"], task="rewrite",
                                    note="앞서 쓴 요약의 분량이 기준을 벗어났다. keep·섹션·중요도 판단은 그대로 두고 summary만 "
                                         "목표 글자 수에 맞춰 다시 쓴다. 본문에 있는 사실만 쓰고, 분량을 채우려고 평가·전망·의미 부여 "
-                                        "문장을 덧붙이지 않는다. " + guide)
+                                        "문장을 덧붙이지 않는다. 회사 간 관계(자회사·계열사·투자 등)는 본문에 그 표현이 있을 때만 쓴다. "
+                                        "본문 사실이 모자라면 목표보다 짧아도 된다. " + guide)
         except llm.QuotaExceeded:
             break
         except Exception as e:
@@ -282,18 +352,25 @@ def fix_summary_length(items: list[dict], cfg: dict) -> dict:
             if abs(len(new) - mid) < abs(len(old) - mid):
                 it["review"]["summary"] = new
                 fixed += 1
-    floor_gap = cfg.get("summary_floor_gap", 80)
-    for it in targets:
-        r = it["review"]
+    if targets:
+        log.info("분량 벗어난 요약 %d건 중 %d건 보정", len(targets), fixed)
+    return {"fixed": fixed, "targets": len(targets), "tried": tried}
+
+
+def drop_thin_summaries(items: list[dict], cfg: dict, tried: set) -> int:
+    """보정을 시도했는데도 목표 하한보다 크게 짧으면 '요약할 내용 부족'으로 제외(자사·꼭 실을 기사 예외)."""
+    gap, dropped = cfg.get("summary_floor_gap", 80), 0
+    for it in items:
+        r = it.get("review") or {}
+        if not r.get("keep") or it["id"] not in tried or _is_own(it) or r.get("must_include"):
+            continue
         lo, _ = _len_range(r.get("kind", "news"), cfg)
         n = len((r.get("summary") or "").strip())
-        if it["id"] in tried and n < lo - floor_gap and not _is_own(it) and not r.get("must_include"):
+        if n < lo - gap:
             r["keep"] = False
             r["reason"] = f"요약할 내용 부족(요약 {n}자)"
             dropped += 1
-    if targets:
-        log.info("분량 벗어난 요약 %d건 중 %d건 보정, %d건 내용 부족 제외", len(targets), fixed, dropped)
-    return {"fixed": fixed, "dropped": dropped, "targets": len(targets)}
+    return dropped
 
 
 def no_ai_review(it: dict) -> dict | None:
@@ -449,9 +526,15 @@ def main(argv=None):
                 to_review += pri
                 stats["priority_review"] = len(pri)
         excluded += [excluded_record(it, "1차", "검토 한도 초과") for it in overflow]
+        # 요약 사실 검증 → 분량 보정 → 다시 검증 → 내용 부족 제외
+        n1, issues = verify_summaries(to_review, cfg)
+        tried = set()
         if not quota_out:
-            res = fix_summary_length(to_review, cfg)
-            stats["summary_fixed"], stats["summary_thin_dropped"] = res["fixed"], res["dropped"]
+            res = fix_summary_length(to_review, cfg, issues)
+            stats["summary_fixed"], tried = res["fixed"], res["tried"]
+        n2, _ = verify_summaries(to_review, cfg)
+        stats["unsupported_removed"] = n1 + n2
+        stats["summary_thin_dropped"] = drop_thin_summaries(to_review, cfg, tried)
         stats["ai_sec"] = round(time.time() - ai_start)
     else:
         to_review = []
