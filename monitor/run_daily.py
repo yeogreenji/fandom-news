@@ -161,10 +161,15 @@ def run_triage(items: list[dict], cfg: dict) -> None:
             it["triage"].setdefault("importance", 2)
 
 
-def pick_for_review(items: list[dict], cap: int) -> tuple[list[dict], list[dict]]:
+_STOCK_TITLE_RE = re.compile(r"특징주|관련주|테마주|엔터주|음악주|게임주|상한가|하한가|목표주가|목표가|주가\S*\s*(급등|급락|강세|약세)")
+
+
+def pick_for_review(items: list[dict], cap: int, reserve: dict | None = None) -> tuple[list[dict], list[dict]]:
     # AI가 실제로 판단한 '포함/보류'만 본문 검토로. AI 판단을 못 받은 기사는 자사만 예외적으로 포함
+    # 단순 주가 기사(제목에 특징주·강세 등)는 본문 검토 전에 뺀다
     cands = [it for it in items if it["triage"]["decision"] != "exclude"
-             and (it["triage"].get("ai") or "own" in it["section_hints"])]
+             and (it["triage"].get("ai") or "own" in it["section_hints"])
+             and not _STOCK_TITLE_RE.search(it.get("title", ""))]
 
     def key(it):
         t = it["triage"]
@@ -172,7 +177,25 @@ def pick_for_review(items: list[dict], cap: int) -> tuple[list[dict], list[dict]
         return (own, 0 if t["decision"] == "include" else 1, -t.get("importance", 2))
 
     cands.sort(key=key)
-    return cands[:cap], cands[cap:]
+    head, rest = cands[:cap], cands[cap:]
+    # 섹션별 최소 검토 건수 보장(예: AI 섹션이 다른 섹션에 밀려 통째로 빠지지 않게)
+    for sec, n in (reserve or {}).items():
+        have = sum(1 for it in head if it["triage"].get("section") == sec)
+        add = [it for it in rest if it["triage"].get("section") == sec][:max(0, n - have)]
+        if not add:
+            continue
+        protected = set(reserve)
+        for it in add:
+            # 뒤에서부터, 자사가 아니고 보장 대상 섹션도 아닌 기사와 맞바꿈
+            for j in range(len(head) - 1, -1, -1):
+                h = head[j]
+                if h["triage"].get("section") not in protected and "own" not in h["section_hints"]:
+                    rest.append(head.pop(j))
+                    break
+            head.append(it)
+            rest.remove(it)
+    rest.sort(key=key)
+    return head, rest
 
 
 def _chunks(xs: list, n: int):
@@ -342,7 +365,7 @@ def fix_summary_length(items: list[dict], cfg: dict, issues: dict | None = None)
         r = it["review"]
         lo, hi = _len_range(r.get("kind", "news"), cfg)
         n = len((r.get("summary") or "").strip())
-        return n < lo - tol or n > hi + tol
+        return n < lo - tol or n > hi + tol or bool(re.search(r"습니다|니다\.|어요\.|에요\.", r.get("summary") or ""))
     targets = [it for it in items
                if (r := it.get("review")) and r.get("keep") and not r.get("no_ai")
                and r.get("kind") != "disclosure" and off(it)]
@@ -354,7 +377,7 @@ def fix_summary_length(items: list[dict], cfg: dict, issues: dict | None = None)
             for it in batch)
         try:
             res = llm.review_batch(batch, cfg["max_body_chars"], task="rewrite",
-                                   note="앞서 쓴 요약의 분량이 기준을 벗어났다. keep·섹션·중요도 판단은 그대로 두고 summary만 "
+                                   note="앞서 쓴 요약의 분량이나 문체(~했다 평서문)가 기준을 벗어났다. keep·섹션·중요도 판단은 그대로 두고 summary만 "
                                         "목표 글자 수에 맞춰 다시 쓴다. 본문에 있는 사실만 쓰고, 분량을 채우려고 평가·전망·의미 부여 "
                                         "문장을 덧붙이지 않는다. 회사 간 관계(자회사·계열사·투자 등)는 본문에 그 표현이 있을 때만 쓴다. "
                                         "본문 사실이 모자라면 목표보다 짧아도 된다. " + guide)
@@ -380,19 +403,40 @@ def fix_summary_length(items: list[dict], cfg: dict, issues: dict | None = None)
 
 
 def drop_thin_summaries(items: list[dict], cfg: dict, tried: set) -> int:
-    """보정을 시도했는데도 목표 하한보다 크게 짧으면 '요약할 내용 부족'으로 제외(자사·꼭 실을 기사 예외)."""
-    gap, dropped = cfg.get("summary_floor_gap", 80), 0
+    """보정을 시도했는데도 요약이 이 글자 수보다 짧으면 '요약할 내용 부족'으로 제외(자사·꼭 실을 기사 예외).
+    기사에 없는 말로 분량을 채우지 않기 때문에, 내용이 조금 적은 기사는 짧은 요약으로 그대로 싣는다."""
+    floor, dropped = cfg.get("summary_drop_below", 250), 0
     for it in items:
         r = it.get("review") or {}
         if not r.get("keep") or it["id"] not in tried or _is_own(it) or r.get("must_include"):
             continue
-        lo, _ = _len_range(r.get("kind", "news"), cfg)
         n = len((r.get("summary") or "").strip())
-        if n < lo - gap:
+        if n < floor:
             r["keep"] = False
             r["reason"] = f"요약할 내용 부족(요약 {n}자)"
             dropped += 1
     return dropped
+
+
+def trim_long_summaries(items: list[dict], cfg: dict) -> int:
+    """다시 써도 목표보다 길면 뒤 문장부터 잘라 상한에 맞춤(요약은 중요한 내용이 앞에 오므로)."""
+    tol, trimmed = cfg.get("summary_len_tolerance", 20), 0
+    for it in items:
+        r = it.get("review") or {}
+        if not r.get("keep") or not r.get("summary") or r.get("kind") == "disclosure":
+            continue
+        _, hi = _len_range(r.get("kind", "news"), cfg)
+        text = r["summary"].strip()
+        if len(text) <= hi + tol:
+            continue
+        sents = [m.group().strip() for m in _SENT_RE.finditer(text)]
+        if len(sents) < 5:
+            continue
+        while len(sents) > 4 and len(" ".join(sents)) > hi + tol:
+            sents.pop()
+        r["summary"] = " ".join(sents)
+        trimmed += 1
+    return trimmed
 
 
 def no_ai_review(it: dict) -> dict | None:
@@ -514,7 +558,7 @@ def main(argv=None):
         stats["triage_candidates"] = len(items)
         log.info("1차 선별 대상 %d건 (사전 제외 %d건)", len(items), len(pre_dropped))
         run_triage(items, cfg)
-        to_review, overflow = pick_for_review(items, review_cap)
+        to_review, overflow = pick_for_review(items, review_cap, cfg.get("review_reserve", {}))
         for it in items:
             t = it["triage"]
             if t["decision"] == "exclude" and ("own" in it["section_hints"] or t.get("importance", 1) >= 3):
@@ -556,6 +600,7 @@ def main(argv=None):
             res = fix_summary_length(to_review, cfg, issues)
             stats["summary_fixed"], tried = res["fixed"], res["tried"]
         n2, _ = verify_summaries(to_review, cfg)
+        stats["summary_trimmed"] = trim_long_summaries(to_review, cfg)
         stats["unsupported_removed"] = n1 + n2
         stats["summary_thin_dropped"] = drop_thin_summaries(to_review, cfg, tried)
         stats["ai_sec"] = round(time.time() - ai_start)
