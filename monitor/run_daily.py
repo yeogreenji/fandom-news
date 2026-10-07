@@ -301,6 +301,28 @@ def verify_summaries(items: list[dict], cfg: dict) -> tuple[int, dict]:
     return removed, issues
 
 
+# 자사 이름이 요약·제목에 나오면 어느 키워드로 수집됐든 자사 섹션으로 옮긴다(주가 기사의 종목 나열은 제외)
+_STOCK_RE = re.compile(r"관련주|특징주|엔터주|테마주|주가|매수세|목표주가|상한가|하한가|급등|급락")
+_OWN_TERMS = ["비마이프렌즈", "서우석", "비스테이지", "b.stage", "bemyfriends", "드림어스", "플로집", "Dreamus"]
+
+
+def promote_own(items: list[dict]) -> int:
+    moved = 0
+    for it in items:
+        r = it.get("review") or {}
+        if not r.get("keep") or r.get("section") == "own":
+            continue
+        text = (it.get("title", "") + " " + (r.get("summary") or "")).lower()
+        if any(t.lower() in text for t in _OWN_TERMS) and not _STOCK_RE.search(text):
+            r["section"], r["subsection"] = "own", "own"
+            r["importance"] = max(r.get("importance", 3), 4)
+            if "own" not in it.get("section_hints", []):
+                it.setdefault("section_hints", []).append("own")
+            moved += 1
+            log.info("자사 섹션으로 이동: %s", it.get("title", "")[:40])
+    return moved
+
+
 def _is_own(it: dict) -> bool:
     t = it.get("triage") or {}
     return "own" in it.get("section_hints", []) or t.get("section") == "own"
@@ -526,6 +548,7 @@ def main(argv=None):
                 to_review += pri
                 stats["priority_review"] = len(pri)
         excluded += [excluded_record(it, "1차", "검토 한도 초과") for it in overflow]
+        stats["own_promoted"] = promote_own(to_review)
         # 요약 사실 검증 → 분량 보정 → 다시 검증 → 내용 부족 제외
         n1, issues = verify_summaries(to_review, cfg)
         tried = set()
