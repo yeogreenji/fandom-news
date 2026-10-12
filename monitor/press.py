@@ -34,7 +34,13 @@ DOMAIN_PRESS = {
     "mbn.co.kr": "MBN", "mediatoday.co.kr": "미디어오늘", "byline.network": "바이라인네트워크",
     "platum.kr": "플래텀", "venturesquare.net": "벤처스퀘어", "wikitree.co.kr": "위키트리",
     "insight.co.kr": "인사이트", "musicbusinessworldwide.com": "Music Business Worldwide",
-    "billboard.com": "Billboard", "koreaherald.com": "The Korea Herald",
+    "billboard.com": "Billboard",
+    "it.donga.com": "IT동아", "sports.khan.co.kr": "스포츠경향", "sportschosun.com": "스포츠조선",
+    "sportsworldi.com": "스포츠월드", "segyebiz.com": "세계비즈", "magazine.hankyung.com": "한경매거진",
+    "news.mtn.co.kr": "MTN", "joongang.co.kr": "중앙일보", "aitimes.com": "AI타임스",
+    "gukjenews.com": "국제뉴스", "srtimes.kr": "SR타임스", "hansbiz.co.kr": "한스경제",
+    "nc.press": "뉴스컬처", "the-today.com": "더투데이", "mediafine.co.kr": "미디어파인",
+    "greened.kr": "녹색경제신문", "newstomato.com": "뉴스토마토", "bbc.com": "BBC News 코리아", "koreaherald.com": "The Korea Herald",
     "koreatimes.co.kr": "The Korea Times", "koreajoongangdaily.joins.com": "Korea JoongAng Daily",
 }
 

@@ -13,8 +13,9 @@ from . import llm, sources, workdays
 from .common import (DAYS_DIR, KST, SECTION_ORDER, STATE_FILE, date_label, load_yaml, now_kst,
                      read_json, settings, update_index, url_id, write_json)
 from .fetch import fetch_article
+from .press import press_from_domain
 from .textutil import (_bigrams, _norm_title, _sim, cluster, detect_series, query_terms,
-                       rule_excluded, snippet_has, snippet_has_all)
+                       rule_excluded, snippet_has, snippet_has_all, topic_links)
 
 log = logging.getLogger("monitor")
 
@@ -164,24 +165,54 @@ def run_triage(items: list[dict], cfg: dict) -> None:
 _STOCK_TITLE_RE = re.compile(r"특징주|관련주|테마주|엔터주|음악주|게임주|상한가|하한가|목표주가|목표가|주가\S*\s*(급등|급락|강세|약세)")
 
 
+def _topic_prio(cands: list[dict]) -> None:
+    """같은 사안을 여러 매체(4곳 이상)가 다룬 '큰 이슈'는 검토 우선순위를 1 올리고(최대 4),
+    같은 사안의 두 번째 기사부터는 'mate'로 표시해 검토 순서를 뒤로 미룬다(대표 1건이 먼저 검토되도록)."""
+    texts = [it["title"] + " " + (it.get("description") or "")[:80] for it in cands]
+    heat = topic_links(texts, k=2, max_df_ratio=0.15)     # 보도량 집계용(느슨하게)
+    same = topic_links(texts, k=3, max_df_ratio=0.15)     # 같은 사안 판정용(엄격하게)
+    for i, it in enumerate(cands):
+        t = it["triage"]
+        n = 1 + len(heat[i]) + sum(cands[j].get("cluster_size", 1) - 1 for j in heat[i]) + it.get("cluster_size", 1) - 1
+        t["topic_size"] = n
+        imp = t.get("importance", 2)
+        t["prio"] = max(imp, min(4, imp + 1)) if n >= 4 else imp
+    return same
+
+
 def pick_for_review(items: list[dict], cap: int, reserve: dict | None = None) -> tuple[list[dict], list[dict]]:
     # AI가 실제로 판단한 '포함/보류'만 본문 검토로. AI 판단을 못 받은 기사는 자사만 예외적으로 포함
     # 단순 주가 기사(제목에 특징주·강세 등)는 본문 검토 전에 뺀다
     cands = [it for it in items if it["triage"]["decision"] != "exclude"
              and (it["triage"].get("ai") or "own" in it["section_hints"])
              and not _STOCK_TITLE_RE.search(it.get("title", ""))]
+    same = _topic_prio(cands) if cands else []
 
     def key(it):
         t = it["triage"]
         own = 0 if ("own" in it["section_hints"] or t["section"] == "own") else 1
-        return (own, 0 if t["decision"] == "include" else 1, -t.get("importance", 2))
+        return (own, -t.get("prio", t.get("importance", 2)), 0 if t["decision"] == "include" else 1,
+                -t.get("topic_size", 1))
 
-    cands.sort(key=key)
+    order = sorted(range(len(cands)), key=lambda i: key(cands[i]))
+    # 같은 사안의 대표(먼저 오는 기사) 1건만 앞에 두고 나머지는 맨 뒤로
+    rep_idx: list[int] = []
+    reps, mates = [], []
+    for i in order:
+        hit = [r for r in rep_idx if same and r in same[i]]
+        if hit and "own" not in cands[i]["section_hints"]:
+            cands[i]["triage"]["mate"] = True
+            cands[i]["triage"]["rep_id"] = cands[hit[0]]["id"]
+            mates.append(cands[i])
+        else:
+            reps.append(cands[i])
+            rep_idx.append(i)
+    cands = reps + mates
     head, rest = cands[:cap], cands[cap:]
     # 섹션별 최소 검토 건수 보장(예: AI 섹션이 다른 섹션에 밀려 통째로 빠지지 않게)
     for sec, n in (reserve or {}).items():
         have = sum(1 for it in head if it["triage"].get("section") == sec)
-        add = [it for it in rest if it["triage"].get("section") == sec][:max(0, n - have)]
+        add = [it for it in rest if it["triage"].get("section") == sec and not it["triage"].get("mate")][:max(0, n - have)]
         if not add:
             continue
         protected = set(reserve)
@@ -194,7 +225,8 @@ def pick_for_review(items: list[dict], cap: int, reserve: dict | None = None) ->
                     break
             head.append(it)
             rest.remove(it)
-    rest.sort(key=key)
+    rest_reps = sorted([it for it in rest if not it["triage"].get("mate")], key=key)
+    rest = rest_reps + [it for it in rest if it["triage"].get("mate")]
     return head, rest
 
 
@@ -327,6 +359,8 @@ def verify_summaries(items: list[dict], cfg: dict) -> tuple[int, dict]:
 # 자사 이름이 요약·제목에 나오면 어느 키워드로 수집됐든 자사 섹션으로 옮긴다(주가 기사의 종목 나열은 제외)
 _STOCK_RE = re.compile(r"관련주|특징주|엔터주|테마주|주가|매수세|목표주가|상한가|하한가|급등|급락")
 _OWN_TERMS = ["비마이프렌즈", "서우석", "비스테이지", "b.stage", "bemyfriends", "드림어스", "플로집", "Dreamus"]
+# 드림어스가 투자한 기획사·아티스트(기준 문서 '자사' 범위). 기사에 관계 표현이 없어도 섹션만 자사로 옮긴다
+_OWN_RELATED_TERMS = ["타이탄콘텐츠", "타이탄뮤직", "앳하트", "AtHeart", "알앤디컴퍼니"]
 
 
 def promote_own(items: list[dict]) -> int:
@@ -336,7 +370,8 @@ def promote_own(items: list[dict]) -> int:
         if not r.get("keep") or r.get("section") == "own":
             continue
         text = (it.get("title", "") + " " + (r.get("summary") or "")).lower()
-        if any(t.lower() in text for t in _OWN_TERMS) and not _STOCK_RE.search(text):
+        terms = _OWN_TERMS + _OWN_RELATED_TERMS
+        if any(t.lower() in text for t in terms) and not _STOCK_RE.search(text):
             r["section"], r["subsection"] = "own", "own"
             r["importance"] = max(r.get("importance", 3), 4)
             if "own" not in it.get("section_hints", []):
@@ -451,6 +486,30 @@ def no_ai_review(it: dict) -> dict | None:
             "summary": it.get("description", ""), "no_ai": True}
 
 
+# ── 존댓말 어미('~습니다') → 기사체 평서문('~다') ──
+_ODD = {"입니다": "이다", "아닙니다": "아니다", "있습니다": "있다", "없습니다": "없다"}
+
+
+def _ending(m: re.Match) -> str:
+    w = m.group(1)
+    for k, v in _ODD.items():
+        if w.endswith(k):
+            return w[:-len(k)] + v
+    if w.endswith("습니다"):
+        return w[:-3] + "다"
+    # 'ㅂ니다'(됩니다·합니다·갑니다) → 받침 ㅂ을 ㄴ으로: 된다·한다·간다
+    stem = w[:-2]
+    last = stem[-1]
+    code = ord(last) - 0xAC00
+    if 0 <= code < 11172 and code % 28 == 17:
+        return stem[:-1] + chr(ord(last) - 17 + 4) + "다"
+    return w
+
+
+def plain_style(text: str) -> str:
+    return re.sub(r"([가-힣]*(?:습니다|니다))(?=[.!?]|\s|$|\*)", _ending, text or "")
+
+
 # ── 4. 결과 정리 ────────────────────────────────
 def to_record(it: dict) -> dict:
     r = it["review"]
@@ -471,12 +530,13 @@ def to_record(it: dict) -> dict:
     sub = r["subsection"] if r["subsection"] in llm.SUBSECTIONS[r["section"]] else llm.SUBSECTIONS[r["section"]][0]
     return {
         "id": it["id"], "title": it["title"], "url": it["url"],
-        "press": (r.get("press") or it.get("press") or "").strip(),
+        # 언론사명: 도메인 매핑 → 네이버 표기 → AI 추정 순(AI가 IT동아를 동아일보로 쓰는 식의 오류 방지)
+        "press": (press_from_domain(it["url"]) or it.get("press") or r.get("press") or "").strip(),
         "pub_date": it["pub_date"], "date_label": date_label(pub),
         "section": r["section"], "subsection": sub,
         "importance": r.get("importance", 3), "kind": r.get("kind", "news"),
         "must_include": bool(r.get("must_include")),
-        "summary": (r.get("summary") or "").strip(), "reason": r.get("reason", ""),
+        "summary": plain_style((r.get("summary") or "").strip()), "reason": r.get("reason", ""),
         "tags": tags, "series": detect_series(it["title"]), "lang": it.get("lang", "ko"),
         "cluster_size": it.get("cluster_size", 1),
     }
@@ -567,6 +627,22 @@ def main(argv=None):
         llm.DEADLINE[0] = ai_start + budget           # 남은 시간은 본문 판정·요약에
         stats["triage_sec"] = round(time.time() - ai_start)
         quota_out = run_review(to_review, cfg)
+        # 같은 사안 대표 기사가 본문 부족·판정 실패로 빠졌으면 같은 사안의 다른 기사 1건을 대신 검토
+        if not quota_out and overflow:
+            failed = {it["id"] for it in to_review
+                      if (r := it.get("review")) is None or (not r.get("keep") and ("부족" in r.get("reason", "") or r.get("thin")))}
+            sub, used = [], set()
+            for it in overflow:
+                rid = it["triage"].get("rep_id")
+                if rid in failed and rid not in used:
+                    sub.append(it)
+                    used.add(rid)
+            if sub:
+                ids = {it["id"] for it in sub}
+                overflow = [it for it in overflow if it["id"] not in ids]
+                log.info("대표 기사 대신 같은 사안 기사 %d건 검토", len(sub))
+                quota_out = run_review(sub, cfg)
+                to_review += sub
         # 게재 가능 건수가 상한보다 적으면 검토 대기(한도 초과) 기사를 이어서 검토
         min_imp = cfg.get("min_importance", 3)
         for rnd in range(cfg.get("backfill_rounds", 2)):
@@ -583,7 +659,8 @@ def main(argv=None):
         # 1차에서 중요도가 높게 나온 후보는 게재 건수와 관계없이 본문 검토(상한 넘어도 실을 기사 찾기)
         pmax = cfg.get("priority_review_max", 12)
         if not quota_out and overflow and pmax:
-            pri = [it for it in overflow if it["triage"].get("importance", 0) >= 4][:pmax]
+            pri = [it for it in overflow if it["triage"].get("prio", it["triage"].get("importance", 0)) >= 4
+                   and not it["triage"].get("mate")][:pmax]
             if pri:
                 ids = {it["id"] for it in pri}
                 overflow = [it for it in overflow if it["id"] not in ids]
@@ -591,7 +668,8 @@ def main(argv=None):
                 quota_out = run_review(pri, cfg)
                 to_review += pri
                 stats["priority_review"] = len(pri)
-        excluded += [excluded_record(it, "1차", "검토 한도 초과") for it in overflow]
+        excluded += [excluded_record(it, "1차", "같은 사안 대표 기사로 검토" if it["triage"].get("mate") else "검토 한도 초과")
+                     for it in overflow]
         stats["own_promoted"] = promote_own(to_review)
         # 요약 사실 검증 → 분량 보정 → 다시 검증 → 내용 부족 제외
         n1, issues = verify_summaries(to_review, cfg)
@@ -619,7 +697,10 @@ def main(argv=None):
     # 전날·당일 게재분 및 오늘 후보끼리 같은 사안 제거 (AI 1회 호출)
     if records:
         try:
-            drops = llm.dedupe(records, recent_items(3))
+            texts = [r["title"] + " " + r["summary"][:300] for r in records]
+            links = topic_links(texts, k=6, max_df_ratio=0.1)
+            hints = sorted({(min(i, j), max(i, j)) for i, ls in enumerate(links) for j in ls})
+            drops = llm.dedupe(records, recent_items(3), [(records[i]["id"], records[j]["id"]) for i, j in hints])
         except Exception as e:
             log.error("중복 점검 실패(건너뜀): %s", e)
             drops = []

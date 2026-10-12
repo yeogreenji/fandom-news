@@ -9,7 +9,7 @@ from datetime import datetime
 from . import llm
 from .common import DAYS_DIR, KST, now_kst, read_json, settings, update_index, url_id, write_json
 from .fetch import fetch_article
-from .run_daily import sort_records, to_record
+from .run_daily import sort_records, to_record, verify_summaries
 from .textutil import domain
 
 log = logging.getLogger("manual")
@@ -36,6 +36,8 @@ def add(url: str, section: str | None, day: str | None) -> None:
     if item["id"] not in res:
         raise SystemExit("AI 요약을 받지 못했습니다. 잠시 후 다시 실행해주세요.")
     item["review"] = res[item["id"]]
+    item["review"]["keep"] = True
+    verify_summaries([item], cfg)   # 본문에 근거 없는 문장 삭제(자동 수집과 같은 검증)
     if section:
         item["review"]["section"] = section
         if item["review"]["subsection"] not in llm.SUBSECTIONS[section]:
