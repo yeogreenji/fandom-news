@@ -1,0 +1,82 @@
+name: Manual edit
+
+# 사이트에 기사를 직접 넣거나 빼는 수동 실행
+# Actions → Manual edit → Run workflow 에서 링크·작업·날짜를 넣고 실행
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "add = 기사 추가, remove = 게재 기사 빼기"
+        required: true
+        type: choice
+        options: [add, remove]
+      url:
+        description: "기사 원문 링크"
+        required: true
+      section:
+        description: "추가할 섹션(auto = AI 판단)"
+        required: false
+        type: choice
+        options: [auto, own, fandom_music, ent_content, ai_tech]
+        default: auto
+      date:
+        description: "넣을 날짜 YYYY-MM-DD (비우면 오늘)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: monitor
+  cancel-in-progress: false
+
+jobs:
+  edit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: edit
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          ARGS="${{ github.event.inputs.action }} ${{ github.event.inputs.url }}"
+          if [ "${{ github.event.inputs.section }}" != "auto" ]; then ARGS="$ARGS --section ${{ github.event.inputs.section }}"; fi
+          if [ -n "${{ github.event.inputs.date }}" ]; then ARGS="$ARGS --date ${{ github.event.inputs.date }}"; fi
+          python -m monitor.manual $ARGS
+      - name: save
+        run: |
+          git config user.name "news-monitor-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/data
+          git diff --cached --quiet || git commit -m "manual: ${{ github.event.inputs.action }} $(TZ=Asia/Seoul date +%F_%H%M)"
+          for i in 1 2 3; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push && break
+            sleep 5
+          done
+
+  deploy:
+    needs: edit
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.pages.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - id: pages
+        uses: actions/deploy-pages@v4
