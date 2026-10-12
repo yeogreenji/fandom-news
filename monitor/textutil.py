@@ -1,6 +1,8 @@
 """규칙 기반 1차 필터, 중복 기사 묶기, 시리즈 기획 감지."""
 from __future__ import annotations
 
+import collections
+import itertools
 import re
 from urllib.parse import urlparse
 
@@ -110,3 +112,35 @@ def detect_series(title: str) -> dict | None:
     else:
         n = int(re.sub(r"\D", "", no) or 0)
     return {"name": name, "no": n}
+
+
+# ── 같은 사안 판별(제목·요약의 드문 단어 공유) ──────
+# 같은 사건을 매체마다 제목을 달리 쓰면 cluster()로 안 묶인다(예: 암표 국감 기사 15건).
+# 후보 안에서 드물게 나오는 단어를 몇 개 이상 함께 쓰면 같은 사안으로 본다.
+_TOPIC_STOP = set("""기자 지난 올해 지난해 이번 위해 대한 관련 통해 따르면 밝혔다 있다 했다 한다 있으며 오는 최근
+가장 사진 뉴스 단독 종합 공식 국내 글로벌 한국 서울 신규 출시 개최 진행 예정 전년 대비 기록 확대 강화 나선다
+공개 결정 계획 이후 현재 통한 위한 대해 함께 중심 가운데 이어 특히 또한 다만 한편 지난달 이달 내년""".split())
+_JOSA = re.compile(r"(은|는|이|가|을|를|의|에|에서|으로|로|와|과|도|만|까지|부터)$")
+
+
+def topic_tokens(text: str) -> set[str]:
+    out = set()
+    for w in re.findall(r"[0-9A-Za-z가-힣]{2,}", (text or "").replace("**", "")):
+        w = _JOSA.sub("", w).lower()
+        if len(w) >= 2 and w not in _TOPIC_STOP:
+            out.add(w)
+    return out
+
+
+def topic_links(texts: list[str], k: int, max_df_ratio: float = 0.05) -> list[set[int]]:
+    """texts[i]와 같은 사안으로 보이는 다른 인덱스 집합(드문 단어를 k개 이상 공유).
+    여러 건을 사슬처럼 엮지 않고 1:1 쌍만 본다(엉뚱한 기사끼리 묶이는 것 방지)."""
+    toks = [topic_tokens(t) for t in texts]
+    df = collections.Counter(x for s in toks for x in s)
+    lim = max(3, int(len(texts) * max_df_ratio))
+    links: list[set[int]] = [set() for _ in texts]
+    for i, j in itertools.combinations(range(len(texts)), 2):
+        if len({x for x in toks[i] & toks[j] if df[x] <= lim}) >= k:
+            links[i].add(j)
+            links[j].add(i)
+    return links
