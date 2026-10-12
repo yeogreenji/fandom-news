@@ -8,6 +8,7 @@ import trafilatura
 from bs4 import BeautifulSoup
 
 from .press import press_from_domain
+from .titles import full_title, is_truncated
 
 log = logging.getLogger(__name__)
 
@@ -71,11 +72,15 @@ def fetch_article(item: dict) -> dict:
             body, press = _from_naver(html)
             if not item.get("title"):
                 item["title"], item["_meta_date"] = _meta_title_date(html)
-    if not body or len(body) < 200 or not item.get("title"):
+            elif is_truncated(item["title"]):   # 네이버 API가 '...'로 자른 제목 복원
+                item["title"] = full_title(item["title"], html) or item["title"]
+    if not body or len(body) < 200 or not item.get("title") or is_truncated(item.get("title", "")):
         html = _get(item["url"])
         if html:
             if not item.get("title"):
                 item["title"], item["_meta_date"] = _meta_title_date(html)
+            elif is_truncated(item["title"]):
+                item["title"] = full_title(item["title"], html) or item["title"]
             b2, site = _from_original(html)
             if b2 and len(b2) > len(body or ""):
                 body = b2
