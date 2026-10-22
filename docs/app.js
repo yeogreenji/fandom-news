@@ -14,6 +14,13 @@
     ent_content: ["fandom_commerce", "ent_biz", "ent_market", "live_ticket", "virtual_ai", "video_platform"],
     ai_tech: ["ai_tech"],
   };
+  // 섹션 안 소분류 이름(화면에만 표시, 메일 복사 형식에는 넣지 않음)
+  const SUB_LABEL = {
+    fan_platform: "팬덤 플랫폼·팬 비즈니스", music_platform: "국내 음원 플랫폼",
+    global_music: "해외 음악 산업", music_ai_rights: "음악 AI",
+    fandom_commerce: "팬덤 커머스", ent_biz: "엔터사 사업", ent_market: "산업 분석·제도·저작권",
+    live_ticket: "공연·티켓", virtual_ai: "버추얼·AI 아티스트", video_platform: "유튜브·OTT",
+  };
   const SAMPLE = window.__SAMPLE__ || null;
   const REVIEW = location.hash.replace("#", "") === "review";
 
@@ -115,7 +122,18 @@
       sec.className = "sec " + key; sec.id = "sec-" + key;
       sec.innerHTML = `<header><h2>[${esc(en)}]</h2><span class="ko">${esc(ko)}</span><span class="count">${list.length}건</span></header>`;
       if (!list.length) sec.insertAdjacentHTML("beforeend", `<p class="empty">해당 기간에 클리핑된 기사가 없습니다.</p>`);
-      for (const it of list) sec.append(renderItem(it));
+      let curSub = null;
+      for (const it of list) {
+        const label = SUB_LABEL[it.subsection];
+        if (label && it.subsection !== curSub) {
+          const h = document.createElement("h3");
+          h.className = "subhead";
+          h.textContent = label;
+          sec.append(h);
+        }
+        curSub = it.subsection;
+        sec.append(renderItem(it));
+      }
       main.append(sec);
     }
     if (series.length) {

@@ -106,6 +106,9 @@ main { min-width: 0; display: flex; flex-direction: column; gap: 36px; }
 .sec.own > header { border-bottom-color: var(--own); }
 .empty { color: var(--muted); font-size: 14px; padding: 14px 0; }
 
+.subhead { margin: 18px 0 0; padding: 4px 10px; display: inline-block; border-radius: 6px;
+  background: var(--accent-soft); color: var(--accent); font: 600 12px/1.4 var(--f-body); letter-spacing: .02em; }
+.subhead + .item { padding-top: 10px; }
 .item { display: grid; grid-template-columns: 22px minmax(0, 1fr); gap: 10px; padding: 16px 0; border-bottom: 1px solid var(--line); }
 .item input { margin-top: 5px; width: 16px; height: 16px; accent-color: var(--accent); cursor: pointer; }
 .item.picked { background: linear-gradient(90deg, var(--accent-soft), transparent 70%); }
