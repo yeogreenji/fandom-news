@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 import os
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -70,7 +71,8 @@ def date_label(dt: datetime) -> str:
 
 
 def update_index() -> None:
-    dates = sorted((p.stem for p in DAYS_DIR.glob("*.json")), reverse=True)
+    # 날짜 형식(YYYY-MM-DD) 파일만 목록에 넣는다(다운로드 때 붙는 "(1)" 같은 사본 제외)
+    dates = sorted((p.stem for p in DAYS_DIR.glob("*.json") if re.fullmatch(r"\d{4}-\d{2}-\d{2}", p.stem)), reverse=True)
     write_json(DATA_DIR / "index.json", {
         "dates": dates,
         "updated": now_kst().isoformat(timespec="minutes"),

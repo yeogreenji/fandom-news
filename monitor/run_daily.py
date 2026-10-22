@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import collections
 import math
 import re
 import time
@@ -15,7 +16,7 @@ from .common import (DAYS_DIR, KST, SECTION_ORDER, STATE_FILE, date_label, load_
 from .fetch import fetch_article
 from .press import press_from_domain
 from .textutil import (_bigrams, _norm_title, _sim, cluster, detect_series, query_terms,
-                       rule_excluded, snippet_has, snippet_has_all, topic_links)
+                       rule_excluded, snippet_has, snippet_has_all, topic_links, topic_tokens)
 
 log = logging.getLogger("monitor")
 
@@ -75,8 +76,40 @@ def collect(since: datetime, until: datetime, cfg: dict, qcfg: dict) -> tuple[li
 def recent_items(days: int = 3) -> list[dict]:
     """최근 며칠(오늘 이미 저장된 분 포함) 게재 기사."""
     out = []
-    for p in sorted(DAYS_DIR.glob("*.json"), reverse=True)[:days]:
+    for p in _day_files()[-days:]:
         out += read_json(p, {}).get("items", [])
+    return out
+
+
+def _day_files(before: str | None = None) -> list:
+    """날짜 형식(YYYY-MM-DD) 결과 파일만, 오래된 순. before를 주면 그 날짜보다 앞선 파일만."""
+    fs = sorted(p for p in DAYS_DIR.glob("*.json") if re.fullmatch(r"\d{4}-\d{2}-\d{2}", p.stem))
+    return [p for p in fs if before is None or p.stem < before]
+
+
+def drop_repeats(records: list[dict], day: str, days: int = 4) -> dict[str, str]:
+    """AI 중복 점검이 놓친 '최근 게재분과 같은 사안'을 코드로 한 번 더 거른다.
+    같은 보도자료가 수집 기준 시각(09:30) 전후로 나뉘어 이틀 연속 실리는 경우를 막기 위한 안전장치.
+    제목·요약에서 드물게 나오는 단어를 많이 공유하면(자사 8개, 그 외 13개 이상) 같은 사안으로 본다.
+    반환: {빼는 기사 id: 겹치는 기존 기사 제목}"""
+    recent = [x for p in _day_files(before=day)[-days:] for x in read_json(p, {}).get("items", [])]
+    if not recent or not records:
+        return {}
+    txt = lambda r: r["title"] + " " + (r.get("summary") or "")[:400]
+    toks = [topic_tokens(txt(x)) for x in records + recent]
+    df = collections.Counter(w for t in toks for w in t)
+    lim = max(3, int(len(toks) * 0.03))
+    urls = {x["url"]: x["title"] for x in recent}
+    out = {}
+    for i, r in enumerate(records):
+        if r["url"] in urls:
+            out[r["id"]] = urls[r["url"]]
+            continue
+        need = 8 if r.get("section") == "own" else 13
+        for j, p in enumerate(recent):
+            if len({w for w in toks[i] & toks[len(records) + j] if df[w] <= lim}) >= need:
+                out[r["id"]] = p["title"]
+                break
     return out
 
 
@@ -381,6 +414,56 @@ def promote_own(items: list[dict]) -> int:
     return moved
 
 
+# 1차·2차에서 자사 언급 기사가 '단순 언급'으로 빠지지 않게 하는 판별(플로는 조사까지 허용해 플로리다·플로어 등은 제외)
+_OWN_MENTION_RE = re.compile(
+    r"비마이프렌즈|서우석|비스테이지|b\.stage|bemyfriends|드림어스|플로집|dreamus|\bFLO\b"
+    r"|(?<![가-힣A-Za-z])플로(?=$|[^가-힣]|[가는은의를을에와과도로만까])", re.I)
+
+
+def _own_mention(it: dict) -> bool:
+    text = it.get("title", "") + " " + (it.get("description") or "") + " " + (it.get("body") or "")[:4000]
+    return bool(_OWN_MENTION_RE.search(text)) and not _STOCK_TITLE_RE.search(it.get("title", ""))
+
+
+def protect_own(items: list[dict]) -> int:
+    """1차에서 자사 언급 기사가 exclude되면 maybe·자사로 되돌린다(기준: 자사는 단순 언급도 포함)."""
+    n = 0
+    for it in items:
+        t = it.get("triage") or {}
+        if t.get("decision") == "exclude" and _own_mention(it):
+            t.update(decision="maybe", section="own", importance=max(t.get("importance", 2), 4),
+                     reason="자사 언급(단순 언급도 포함 기준)")
+            if "own" not in it.setdefault("section_hints", []):
+                it["section_hints"].append("own")
+            n += 1
+            log.info("자사 언급 1차 제외 취소: %s", it.get("title", "")[:40])
+    return n
+
+
+def rescue_own(items: list[dict], cfg: dict) -> int:
+    """2차에서 자사 언급 기사가 빠졌으면 '자사 언급' 안내를 붙여 한 번 더 판정(이벤트 공지·주가 기사는 그대로 제외)."""
+    cands = [it for it in items if (r := it.get("review")) is not None and not r.get("keep") and _own_mention(it)]
+    if not cands:
+        return 0
+    note = ("이 기사들에는 자사(비마이프렌즈·비스테이지·드림어스컴퍼니·플로)가 나온다. 기준상 자사는 단순 언급이라도 "
+            "주가·증권 기사나 경품·응모·할인 이벤트 공지가 아니면 포함한다. 해당하면 keep=true, section=own으로 두고 "
+            "기사 내용을 요약하되 자사가 나오는 문장을 반드시 넣고 **굵게** 표시한다. 이벤트 공지·주가 기사면 keep=false를 유지한다.")
+    n = 0
+    for batch in _chunks(cands, 4):
+        try:
+            res = llm.review_batch(batch, cfg["max_body_chars"], note=note)
+        except Exception as e:
+            log.error("자사 언급 재판정 실패(%d건): %s", len(batch), e)
+            continue
+        for it in batch:
+            r = res.get(it["id"])
+            if r and r.get("keep"):
+                it["review"] = r
+                n += 1
+                log.info("자사 언급 기사 재판정 후 포함: %s", it.get("title", "")[:40])
+    return n
+
+
 def _is_own(it: dict) -> bool:
     t = it.get("triage") or {}
     return "own" in it.get("section_hints", []) or t.get("section") == "own"
@@ -618,6 +701,7 @@ def main(argv=None):
         stats["triage_candidates"] = len(items)
         log.info("1차 선별 대상 %d건 (사전 제외 %d건)", len(items), len(pre_dropped))
         run_triage(items, cfg)
+        stats["own_protected"] = protect_own(items)
         to_review, overflow = pick_for_review(items, review_cap, cfg.get("review_reserve", {}))
         for it in items:
             t = it["triage"]
@@ -670,6 +754,8 @@ def main(argv=None):
                 stats["priority_review"] = len(pri)
         excluded += [excluded_record(it, "1차", "같은 사안 대표 기사로 검토" if it["triage"].get("mate") else "검토 한도 초과")
                      for it in overflow]
+        if not quota_out:
+            stats["own_rescued"] = rescue_own(to_review, cfg)
         stats["own_promoted"] = promote_own(to_review)
         # 요약 사실 검증 → 분량 보정 → 다시 검증 → 내용 부족 제외
         n1, issues = verify_summaries(to_review, cfg)
@@ -711,6 +797,15 @@ def main(argv=None):
                                  "stage": "중복", "reason": "같은 사안: " + drop_ids[r["id"]][:60]})
         records = [r for r in records if r["id"] not in drop_ids]
         log.info("중복 점검: %d건 제외", len(drop_ids))
+        # AI가 놓친 최근 게재분과의 중복을 코드로 한 번 더(같은 보도자료가 이틀에 걸쳐 실리는 것 방지)
+        rep_ids = drop_repeats(records, until.strftime("%Y-%m-%d"))
+        for r in records:
+            if r["id"] in rep_ids:
+                excluded.append({**{k: r[k] for k in ("title", "url", "press", "pub_date", "section")},
+                                 "stage": "중복", "reason": "최근 게재분과 같은 사안: " + rep_ids[r["id"]][:60]})
+        records = [r for r in records if r["id"] not in rep_ids]
+        stats["repeat_dropped"] = len(rep_ids)
+        log.info("최근 게재분 중복(코드 점검): %d건 제외", len(rep_ids))
     records, cut = apply_caps(records, cfg["section_caps"])
     excluded += [{**{k: r[k] for k in ("title", "url", "press", "pub_date", "section")},
                   "stage": "2차", "reason": "섹션 한도 초과"} for r in cut]
