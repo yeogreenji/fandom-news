@@ -1,0 +1,35 @@
+name: Deploy site
+
+# 담당자가 docs 폴더 파일(날짜 데이터·화면 파일)을 직접 올리거나 고치면 바로 사이트에 다시 배포한다.
+# 자동 수집(Daily monitor)이 끝날 때만 배포되던 것을 보완. 수동 실행: Actions → Deploy site → Run workflow
+on:
+  push:
+    branches: [main]
+    paths:
+      - "docs/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.pages.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - id: pages
+        uses: actions/deploy-pages@v4
