@@ -156,7 +156,21 @@ def prerank(items: list[dict], cfg: dict) -> tuple[list[dict], list[dict]]:
         n = caps.get(s_name, 0) or len(group)
         keep += group[:n]
         drop += group[n:]
-    return keep, drop
+    # 핵심 경쟁·유통 플랫폼 키워드 기사는 상한에 밀려도 되살린다(제목에 키워드가 있는 기사부터)
+    pri = [it for it in drop if priority_hit(it, cfg)]
+    pri.sort(key=lambda it: (0 if priority_hit(it, cfg, title_only=True) else 1, it["pub_date"]))
+    pri = pri[:cfg.get("priority_max", 80)]
+    ids = {it["id"] for it in pri}
+    if pri:
+        log.info("핵심 키워드 기사 %d건을 1차 선별에 추가", len(pri))
+    return keep + pri, [it for it in drop if it["id"] not in ids]
+
+
+def priority_hit(it: dict, cfg: dict, title_only: bool = False) -> bool:
+    """제목(또는 제목+요약문)에 핵심 경쟁·유통 플랫폼 키워드(settings의 priority_terms)가 있는지."""
+    text = it.get("title", "") + ("" if title_only else " " + (it.get("description") or ""))
+    text = text.replace(" ", "").lower()
+    return any(t.replace(" ", "").lower() in text for t in cfg.get("priority_terms", []))
 
 
 def run_triage(items: list[dict], cfg: dict) -> None:
@@ -213,17 +227,18 @@ def _topic_prio(cands: list[dict]) -> None:
     return same
 
 
-def pick_for_review(items: list[dict], cap: int, reserve: dict | None = None) -> tuple[list[dict], list[dict]]:
+def pick_for_review(items: list[dict], cap: int, reserve: dict | None = None,
+                    cfg: dict | None = None) -> tuple[list[dict], list[dict]]:
     # AI가 실제로 판단한 '포함/보류'만 본문 검토로. AI 판단을 못 받은 기사는 자사만 예외적으로 포함
     # 단순 주가 기사(제목에 특징주·강세 등)는 본문 검토 전에 뺀다
     cands = [it for it in items if it["triage"]["decision"] != "exclude"
              and (it["triage"].get("ai") or "own" in it["section_hints"])
-             and not _STOCK_TITLE_RE.search(it.get("title", ""))]
+             and (not _STOCK_TITLE_RE.search(it.get("title", "")) or (cfg and priority_hit(it, cfg, title_only=True)))]
     same = _topic_prio(cands) if cands else []
 
     def key(it):
         t = it["triage"]
-        own = 0 if ("own" in it["section_hints"] or t["section"] == "own") else 1
+        own = 0 if ("own" in it["section_hints"] or t["section"] == "own") else (1 if cfg and priority_hit(it, cfg) else 2)
         return (own, -t.get("prio", t.get("importance", 2)), 0 if t["decision"] == "include" else 1,
                 -t.get("topic_size", 1))
 
@@ -702,7 +717,7 @@ def main(argv=None):
         log.info("1차 선별 대상 %d건 (사전 제외 %d건)", len(items), len(pre_dropped))
         run_triage(items, cfg)
         stats["own_protected"] = protect_own(items)
-        to_review, overflow = pick_for_review(items, review_cap, cfg.get("review_reserve", {}))
+        to_review, overflow = pick_for_review(items, review_cap, cfg.get("review_reserve", {}), cfg)
         for it in items:
             t = it["triage"]
             if t["decision"] == "exclude" and ("own" in it["section_hints"] or t.get("importance", 1) >= 3):
