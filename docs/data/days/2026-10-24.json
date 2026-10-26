@@ -51,46 +51,6 @@
  },
  "items": [
   {
-   "id": "f9583c640fdd",
-   "title": "비마이프렌즈∙아뮤즈 첫 협업…소속 아티스트 팬덤 플랫폼 구축",
-   "url": "http://www.kdfnews.com/news/articleView.html?idxno=189784",
-   "press": "한국면세뉴스",
-   "pub_date": "2026-10-23T09:52:00+09:00",
-   "date_label": "26.10.23",
-   "section": "own",
-   "subsection": "own",
-   "importance": 5,
-   "kind": "news",
-   "must_include": true,
-   "summary": "**비마이프렌즈가 일본 아뮤즈엔터테인먼트와 첫 협업을 진행하며 소속 아티스트 신원호와 밴드 립스티커즈의 비스테이지 공식 팬 커뮤니티를 열고 글로벌 팬클럽 운영을 시작했다.** 립스티커즈는 지난 16일 비스테이지를 열고 첫 공식 팬클럽 회원 모집에 들어갔으며, 신원호는 23일 공식 비스테이지를 개설했다. 기존에는 일본 팬클럽을 중심으로 팬들과 교류했으나 일본 외 지역 팬들의 요청을 반영해 거주지와 관계없이 가입할 수 있도록 확장했다. 두 커뮤니티에서는 아티스트가 ‘스타 스토리’를 통해 일상과 근황을 직접 전하고 활동 일정 등을 공개하며, 멤버십 회원에게는 전용 콘텐츠와 디지털 리워드도 제공할 예정이다. **비마이프렌즈는 지난 7월 일본 종합 엔터테인먼트 기업 아뮤즈로부터 전략적 투자를 유치한 바 있으며, 이번 커뮤니티 오픈은 이후 진행한 첫 협업으로 향후 해외 진출을 추진하는 아뮤즈 소속 아티스트를 대상으로 협력을 이어갈 계획이다.**",
-   "reason": "비마이프렌즈 아뮤즈 협업 비스테이지 오픈",
-   "tags": [
-    "자사 보도자료 추정"
-   ],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 1
-  },
-  {
-   "id": "2217f6a75e12",
-   "title": "가수 겸 배우 신원호, 글로벌 팬들과 더 가까이…비스테이지(b.stage) 커뮤니티 오픈",
-   "url": "https://www.apnews.kr/news/articleView.html?idxno=3052388",
-   "press": "AP신문 | 온라인뉴스미디어 에이피신문",
-   "pub_date": "2026-10-23T14:40:00+09:00",
-   "date_label": "26.10.23",
-   "section": "own",
-   "subsection": "own",
-   "importance": 3,
-   "kind": "news",
-   "must_include": false,
-   "summary": "가수 겸 배우 신원호가 공식 팬 커뮤니티를 열고 글로벌 팬들과의 소통을 확대한다. 소속사 아뮤즈엔터테인먼트에 따르면 신원호는 금일 **글로벌 팬덤 플랫폼 비스테이지(b.stage)에 공식 팬 커뮤니티를 오픈했다.** 이번 팬 커뮤니티 개설을 통해 신원호는 국내외 팬들과 보다 적극적인 소통에 나설 예정이다. 그동안 일본 팬클럽을 중심으로 팬들과 교류해온 만큼, **비스테이지를 통해 일본 외 다양한 국가의 팬들과도 접점을 넓혀갈 예정이다.** 최근 신곡 'Super Star'를 발매하며 음악적 행보를 이어가는 가운데, 이번 글로벌 공식 팬 커뮤니티 개설을 연계해 팬들과의 교류를 넓혀가고 있다.",
-   "reason": "신원호 비스테이지 오픈 소식 중복",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 1
-  },
-  {
    "id": "15c343bce7a0",
    "title": "The Deals: Reservoir Acquires José Feliciano’s Recorded Catalog; SoundCloud Pacts With AI Platform Moises",
    "url": "https://www.billboard.com/lists/jose-feliciano-recorded-catalog-sells-reservoir-music-deals/",
@@ -109,25 +69,6 @@
    ],
    "series": null,
    "lang": "en",
-   "cluster_size": 1
-  },
-  {
-   "id": "fe203279a27a",
-   "title": "극장가 접수한 ‘치이카와’… 200만 고지도 코앞",
-   "url": "https://www.edaily.co.kr/News/Read?newsId=03037286645615872&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-   "press": "이데일리",
-   "pub_date": "2026-10-23T09:10:00+09:00",
-   "date_label": "26.10.23",
-   "section": "ent_content",
-   "subsection": "fandom_commerce",
-   "importance": 4,
-   "kind": "trend",
-   "must_include": false,
-   "summary": "일본 애니메이션 ‘극장판 치이카와: 인어 섬의 비밀’이 개봉 4주 차에도 박스오피스 1위를 지키며 누적 관객 200만 명 돌파를 앞두고 있다. 23일 영화진흥위원회 통합전산망에 따르면 이 작품은 22일 하루 2만 3254명을 모아 누적 관객 192만 7845명을 기록했다. 실시간 예매율 역시 1위를 유지하며 신작 공세 속에서도 장기 흥행을 이어가는 모습이다. 이번 흥행은 개봉 초반 팬덤 화력에 그치지 않고 주차별 특전과 한정판 상품을 통해 팬들의 반복 관람을 유도한 전략이 주효했다는 평가를 받는다. 국내에서 ‘먼작귀’로 불리며 인형, 키링, 팝업스토어 등으로 다져진 캐릭터 팬덤을 극장 관객으로 흡수한 점도 흥행 배경으로 꼽힌다. 캐릭터들이 음악방송 ‘엠카운트다운’에 출연하는 등 아이돌식 이색 홍보를 펼친 점도 관객 유입을 이끌었다. 영화계 관계자는 이번 사례가 영화 경쟁력뿐 아니라 IP와 팬덤의 힘이 극장 성적을 좌우할 수 있음을 보여준다고 분석했다.",
-   "reason": "캐릭터 팬덤 및 굿즈 특전 기반 흥행 분석",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
    "cluster_size": 1
   },
   {
@@ -207,25 +148,6 @@
    "cluster_size": 1
   },
   {
-   "id": "1bb48a61a027",
-   "title": "이영애·이승철·변요한·티파니 영 등 37人, 'MMA 2026' 시상자 출격",
-   "url": "https://www.edaily.co.kr/News/Read?newsId=04162326645615872&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-   "press": "이데일리",
-   "pub_date": "2026-10-23T14:17:00+09:00",
-   "date_label": "26.10.23",
-   "section": "ent_content",
-   "subsection": "ent_biz",
-   "importance": 3,
-   "kind": "news",
-   "must_include": false,
-   "summary": "카카오엔터테인먼트는 멜론 데이터 기반 대중음악 시상식 '2026 멜론뮤직어워드'의 시상자 라인업을 공개했다. MMA 2026은 내달 14일부터 15일까지 양일간 서울 고척스카이돔에서 개최되며, '연결'을 핵심 키워드로 한 메인 슬로건 아래 진행된다. 첫째 날에는 강훈, 강소라를 비롯한 17명이 시상자로 참여하고, 둘째 날에는 변요한, 이승철, 티파니 영 등을 포함한 20명이 시상자로 무대에 오른다. 앞서 공개된 아티스트 라인업에는 양일간 총 26팀이 이름을 올렸으며, 첫째 날에는 NCT 드림, 에이티즈, 에스파 등이 출연하고 둘째 날에는 아이브, NCT 127, 플레이브 등이 출연한다. 카카오엔터테인먼트는 오는 29일까지 멜론을 통해 톱10 부문 투표를 진행한다.",
-   "reason": "카카오엔터 멜론뮤직어워드 시상자 라인업 발표",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 2
-  },
-  {
    "id": "5efde71596a6",
    "title": "노바뮤직그룹 강동아 대표, 음원부터 포토이즘·버블·콘서트까지…아티스트 IP 사업 확장",
    "url": "http://www.segyebiz.com/newsView/20261023513582?OutUrl=naver",
@@ -285,27 +207,6 @@
    "cluster_size": 1
   },
   {
-   "id": "7071bf10b0ee",
-   "title": "대구경찰, 25일부터 프로야구 경기장 주변 암표매매 단속",
-   "url": "https://www.lawissue.co.kr/view.php?ud=2026102309041876689a8c8bf58f_12",
-   "press": "로이슈",
-   "pub_date": "2026-10-23T09:16:00+09:00",
-   "date_label": "26.10.23",
-   "section": "ent_content",
-   "subsection": "live_ticket",
-   "importance": 3,
-   "kind": "news",
-   "must_include": false,
-   "summary": "대구경찰청은 25일부터 대구삼성 라이온스파크 일대에서 프로야구 경기장 주변 암표매매 단속 및 순찰을 강화한다고 밝혔다. 특히 26일에는 대구경찰과 문화체육관광부, KBO가 합동으로 암표매매 단속 및 홍보 활동에 나선다. 그간 단속 현장에서는 암표매매가 적발되더라도 경범죄처벌법에 따른 범칙금 부과에 그쳤으나, 8월 28일 개정된 국민체육진흥법 시행에 따라 상습성 또는 영업성이 인정되는 경우 1년 이하의 징역 또는 1000만 원 이하의 벌금에 처해진다. 현장 단속은 매표소 주변과 지하철 출구, 야구팬 주 이동 동선에 사복 경찰과 합동 순찰팀을 배치해 조직적인 현장 판매와 호객 행위를 차단하는 방식으로 진행되며, 관계기관과 협력을 지속할 계획이다.",
-   "reason": "프로야구 경기장 암표 단속 제도 및 강화",
-   "tags": [
-    "동일 보도 3건"
-   ],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 3
-  },
-  {
    "id": "b6d7bed04fdf",
    "title": "내년 6월 문 여는 서울아레나…오세훈 “강북 전성시대 주요 거점”",
    "url": "https://www.seoul.co.kr/news/publicnews/2026/10/23/20261023500098?wlog_tag3=naver",
@@ -319,25 +220,6 @@
    "must_include": false,
    "summary": "서울시가 내년 6월 개관을 앞둔 국내 최대 규모 공연 전문 복합문화시설 '서울아레나' 건립 현장을 점검했다. 도봉구 창동에 조성 중인 서울아레나는 현재 공정률 81%로 내년 5월 준공 예정이다. 최대 2만 8000명을 수용할 수 있는 대형 아레나 공연장과 7000명 규모의 중형 공연장, 대중음악지원시설, 상업시설 등이 들어선다. 지난달 진행된 2027년 하반기 공연 일정 정기 대관은 최대 4대 1의 경쟁률을 기록했으며, 서울시는 개관 이후 연간 약 270만 명의 관광객이 찾을 것으로 예상하고 있다. 시는 서울아레나를 거점으로 창동 일대를 문화·관광·산업의 'K-엔터타운'으로 육성할 계획이다. 대중음악지원시설을 통해 중소기획사와 신진 아티스트의 창작과 공연 활동을 지원하고 전문인력을 양성한다. 또한 창동역 먹자골목 정비와 팝업스토어 운영, 버스 증편 및 지하철 임시열차 운행 등 대규모 관람객 유입에 대응하는 교통 및 상권 활성화 대책도 추진한다.",
    "reason": "국내 최대 서울아레나 건립 및 공연 인프라 현황",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 2
-  },
-  {
-   "id": "7877fa0312b9",
-   "title": "SOOP, 국내 최대 서브컬처 축제 'AGF 2026' 첫 출격...\"버추얼 생태계 뽐낸다\"",
-   "url": "https://www.asiaa.co.kr/news/articleView.html?idxno=267532",
-   "press": "아시아에이",
-   "pub_date": "2026-10-23T09:56:00+09:00",
-   "date_label": "26.10.23",
-   "section": "ent_content",
-   "subsection": "virtual_ai",
-   "importance": 3,
-   "kind": "news",
-   "must_include": false,
-   "summary": "에스오오피가 국내 최대 서브컬처 축제인 에이지에프 2026에 공식 스폰서로 처음 참가해 자사 버추얼 스트리머 콘텐츠를 대거 선보인다. 에스오오피는 오는 12월 4일부터 6일까지 경기 고양시 일산 킨텍스에서 열리는 에이지에프 2026 행사장에 대형 전용 부스를 마련한다고 23일 밝혔다. 에이지에프는 애니메이션과 게임을 중심으로 한 국내 최대 규모 서브컬처 종합 오프라인 행사다. 이번 행사에서 에스오오피는 자사 플랫폼을 기반으로 활동하는 주요 버추얼 스트리머들을 오프라인으로 끌어내 서브컬처 팬들과의 접점을 넓힌다. 가상 아바타를 내세워 게임, 음악, 토크 등 다양한 방송을 진행하는 버추얼 스트리머는 최근 게임과 애니메이션 유저들을 중심으로 강력한 코어 팬덤을 형성하며 서브컬처 시장 핵심 주류로 자리 잡았다. 에스오오피는 그동안 온라인 화면 너머로만 접했던 버추얼 콘텐츠를 오프라인 현장 경험으로 확장해, 서브컬처 팬들이 스트리머와 직접 교류하고 소통할 수 있는 다양한 체험형 프로그램을 운영할 계획이다.",
-   "reason": "SOOP의 AGF 2026 참가 및 버추얼 생태계 확장 소식",
    "tags": [],
    "series": null,
    "lang": "ko",
@@ -361,25 +243,6 @@
    "series": null,
    "lang": "ko",
    "cluster_size": 1
-  },
-  {
-   "id": "49fbd717bb8a",
-   "title": "SOOP, 서브컬처 축제 AGF 공식 스폰서 참여…버추얼 콘텐츠 선보인다",
-   "url": "https://www.straightnews.co.kr/news/articleView.html?idxno=313825",
-   "press": "스트레이트뉴스",
-   "pub_date": "2026-10-23T14:44:00+09:00",
-   "date_label": "26.10.23",
-   "section": "ent_content",
-   "subsection": "virtual_ai",
-   "importance": 3,
-   "kind": "news",
-   "must_include": false,
-   "summary": "SOOP은 오는 12월 4일부터 6일까지 경기 고양시 킨텍스에서 열리는 애니메이션 X 게임 페스티벌 2026에 처음 참가한다고 23일 밝혔다. 공식 스폰서로 참여해 행사장에 부스를 마련하고 버추얼 스트리머와 관련 콘텐츠를 소개할 계획이다. 버추얼 스트리머를 중심으로 형성된 온라인 팬덤이 오프라인 행사로 활동 범위를 넓히고 있다. 라이브 방송을 통해 캐릭터와 콘텐츠를 소비하던 팬들이 현장에서 스트리머와 교류하고 관련 콘텐츠를 경험하는 방식이다. AGF는 애니메이션과 게임을 중심으로 서브컬처 콘텐츠를 즐기는 행사다. SOOP은 게임과 음악 등 다양한 분야에서 활동하는 버추얼 스트리머를 앞세워 방문객이 콘텐츠를 직접 체험하고 소통할 수 있는 프로그램을 마련할 예정이다. 버추얼 스트리머는 가상 캐릭터나 아바타를 활용해 라이브 방송을 진행하며 게임, 음악, 토크 등으로 이용자와 교류한다. 캐릭터와 세계관을 중심으로 팬덤이 형성된다는 점에서 애니메이션 게임 기반 서브컬처와 접점이 있다.",
-   "reason": "SOOP의 버추얼 팬덤 오프라인 확장 전략",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 2
   },
   {
    "id": "3d3a4ffd33c4",
@@ -1441,6 +1304,69 @@
    "section": "ai_tech",
    "stage": "2차",
    "reason": "섹션 한도 초과"
+  },
+  {
+   "title": "가수 겸 배우 신원호, 글로벌 팬들과 더 가까이…비스테이지(b.stage) 커뮤니티 오픈",
+   "url": "https://www.apnews.kr/news/articleView.html?idxno=3052388",
+   "press": "AP신문 | 온라인뉴스미디어 에이피신문",
+   "pub_date": "2026-10-23T14:40:00+09:00",
+   "section": "own",
+   "stage": "담당자",
+   "reason": "담당자 제외: 10/23 게재(마이데일리)와 같은 사안"
+  },
+  {
+   "title": "이영애·이승철·변요한·티파니 영 등 37人, 'MMA 2026' 시상자 출격",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=04162326645615872&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "press": "이데일리",
+   "pub_date": "2026-10-23T14:17:00+09:00",
+   "section": "ent_content",
+   "stage": "담당자",
+   "reason": "담당자 제외: 시상식 시상자 라인업 단신"
+  },
+  {
+   "title": "SOOP, 국내 최대 서브컬처 축제 'AGF 2026' 첫 출격...\"버추얼 생태계 뽐낸다\"",
+   "url": "https://www.asiaa.co.kr/news/articleView.html?idxno=267532",
+   "press": "아시아에이",
+   "pub_date": "2026-10-23T09:56:00+09:00",
+   "section": "ent_content",
+   "stage": "담당자",
+   "reason": "담당자 제외: 같은 날 같은 보도자료(데일리게임 기사 유지)"
+  },
+  {
+   "title": "SOOP, 서브컬처 축제 AGF 공식 스폰서 참여…버추얼 콘텐츠 선보인다",
+   "url": "https://www.straightnews.co.kr/news/articleView.html?idxno=313825",
+   "press": "스트레이트뉴스",
+   "pub_date": "2026-10-23T14:44:00+09:00",
+   "section": "ent_content",
+   "stage": "담당자",
+   "reason": "담당자 제외: 같은 날 같은 보도자료(데일리게임 기사 유지)"
+  },
+  {
+   "title": "대구경찰, 25일부터 프로야구 경기장 주변 암표매매 단속",
+   "url": "https://www.lawissue.co.kr/view.php?ud=2026102309041876689a8c8bf58f_12",
+   "press": "로이슈",
+   "pub_date": "2026-10-23T09:16:00+09:00",
+   "section": "ent_content",
+   "stage": "담당자",
+   "reason": "담당자 제외: 암표 단속 공지 단신"
+  },
+  {
+   "title": "비마이프렌즈∙아뮤즈 첫 협업…소속 아티스트 팬덤 플랫폼 구축",
+   "url": "http://www.kdfnews.com/news/articleView.html?idxno=189784",
+   "press": "한국면세뉴스",
+   "pub_date": "2026-10-23T09:52:00+09:00",
+   "section": "own",
+   "stage": "담당자",
+   "reason": "담당자 제외: 10/23 게재 자사 사안(신원호 비스테이지 오픈)과 같은 내용"
+  },
+  {
+   "title": "극장가 접수한 ‘치이카와’… 200만 고지도 코앞",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=03037286645615872&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "press": "이데일리",
+   "pub_date": "2026-10-23T09:10:00+09:00",
+   "section": "ent_content",
+   "stage": "담당자",
+   "reason": "담당자 제외: 영화 흥행 기사"
   }
  ]
 }
