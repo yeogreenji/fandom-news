@@ -149,15 +149,17 @@ def drop_repeats(records: list[dict], day: str, days: int = 4) -> dict[str, str]
                 out[r["id"]] = p["title"]
                 break
         else:
-            # 자사: 최근 자사 기사 제목의 고유명사(아티스트·고객사·행사명)가 이번 기사에 나오면 같은 사안으로 본다
-            # 예) 10/23 “신원호, 비스테이지 공식 팬 커뮤니티 오픈” → 10/24 “비마이프렌즈∙아뮤즈 첫 협업”(본문에 신원호)
+            # 자사: 최근 자사 기사 제목의 고유명사(아티스트·고객사·행사명)가 이번 기사 제목에도 나오면 같은 사안으로 본다
+            # 예) 10/23 “신원호, 오늘(23일) 비스테이지 공식 팬 커뮤니티 오픈” → 10/24 “가수 겸 배우 신원호, …비스테이지 커뮤니티 오픈”
             if r.get("section") == "own":
                 for j, p in enumerate(recent):
                     if p.get("section") != "own":
                         continue
                     names = {w for w in topic_tokens(p["title"]) if len(w) >= 2 and not w.isdigit()
                              and w not in _OWN_GENERIC and df[w] <= 3}
-                    if names & toks[i]:
+                    # 같은 이름이 새 기사 '제목'에도 있어야 재게재로 본다. 제목 주체가 다른 쪽 보도자료
+                    # (예: 아뮤즈 측 “신원호 비스테이지 오픈” 다음 날 비마이프렌즈 측 “비마이프렌즈∙아뮤즈 첫 협업”)는 싣는다
+                    if names & topic_tokens(r["title"]):
                         out[r["id"]] = p["title"]
                         break
     return out
