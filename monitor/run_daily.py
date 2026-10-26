@@ -87,6 +87,44 @@ def _day_files(before: str | None = None) -> list:
     return [p for p in fs if before is None or p.stem < before]
 
 
+def drop_same_day(records: list[dict], need: int = 11) -> dict[str, str]:
+    """AI 중복 점검이 놓친 '같은 날 같은 보도자료' 기사를 코드로 묶어 1건만 남긴다(자사 제외).
+    제목·요약에서 드문 단어를 need개 이상 공유하면 같은 사안으로 보고, 묶음 안에서
+    중요도 높은 기사 → 주요 매체(PRESS_PRIORITY) 순으로 1건을 남긴다.
+    반환: {빼는 기사 id: 남기는 기사 제목}"""
+    from .press import PRESS_PRIORITY
+    recs = [r for r in records if r.get("section") != "own"]
+    if len(recs) < 2:
+        return {}
+    txt = lambda r: r["title"] + " " + (r.get("summary") or "")[:400]
+    toks = [topic_tokens(txt(x)) for x in recs]
+    df = collections.Counter(w for t in toks for w in t)
+    lim = max(3, int(len(toks) * 0.03))
+    parent = list(range(len(recs)))
+
+    def find(i):
+        while parent[i] != i:
+            parent[i] = parent[parent[i]]
+            i = parent[i]
+        return i
+    for i in range(len(recs)):
+        for j in range(i + 1, len(recs)):
+            if len({w for w in toks[i] & toks[j] if df[w] <= lim}) >= need:
+                parent[find(i)] = find(j)
+    groups = collections.defaultdict(list)
+    for i in range(len(recs)):
+        groups[find(i)].append(recs[i])
+    rank = lambda r: (-r.get("importance", 3),
+                      PRESS_PRIORITY.index(r["press"]) if r.get("press") in PRESS_PRIORITY else 99, r["pub_date"])
+    out = {}
+    for g in groups.values():
+        if len(g) > 1:
+            g.sort(key=rank)
+            for r in g[1:]:
+                out[r["id"]] = g[0]["title"]
+    return out
+
+
 def drop_repeats(records: list[dict], day: str, days: int = 4) -> dict[str, str]:
     """AI 중복 점검이 놓친 '최근 게재분과 같은 사안'을 코드로 한 번 더 거른다.
     같은 보도자료가 수집 기준 시각(09:30) 전후로 나뉘어 이틀 연속 실리는 경우를 막기 위한 안전장치.
@@ -110,7 +148,25 @@ def drop_repeats(records: list[dict], day: str, days: int = 4) -> dict[str, str]
             if len({w for w in toks[i] & toks[len(records) + j] if df[w] <= lim}) >= need:
                 out[r["id"]] = p["title"]
                 break
+        else:
+            # 자사: 최근 자사 기사 제목의 고유명사(아티스트·고객사·행사명)가 이번 기사에 나오면 같은 사안으로 본다
+            # 예) 10/23 “신원호, 비스테이지 공식 팬 커뮤니티 오픈” → 10/24 “비마이프렌즈∙아뮤즈 첫 협업”(본문에 신원호)
+            if r.get("section") == "own":
+                for j, p in enumerate(recent):
+                    if p.get("section") != "own":
+                        continue
+                    names = {w for w in topic_tokens(p["title"]) if len(w) >= 2 and not w.isdigit()
+                             and w not in _OWN_GENERIC and df[w] <= 3}
+                    if names & toks[i]:
+                        out[r["id"]] = p["title"]
+                        break
     return out
+
+
+# 자사 고유명사 비교에서 빼는 일반어(자사 이름·서비스명·흔한 단어)
+_OWN_GENERIC = {"비스테이지", "플로", "flo", "비마이프렌즈", "드림어스", "드림어스컴퍼니", "stage", "서우석", "이기영",
+                "플로집", "팬덤", "플랫폼", "글로벌", "공식", "커뮤니티", "오픈", "응원하기", "가수", "배우", "연결",
+                "팬클럽", "비즈니스", "재생", "콘텐츠", "아티스트", "음원", "음악", "멤버십", "협업", "출시"}
 
 
 def recent_signatures(days: int = 4) -> list[set]:
@@ -435,6 +491,10 @@ _OWN_MENTION_RE = re.compile(
     r"|(?<![가-힣A-Za-z])플로(?=$|[^가-힣]|[가는은의를을에와과도로만까])", re.I)
 
 
+# 음원 차트·순위·브랜드평판 기사(본문에 플로가 집계 플랫폼으로만 나오는 경우) 판별
+_RANK_TITLE_RE = re.compile(r"\d+\s*위|차트|순위|뮤직100|가수브랜드|브랜드평판|계단\s*(상승|하락)|\d+주차")
+
+
 def _own_mention(it: dict) -> bool:
     text = it.get("title", "") + " " + (it.get("description") or "") + " " + (it.get("body") or "")[:4000]
     return bool(_OWN_MENTION_RE.search(text)) and not _STOCK_TITLE_RE.search(it.get("title", ""))
@@ -457,7 +517,8 @@ def protect_own(items: list[dict]) -> int:
 
 def rescue_own(items: list[dict], cfg: dict) -> int:
     """2차에서 자사 언급 기사가 빠졌으면 '자사 언급' 안내를 붙여 한 번 더 판정(이벤트 공지·주가 기사는 그대로 제외)."""
-    cands = [it for it in items if (r := it.get("review")) is not None and not r.get("keep") and _own_mention(it)]
+    cands = [it for it in items if (r := it.get("review")) is not None and not r.get("keep") and _own_mention(it)
+             and not (_RANK_TITLE_RE.search(it.get("title", "")) and not _OWN_MENTION_RE.search(it.get("title", "")))]
     if not cands:
         return 0
     note = ("이 기사들에는 자사(비마이프렌즈·비스테이지·드림어스컴퍼니·플로)가 나온다. 기준상 자사는 단순 언급이라도 "
@@ -820,6 +881,14 @@ def main(argv=None):
                                  "stage": "중복", "reason": "최근 게재분과 같은 사안: " + rep_ids[r["id"]][:60]})
         records = [r for r in records if r["id"] not in rep_ids]
         stats["repeat_dropped"] = len(rep_ids)
+        same_ids = drop_same_day(records)
+        for r in records:
+            if r["id"] in same_ids:
+                excluded.append({**{k: r[k] for k in ("title", "url", "press", "pub_date", "section")},
+                                 "stage": "중복", "reason": "같은 날 같은 사안: " + same_ids[r["id"]][:60]})
+        records = [r for r in records if r["id"] not in same_ids]
+        stats["same_day_dropped"] = len(same_ids)
+        log.info("같은 날 중복(코드 점검): %d건 제외", len(same_ids))
         log.info("최근 게재분 중복(코드 점검): %d건 제외", len(rep_ids))
     records, cut = apply_caps(records, cfg["section_caps"])
     excluded += [{**{k: r[k] for k in ("title", "url", "press", "pub_date", "section")},
