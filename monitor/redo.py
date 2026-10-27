@@ -95,6 +95,18 @@ def redo(day: str) -> None:
     excluded += [{**{k: r[k] for k in _KEYS}, "stage": "선별", "reason": f"중요도 {r['importance']} (기준 {min_imp} 미만)"}
                  for r in low]
     records = [r for r in records if r not in low]
+    # 섹션별 하루 한도(예: AI & Tech 4건) — 이미 실린 기사 수를 빼고 남은 만큼만
+    sec_caps = cfg.get("section_caps", {})
+    records.sort(key=lambda r: -r["importance"])
+    capped = []
+    for r in records:
+        lim = sec_caps.get(r["section"], 0)
+        used = sum(1 for x in keep_items + capped if x["section"] == r["section"])
+        if lim and used >= lim:
+            excluded.append({**{k: r[k] for k in _KEYS}, "stage": "2차", "reason": "섹션 한도 초과"})
+        else:
+            capped.append(r)
+    records = capped
     cap = data.get("cap", cfg.get("cap_base", 30))
     records.sort(key=lambda r: (-r["importance"], 0 if r.get("must_include") else 1, 0 if r["section"] == "own" else 1))
     slots = max(0, cap - len(keep_items))
