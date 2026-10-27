@@ -391,6 +391,16 @@ def run_review(items: list[dict], cfg: dict) -> bool:
                 if it["review"] is None:
                     still.append(it)
         failed = still
+    # 그래도 남으면 1분 쉬고 1건씩 마지막 시도(구글 서버 과부하가 길게 이어지는 날 대비)
+    if failed and not state["quota_out"]:
+        log.info("2차 판정 실패 %d건 1건씩 마지막 재시도", len(failed))
+        time.sleep(60)
+        still = []
+        for it in failed:
+            it["review"] = ask([it]).get(it["id"])
+            if it["review"] is None:
+                still.append(it)
+        failed = still
     for it in failed:
         it["review"] = no_ai_review(it)
     return state["quota_out"]
@@ -638,7 +648,8 @@ def trim_long_summaries(items: list[dict], cfg: dict) -> int:
 def no_ai_review(it: dict) -> dict | None:
     """AI 본문 판정을 못 받은 경우: 자사 기사만 네이버 요약문으로 게재(다른 기사는 품질 때문에 싣지 않음)."""
     t = it.get("triage", {})
-    own = _is_own(it)
+    # 검색어로만 자사로 잡힌 기사(예: '포레드플로'가 '플로'로 검색됨)는 싣지 않는다. 기사에 자사가 실제로 나와야 함
+    own = _is_own(it) and _own_mention(it)
     if not own:
         return None
     sec = "own" if own else t.get("section", it["section_hints"][0])
