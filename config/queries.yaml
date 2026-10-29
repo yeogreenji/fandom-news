@@ -86,6 +86,39 @@ groups:
       - q: 비디오 팟캐스트
       - q: 음악서비스
 
+  - name: AI 음악 정책 (고객사 요청 중점)
+    section_hint: fandom_music
+    snippet_check: true
+    queries:
+      - q: AI 음원
+      - q: AI 음악 저작권
+      - q: AI 음악 표시
+      - q: AI 음원 표기
+      - q: AI 음악 신탁
+      - q: AI 음악 정책
+      - q: AI 음악 규제
+      - q: AI 기본법 음악
+        must_any: [음악, 음원, 노래, 가수]
+      - q: AI 작곡 저작권
+      - q: AI 커버곡
+      - q: AI 가수
+        must_any: [음악, 음원, 노래, 차트, 저작권]
+      - q: AI 보컬
+        must_any: [음악, 음원, 노래, 차트, 저작권]
+      - q: 생성형 AI 음악
+      - q: 수노 AI
+        must_any: [수노, Suno]
+      - q: 유디오 AI
+        must_any: [유디오, Udio]
+      - q: 스포티파이 AI
+      - q: 유튜브 AI 음악
+      - q: 애플뮤직 AI
+      - q: 디저 AI
+        must_any: [디저, Deezer]
+      - q: 음원 플랫폼 AI
+      - q: AI 음악 소송
+      - q: AI 음악 라이선스
+
   - name: 콘텐츠 업계 (유튜브·IP·OTT)
     section_hint: ent_content
     snippet_check: true
