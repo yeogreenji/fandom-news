@@ -1,0 +1,1668 @@
+{
+ "date": "2026-10-30",
+ "generated_at": "2026-10-30T09:10+09:00",
+ "window": {
+  "from": "2026-10-29T09:10+09:00",
+  "to": "2026-10-30T09:10+09:00"
+ },
+ "cap": 30,
+ "stats": {
+  "raw": 4379,
+  "rule_dropped": 21,
+  "snippet_dropped": 865,
+  "collect_sec": 201,
+  "unique": 1976,
+  "new": 1974,
+  "clusters": 1633,
+  "triage_candidates": 413,
+  "own_protected": 1,
+  "triage_sec": 62,
+  "own_promoted": 0,
+  "summary_trimmed": 1,
+  "unsupported_removed": 7,
+  "summary_thin_dropped": 0,
+  "ai_sec": 1501,
+  "repeat_dropped": 1,
+  "same_day_dropped": 2,
+  "kept": 16
+ },
+ "ai": {
+  "calls": 26,
+  "ok": 19,
+  "parse_fail": 0,
+  "rate_wait": 0,
+  "quota_day": 0,
+  "errors": [
+   "503 서버 오류",
+   "연결 오류: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read ti",
+   "503 서버 오류",
+   "503 서버 오류",
+   "연결 오류: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read ti",
+   "연결 오류: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read ti",
+   "연결 오류: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read ti"
+  ],
+  "seconds": 799
+ },
+ "items": [
+  {
+   "id": "e3812b5960c4",
+   "title": "플로, 팬덤 스트리밍 인증 '응원 카드' 도입",
+   "url": "https://view.asiae.co.kr/article/2026102910060858397",
+   "press": "아시아경제",
+   "pub_date": "2026-10-29T10:06:00+09:00",
+   "date_label": "26.10.29",
+   "section": "own",
+   "subsection": "own",
+   "importance": 5,
+   "kind": "news",
+   "must_include": true,
+   "summary": "**드림어스컴퍼니의 음악 플랫폼 플로(FLO)가 가수별 스트리밍 참여 기록을 확인하고 공유할 수 있는 '응원 카드'와 실시간 댓글 기능을 추가했다고 29일 밝혔다.** **응원 카드는 이용자의 특정 가수 음원 재생 내역을 시각화한 기능으로, '내 응원 카드'를 누르면 전체 스트리밍 횟수, 참여 인원, 개인 기여도(%)가 표시되며 인스타그램, X, 카카오톡 등에 공유할 수 있다.** **이용자는 음악을 들으며 동일 재생목록 참여자들과 댓글, 답글, 이모지를 주고받으며 소통할 수 있다.** **플로는 팬들의 반복 재생 문화를 반영해 지난 9월 '응원하기'를 정식 출시했으며, 출시 한 달 만에 누적 재생 수 100만 회와 참여자 25만 명을 넘어 현재 130여 팀의 재생목록을 운영 중이다.** **12월까지 매달 최다 응원을 받은 3팀의 광고를 강남역, 홍대입구역, 고속터미널역 등 서울 주요 지하철역에 게시하는 행사도 연다.**",
+   "reason": "드림어스 플로 응원 카드 및 댓글 도입",
+   "tags": [
+    "자사 보도자료 추정"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "0058311cb3f5",
+   "title": "오마이걸, MBC '신인감독 김연경2' OST 'FLY HIGH' 가창 참여",
+   "url": "https://www.gukjenews.com/news/articleView.html?idxno=3736222",
+   "press": "국제뉴스",
+   "pub_date": "2026-10-29T11:22:00+09:00",
+   "date_label": "26.10.29",
+   "section": "own",
+   "subsection": "own",
+   "importance": 5,
+   "kind": "news",
+   "must_include": false,
+   "summary": "팬엔터테인먼트가 예능 프로그램 제작을 넘어 OST, 굿즈, 팬덤 플랫폼 등으로 사업을 확장하고 있다. **팬엔터테인먼트는 글로벌 팬덤 플랫폼 비스테이지(b.stage)를 활용해 공식 팬페이지를 열고 팬 참여형 콘텐츠와 커머스 기능을 도입하는 등 콘텐츠 IP 다각화에 힘쓰고 있으며**, 이번에는 MBC '신인감독 김연경2'의 OST 발매를 통해 프로그램의 메시지를 음악으로 전한다. '신인감독 김연경2'는 팬엔터테인먼트와 MBC가 공동 제작한 예능으로, 굿데이터코퍼레이션 10월 3주 펀덱스 리포트에서 TV·OTT 비드라마 화제성 1위를 기록했다. 프로그램 OST 'FLY HIGH'는 그룹 오마이걸이 가창에 참여해 25일 오후 6시 음원 사이트를 통해 공개된다. 곡은 신생 배구단 '필승 원더독스'가 승리를 향해 나아가는 도전과 성장 과정을 경쾌한 드럼과 신시사이저 사운드, 오마이걸의 보컬로 표현했다.",
+   "reason": "비스테이지 활용사례 실질 언급",
+   "tags": [],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "0afe0d38c370",
+   "title": "커넥텀 보이즈, 글로벌 팬 커뮤니티‘B.Stage’(비스테이지) 공식오픈 팬들과 소통 본격화",
+   "url": "https://sports.khan.co.kr/article/202610292011003?pt=nv",
+   "press": "스포츠경향",
+   "pub_date": "2026-10-29T20:12:00+09:00",
+   "date_label": "26.10.29",
+   "section": "own",
+   "subsection": "own",
+   "importance": 5,
+   "kind": "news",
+   "must_include": false,
+   "summary": "**커넥텀 엔터테인먼트 소속 연습생 그룹 '커넥텀 보이즈'가 글로벌 팬덤 플랫폼 '비스테이지(b.stage)'에 공식 커뮤니티를 오픈하고 팬들과 소통을 본격화했다.** 커넥텀 보이즈는 지난 28일 **비스테이지** 공식 커뮤니티를 개설해 국내외 팬들이 한 공간에서 소식과 콘텐츠를 접할 수 있는 소통 창구를 마련했다. 오픈 첫날부터 멤버들은 메시지와 댓글을 통해 일상을 공유하며 적극적인 소통에 나섰다. 이번 오픈은 기존 SNS 중심 활동을 넘어 지속적인 관계를 형성하기 위해 추진됐다. 커넥텀 보이즈는 연습 과정과 일상, 비하인드 콘텐츠를 순차 공개할 예정이다. 기획사 측은 청소년 팬 보호와 건전한 팬덤 문화 형성을 고려했으며, 향후 유료 멤버십 도입을 검토해 운영비를 제외한 수익을 기부할 계획이라고 밝혔다. **한편 비스테이지는 IT 인프라부터 IP 비즈니스 및 컨설팅까지 팬덤 비즈니스에 특화된 토탈 솔루션을 지원하고 있다.**",
+   "reason": "자사 솔루션 비스테이지 오픈 고객사 보도",
+   "tags": [],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "ba34f2fcbdfa",
+   "title": "Jared Gutstadt’s Audio Chateau Records secures up to $9M in Series A financing, with Poo Bear joining as strategic advisor",
+   "url": "https://www.musicbusinessworldwide.com/jared-gutstadts-audio-chateau-records-secures-up-to-9m-in-series-a-financing-with-poo-bear-joining-as-strategic-advisor/",
+   "press": "Music Business Worldwide",
+   "pub_date": "2026-10-29T22:00:12+09:00",
+   "date_label": "26.10.29",
+   "section": "fandom_music",
+   "subsection": "global_music",
+   "importance": 3,
+   "kind": "news",
+   "must_include": false,
+   "summary": "징글 펑크 공동 창업자 재러드 구트슈타트가 설립한 음악·크리에이터 기업 오디오 샤토 레코드(ACR)가 최대 900만 달러 규모의 시리즈 A 투자를 유치했다. 이번 투자금은 레코드 레이블 기능과 콘텐츠 제작, 스포츠·브랜드·라이브 엔터테인먼트·미디어를 아우르는 상업적 파트너십을 결합한 아티스트 개발 모델의 다음 단계를 지원하는 데 투입된다. 저스틴 비버와의 협업으로 잘 알려진 그래미 후보 프로듀서 제이슨 포 베어 보이드가 전략 고문으로 합류했다. ACR은 오디언스 구축과 브랜드 벤처를 커리어 후반이 아닌 아티스트 개발 초기 단계부터 통합한다고 밝혔다. ACR은 2024년 1월 구트슈타트의 팟캐스트 회사 산하 레이블로 출범해 8월 450만 달러를 유치한 바 있으며, 유니버설 뮤직 그룹의 버진 뮤직 그룹을 통해 음원을 유통한다. 로스앤젤레스와 내슈빌에 창작 시설을 운영 중이다. 음악 레이블이 크리에이터 경제와 초기 브랜딩을 결합해 비즈니스 확장을 꾀하려는 움직임으로 볼 수 있다.",
+   "reason": "해외 음악 레이블의 크리에이터·IP 투자 유치",
+   "tags": [
+    "영문"
+   ],
+   "series": null,
+   "lang": "en",
+   "cluster_size": 1
+  },
+  {
+   "id": "ea4bc7653f92",
+   "title": "BTS·싸이 노래 무단학습한 수노, 美서 소송당해…대중문화계 AI 무단학습 논란",
+   "url": "https://www.ddaily.co.kr/page/view/2026102916253763834",
+   "press": "디지털데일리",
+   "pub_date": "2026-10-29T16:26:00+09:00",
+   "date_label": "26.10.29",
+   "section": "fandom_music",
+   "subsection": "music_ai_rights",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "음악 생성 AI 수노(Suno)가 싸이와 방탄소년단 등의 노래를 허락 없이 AI 학습에 사용했다는 의혹이 제기됐다. 미국 유니버설·소니 계열 음반사들은 지난달 수노를 상대로 미국 매사추세츠 연방지방법원에 저작권 침해 소송을 제기했다. 음반사들은 싸이의 '강남스타일', '젠틀맨', 방탄소년단의 '배드 디시전스', '웨이스트 잇 온 미' 등 총 6만여 곡이 저작권 침해를 당했다고 주장하며 1곡당 15만 달러(약 2억 원)의 배상을 요구했다. 해당 침해 곡 목록은 증거개시 절차에 따라 음원 전문가들이 수노 오디오 파일의 음원지문을 확보해 비교한 결과물이다. 이에 대해 수노는 지난 20일 법원 답변서에서 YT-DLP 프로그램을 통해 유튜브에서 학습용 오디오를 내려받았으나 이는 공정이용이라고 반박했다. 국내 음원 플랫폼 멜론에서도 수노로 제작된 AI 가수 머무르의 곡이 차트 상위권에 오르는 등 파장이 일고 있다.",
+   "reason": "AI 음악 서비스 수노의 저작권 소송",
+   "tags": [],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "8ab56f5b5e9d",
+   "title": "[시대&뮤직/유윤종] 말러의 교향곡, AI가 완성할 수 있을까",
+   "url": "https://www.sidae.com/article/2026102716261875950",
+   "press": "동행미디어 시대",
+   "pub_date": "2026-10-29T17:00:00+09:00",
+   "date_label": "26.10.29",
+   "section": "fandom_music",
+   "subsection": "music_ai_rights",
+   "importance": 3,
+   "kind": "column",
+   "must_include": false,
+   "summary": "이에 따라 과거 슈베르트나 말러의 미완성 교향곡을 작곡가나 음악학자들이 보완했던 것처럼, AI를 클래식 거장들의 미완성 작품 완성에 활용할 수 있을지에 대한 관심이 커지고 있다. 과거에도 2019년 화웨이가 슈베르트 교향곡 8번 미완성의 3, 4악장을 AI로 생성했고, 2021년 카라얀 연구소와 플레이폼이 베토벤 교향곡 10번을 완성한 사례가 있다. 그러나 당시 결과물에 대해서는 진부하고 상투적이거나 거장 특유의 실험성과 개성이 결여됐다는 비판이 제기됐다. 방대한 데이터에서 유효한 패턴을 추출해 작곡가의 표면적 특징을 재현할 수는 있지만, 모차르트나 말러처럼 표준적인 패턴을 뛰어넘는 고유한 예술적 개성은 단순한 데이터 수집과 편집만으로 구현하기 어렵다. 예술가의 개성은 개인의 성격과 욕망, 깊은 내적 감동의 표현인 만큼, 욕망이 없는 AI가 정보 편집을 넘어 진정한 예술적 감동을 빚어낼 수 있을지는 여전히 의문으로 남아있다.",
+   "reason": "AI 음악 창작 한계와 예술성 고찰 칼럼",
+   "tags": [],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "1649a5727849",
+   "title": "K팝은 어쩌다 라이브 커머스 주인공이 됐을까 [엔터그알]",
+   "url": "https://news.mtn.co.kr/article/2026102814501883778",
+   "press": "MTN",
+   "pub_date": "2026-10-29T10:56:00+09:00",
+   "date_label": "26.10.29",
+   "section": "ent_content",
+   "subsection": "fandom_commerce",
+   "importance": 4,
+   "kind": "trend",
+   "must_include": false,
+   "summary": "CJ올리브영이 K팝 콘텐츠와 실시간 쇼핑을 결합한 라이브 커머스 신규 프로그램 ‘그린룸’을 선보이며 팬덤 커머스 확장에 나섰다. 뷰티 중심의 유통 플랫폼에 K팝을 결합해 팬덤을 유입시키고, 앨범 구매를 계기로 타 카테고리 상품 소비까지 유도하는 전략이다. 그린룸은 아티스트 대기실 콘셉트로 컴백 아티스트를 초대해 신곡 청음회와 퍼포먼스를 진행하며, 방송 중 실시간 소통과 전용 특전 포토카드 증정 등을 통해 앨범 구매로 연결한다. 첫 방송은 비투비 서은광과 엔믹스가 참여했으며, 국내 올영라이브와 유튜브뿐 아니라 글로벌몰 일본어 사이트에서도 동시 송출됐다. 올리브영의 올해 1~9월 앨범 상품군 매출은 전년 동기 대비 152% 증가하며 높은 수요를 보이고 있다. 엔터사 역시 일상 유통 채널에서 IP 노출과 판로를 다변화할 수 있는 기회다. 올리브영은 시범 방송을 거쳐 내년부터 그린룸을 정기 편성해 시즌제로 운영할 계획이다.",
+   "reason": "CJ올리브영 K팝 라이브 커머스 도입과 팬덤 소비 분석",
+   "tags": [],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "6c861f25a6e1",
+   "title": "[K게임 팬덤 비즈니스①]캐릭터·세계관 일상속으로, '오프라인 혈투'",
+   "url": "https://www.insightkorea.co.kr/news/articleView.html?idxno=257617",
+   "press": "인사이트코리아",
+   "pub_date": "2026-10-29T15:40:00+09:00",
+   "date_label": "26.10.29",
+   "section": "ent_content",
+   "subsection": "fandom_commerce",
+   "importance": 4,
+   "kind": "trend",
+   "must_include": false,
+   "summary": "국내 게임사들이 캐릭터와 세계관을 앞세워 놀이공원, 축제, 편의점 등 일상 공간으로 접점을 넓히며 팬덤 비즈니스를 본격화하고 있다. 온라인 게임 내 결제에 집중된 수익 구조의 한계를 극복하고 충성도를 제고하려는 전략이다. 넥슨은 메이플스토리 23주년을 맞아 롯데월드 전일 대관 행사를 열었고, 크래프톤은 성수동에서 치맥축제를 진행했다. 데브시스터즈 역시 서울어린이대공원에서 대규모 페스티벌을 개최해 AR 체험과 한정판 럭키박스 매진을 기록했다. 실제로 데브시스터즈는 올해 상반기 TCG와 캐릭터 상품 등 IP 사업에서만 전체 매출의 10%가 넘는 100억원 이상의 매출을 달성했다. 넷마블 엠엔비의 '쿵야 레스토랑즈'도 야구단 및 편의점 협업을 이어가며 사업 영역을 확장 중이다. 학계 전문가들은 게임사의 오프라인 행사가 가수와 팬의 만남처럼 충성도를 높이고 IP의 지속 가능성을 강화한다고 분석했다.",
+   "reason": "게임 IP 기반 오프라인 팬덤 비즈니스 기획",
+   "tags": [],
+   "series": {
+    "name": "K게임 팬덤 비즈니스",
+    "no": 1
+   },
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "0400e1ebde88",
+   "title": "인스타 크리에이터 팔로워까지 분석…카페24, 브랜드 매칭 고도화",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=03608006645617840&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "press": "이데일리",
+   "pub_date": "2026-10-29T09:55:00+09:00",
+   "date_label": "26.10.29",
+   "section": "ent_content",
+   "subsection": "fandom_commerce",
+   "importance": 3,
+   "kind": "news",
+   "must_include": false,
+   "summary": "카페24가 유튜브에 이어 메타의 인스타그램 크리에이터 마켓플레이스 API를 연동해 브랜드 맞춤형 크리에이터 매칭을 고도화한다. 카페24를 이용하는 브랜드는 관리자 페이지에서 인스타그램 크리에이터의 프로필과 주요 콘텐츠, 채널 규모를 포함해 팔로워의 국가, 연령대, 성별 데이터를 확인할 수 있다. 이를 통해 브랜드는 타깃 고객에 부합하는 협업 대상을 검색하고 비교할 수 있으며, 조회수, 도달, 참여율 등 콘텐츠 성과 지표도 데이터로 분석할 수 있다. 아울러 협업 제안은 ‘파트너십 메시지’ 기능을 통해 크리에이터 전용 인스타그램 메시지함으로 직접 전달된다. 협업을 통해 제작된 릴스는 메타의 파트너십 광고 소재로 전환해 자사몰 유입과 구매를 유도하는 마케팅에 활용 가능하다. 카페24는 지난 8월 유튜브 API 연동에 이어 이번 인스타그램 데이터 확장을 통해 크리에이터 마케팅과 이커머스 서비스 간의 연계를 지속적으로 강화할 방침이다.",
+   "reason": "카페24의 인스타그램 크리에이터 데이터 연동",
+   "tags": [],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "8c8272e5be21",
+   "title": "제도 틈 노려 저작권료 챙기는 '딸깍음원' 급증… AI음악 등록 기준 시급",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02378006645618168&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "press": "이데일리",
+   "pub_date": "2026-10-30T06:05:00+09:00",
+   "date_label": "26.10.30",
+   "section": "ent_content",
+   "subsection": "ent_market",
+   "importance": 4,
+   "kind": "trend",
+   "must_include": false,
+   "summary": "AI를 활용해 제작된 머무르의 '꿈꾸던 어른이 되었나요?'가 멜론 톱100 2위까지 올랐으나, 신탁 등록 기준의 부재로 저작권료를 받지 못하고 있다. 한국음악저작권협회(음저협)는 지난 8월 인간의 실질적 참여분을 저작물로 인정하는 개정 규정을 발표했으나, 공론화가 필요하다는 문체부와 국회의 의견에 따라 22일 만에 철회했다. 멜론 1위 곡의 작사·작곡 저작권료가 월 2000만~3000만 원 수준인 상황에서 AI 활용을 투명하게 밝힌 원작자는 수익을 얻지 못하는 제도적 공백이 발생했다. 반면 100% AI 생성물을 인간 창작물로 속여 등록한 것으로 의심돼 음저협에 신고된 사례는 최근 3년간 802건에 달하며, 이들에게 지급된 저작권료는 205억 원을 넘는 것으로 파악됐다. 김재원 의원 주최 토론회 등에서 100% AI 생성물 제외 원칙에는 공감대가 형성됐으나 구체적 기여도 판단 기준과 증빙 방식 논의는 지연되고 있다. 문체부의 구체적 일정 제시 없이 등록 기준 공백이 장기화되면서 창작자들의 피해와 시장 혼란에 대한 우려가 커지고 있다.",
+   "reason": "AI 음악 신탁 등록 기준 공백 및 실태",
+   "tags": [],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "e66373dbae5d",
+   "title": "2026 MAMA AWARDS, '박보검→패닉·빅뱅' K팝 팬경험 진화 예고 (종합)",
+   "url": "https://www.nc.press/news/articleView.html?idxno=629759",
+   "press": "뉴스컬처",
+   "pub_date": "2026-10-29T15:04:00+09:00",
+   "date_label": "26.10.29",
+   "section": "ent_content",
+   "subsection": "live_ticket",
+   "importance": 3,
+   "kind": "trend",
+   "must_include": false,
+   "summary": "CJ ENM이 29일 미디어데이를 열고 오는 11월 20~21일 일본 교세라 돔 오사카에서 개최되는 '2026 MAMA AWARDS'의 방향성과 산업적 확장 전략을 발표했다. 메인 콘셉트는 개인화된 음악 소비와 팬덤의 연대를 우주 서사로 풀어낸 '뮤직 인터스텔라'로, 배우 박보검이 첫 공식 앰버서더를 맡아 이틀간의 서사를 이끈다. 첫날은 팬 투표 중심의 '팬스초이스'를, 둘째 날은 '베스트 송 TOP10' 등 작품 중심 시상을 진행한다. 무대 외적으로는 11월 9일부터 21일까지 오사카 도심과 디지털 플랫폼 엠넷플러스를 연계한 '마마 팬 페스타'를 전개한다. 지난해 약 65만 명이 참여한 공식 글로벌 앰버서더 개념인 '슈퍼팬' 제도를 결합해 팬들이 투표와 도시 탐험 미션에 능동적으로 참여하는 페스티벌 생태계를 조성한다. 대형 돔 공연의 고질적인 음향 간극을 해소하기 위해 현장 공간감과 디지털 송출 음향 간의 밸런스를 맞추는 기술 고도화도 지속 테스트 중이다.",
+   "reason": "마마 어워즈 슈퍼팬 및 플랫폼 연계 전략",
+   "tags": [],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "8bd972f77ea0",
+   "title": "구글 AI, MAMA 영상·무대 제작에 참여…유튜브로 생중계 확대",
+   "url": "https://www.thebigdata.co.kr/view.php?ud=202610300822297383d0a8833aad_23",
+   "press": "빅데이터뉴스",
+   "pub_date": "2026-10-30T08:30:00+09:00",
+   "date_label": "26.10.30",
+   "section": "ent_content",
+   "subsection": "virtual_ai",
+   "importance": 3,
+   "kind": "news",
+   "must_include": false,
+   "summary": "구글이 11월 20일부터 21일까지 일본 오사카 교세라 돔에서 열리는 ‘2026 MAMA 어워즈’와 파트너십을 맺고 AI 기술과 유튜브 중계를 연계한다. 이번 협업은 구글의 AI 모델 제미나이를 활용한 콘텐츠 제작과 유튜브를 통한 글로벌 생중계 및 팬 소통을 중심으로 진행된다. 제미나이는 사전 프로모션 콘텐츠 기획부터 시상식 오프닝 영상, 주요 하이라이트 무대 제작 과정에 투입되어 K팝 공연 연출과 결합된다. 유튜브 플랫폼에서는 한국을 포함한 전 세계 주요 지역을 대상으로 시상식 생중계를 제공하며, 유튜브 뮤직 플레이리스트와 뮤직스테이션을 통해 후보 아티스트들의 음악과 영상을 선보인다. 시청자들은 라이브 시청 중 실시간 채팅과 쇼츠로 소통할 수 있다. 시상 부문에서는 장르 부문 본상인 ‘베스트 뮤직비디오’를 유튜브와 협업해 수여한다. 구글은 최신 AI 기술과 글로벌 플랫폼 역량을 결합해 K팝 아티스트의 비주얼 스토리텔링을 지원하겠다고 밝혔다.",
+   "reason": "구글 AI와 MAMA 연출 및 유튜브 스트리밍 협업",
+   "tags": [],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "82019d02334f",
+   "title": "유튜브 숏폼 드라마 1년 새 2배 성장…'쇼츠 시리즈'로 콘텐츠 시장 공략",
+   "url": "http://www.metroseoul.co.kr/article/20261029500244",
+   "press": "메트로신문",
+   "pub_date": "2026-10-29T11:08:00+09:00",
+   "date_label": "26.10.29",
+   "section": "ent_content",
+   "subsection": "video_platform",
+   "importance": 3,
+   "kind": "news",
+   "must_include": false,
+   "summary": "국내 유튜브에서 숏폼 드라마의 시청 지표가 가파르게 상승하면서 유튜브가 연재형 콘텐츠를 지원하는 ‘쇼츠 시리즈’ 기능을 도입한다. 업계에 따르면 지난해 7월부터 올해 6월까지 국내 유튜브 숏폼 드라마 관련 조회수는 전년 동기 대비 130% 이상, 시청 시간은 100% 이상 증가했다. 아시아·태평양 지역 전반에서도 조회수와 시청 시간이 각각 70% 이상 늘었으며, 상반기 글로벌 누적 조회수는 65억 회를 넘어섰다. 특히 TV 화면을 통한 시청이 90% 이상 증가하며 소비 환경이 다변화되고 있다. 유튜브는 이에 맞춰 크리에이터가 쇼츠 영상을 시즌과 에피소드 순서대로 묶어 제공할 수 있는 쇼츠 시리즈 기능을 선보여 끊김 없는 연속 시청을 지원한다. 향후에는 모바일 시청 화면에서 벗어나지 않고 채널 멤버십에 가입해 전용 에피소드를 시청할 수 있는 수익화 기능도 추가할 계획이다. 플랫폼의 체류 시간 확대와 크리에이터 유료 콘텐츠 수익 기반을 다지기 위한 포석이다.",
+   "reason": "유튜브 숏폼 드라마 급성장 및 쇼츠 시리즈 기능 도입",
+   "tags": [],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "66e3d956df80",
+   "title": "[기고] 확률로 판단하는 보안 에이전트의 함정",
+   "url": "https://www.itdaily.kr/news/articleView.html?idxno=242543",
+   "press": "아이티데일리",
+   "pub_date": "2026-10-29T13:56:00+09:00",
+   "date_label": "26.10.29",
+   "section": "ai_tech",
+   "subsection": "ai_tech",
+   "importance": 4,
+   "kind": "column",
+   "must_include": false,
+   "summary": "크레이그 포터 가트너 애널리스트는 기업 업무에 빠르게 확산되는 AI 에이전트 도입과 관련해 자율 방어 체계 구축의 한계와 올바른 통제 전략을 제시했다. 거대언어모델(LLM)은 통계적 확률에 따라 응답을 생성하므로, 결함 없는 결정론적 결과가 요구되는 보안 통제에 무비판적으로 적용할 경우 정상 프로세스를 차단하거나 위험 행동을 오인 허용하는 문제를 유발할 수 있다고 지적했다. 또한 AI 에이전트를 감시하기 위해 또 다른 에이전트를 중첩 추가하는 ‘에이전트 스프롤’ 방식은 운영 복잡성과 비용을 키우고 잠재적 공격 표면을 불필요하게 넓힐 수 있다고 짚었다. 이에 따라 보안의 핵심은 에이전트 자체가 아닌 ‘행동’의 결정론적 통제에 두어야 한다고 강조했다. CISO는 승인되지 않은 섀도 AI를 식별하고 각 에이전트의 명확한 신원 관리 및 최소 권한 원칙을 확립해야 하며, 도구와 API 호출 시점에 허용 목록과 매개변수 제한, 런타임 정책 검사를 엄격히 적용해야 한다고 설명했다.",
+   "reason": "가트너의 AI 에이전트 도입 위험 및 거버넌스 분석 칼럼",
+   "tags": [],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "64e56b008434",
+   "title": "AI가 상품 탐색부터 결제까지…텐센트, 비자와 e커머스 동맹",
+   "url": "https://www.hankyung.com/article/2026102943931",
+   "press": "한국경제",
+   "pub_date": "2026-10-29T18:17:00+09:00",
+   "date_label": "26.10.29",
+   "section": "ai_tech",
+   "subsection": "ai_tech",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "중국 텐센트가 글로벌 카드 네트워크 비자와 손잡고 인공지능(AI) 에이전트 기반 결제 시장 공략에 나선다. 양사는 29일 글로벌 결제·전자상거래 협력을 확대하기 위한 양해각서(MOU)를 체결했다. 협력의 핵심은 AI가 상품 탐색부터 선택, 구매까지 대신 수행하는 차세대 결제 시스템 구축이다. 비자의 결제 솔루션 '비자인텔리전스커머스'와 텐센트의 AI 기술을 결합해 안전한 거래 환경을 마련한다는 계획이다. 다우슨 통 텐센트 수석부사장은 소비자에게 원활한 상거래 경험을, 국내외 기업에는 새로운 사업 기회를 제공하겠다고 밝혔다. 텐센트는 같은 날 열린 '글로벌 디지털 에코시스템 서밋'에서 AI 에이전트가 마케팅과 재무 등 기업의 핵심 생산 수단으로 자리 잡았다고 진단했다. 상반기 출시된 업무 플랫폼 워크버디를 통해 주문 처리와 고객 분석을 자동화하고 있으며, 위챗과의 연동도 강화하고 있다. 통 부사장은 AI 경쟁의 초점이 모델 성능에서 업무 적합성으로 이동하고 있다며 생태계 확장을 예고했다.",
+   "reason": "빅테크 AI 에이전트 결제 및 커머스 동맹",
+   "tags": [],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "d7122398521a",
+   "title": "이선웅 대표 \"공공 AI, 모델 만큼이나 데이터 활용 환경 구축도 중요\"",
+   "url": "https://zdnet.co.kr/view/?no=20261029090009",
+   "press": "지디넷코리아",
+   "pub_date": "2026-10-29T11:00:00+09:00",
+   "date_label": "26.10.29",
+   "section": "ai_tech",
+   "subsection": "ai_tech",
+   "importance": 3,
+   "kind": "interview",
+   "must_include": false,
+   "summary": "이선웅 클라우다이크 대표는 생성형 AI의 업무 도입에서 모델 선택 못지않게 데이터 저장과 처리 환경 설계가 중요하다고 지적했다. 공공기관이나 금융·의료 등 보안 요구 수준이 높은 조직에서는 내부 데이터를 외부로 보내기 어려워 AI 도입의 병목이 발생하며, 데이터의 저장 위치뿐 아니라 문서 처리 장소와 접근 권한, 질의응답 기록 관리까지 통합적으로 고려해야 한다고 설명했다. 외부 반출이 제한된 기관의 대안으로는 내부망이나 전용 인프라에 모델을 구축하는 방식을 제시했으며, 단순 모델 설치를 넘어 텍스트 추출과 검색 과정 전반의 보안성 및 비용·품질 검증이 수반되어야 한다고 덧붙였다. 또한 클라우드 스토리지는 문서 관리 체계와 AI 검색 시스템을 연결해 권한에 맞는 정보만 노출되도록 하는 기반 역할을 수행해야 한다고 강조했다. 향후 B2B AI 시장에서는 데이터 안전 활용 및 기존 업무 시스템과의 연계 운영 역량이 핵심 경쟁력이 될 것이라며, 업무 범위와 접근 권한을 먼저 정의한 뒤 단계적으로 확대 도입할 것을 권장했다.(일문일답 본문 확인)",
+   "reason": "기업용 클라우드 SaaS 및 내부망 AI 도입 전략 인터뷰",
+   "tags": [
+    "인터뷰"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  }
+ ],
+ "excluded": [
+  {
+   "title": "유해진·박해일·이민호 ‘암살자(들)’, 340만 관객 돌파..손익분기점 ...",
+   "url": "http://www.breaknews.com/1246674",
+   "press": "",
+   "pub_date": "2026-10-29T10:04:00+09:00",
+   "stage": "1차",
+   "reason": "영화 손익분기점 관련 기사",
+   "section": "ent_content"
+  },
+  {
+   "title": "거대 석유기업은 어떻게 '아메리칸 드림'을 만들어냈나",
+   "url": "https://www.newspenguin.com/news/articleView.html?idxno=22363",
+   "press": "",
+   "pub_date": "2026-10-29T17:40:00+09:00",
+   "stage": "1차",
+   "reason": "석유기업 관련 역사 기사",
+   "section": "own"
+  },
+  {
+   "title": "프리즘, 페스티벌 부스 공동 운영… 샘플링 마케팅 문턱 낮춘다",
+   "url": "https://magazine.hankyung.com/business/article/202610292555b",
+   "press": "",
+   "pub_date": "2026-10-29T10:01:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "[스톡 브리핑] JYP엔터, 지분 인수설 재차 일축",
+   "url": "https://enter.etoday.co.kr/news/view/304467",
+   "press": "",
+   "pub_date": "2026-10-29T18:22:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "도어 잠금·기어 확인 쉬워진다…그랜저 '플레오스 커넥트' 업데이트",
+   "url": "https://www.news1.kr/industry/auto-industry/6337303",
+   "press": "",
+   "pub_date": "2026-10-30T09:08:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "보고 싶은 공연도, 타야 할 열차도…암표 때문에 놓치지 않으려면",
+   "url": "https://www.korea.kr/news/reporterView.do?newsId=148974501&call_from=naver_news",
+   "press": "",
+   "pub_date": "2026-10-29T17:55:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "AIDC를 채우는 산업…건물 아닌 공급망",
+   "url": "https://www.itdaily.kr/news/articleView.html?idxno=242550",
+   "press": "",
+   "pub_date": "2026-10-29T15:26:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "인텔, AI부문 급성장에도…4분기 부정적 전망에 주가 20% 폭락",
+   "url": "https://www.yna.co.kr/view/AKR20261030013500091?input=1195m",
+   "press": "",
+   "pub_date": "2026-10-30T07:34:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "김연수 한컴 대표 “글로벌 선봉 ‘노마디안’, 2028년까지 가입자 50만...",
+   "url": "https://biz.newdaily.co.kr/site/data/html/2026/10/29/2026102900215.html",
+   "press": "",
+   "pub_date": "2026-10-29T14:20:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[카카오엔터 해부] 11조 몸값은 옛말?…카카오엔터, 실적 뒷걸음에 FI 회...",
+   "url": "https://dealsite.co.kr/articles/171429",
+   "press": "",
+   "pub_date": "2026-10-30T08:02:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "[티빙 해킹사태] ① “매출 26배 늘었는데, 보안투자 ‘찔끔’”…토종...",
+   "url": "https://www.ceoscoredaily.com/page/view/2026102914151904596",
+   "press": "",
+   "pub_date": "2026-10-30T07:02:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "리정, '대한민국 대중문화예술상' 문체부 장관 표창...'케데헌' 성과 인...",
+   "url": "https://www.slist.kr/news/articleView.html?idxno=777629",
+   "press": "",
+   "pub_date": "2026-10-30T08:06:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "너도나도 ‘돔구장’, 전국 지자체 유치 경쟁 가열···지역경제 활성...",
+   "url": "https://www.khan.co.kr/article/202610291621001",
+   "press": "",
+   "pub_date": "2026-10-29T16:21:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "와신상담 구글, 새 AI '카본'으로 선두 탈환...\"오픈AI 제쳤다\"",
+   "url": "https://www.ytn.co.kr/_ln/0104_202610291411258199",
+   "press": "",
+   "pub_date": "2026-10-29T14:11:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "외부 쇼핑몰 결제까지…쇼피파이, AI 에이전트에 숍페이 확대",
+   "url": "https://www.tokenpost.kr/news/ai/429122",
+   "press": "",
+   "pub_date": "2026-10-29T15:52:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[단독] 디즈니플러스도 광고 요금제… 국내 OTT 저가 경쟁 가세",
+   "url": "https://it.chosun.com/news/articleView.html?idxno=2023092173071",
+   "press": "",
+   "pub_date": "2026-10-29T16:50:00+09:00",
+   "stage": "1차",
+   "reason": "검토 한도 초과",
+   "section": "ent_content"
+  },
+  {
+   "title": "이시하 음저협 회장 \"100% AI 음원 색출… 창작자 몫 지킬 것\"",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02397686645618168&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "press": "",
+   "pub_date": "2026-10-30T06:06:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "日오사카 도심으로 나온 'MAMA'…시상식 넘어 13일간 K팝 축제로",
+   "url": "https://www.fnnews.com/news/202610291458153960",
+   "press": "",
+   "pub_date": "2026-10-29T15:17:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "\"금전적 수익 넘어 산업적 가치 창출\"…'2026 MAMA'가 그리는 음악 우주",
+   "url": "https://www.fnnews.com/news/202610291511022060",
+   "press": "",
+   "pub_date": "2026-10-29T15:45:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "'2026 마마 어워즈' 11월 일본 오사카에서, 빅뱅·패닉 등 출연",
+   "url": "https://www.abcn.kr/news/articleView.html?idxno=93777",
+   "press": "",
+   "pub_date": "2026-10-29T14:28:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "\"뼈아프게 생각\"… '마마 어워즈', 반복되는 음향 문제 개선되나 [종합...",
+   "url": "https://www.hankookilbo.com/news/article/A2026102912030000324?did=NA",
+   "press": "",
+   "pub_date": "2026-10-29T12:39:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "빅뱅부터 패닉까지…'MAMA AWARDS', 日 거리 수놓을 'K팝 파워'[종합]",
+   "url": "http://www.joynews24.com/view/2020370",
+   "press": "",
+   "pub_date": "2026-10-29T11:48:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "'마마 어워즈' 측 \"박진영의 페노메논? 우리도 응원…국내 개최도 다양...",
+   "url": "https://www.sportschosun.com/entertainment/2026-10-29/202610290100186160012669",
+   "press": "",
+   "pub_date": "2026-10-29T11:50:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "'2026 마마 어워즈' 코르티스→빅뱅·패닉 출격…'뮤직 인터스텔라'로 K...",
+   "url": "http://www.celuvmedia.com/article.php?aid=1793242226530024007",
+   "press": "",
+   "pub_date": "2026-10-29T11:52:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "[SC현장]박보검 이끌고, 빅뱅·둘리 만난다…'2026 마마', 음악으로 펼칠...",
+   "url": "https://www.sportschosun.com/entertainment/2026-10-29/202610290100186260012678",
+   "press": "",
+   "pub_date": "2026-10-29T12:15:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "패닉, '2026 마마 어워즈' 참석…\"코르티스→하츠투하츠와 콜라보레이션...",
+   "url": "http://www.celuvmedia.com/article.php?aid=1793239475530020007",
+   "press": "",
+   "pub_date": "2026-10-29T11:08:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "[SW현장] 패닉·빅뱅에 둘리·듄까지…‘2026 마마 어워즈’, 세대 잇고...",
+   "url": "https://www.sportsworldi.com/newsView/20261029510335",
+   "press": "",
+   "pub_date": "2026-10-29T12:20:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "빅뱅은 둘리와, 엔하이픈은 '듄'과…'2026 마마 어워즈' 파격 협업 예고...",
+   "url": "https://www.tenasia.co.kr/article/2026102931264",
+   "press": "",
+   "pub_date": "2026-10-29T18:00:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "앰버서더 맡은 박보검, 둘리 만나는 빅뱅…'2026 마마 어워즈' 키포인트...",
+   "url": "https://www.mydaily.co.kr/page/view/2026102911483931839",
+   "press": "",
+   "pub_date": "2026-10-29T11:49:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "'2026 마마 어워즈', '숯' 이배·빅뱅X둘리·엔하이픈X'듄'…日 교세라돔...",
+   "url": "https://www.newsis.com/view/NISX20261029_0003845896",
+   "press": "",
+   "pub_date": "2026-10-29T14:33:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "박보검 뜨고 빅뱅·둘리 만난다…CJ ENM, '2026 마마 어워즈' 청사진 공개",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=04742886645617840&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "press": "",
+   "pub_date": "2026-10-29T14:46:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "박보검, '2026 마마 어워즈' 앰버서더 발탁…8번째 호스트 출격",
+   "url": "https://www.slist.kr/news/articleView.html?idxno=777416",
+   "press": "",
+   "pub_date": "2026-10-29T11:40:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "'마마 어워즈' 측 \"올해 호스트는 박보검, 이틀간 가이드 역할\"",
+   "url": "https://www.sportschosun.com/entertainment/2026-10-29/202610290100185420012620",
+   "press": "",
+   "pub_date": "2026-10-29T11:04:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "박보검 첫 앰버서더→빅뱅·엔하이픈 특별 무대…‘2026 MAMA’의 자신감...",
+   "url": "https://www.mk.co.kr/article/12189729",
+   "press": "",
+   "pub_date": "2026-10-29T12:28:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "\"빅뱅이, 둘리를 소환했다\"…'2026 마마', 무한한 가능성 (간담회)",
+   "url": "http://www.dispatch.co.kr/2349982",
+   "press": "",
+   "pub_date": "2026-10-29T13:10:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "둘리 만난 빅뱅·‘듄’ 재해석 엔하이픈…“마마, 개최 도시 전체 축제...",
+   "url": "https://biz.heraldcorp.com/article/10919337?ref=naver",
+   "press": "",
+   "pub_date": "2026-10-29T15:12:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "패닉+빅뱅+박보검, 2026 MAMA가 보여줄 우주 스케일 [SQ현장]",
+   "url": "https://www.newsq.co.kr/news/articleView.html?idxno=500649",
+   "press": "",
+   "pub_date": "2026-10-29T16:00:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "[핌in현장] 패닉부터 엔하이픈까지…'2026 마마 어워즈', 세대 잇는 무대...",
+   "url": "https://www.newspim.com/news/view/20261029000477",
+   "press": "",
+   "pub_date": "2026-10-29T16:25:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "AI 시대에 묻는 예술의 가치…'2026 마마 어워즈'가 그리는 음악 우주 [...",
+   "url": "https://www.dailian.co.kr/news/view/1707993/?sc=Naver",
+   "press": "",
+   "pub_date": "2026-10-29T12:00:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "박보검, '2026 마마어워즈' 앰버서더 출격..패닉부터 빅뱅까지 ★ 총출동...",
+   "url": "https://www.starnewskorea.com/music/2026/10/29/2026102910162422023",
+   "press": "",
+   "pub_date": "2026-10-29T12:00:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "'마마 어워즈', 올해는 일본…\"시공간 초월 음악 우주 만들겠다\" [종합]",
+   "url": "https://www.hankyung.com/article/202610293047H",
+   "press": "",
+   "pub_date": "2026-10-29T13:07:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "박보검이 열고 빅뱅이 닫을 ‘뮤직 인터스텔라’..‘2026 MAMA’의 특별한...",
+   "url": "http://www.osen.co.kr/article/G1112900226",
+   "press": "",
+   "pub_date": "2026-10-29T12:16:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "시공간·세대 경계 허문다…'마마 어워즈', 글로벌 음악 축제로",
+   "url": "https://www.asiatoday.co.kr/kn/view.php?key=20261029010010404",
+   "press": "",
+   "pub_date": "2026-10-29T13:24:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "코르티스-우즈-제베원-하투하 등 '마마어워즈'서 패닉과 무대한다…\"레...",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16262173",
+   "press": "",
+   "pub_date": "2026-10-29T18:38:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "하이브 15만9200원으로 5.24% 하락…아티스트 활동과 비용 구조 주목",
+   "url": "https://www.job-post.co.kr/news/articleView.html?idxno=235317",
+   "press": "",
+   "pub_date": "2026-10-29T14:54:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "'숯의 화가' 이배와 K팝, 둘리와 빅뱅...MAMA로 만난다",
+   "url": "https://www.hankyung.com/article/202610293520i",
+   "press": "",
+   "pub_date": "2026-10-29T14:47:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "씨엔블루, 전 세계 20개 도시 투어 마침표…서울 KSPO DOME 단독 콘서트...",
+   "url": "https://mhnse.com/news/articleView.html?idxno=1640431",
+   "press": "",
+   "pub_date": "2026-10-29T14:15:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "빅뱅·둘리→엔하이픈·듄3, 'MAMA AWARDS' 스페셜 스테이지",
+   "url": "http://www.joynews24.com/view/2020344",
+   "press": "",
+   "pub_date": "2026-10-29T11:10:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "캣츠아이, 첫 한국 콘서트부터 체조경기장 입성…내년 2월 개최",
+   "url": "https://www.tenasia.co.kr/article/2026102932954",
+   "press": "",
+   "pub_date": "2026-10-29T13:52:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "에이댑, 오디션 출신 멤버들 뭉쳤다…6인조 보이그룹 출격",
+   "url": "http://www.atstar1.com/news/articleView.html?idxno=6040128",
+   "press": "",
+   "pub_date": "2026-10-29T15:07:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "캣츠아이, 첫 한국 콘서트…KSPO돔 입성",
+   "url": "https://www.bntnews.co.kr/article/view/bnt202610290199",
+   "press": "",
+   "pub_date": "2026-10-29T12:48:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "투모로우바이투게더(TXT), 신보 서사 기반 추리형 콘텐츠 선보인다···...",
+   "url": "https://sports.khan.co.kr/article/202610291243003?pt=nv",
+   "press": "",
+   "pub_date": "2026-10-29T12:44:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "씨엔블루, 데뷔 첫 KSPO DOME 입성",
+   "url": "https://www.bntnews.co.kr/article/view/bnt202610290225",
+   "press": "",
+   "pub_date": "2026-10-29T14:14:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "씨엔블루, KSPO 돔서 ‘에바뛰콘’ 연다⋯더 뜨거운 무대 예고",
+   "url": "https://www.etoday.co.kr/news/view/2641778",
+   "press": "",
+   "pub_date": "2026-10-29T14:26:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "씨엔블루, 내년 2월 KSPO DOME 입성..'에바뛰콘' 개최",
+   "url": "http://www.osen.co.kr/article/G1112900238",
+   "press": "",
+   "pub_date": "2026-10-29T14:22:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "[테크 NOW] 카카오ㆍ카카오엔터ㆍ네이버페이",
+   "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202610291016317510698",
+   "press": "",
+   "pub_date": "2026-10-29T10:22:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "MMA, 본상 '글로벌 TOP10' 신설…국내는 멜론·해외는 베리즈",
+   "url": "https://www.mydaily.co.kr/page/view/2026102918194784352",
+   "press": "",
+   "pub_date": "2026-10-29T18:20:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "MMA2026, 방탄소년단·아이브 후보",
+   "url": "https://www.bntnews.co.kr/article/view/bnt202610300120",
+   "press": "",
+   "pub_date": "2026-10-30T08:44:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "씨엔블루 정용화, 고향 잠실 간다…‘에바뛰콘’ 체조 입성",
+   "url": "https://sports.donga.com/ent/article/all/20261029/134932174/1",
+   "press": "",
+   "pub_date": "2026-10-29T14:38:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "카카오엔터, 베리즈 MMA2026 '글로벌 TOP10' 해외 투표 시작",
+   "url": "https://www.starnewskorea.com/music/2026/10/29/2026102914065198523",
+   "press": "",
+   "pub_date": "2026-10-29T14:11:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "캣츠아이, 2027년 아시아·오세아니아 투어 확정···서울 포함 11개 도...",
+   "url": "https://sports.khan.co.kr/article/202610291232003?pt=nv",
+   "press": "",
+   "pub_date": "2026-10-29T12:33:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "씨엔블루, 작정하고 뛴다…내년 2월 '에바뛰콘' 개최(공식)",
+   "url": "http://www.joynews24.com/view/2020425",
+   "press": "",
+   "pub_date": "2026-10-29T14:16:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "MMA2026, ‘글로벌 TOP10’ 신설…베리즈서 해외 팬 투표",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=03791686645617840&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "press": "",
+   "pub_date": "2026-10-29T10:18:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "투모로우바이투게더, 미니 9집 서사 담은 추리형 롤플레잉 영상 극장 상...",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16261734",
+   "press": "",
+   "pub_date": "2026-10-29T11:08:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "[IT돋보기] 네이버, 미 기업 투자 어느새 '11곳'⋯\"AI 전반서 유망 기업...",
+   "url": "http://www.inews24.com/view/2020593",
+   "press": "",
+   "pub_date": "2026-10-30T08:01:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ai_tech"
+  },
+  {
+   "title": "'MAMA AWARDS' 측 \"'패노메논', 기대와 응원 전한다\"",
+   "url": "http://www.joynews24.com/view/2020369",
+   "press": "",
+   "pub_date": "2026-10-29T11:46:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "차트 2위 차지한 AI 가수, 인기몰이가 남긴 새로운 질문",
+   "url": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003279866&CMPT_CD=P0010&utm_source=naver&utm_medium=newsearch&utm_campaign=naver_news",
+   "press": "",
+   "pub_date": "2026-10-29T15:11:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "“몰래 AI 쓴 음원에 205억?”…멜론 2위 ‘꿈꾸던 어른’은 저작권료 0...",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=02338646645618168&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "press": "",
+   "pub_date": "2026-10-30T06:02:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "\"유튜브·릴스 이어 인스타그램\"…카페24, 크리에이터 데이터 연동",
+   "url": "https://www.news1.kr/industry/sb-founded/6335882",
+   "press": "",
+   "pub_date": "2026-10-29T09:40:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ent_content"
+  },
+  {
+   "title": "CJ온스타일 첫 크리에이터 커머스 축제 성황…“관람객 65.6%가 수익화 도...",
+   "url": "https://www.donga.com/news/Economy/article/all/20261029/134931035/1",
+   "press": "",
+   "pub_date": "2026-10-29T11:35:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ent_content"
+  },
+  {
+   "title": "‘OTT·AI가 바꾸는 스포츠 시장’ 중계권부터 팬 비즈니스까지…11월 스...",
+   "url": "http://www.osen.co.kr/article/G1112900162",
+   "press": "",
+   "pub_date": "2026-10-29T10:20:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "유튜브 이어 인스타그램까지…카페24, 글로벌 플랫폼 손잡고 '커머스 생...",
+   "url": "https://www.techm.kr/news/articleView.html?idxno=156646",
+   "press": "",
+   "pub_date": "2026-10-29T11:52:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ent_content"
+  },
+  {
+   "title": "\"창원 K-POP 월드페스티벌, 축제 넘어 콘텐츠 산업 플랫폼으로\"",
+   "url": "https://www.nocutnews.co.kr/news/6599460?utm_source=naver&utm_medium=article&utm_campaign=20261029175849",
+   "press": "",
+   "pub_date": "2026-10-29T17:59:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ent_content"
+  },
+  {
+   "title": "KPR, 로봇 아이돌 '치치앤키키' 공개…공연 위해 만든 50개 동작 데이터...",
+   "url": "https://www.ajunews.com/view/20261029154740116",
+   "press": "",
+   "pub_date": "2026-10-29T15:52:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ent_content"
+  },
+  {
+   "title": "전 세계는 '숏폼 시대'... 유튜브, 쇼츠 연재 기능 도입",
+   "url": "https://ditoday.com/%ec%a0%84-%ec%84%b8%ea%b3%84%eb%8a%94-%ec%88%8f%ed%8f%bc-%ec%8b%9c%eb%8c%80-%ec%9c%a0%ed%8a%9c%eb%b8%8c-%ec%87%bc%ec%b8%a0-%ec%97%b0%ec%9e%ac-%ea%b8%b0%eb%8a%a5-%eb%8f%84%ec%9e%85/",
+   "press": "",
+   "pub_date": "2026-10-29T17:14:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ent_content"
+  },
+  {
+   "title": "\"장르 경계 없이 모든 팬덤 모인다\" 롯데백 첫 IP 전문관 '팬덤 스페이스...",
+   "url": "https://www.cnbnews.com/news/articleView.html?idxno=1021481",
+   "press": "",
+   "pub_date": "2026-10-29T09:50:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ent_content"
+  },
+  {
+   "title": "韓 유튜브 숏폼 드라마 조회수 130% 급증…'쇼츠 시리즈' 도입",
+   "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=877805",
+   "press": "",
+   "pub_date": "2026-10-29T16:12:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ent_content"
+  },
+  {
+   "title": "세일즈포스 이어 오라클도 AI에 통합…기업용 소프트웨어 판도 변화",
+   "url": "https://www.aitimes.com/news/articleView.html?idxno=216783",
+   "press": "",
+   "pub_date": "2026-10-29T14:06:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ai_tech"
+  },
+  {
+   "title": "AI 저작권부터 공연 암표까지…콘텐츠 분쟁 해법 찾는다",
+   "url": "https://www.fnnews.com/news/202610291549173957",
+   "press": "",
+   "pub_date": "2026-10-29T16:09:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ent_content"
+  },
+  {
+   "title": "K-팝에서 K-뷰티까지, 포르투갈에서 확대되는 한류 소비재 시장",
+   "url": "http://dream.kotra.or.kr/kotranews/cms/news/actionKotraBoardDetail.do?SITE_NO=3&MENU_ID=180&CONTENTS_NO=1&bbsGbn=243&bbsSn=243&pNttSn=244753",
+   "press": "",
+   "pub_date": "2026-10-29T11:24:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ent_content"
+  },
+  {
+   "title": "한컴, 글로벌 AI 네이티브 SaaS 시장 도전...\"개인화로 빅테크와 차별화...",
+   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=710960",
+   "press": "",
+   "pub_date": "2026-10-29T13:40:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ai_tech"
+  },
+  {
+   "title": "\"직원이 찾아낸 AI, 회사 전체가 쓴다\"…LG유플러스의 AX 실험",
+   "url": "https://www.fnnews.com/news/202610291358106443",
+   "press": "",
+   "pub_date": "2026-10-29T15:07:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[컨콜] 삼성SDS \"내년 3월 베라 루빈 GPU 서비스, 아시아 첫 사례 될 것\"",
+   "url": "https://www.newspim.com/news/view/20261029000950",
+   "press": "",
+   "pub_date": "2026-10-29T14:45:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ai_tech"
+  },
+  {
+   "title": "IPX, '나루토·케로로' 국내 IP 사업권 확보",
+   "url": "https://www.bloter.net/news/articleView.html?idxno=677079",
+   "press": "",
+   "pub_date": "2026-10-29T14:16:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ent_content"
+  },
+  {
+   "title": "AI가 흔든 SW 수익 공식…韓 SaaS '매출·비용' 이중 압박",
+   "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=877671",
+   "press": "",
+   "pub_date": "2026-10-29T15:52:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ai_tech"
+  },
+  {
+   "title": "구글, 보안 역량 강화한 ‘제미나이 4 카본’ 공개",
+   "url": "https://biz.chosun.com/it-science/ict/2026/10/29/VVY2VDWZRJCJ7N74TWW5XYWMVA/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+   "press": "",
+   "pub_date": "2026-10-29T14:04:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[영웅신문] 임영웅, 멜론 누적 스트리밍 148억 회 돌파…하루 644만 회↑...",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16261933",
+   "press": "",
+   "pub_date": "2026-10-29T15:28:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "수원서 확인한 '공간의 힘'…롯데백화점, 점포 새 판 짜기 속도",
+   "url": "https://www.newspim.com/news/view/20261029000626",
+   "press": "",
+   "pub_date": "2026-10-29T11:26:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ent_content"
+  },
+  {
+   "title": "'디펜딩 챔프' GS칼텍스, 31일 도로공사전으로 '다시 장충의 봄' 노래한...",
+   "url": "https://www.starnewskorea.com/sports/2026/10/29/2026102917495431134",
+   "press": "",
+   "pub_date": "2026-10-29T17:53:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ent_content"
+  },
+  {
+   "title": "인티큐브·제네시스 코리아, 금융권 AI·클라우드 기반 CX 혁신 전략 공...",
+   "url": "https://www.etnews.com/20261029000229",
+   "press": "",
+   "pub_date": "2026-10-29T12:15:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ai_tech"
+  },
+  {
+   "title": "인성디지탈, 맞춤형 통합 보안으로 금융권 보안 시장 공략 속도",
+   "url": "https://www.dailysecu.com/news/articleView.html?idxno=209155",
+   "press": "",
+   "pub_date": "2026-10-29T12:10:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ai_tech"
+  },
+  {
+   "title": "\"AI 노래, 어디까지 갈까?\"…'꿈꾸던 어른이~', 멜론 역주행",
+   "url": "http://www.dispatch.co.kr/2349971",
+   "press": "",
+   "pub_date": "2026-10-29T11:00:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "콘진원, ‘2026 콘텐츠분쟁조정포럼’ 개최",
+   "url": "https://www.munhwa.com/article/11627152?ref=naver",
+   "press": "",
+   "pub_date": "2026-10-29T09:20:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ent_content"
+  },
+  {
+   "title": "“AI 학습데이터·암표 분쟁은”…콘진원, 콘텐츠분쟁조정포럼 개최",
+   "url": "https://www.etnews.com/20261029000123",
+   "press": "",
+   "pub_date": "2026-10-29T10:11:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ent_content"
+  },
+  {
+   "title": "변화하는 콘텐츠 분쟁, 조정은 어떻게 달라져야 하나",
+   "url": "https://view.asiae.co.kr/article/2026102909151206764",
+   "press": "",
+   "pub_date": "2026-10-29T09:15:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ent_content"
+  },
+  {
+   "title": "“3년간 음원 스트리밍 300% 증가”…남미 전문가들 분석한 BTS 열풍",
+   "url": "https://www.mk.co.kr/article/12189579",
+   "press": "",
+   "pub_date": "2026-10-29T10:12:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "fandom_music"
+  },
+  {
+   "title": "11번가, AI 쇼호스트 첫선…그랜드십일절 라이브 방송 진행",
+   "url": "https://www.yna.co.kr/view/AKR20261030031300030?input=1195m",
+   "press": "",
+   "pub_date": "2026-10-30T08:49:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ai_tech"
+  },
+  {
+   "title": "JYP엔터 측, 日 투자그룹 지분 인수설 일축 \"제안서 검토한 적 없어\" [공...",
+   "url": "https://www.starnewskorea.com/music/2026/10/29/2026102918385345422",
+   "press": "",
+   "pub_date": "2026-10-29T19:05:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ent_content"
+  },
+  {
+   "title": "JYP엔터, 日 투자그룹 지분 인수설 재차 일축⋯ \"이메일 스팸 처리돼\"",
+   "url": "https://www.etoday.co.kr/news/view/2641958",
+   "press": "",
+   "pub_date": "2026-10-29T18:26:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ent_content"
+  },
+  {
+   "title": "앤트로픽, 1인 신약 개발사 인수...클로드로 직접 치료제 개발",
+   "url": "https://www.aitimes.com/news/articleView.html?idxno=216778",
+   "press": "",
+   "pub_date": "2026-10-29T18:02:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ai_tech"
+  },
+  {
+   "title": "프리즘(PRIZM), 페스티벌 공동 샘플링 부스…재참여 매출 73%",
+   "url": "https://www.etoday.co.kr/news/view/2641498",
+   "press": "",
+   "pub_date": "2026-10-29T09:12:00+09:00",
+   "stage": "1차",
+   "reason": "같은 사안 대표 기사로 검토",
+   "section": "ent_content"
+  },
+  {
+   "title": "플로, 스트리밍 기여도 확인하는 '응원 카드' 도입",
+   "url": "http://www.kdfnews.com/news/articleView.html?idxno=190083",
+   "press": "한국면세뉴스",
+   "pub_date": "2026-10-29T09:52:00+09:00",
+   "stage": "2차",
+   "reason": "동일 보도자료 중복 (아시아경제 우선)",
+   "section": "own"
+  },
+  {
+   "title": "플로( FLO), '응원 카드' 기능 도입…스밍 인증 한방에",
+   "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=877527",
+   "press": "한스경제",
+   "pub_date": "2026-10-29T13:46:00+09:00",
+   "stage": "2차",
+   "reason": "동일 보도자료 중복 (아시아경제 우선)",
+   "section": "own"
+  },
+  {
+   "title": "팬들이 직접 하던 ‘스밍 인증’, 이제 플로(FLO) ‘응원 카드’ 한 장이면 충분",
+   "url": "https://sports.khan.co.kr/article/202610300143003?pt=nv",
+   "press": "스포츠경향",
+   "pub_date": "2026-10-30T01:44:00+09:00",
+   "stage": "2차",
+   "reason": "동일 보도자료 중복 (아시아경제 우선)",
+   "section": "own"
+  },
+  {
+   "title": "플로, 팬 응원 인증 '응원 카드'와 실시간 댓글 기능 추가",
+   "url": "https://www.lawissue.co.kr/view.php?ud=202610290914337060204ead0791_12",
+   "press": "로이슈",
+   "pub_date": "2026-10-29T09:16:00+09:00",
+   "stage": "2차",
+   "reason": "동일 보도자료 중복 (아시아경제 우선)",
+   "section": "own"
+  },
+  {
+   "title": "플로, 팬덤 '스밍 인증' 한 장으로…응원 카드·댓글 기능 추가",
+   "url": "https://www.mt.co.kr/tech/2026/10/29/2026102909292038029",
+   "press": "머니투데이",
+   "pub_date": "2026-10-29T09:30:00+09:00",
+   "stage": "2차",
+   "reason": "동일 보도자료 기반 중복(이데일리 기사 선정)",
+   "section": "own"
+  },
+  {
+   "title": "플로, 팬별 스트리밍 기여도 보여준다…'응원 카드' 추가",
+   "url": "https://www.ddaily.co.kr/page/view/2026102916142327973",
+   "press": "디지털데일리",
+   "pub_date": "2026-10-29T16:22:00+09:00",
+   "stage": "2차",
+   "reason": "동일 보도자료 기반 중복(이데일리 기사 선정)",
+   "section": "own"
+  },
+  {
+   "title": "[더벨][티맵모빌리티 매각] SK스퀘어 리밸런싱, 골드만삭스와 협상",
+   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202610291651525240108676",
+   "press": "더벨",
+   "pub_date": "2026-10-29T17:18:00+09:00",
+   "stage": "2차",
+   "reason": "본문 부재 및 타사 매각 기사 내 단순 언급",
+   "section": "own"
+  },
+  {
+   "title": "SK스퀘어, 티맵모빌리티 경영권 매각 추진…글로벌 투자은행과 협상 중",
+   "url": "https://www.mdtoday.co.kr/news/articleView.html?idxno=621874",
+   "press": "메디컬투데이",
+   "pub_date": "2026-10-29T21:38:00+09:00",
+   "stage": "2차",
+   "reason": "타사 사업 재편 기사 내 과거 지분 단순 언급",
+   "section": "own"
+  },
+  {
+   "title": "AI·반도체 올인한 SK스퀘어, 이번엔 티맵 내려놓나",
+   "url": "https://www.newscj.com/news/articleView.html?idxno=3444300",
+   "press": "여론조사에 강한 신문- 천지일보",
+   "pub_date": "2026-10-29T18:34:00+09:00",
+   "stage": "2차",
+   "reason": "티맵 매각 기사 내 드림어스 단순 나열",
+   "section": "own"
+  },
+  {
+   "title": "“반도체만 남긴다”…SK스퀘어, '티맵' 골드만삭스와 매각 협상",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=05628486645617840&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "press": "이데일리",
+   "pub_date": "2026-10-29T16:57:00+09:00",
+   "stage": "2차",
+   "reason": "티맵 매각 관련 기사로 드림어스 무관",
+   "section": "own"
+  },
+  {
+   "title": "SK스퀘어, 티맵 지분매각 추진…\"골드만삭스와 협상\"",
+   "url": "https://www.newsis.com/view/NISX20261029_0003847163",
+   "press": "뉴시스",
+   "pub_date": "2026-10-29T17:14:00+09:00",
+   "stage": "2차",
+   "reason": "티맵 매각 기사 내 드림어스 단순 언급",
+   "section": "own"
+  },
+  {
+   "title": "SK스퀘어, 티맵모빌리티 매각 추진…AI·반도체 중심 리밸런싱 속도",
+   "url": "https://www.newspim.com/news/view/20261029001349",
+   "press": "뉴스핌",
+   "pub_date": "2026-10-29T18:18:00+09:00",
+   "stage": "2차",
+   "reason": "티맵 매각 기사 내 과거 매각 사례 언급",
+   "section": "own"
+  },
+  {
+   "title": "인천음악창작소, '2026 인천의 노래 제작지원사업' 음원 5곡 발매",
+   "url": "https://www.mhns.co.kr/news/articleView.html?idxno=765477",
+   "press": "더쎈뉴스(The Cen News)",
+   "pub_date": "2026-10-29T09:16:00+09:00",
+   "stage": "2차",
+   "reason": "지역 지원사업 음원 발매 및 단순 유통처",
+   "section": "own"
+  },
+  {
+   "title": "[미리보는 이데일리 신문] AI 쓴 작곡가, 밝히면 0원 쉬쉬하면 205억",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=07209446645617840&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "press": "이데일리",
+   "pub_date": "2026-10-29T20:44:00+09:00",
+   "stage": "2차",
+   "reason": "신문 지면 기사 목차 나열 단신",
+   "section": "fandom_music"
+  },
+  {
+   "title": "투바투, 신보 추리형 콘텐츠 출격… ‘크라임씬’ 작가 참여",
+   "url": "https://www.bntnews.co.kr/article/view/bnt202610290183",
+   "press": "bnt뉴스",
+   "pub_date": "2026-10-29T11:10:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 자체 영상 콘텐츠 공개 단순 홍보",
+   "section": "fandom_music"
+  },
+  {
+   "title": "캣츠아이, 첫 국내 공연 개최…\"내년 2월, KSPO돔 상륙\"",
+   "url": "http://www.dispatch.co.kr/2349994",
+   "press": "",
+   "pub_date": "2026-10-29T16:12:00+09:00",
+   "stage": "2차",
+   "reason": "단순 투어 일정 및 예매 안내 단신",
+   "section": "fandom_music"
+  },
+  {
+   "title": "캣츠아이, 데뷔 후 첫 韓 콘서트…아시아·오세아니아 투어 일정 공개",
+   "url": "https://www.news1.kr/entertain/music/6336329",
+   "press": "뉴스1",
+   "pub_date": "2026-10-29T14:10:00+09:00",
+   "stage": "2차",
+   "reason": "단순 투어 일정 및 콘서트 개최 안내",
+   "section": "fandom_music"
+  },
+  {
+   "title": "BTS·악뮤·아이브 격돌…MMA2026, 12개 부문 후보 공개",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=03283286645618168&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "press": "이데일리",
+   "pub_date": "2026-10-30T08:59:00+09:00",
+   "stage": "2차",
+   "reason": "단순 시상식 후보 명단 및 투표 안내",
+   "section": "fandom_music"
+  },
+  {
+   "title": "[공시] 10월 30일, 코스닥 상장사 75개 종목 자사주 매수 신청",
+   "url": "https://www.newstnt.com/news/articleView.html?idxno=725863",
+   "press": "뉴스티앤티",
+   "pub_date": "2026-10-29T20:34:00+09:00",
+   "stage": "2차",
+   "reason": "단순 상장사 자사주 매수 신청 수치 나열",
+   "section": "fandom_music"
+  },
+  {
+   "title": "트와이스 정연, 소속사 이적 후 배우로 본격 소통 시작…개인 버블 오픈",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16262312",
+   "press": "톱스타뉴스",
+   "pub_date": "2026-10-29T22:14:00+09:00",
+   "stage": "2차",
+   "reason": "경쟁사 개별 아티스트 채널 입점 단신",
+   "section": "fandom_music"
+  },
+  {
+   "title": "써클차트 43주차, 엔믹스 +5.9만점…정한&조슈아·아이브 소비 갈렸다",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16262157",
+   "press": "톱스타뉴스",
+   "pub_date": "2026-10-29T18:08:00+09:00",
+   "stage": "2차",
+   "reason": "개별 매체 차트 순위 재집계 기사로 사업성 부족",
+   "section": "fandom_music"
+  },
+  {
+   "title": "[더벨][i-point] 위세아이텍, AI 플랫폼·컴퓨팅 인프라 시장 공략",
+   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202610291450518240108954",
+   "press": "더벨",
+   "pub_date": "2026-10-29T15:32:00+09:00",
+   "stage": "2차",
+   "reason": "본문 내용 부족(0자)",
+   "section": "ai_tech"
+  },
+  {
+   "title": "롯데마트·슈퍼, '카니버X포레스텔라' 협업 와인 패키지 한정 판매",
+   "url": "http://www.kdfnews.com/news/articleView.html?idxno=190078",
+   "press": "한국면세뉴스",
+   "pub_date": "2026-10-29T09:36:00+09:00",
+   "stage": "2차",
+   "reason": "단순 유통사-아티스트 와인 패키지 판매 단신",
+   "section": "ent_content"
+  },
+  {
+   "title": "LF 아떼, 프랑스 버터 브랜드와 협업...'립 글로이밤' 한정판 출시",
+   "url": "http://www.popcornnews.net/news/articleView.html?idxno=137832",
+   "press": "팝콘뉴스",
+   "pub_date": "2026-10-29T09:20:00+09:00",
+   "stage": "2차",
+   "reason": "엔터·팬덤과 무관한 일반 뷰티 브랜드 프로모션",
+   "section": "ent_content"
+  },
+  {
+   "title": "인성디지탈, 금융권 보안사업 확대…3분기 누적 매출 117% 증가",
+   "url": "https://byline.network/?p=9004111222625334",
+   "press": "바이라인네트워크",
+   "pub_date": "2026-10-29T16:10:00+09:00",
+   "stage": "2차",
+   "reason": "금융권 망분리 규제 완화 관련 일반 보안 사업 실적",
+   "section": "ai_tech"
+  },
+  {
+   "title": "AI 학습 저작권과 암표 해법을 논의한다…11월 6일 콘텐츠포럼",
+   "url": "https://www.news1.kr/life-culture/general-cultural/6335965",
+   "press": "뉴스1",
+   "pub_date": "2026-10-29T11:41:00+09:00",
+   "stage": "2차",
+   "reason": "행사 개최 안내 단신(분량 및 실질 내용 부족)",
+   "section": "ent_content"
+  },
+  {
+   "title": "단순 할인으론 부족하다… 카드업계, 스포츠 팬덤에 승부수",
+   "url": "https://www.mt.co.kr/finance/2026/10/30/2026102915293684163",
+   "press": "머니투데이",
+   "pub_date": "2026-10-29T16:07:00+09:00",
+   "stage": "2차",
+   "reason": "금융권 마케팅 제휴 상품 소개 단신",
+   "section": "ent_content"
+  },
+  {
+   "title": "‘더 제로 프로젝트 캄보디아’, 27년 캄팝 보이그룹 데뷔 프로젝트 최종 멤버 9인 공개",
+   "url": "https://www.etoday.co.kr/news/view/2641556",
+   "press": "이투데이",
+   "pub_date": "2026-10-29T09:50:00+09:00",
+   "stage": "2차",
+   "reason": "신인 오디션 프로젝트 최종 멤버 선발 단신",
+   "section": "ent_content"
+  },
+  {
+   "title": "할인 넘어 AI 동맹까지 … 카드사 PLCC 경쟁 '충성 고객' 잡기",
+   "url": "https://biz.newdaily.co.kr/site/data/html/2026/10/29/2026102900134.html",
+   "press": "뉴데일리",
+   "pub_date": "2026-10-29T11:10:00+09:00",
+   "stage": "2차",
+   "reason": "카드사 PLCC 및 스포츠 제휴 마케팅 트렌드",
+   "section": "ent_content"
+  },
+  {
+   "title": "[테크 NOW] SK AXㆍ인텔ㆍ카페24",
+   "url": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202610291409436150776",
+   "press": "대한경제",
+   "pub_date": "2026-10-29T14:22:00+09:00",
+   "stage": "2차",
+   "reason": "본문 내용 부족(168자)",
+   "section": "ent_content"
+  },
+  {
+   "title": "'데뷔 10주년' 블랙핑크, 옥관문화훈장 수훈..K팝 걸그룹 최초",
+   "url": "https://www.starnewskorea.com/music/2026/10/30/2026103008043784000",
+   "press": "스타뉴스",
+   "pub_date": "2026-10-30T08:20:00+09:00",
+   "stage": "2차",
+   "reason": "아티스트 정부 포상 수훈 소식 단신",
+   "section": "ent_content"
+  },
+  {
+   "title": "'나루토·케로로' 국내 사업 IPX가 맡는다…상품·팝업 확대",
+   "url": "https://www.yna.co.kr/view/AKR20261029122500017?input=1195m",
+   "press": "연합뉴스",
+   "pub_date": "2026-10-29T14:07:00+09:00",
+   "stage": "2차",
+   "reason": "AI 판정 못 함(한도·오류)",
+   "section": "ent_content"
+  },
+  {
+   "title": "[뉴욕증시] 믿었던 알파벳마저 흔들린다…나스닥 1.38%↓",
+   "url": "https://news.einfomax.co.kr/news/articleView.html?idxno=4442056",
+   "press": "연합인포맥스",
+   "pub_date": "2026-10-30T05:56:00+09:00",
+   "stage": "2차",
+   "reason": "AI 판정 못 함(한도·오류)",
+   "section": "ai_tech"
+  },
+  {
+   "title": "\"AI로 SaaS 다 갈아엎는다?\"…'탈 SaaS'의 착시",
+   "url": "https://www.itdaily.kr/news/articleView.html?idxno=242561",
+   "press": "아이티데일리",
+   "pub_date": "2026-10-29T17:22:00+09:00",
+   "stage": "2차",
+   "reason": "AI 판정 못 함(한도·오류)",
+   "section": "ai_tech"
+  },
+  {
+   "title": "K콘텐츠 IP, 유럽·중국서 계약·협약 11건…수출 상담 860건",
+   "url": "https://www.fnnews.com/news/202610300411272426",
+   "press": "파이낸셜뉴스",
+   "pub_date": "2026-10-30T08:00:00+09:00",
+   "stage": "2차",
+   "reason": "AI 판정 못 함(한도·오류)",
+   "section": "ent_content"
+  },
+  {
+   "title": "엔믹스, 첫 월드투어 피날레 콘서트 3회 전석 매진 달성",
+   "url": "https://www.mt.co.kr/stock/2026/10/29/2026102915030597887",
+   "press": "머니투데이",
+   "pub_date": "2026-10-29T15:10:00+09:00",
+   "stage": "2차",
+   "reason": "AI 판정 못 함(한도·오류)",
+   "section": "ent_content"
+  },
+  {
+   "title": "핼러윈 코스튬 대신 캐릭터 굿즈…'치이카와' 검색 27배 급증",
+   "url": "https://www.news1.kr/it-science/internet-platform/6336690",
+   "press": "뉴스1",
+   "pub_date": "2026-10-30T07:01:00+09:00",
+   "stage": "2차",
+   "reason": "AI 판정 못 함(한도·오류)",
+   "section": "ent_content"
+  },
+  {
+   "title": "이동 개념 바꾼 'MaaS-Bridge'...시각장애인 등에 '한줄기 빛'",
+   "url": "https://zdnet.co.kr/view/?no=20261029144251",
+   "press": "지디넷코리아",
+   "pub_date": "2026-10-29T14:51:00+09:00",
+   "stage": "2차",
+   "reason": "AI 판정 못 함(한도·오류)",
+   "section": "ai_tech"
+  },
+  {
+   "title": "카카오, SM엔터 지분 이전하나…음악사업 재편 주목",
+   "url": "https://www.sentv.co.kr/article/view/sentv202610290149",
+   "press": "(주) 서울경제티브이",
+   "pub_date": "2026-10-29T18:42:00+09:00",
+   "stage": "2차",
+   "reason": "AI 판정 못 함(한도·오류)",
+   "section": "ent_content"
+  },
+  {
+   "title": "앤트로픽, '클로드' 자기 대화 감시 기술 도입…유해 사용 78% 탐지",
+   "url": "https://www.aitimes.com/news/articleView.html?idxno=216824",
+   "press": "AI타임스",
+   "pub_date": "2026-10-30T07:22:00+09:00",
+   "stage": "2차",
+   "reason": "AI 판정 못 함(한도·오류)",
+   "section": "ai_tech"
+  },
+  {
+   "title": "구글, 기업용 '제미나이 에이전트' 연내 일반 이용자에 제공",
+   "url": "https://www.aitimes.com/news/articleView.html?idxno=216787",
+   "press": "AI타임스",
+   "pub_date": "2026-10-29T14:32:00+09:00",
+   "stage": "2차",
+   "reason": "AI 판정 못 함(한도·오류)",
+   "section": "ai_tech"
+  },
+  {
+   "title": "\"내 스밍 지분 몇 %?\"…플로, 팬 응원 기여도 보여주는 ‘응원 카드’ 출시",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=03772006645617840&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "press": "이데일리",
+   "pub_date": "2026-10-29T10:13:00+09:00",
+   "section": "own",
+   "stage": "중복",
+   "reason": "최근 게재분과 같은 사안: \"내가 스밍에 얼마나 보탰지?\"…플로, 응원 인증 기능 추가"
+  },
+  {
+   "title": "쏟아지는 AI 음악·책‥\"내 작품도 무단 학습?\"",
+   "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6861774_37004.html",
+   "press": "MBC",
+   "pub_date": "2026-10-29T20:47:00+09:00",
+   "section": "fandom_music",
+   "stage": "중복",
+   "reason": "같은 날 같은 사안: BTS·싸이 노래 무단학습한 수노, 美서 소송당해…대중문화계 AI 무단학습 논란"
+  },
+  {
+   "title": "K팝 열풍 타고 음악 축제로…몸집 키우는 연말 시상식",
+   "url": "https://www.kmib.co.kr/article/20261029501705",
+   "press": "국민일보",
+   "pub_date": "2026-10-29T17:09:00+09:00",
+   "section": "ent_content",
+   "stage": "중복",
+   "reason": "같은 날 같은 사안: 2026 MAMA AWARDS, '박보검→패닉·빅뱅' K팝 팬경험 진화 예고 (종합)"
+  }
+ ]
+}
