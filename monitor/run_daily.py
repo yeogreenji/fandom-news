@@ -171,6 +171,31 @@ _OWN_GENERIC = {"비스테이지", "플로", "flo", "비마이프렌즈", "드�
                 "팬클럽", "비즈니스", "재생", "콘텐츠", "아티스트", "음원", "음악", "멤버십", "협업", "출시"}
 
 
+def cross_day_suspects(records: list[dict], day: str, days: int = 4) -> list[dict]:
+    """오늘 후보 중 최근 게재분과 같은 사안으로 의심되는 쌍(코드 판정) → AI가 새 사실 여부로 최종 판단.
+    기준(지난 게재분으로 시험해 맞춘 값): 드문 단어 9개 이상 공유, 또는 제목의 드문 단어 2개 이상 + 본문 6개 이상,
+    또는 제목 드문 단어 2개 이상 + 전체 겹치는 단어 25개 이상(숏폼 드라마 지표처럼 흔한 단어로 쓴 같은 기사)."""
+    recent = [x for p in _day_files(before=day)[-days:] for x in read_json(p, {}).get("items", [])]
+    if not recent or not records:
+        return []
+    txt = lambda r: r["title"] + " " + (r.get("summary") or "")[:400]
+    toks = [topic_tokens(txt(x)) for x in records + recent]
+    ttl = [topic_tokens(x["title"]) for x in records + recent]
+    df = collections.Counter(w for t in toks for w in t)
+    lim = max(3, int(len(toks) * 0.03))
+    out = []
+    for i, r in enumerate(records):
+        for j, p in enumerate(recent):
+            k = len(records) + j
+            both = toks[i] & toks[k]
+            sh = len({w for w in both if df[w] <= lim})
+            tt = len({w for w in ttl[i] & ttl[k] if df[w] <= lim})
+            if sh >= 9 or (tt >= 2 and sh >= 6) or (tt >= 2 and len(both) >= 25):
+                out.append({"id": r["id"], "기존 제목": p["title"], "기존 요약": (p.get("summary") or "")[:300]})
+                break
+    return out
+
+
 def recent_signatures(days: int = 4) -> list[set]:
     return [_bigrams(_norm_title(it["title"])) for it in recent_items(days)]
 
@@ -352,7 +377,14 @@ def run_review(items: list[dict], cfg: dict) -> bool:
     # 본문이 너무 짧아 요약할 내용이 없는 기사는 AI에 보내지 않고 제외(자사 기사는 예외)
     min_body = cfg.get("min_body_chars", 0)
     if min_body:
-        thin = [it for it in items if not _is_own(it) and len(it.get("body") or "") < min_body]
+        # 자사·우선 키워드(위버스·디어유·AI 음악 등) 기사는 본문을 못 읽었어도 요약문으로 판정을 받는다
+        for it in items:
+            if len(it.get("body") or "") < min_body and (_is_own(it) or priority_hit(it, cfg)):
+                desc = (it.get("description") or "").strip()
+                if len(desc) > len(it.get("body") or ""):
+                    it["body"] = desc
+        thin = [it for it in items if not _is_own(it) and not priority_hit(it, cfg)
+                and len(it.get("body") or "") < min_body]
         for it in thin:
             it["review"] = {"keep": False, "reason": f"본문 내용 부족({len(it.get('body') or '')}자)", "thin": True}
         if thin:
@@ -614,7 +646,8 @@ def drop_thin_summaries(items: list[dict], cfg: dict, tried: set) -> int:
     floor, dropped = cfg.get("summary_drop_below", 250), 0
     for it in items:
         r = it.get("review") or {}
-        if not r.get("keep") or it["id"] not in tried or _is_own(it) or r.get("must_include"):
+        if not r.get("keep") or it["id"] not in tried or _is_own(it) or r.get("must_include") \
+                or priority_hit(it, cfg):
             continue
         n = len((r.get("summary") or "").strip())
         if n < floor:
@@ -875,7 +908,10 @@ def main(argv=None):
             texts = [r["title"] + " " + r["summary"][:300] for r in records]
             links = topic_links(texts, k=6, max_df_ratio=0.1)
             hints = sorted({(min(i, j), max(i, j)) for i, ls in enumerate(links) for j in ls})
-            drops = llm.dedupe(records, recent_items(3), [(records[i]["id"], records[j]["id"]) for i, j in hints])
+            cross = cross_day_suspects(records, until.strftime("%Y-%m-%d"))
+            stats["repeat_suspects"] = len(cross)
+            drops = llm.dedupe(records, recent_items(3), [(records[i]["id"], records[j]["id"]) for i, j in hints],
+                               cross=cross)
         except Exception as e:
             log.error("중복 점검 실패(건너뜀): %s", e)
             drops = []

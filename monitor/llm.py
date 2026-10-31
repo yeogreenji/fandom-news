@@ -382,10 +382,16 @@ DEDUPE_GUIDE = """[작업] 중복 점검.
    정보가 더 많은 쪽(종합·분석) 1건만 남긴다. 같은 날 같은 사건을 '단신 + 분석' 두 건으로 싣지 않는다.
    같은 사건이라도 서로 다른 쟁점(예: 같은 국정감사의 '특혜 의혹 해명'과 '상표권 계약 구조')을 다루면 남긴다.
 '같은 사안 의심 쌍'은 시스템이 본문 단어가 많이 겹친다고 찾은 쌍이다. 쌍마다 같은 사건인지 반드시 판단한다.
+'전날 게재분과 같은 사안 의심'은 시스템이 최근 게재 기사와 겹친다고 찾은 오늘 후보다. 항목마다 기존 기사와
+같은 발표·같은 사건인지 반드시 판단한다. 같은 사안이면 오늘 후보를 뺀다(자사 보도자료의 재게재 포함).
+남기는 경우는 기존 기사에 없던 새로운 사실(후속 수치, 공식 입장·반론, 새 일정·새 당사자)이 기사의 중심이거나
+단신을 넘어선 기획·분석으로 확장된 경우뿐이다. 같은 행사의 다른 매체 기사, 같은 보도자료의 다른 제목, 같은 조사
+결과의 재인용은 새 사실이 아니다. 남길 때는 무엇이 새로운지 판단 근거로 삼는다.
 뺄 쪽은 중요도·정보량이 낮은 기사다. 해당이 없으면 빈 배열."""
 
 
-def dedupe(today: list[dict], recent: list[dict], pairs: list[tuple[str, str]] | None = None) -> list[dict]:
+def dedupe(today: list[dict], recent: list[dict], pairs: list[tuple[str, str]] | None = None,
+           cross: list[dict] | None = None) -> list[dict]:
     if not today:
         return []
     fmt = lambda r: {"title": r["title"], "press": r.get("press", ""), "lead": (r.get("summary") or "")[:160]}
@@ -393,6 +399,7 @@ def dedupe(today: list[dict], recent: list[dict], pairs: list[tuple[str, str]] |
         "이미 게재": [fmt(r) for r in recent],
         "오늘 후보": [{"id": r["id"], **fmt(r), "importance": r.get("importance", 3)} for r in today],
         "같은 사안 의심 쌍": [list(p) for p in (pairs or [])],
+        "전날 게재분과 같은 사안 의심": cross or [],
     }, ensure_ascii=False)
     out = call_json("review", DEDUPE_GUIDE, user, DEDUPE_SCHEMA, max_tokens=2000)
     ids = {r["id"] for r in today}

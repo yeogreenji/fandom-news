@@ -4,6 +4,13 @@ from __future__ import annotations
 from urllib.parse import urlparse
 
 DOMAIN_PRESS = {
+    "dispatch.co.kr": "디스패치", "sentv.co.kr": "서울경제TV", "dealsite.co.kr": "딜사이트",
+    "musicbusinessworldwide.com": "Music Business Worldwide", "billboard.com": "Billboard",
+    "itdaily.kr": "아이티데일리", "theguru.co.kr": "더구루", "insightkorea.co.kr": "인사이트코리아",
+    "heraldmuse.com": "헤럴드뮤즈", "nbntv.co.kr": "내외경제TV", "newsworks.co.kr": "뉴스웍스",
+    "datanet.co.kr": "데이터넷", "imaeil.com": "매일신문", "metroseoul.co.kr": "메트로신문",
+    "thebigdata.co.kr": "빅데이터뉴스", "nc.press": "뉴스컬처", "aitimes.com": "AI타임스",
+    "mstoday.co.kr": "엠에스투데이", "byline.network": "바이라인네트워크", "digitaltoday.co.kr": "디지털투데이",
     "yna.co.kr": "연합뉴스", "newsis.com": "뉴시스", "news1.kr": "뉴스1",
     "edaily.co.kr": "이데일리", "hankyung.com": "한국경제", "mk.co.kr": "매일경제",
     "mt.co.kr": "머니투데이", "chosun.com": "조선일보", "biz.chosun.com": "조선비즈",

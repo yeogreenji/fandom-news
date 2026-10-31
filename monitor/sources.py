@@ -99,6 +99,8 @@ def rss_fetch(url: str, since: datetime) -> list[dict]:
         out.append({
             "title": clean(e.get("title")),
             "description": clean(e.get("summary"))[:400],
+            # 피드 본문(content:encoded) — 원문 페이지가 봇을 막아 본문을 못 읽을 때 대신 쓴다(MBW 등)
+            "rss_body": clean(" ".join(c.get("value", "") for c in (e.get("content") or [])))[:20000],
             "url": e.get("link"),
             "naver_url": None,
             "pub_date": pub.isoformat(),
