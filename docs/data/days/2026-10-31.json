@@ -27,7 +27,7 @@
   "ai_sec": 1138,
   "repeat_dropped": 1,
   "same_day_dropped": 0,
-  "kept": 20
+  "kept": 15
  },
  "ai": {
   "calls": 42,
@@ -56,67 +56,10 @@
  },
  "items": [
   {
-   "id": "073c0c0be12a",
-   "title": "OGQ블렌딩, AI 음원 국내외 주요 음악 플랫폼 유통 확대",
-   "url": "https://www.nbntv.co.kr/news/articleView.html?idxno=4026804",
-   "press": "내외경제Tv",
-   "pub_date": "2026-10-30T15:22:00+09:00",
-   "date_label": "26.10.30",
-   "section": "own",
-   "subsection": "own",
-   "importance": 5,
-   "kind": "news",
-   "must_include": true,
-   "summary": "음악 IP 테크 기업 OGQ블렌딩이 AI를 활용해 제작한 음원의 국내외 주요 음악 플랫폼 유통을 본격 확대한다고 밝혔다. **OGQ블렌딩은 멜론, 지니, FLO를 비롯해 유튜브 뮤직, 애플뮤직, 스포티파이 등 주요 음악 플랫폼을 통해 AI 활용 음원의 공식 등록 및 유통을 확대한다.** 대표 사례인 AI 활용 아티스트 '머무르'는 창작자의 기획·작사·디렉션과 AI 생성 보컬을 결합해 제작됐으며 멜론 TOP100 차트 3위를 기록한 바 있다. OGQ블렌딩은 AI 음원 수급 과정의 확인 절차와 탐지 시스템을 마련하고 자체 유통 플랫폼인 '블렌딩 포 아티스트(VFA)' 개편을 진행 중이다. **국내 주요 음악 플랫폼인 멜론, 지니, FLO 등과는 AI 음원의 수급 방식과 정보 표기, 서비스 적용 방안을 협의하며 플랫폼별 정책과 기술 환경에 맞는 공급 체계를 마련하고 있다.**",
-   "reason": "자사 FLO 포함 AI 음원 유통 협력",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 1
-  },
-  {
-   "id": "0b3cc6071366",
-   "title": "SK가 만든 1등앱 ‘티맵’…손절 나선 배경은?",
-   "url": "https://www.mk.co.kr/article/12191280",
-   "press": "매일경제",
-   "pub_date": "2026-10-30T10:27:00+09:00",
-   "date_label": "26.10.30",
-   "section": "own",
-   "subsection": "own",
-   "importance": 3,
-   "kind": "trend",
-   "must_include": false,
-   "summary": "SK스퀘어가 국내 대표 내비게이션 앱 '티맵' 운영사인 티맵모빌리티 경영권 매각 협의를 글로벌 투자은행 골드만삭스 대체투자사업부와 진행하고 있다. 골드만삭스는 SK스퀘어 지분(63.23%)과 재무적투자자 지분을 묶어 약 8000억원을 투입해 지분 대부분을 확보한다는 목표다. SK스퀘어는 지분 약 10% 안팎을 남겨 2대 주주로서 AI 및 데이터 분야 협력 관계를 유지할 계획이다. 티맵모빌리티의 기업가치는 약 6000억원 안팎으로 추산되며, 2021년 프리IPO 당시 인정받은 1조4000억원보다 낮아진 수준이다. **티맵모빌리티는 SK스퀘어가 SK쉴더스, 11번가, 인크로스, 원스토어, 드림어스컴퍼니 등 비핵심 자회사를 정리하는 과정에서도 마지막까지 보유해 온 핵심 플랫폼 자산이다.** 티맵은 2023년 가입자 2000만 명을 돌파하고 올해 2분기 기준 월간활성이용자 1520만 명을 기록했으나, 연결 순손실이 지속되며 상장 추진에 어려움을 겪어왔다. 골드만삭스는 완성차 탑재 확대 등 B2B 성장성에 주목해 단독 인수를 추진 중이다.",
-   "reason": "드림어스컴퍼니 매각 이력 언급",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 1
-  },
-  {
-   "id": "e615d3f85f93",
-   "title": "패닉부터 5세대 아티스트까지‥‘2026 MAMA AWARDS’ 올 제너레이션 라인업 발표",
-   "url": "https://www.heraldmuse.com/article/10920021?ref=naver",
-   "press": "헤럴드뮤즈",
-   "pub_date": "2026-10-30T09:15:00+09:00",
-   "date_label": "26.10.30",
-   "section": "fandom_music",
-   "subsection": "fan_platform",
-   "importance": 3,
-   "kind": "news",
-   "must_include": false,
-   "summary": "CJ ENM이 오는 11월 20일과 21일 일본 교세라 돔 오사카에서 열리는 '2026 MAMA AWARDS'를 앞두고 미디어 데이를 개최해 올해의 연출 포인트와 팬 경험 확장 계획을 발표했다. 시상식 무대에서는 패닉, 올데이 프로젝트, 코르티스, 하츠투하츠, WOODZ, 제로베이스원 등의 세대 초월 컬래버레이션과 함께 현대미술 이배 작가와의 협업, 영화 '듄: 파트3' 및 애니메이션 '아기공룡 둘리', 구글 인공지능 제미나이를 접목한 무대를 선보인다. 아울러 팬이 주체가 되는 온·오프라인 축제 'MAMA FAN FESTA'를 11월 9일부터 21일까지 엠넷플러스와 오사카 일대에서 동시 진행한다. 글로벌 K팝 플랫폼 엠넷플러스에서 온라인 스탬프 미션, 스포일러 퀘스트, 생중계를 제공하고, 오사카 난바광장 등 현장에서는 팬 커뮤니티 라운지, 스타 터치 스테이션, 백스테이지 캠 부스를 조성해 팬 교류 공간을 운영할 계획이다.",
-   "reason": "엠넷플러스 팬 페스타 온오프라인 연계",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 1
-  },
-  {
    "id": "0043901de116",
    "title": "'MMA 2026', 후보 공개…\"방탄소년단부터 악뮤까지\"",
    "url": "http://www.dispatch.co.kr/2350053",
-   "press": "멜론",
+   "press": "디스패치",
    "pub_date": "2026-10-30T16:10:00+09:00",
    "date_label": "26.10.30",
    "section": "fandom_music",
@@ -126,25 +69,6 @@
    "must_include": false,
    "summary": "멜론은 30일 방탄소년단과 악뮤, 아이브, 플레이브 등이 경합하는 '멜론뮤직어워드'(MMA 2026) 12개 부문 후보를 공개하고 다음 달 13일까지 투표를 진행한다고 밝혔다. 올해의 아티스트, 앨범, 베스트송 등 주요상 3개 부문에는 방탄소년단과 악뮤, 아이오아이, 아이브, 아일릿, 키키, 코르티스 등 7팀이 모두 노미네이트됐다. 올해 신설된 글로벌 톱 10은 한중일 음악 플랫폼 데이터가 활용되며 멜론과 중국 텐센트뮤직, 일본 라인뮤직이 선보인 글로벌 K 차트 누적 점수로 후보 30팀을 선정했다. 최종 수상자는 차트 60%, 심사 20%, 투표 20%를 합산해 가리며 멜론과 베리즈 투표를 일대일로 반영한다. 이번 시상식은 사상 최초로 2일간 치러지며 다음 달 14일부터 15일까지 서울 구로구 고척스카이돔에서 개최된다.",
    "reason": "경쟁 플랫폼 MMA 후보 공개 및 투표",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 1
-  },
-  {
-   "id": "5460f15dc2fd",
-   "title": "애플 연말 아이폰 업데이트 시동…iOS 27.3, 12월 중순 나온다",
-   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=711283",
-   "press": "디지털투데이 (Digitaltoday)",
-   "pub_date": "2026-10-30T11:08:00+09:00",
-   "date_label": "26.10.30",
-   "section": "fandom_music",
-   "subsection": "global_music",
-   "importance": 3,
-   "kind": "news",
-   "must_include": false,
-   "summary": "애플의 차기 아이폰 운영체제 업데이트인 iOS 27.3이 며칠 내 베타로 공개되고 정식 버전은 12월 중순 출시될 것으로 관측된다. 애플은 해마다 연말 직전 마지막 주요 업데이트를 내놓는 패턴을 유지해 왔으며 이번에도 휴가철 이전에 인력이 대거 쉬기 전 수정 버전을 내놓기 위한 판단으로 비슷한 주기를 따를 전망이다. 이번 주 배포된 iOS 27.2에는 메시지와 시리 AI, 사진 기능 개선과 함께 애플 뮤직 브랜드 개편이 적용됐다. 따라서 iOS 27.3은 단순 보안 패치보다 기능 확장 성격이 더 강한 업데이트가 될 것으로 보이며 추가 시리 AI 지원 언어와 새로워진 헬스 앱 복귀 등이 탑재될지 주목된다.",
-   "reason": "애플뮤직 브랜드 개편 및 OS 업데이트 일정",
    "tags": [],
    "series": null,
    "lang": "ko",
@@ -170,6 +94,25 @@
    "cluster_size": 1
   },
   {
+   "id": "073c0c0be12a",
+   "title": "OGQ블렌딩, AI 음원 국내외 주요 음악 플랫폼 유통 확대",
+   "url": "https://www.nbntv.co.kr/news/articleView.html?idxno=4026804",
+   "press": "내외경제Tv",
+   "pub_date": "2026-10-30T15:22:00+09:00",
+   "date_label": "26.10.30",
+   "section": "fandom_music",
+   "subsection": "music_ai_rights",
+   "importance": 4,
+   "kind": "news",
+   "must_include": true,
+   "summary": "음악 IP 테크 기업 OGQ블렌딩이 AI를 활용해 제작한 음원의 국내외 주요 음악 플랫폼 유통을 본격 확대한다고 밝혔다. **OGQ블렌딩은 멜론, 지니, FLO를 비롯해 유튜브 뮤직, 애플뮤직, 스포티파이 등 주요 음악 플랫폼을 통해 AI 활용 음원의 공식 등록 및 유통을 확대한다.** 대표 사례인 AI 활용 아티스트 '머무르'는 창작자의 기획·작사·디렉션과 AI 생성 보컬을 결합해 제작됐으며 멜론 TOP100 차트 3위를 기록한 바 있다. OGQ블렌딩은 AI 음원 수급 과정의 확인 절차와 탐지 시스템을 마련하고 자체 유통 플랫폼인 '블렌딩 포 아티스트(VFA)' 개편을 진행 중이다. **국내 주요 음악 플랫폼인 멜론, 지니, FLO 등과는 AI 음원의 수급 방식과 정보 표기, 서비스 적용 방안을 협의하며 플랫폼별 정책과 기술 환경에 맞는 공급 체계를 마련하고 있다.**",
+   "reason": "자사 FLO 포함 AI 음원 유통 협력",
+   "tags": [],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
    "id": "4b6daa73febd",
    "title": "BTS·싸이 노래 학습 논란…수노 소송 확산",
    "url": "https://www.mstoday.co.kr/news/articleView.html?idxno=200319",
@@ -187,6 +130,25 @@
    "series": null,
    "lang": "ko",
    "cluster_size": 1
+  },
+  {
+   "id": "1bea3e98e2f6",
+   "title": "Suno fights to make Apple testify on whether Apple Music could survive without UMG and Sony, claiming the majors use their catalogs ‘as a cudgel’ to win anti-AI concessions",
+   "url": "https://www.musicbusinessworldwide.com/suno-fights-to-make-apple-testify-on-whether-apple-music-could-survive-without-umg-and-sony-claiming-the-majors-use-their-catalogs-as-a-cudgel-to-win-anti-ai-concessions/",
+   "press": "Music Business Worldwide",
+   "pub_date": "2026-10-30T17:47:52+09:00",
+   "date_label": "26.10.30",
+   "section": "fandom_music",
+   "subsection": "music_ai_rights",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "lang": "en",
+   "tags": [],
+   "series": null,
+   "cluster_size": 1,
+   "reason": "수노-메이저 음반사 AI 음악 소송, 애플뮤직 증언 공방",
+   "summary": "AI 음악 생성 기업 수노(Suno)가 유니버설뮤직그룹(UMG)·소니뮤직과의 저작권 소송에서 애플이 애플뮤직의 존속 가능성 등에 대해 선서 증언을 하도록 요구하고 있다. 수노는 애플 측 증인이 메이저 음반사와의 현재 라이선스 협상, UMG·소니 카탈로그 없이 애플뮤직이 상업적으로 유지될 수 있는지, 애플뮤직 내 스트리밍 사기 실태, 음반사들이 애플에 수노에 관해 전달한 내용 등에 대해 증언해야 한다고 주장했다. 수노는 음반사들이 소장에서 수노 이용자들이 만든 음악이 애플뮤직 등 스트리밍 서비스에 넘쳐나 자신들의 점유율과 저작권료 풀을 잠식한다고 주장한 만큼 애플뮤직이 이미 소송의 중심에 있다는 입장이다. 반면 애플은 이를 음악 산업 신규 진입자가 애플의 사업 정보를 캐내려는 무리한 요구라고 반박했다. 당초 공동 원고였던 워너뮤직그룹은 2025년 11월 수노와 합의했다. AI 음악 저작권 소송이 음반사와 AI 기업을 넘어 음원 스트리밍 플랫폼의 라이선스 구조로까지 번지는 움직임으로 볼 수 있다."
   },
   {
    "id": "7cf5dfa274d4",
@@ -251,27 +213,6 @@
    "cluster_size": 3
   },
   {
-   "id": "e3ec5bd00b9a",
-   "title": "내달 52개사 1억923만주 의무보유 해제",
-   "url": "https://www.yna.co.kr/view/AKR20261030041300008?input=1195m",
-   "press": "연합뉴스",
-   "pub_date": "2026-10-30T09:45:00+09:00",
-   "date_label": "26.10.30",
-   "section": "ent_content",
-   "subsection": "ent_biz",
-   "importance": 3,
-   "kind": "news",
-   "must_include": false,
-   "summary": "한국예탁결제원은 의무보유 등록된 상장주식 52개사의 1억923만주가 다음 달 중 해제될 예정이라고 30일 밝혔다. 의무보유 등록은 일반투자자를 보호하기 위해 최대주주 등이 보유한 주식을 일정 기간 처분하지 못하도록 예탁결제원에 전자 등록하는 제도다. 시장별로 유가증권시장에서는 삼화전자공업과 태영건설, 씨아이테크, 프리티 등 4개사의 271만4천749주가 의무보유에서 풀린다. 코스닥시장에서는 브릴스와 노타, 민테크, 스카이랩스, 딜리셔스, 니어스랩 등 48개사의 1억651만8천321주가 해제된다. 종목별 해제 물량은 코스닥 상장사 로스웰인터내셔널이 999만8천418주로 가장 많았다. 이어 노브랜드 843만6천424주, 프리시젼바이오 634만3천284주, 코칩 566만5천543주, 츌립앤사이언스 548만8천420주 순이다. 전체 발행주식 수 대비 해제 물량 비율이 가장 높은 기업은 코칩으로 65%였다. 노브랜드가 50%, 사이냅소프트가 48%로 뒤를 이었고 노머스와 에스켐, 프리시젼바이오는 각각 29%였다.",
-   "reason": "경쟁사 노머스 의무보유 해제 공시",
-   "tags": [
-    "동일 보도 5건"
-   ],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 5
-  },
-  {
    "id": "d152025900e9",
    "title": "[기고] AI 커버곡, 목소리 권리는 누구의 것인가",
    "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=901472",
@@ -289,27 +230,6 @@
    "series": null,
    "lang": "ko",
    "cluster_size": 1
-  },
-  {
-   "id": "2f6c2d71ccb1",
-   "title": "고광민 서울시의회 도시계획균형위원장, 서울아레나 현장점검… “도봉·노원 아우르는 지역연계 전략 고민해야”",
-   "url": "https://www.seoul.co.kr/news/publicnews/local_govern/smc_movement/2026/10/30/20261030500097?wlog_tag3=naver",
-   "press": "서울신문",
-   "pub_date": "2026-10-30T10:24:00+09:00",
-   "date_label": "26.10.30",
-   "section": "ent_content",
-   "subsection": "live_ticket",
-   "importance": 3,
-   "kind": "news",
-   "must_include": false,
-   "summary": "서울 도봉구 창동에 건립 중인 대중음악 전문 공연장 '서울아레나'가 공정률 81%를 기록하며 2027년 6월 개관을 목표로 순항하고 있다. 고광민 서울시의회 도시계획균형위원장을 비롯한 방문단은 지난 28일 공사 현장을 찾아 외장 마감 등 개관 준비 상황을 점검했다. 2023년 11월 착공한 서울아레나는 스탠딩석 포함 최대 2만 8000명을 수용할 수 있는 1만 8000석 규모 아레나 공연장과 2000석 규모 중형 공연장, 대중음악지원시설로 구성되는 국내 최대 규모 음악 공연단지다. 아레나 공연장 5층 현장에서 고 위원장은 해외 유명 아티스트들의 자체 음향 및 무대시설 설치를 고려해 대형 크레인이 진입할 수 있는 구조로 설계된 점을 짚으며 K팝 공연장으로서의 경쟁력을 높게 평가했다. 이어 방문단은 창동차량기지 부지를 둘러보며 인접한 도봉구와 노원구를 아우르는 지역경제, 관광, 교통 등 연계 발전 전략을 지속해서 점검하기로 했다.",
-   "reason": "서울아레나 공연장 인프라 공정 및 건립 점검",
-   "tags": [
-    "동일 보도 4건"
-   ],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 4
   },
   {
    "id": "8ea944783616",
@@ -363,25 +283,6 @@
    "must_include": false,
    "summary": "인기 스포츠 경기나 공연 입장권을 비싸게 되파는 것을 막기 위해 지난 8월부터 암표 방지법이 시행됐으나 가을 야구가 시작되자 100만 원 넘는 암표 거래가 공공연히 이뤄지고 있다. 프로야구 플레이오프 입장권은 3차전까지 매진될 만큼 큰 인기여서 표를 구하지 못한 야구팬들은 극장을 찾기도 하며 현장에는 암표상도 여전히 존재한다. 강화된 암표 방지법은 상습 또는 영업으로 매크로를 이용하지 않았더라도 구입 가격보다 비싸게 표를 팔 경우 판매가의 50배까지 과징금을 물도록 하고 거래 플랫폼도 일부 책임을 지도록 했다. 하지만 입장권 중개 거래 사이트에서는 판매가의 몇 배에 달하는 가격에 판다는 글이 올라오고 중고 거래 앱에서도 고가 거래가 유도되고 있다. 암표 방지법에 규정된 상습성과 영업성 판단 기준이 모호한 데다 중개 플랫폼 역시 부정 판매자를 적극 감시할 유인이 부족하다는 지적이 나온다.",
    "reason": "개정 암표 방지법 시행 후 실효성 및 한계 분석",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 1
-  },
-  {
-   "id": "1a2b27099b5e",
-   "title": "티빙, 2차 보상 신청 마감...'실효성' 논란 속 보상 신청 마무리 수순",
-   "url": "https://www.techm.kr/news/articleView.html?idxno=156689",
-   "press": "테크M",
-   "pub_date": "2026-10-30T11:54:00+09:00",
-   "date_label": "26.10.30",
-   "section": "ent_content",
-   "subsection": "video_platform",
-   "importance": 4,
-   "kind": "news",
-   "must_include": false,
-   "summary": "국내 온라인 동영상 서비스 티빙이 대규모 개인정보 유출 사고와 관련한 2차 피해 보상 신청을 마감한다. 앞서 진행한 1차 보상 신청률이 14%에 그친 가운데 추가 신청까지 종료되면서 보상 절차도 마무리 수순에 접어들었다. 다만 직접적인 금전 배상 대신 자사 서비스 중심의 혜택을 제공한다는 점에서 보상안의 실효성을 둘러싼 논란은 이어지는 모양새다. 티빙은 이날까지 개인정보 유출 피해 회원을 대상으로 2차 보상 신청을 받는다. 지난 9월 진행한 1차 보상 신청 기간에 접수하지 못한 회원이 대상이다. 추가 신청은 이달 6일부터 시작됐으며 2차 신청자에 대한 보상은 내달 4일부터 순차적으로 지급된다. 2차 신청을 진행하면서는 프리미엄 시청 기능 제공 기간을 기존 3개월에서 4개월로 늘렸다. 프리미엄 시청 기능은 유료 이용권을 구독 중인 회원에게 적용되며 기존 보상안에 포함됐던 CGV 할인쿠폰은 2차 신청 대상에서 제외됐다.",
-   "reason": "티빙 개인정보 유출 보상 및 보안 투자 계획",
    "tags": [],
    "series": null,
    "lang": "ko",
@@ -687,15 +588,6 @@
    "pub_date": "2026-10-30T14:16:00+09:00",
    "stage": "2차",
    "reason": "단순 주가 및 테마주 등락 나열",
-   "section": "fandom_music"
-  },
-  {
-   "title": "Suno fights to make Apple testify on whether Apple Music could survive without UMG and Sony, claiming the majors use their catalogs ‘as a cudgel’ to win anti-AI concessions",
-   "url": "https://www.musicbusinessworldwide.com/suno-fights-to-make-apple-testify-on-whether-apple-music-could-survive-without-umg-and-sony-claiming-the-majors-use-their-catalogs-as-a-cudgel-to-win-anti-ai-concessions/",
-   "press": "Music Business Worldwide",
-   "pub_date": "2026-10-30T17:47:52+09:00",
-   "stage": "2차",
-   "reason": "본문 내용 부족(0자)",
    "section": "fandom_music"
   },
   {
@@ -1201,6 +1093,61 @@
    "section": "own",
    "stage": "중복",
    "reason": "최근 게재분과 같은 사안: 커넥텀 보이즈, 글로벌 팬 커뮤니티‘B.Stage’(비스테이지) 공식오픈 팬들과 소통 본격화"
+  },
+  {
+   "title": "SK가 만든 1등앱 ‘티맵’…손절 나선 배경은?",
+   "url": "https://www.mk.co.kr/article/12191280",
+   "press": "매일경제",
+   "pub_date": "2026-10-30T10:27:00+09:00",
+   "stage": "수동 점검",
+   "reason": "드림어스컴퍼니 단순 언급(SK스퀘어 자회사 정리 목록)",
+   "section": "own"
+  },
+  {
+   "title": "패닉부터 5세대 아티스트까지‥‘2026 MAMA AWARDS’ 올 제너레이션 라인업 발표",
+   "url": "https://www.heraldmuse.com/article/10920021?ref=naver",
+   "press": "헤럴드뮤즈",
+   "pub_date": "2026-10-30T09:15:00+09:00",
+   "stage": "수동 점검",
+   "reason": "10/30 게재 사안 중복(MAMA 미디어데이)",
+   "section": "fandom_music"
+  },
+  {
+   "title": "애플 연말 아이폰 업데이트 시동…iOS 27.3, 12월 중순 나온다",
+   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=711283",
+   "press": "디지털투데이 (Digitaltoday)",
+   "pub_date": "2026-10-30T11:08:00+09:00",
+   "stage": "수동 점검",
+   "reason": "애플뮤직 단순 언급(OS 업데이트 기사)",
+   "section": "fandom_music"
+  },
+  {
+   "title": "내달 52개사 1억923만주 의무보유 해제",
+   "url": "https://www.yna.co.kr/view/AKR20261030041300008?input=1195m",
+   "press": "연합뉴스",
+   "pub_date": "2026-10-30T09:45:00+09:00",
+   "stage": "수동 점검",
+   "reason": "노머스 단순 언급(의무보유 해제 목록)",
+   "section": "ent_content"
+  },
+  {
+   "title": "고광민 서울시의회 도시계획균형위원장, 서울아레나 현장점검… “도봉·노원 아우르는 지역연계 전략 고민해야”",
+   "url": "https://www.seoul.co.kr/news/publicnews/local_govern/smc_movement/2026/10/30/20261030500097?wlog_tag3=naver",
+   "press": "서울신문",
+   "pub_date": "2026-10-30T10:24:00+09:00",
+   "stage": "수동 점검",
+   "reason": "지방의원 현장점검 동정(공통 제외)",
+   "section": "ent_content"
+  },
+  {
+   "title": "티빙, 2차 보상 신청 마감...'실효성' 논란 속 보상 신청 마무리 수순",
+   "url": "https://www.techm.kr/news/articleView.html?idxno=156689",
+   "press": "테크M",
+   "pub_date": "2026-10-30T11:54:00+09:00",
+   "stage": "수동 점검",
+   "reason": "티빙 정보유출·보상 기사(제외 기준)",
+   "section": "ent_content"
   }
- ]
+ ],
+ "manual_review": "2026-10-31 수동 점검: 6건 제외, 1건 추가, 분류·매체명 수정"
 }
