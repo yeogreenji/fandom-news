@@ -171,7 +171,7 @@ _OWN_GENERIC = {"비스테이지", "플로", "flo", "비마이프렌즈", "드�
                 "팬클럽", "비즈니스", "재생", "콘텐츠", "아티스트", "음원", "음악", "멤버십", "협업", "출시"}
 
 
-def cross_day_suspects(records: list[dict], day: str, days: int = 4) -> list[dict]:
+def cross_day_suspects(records: list[dict], day: str, days: int = 7) -> list[dict]:
     """오늘 후보 중 최근 게재분과 같은 사안으로 의심되는 쌍(코드 판정) → AI가 새 사실 여부로 최종 판단.
     기준(지난 게재분으로 시험해 맞춘 값): 드문 단어 9개 이상 공유, 또는 제목의 드문 단어 2개 이상 + 본문 6개 이상,
     또는 제목 드문 단어 2개 이상 + 전체 겹치는 단어 25개 이상(숏폼 드라마 지표처럼 흔한 단어로 쓴 같은 기사)."""
@@ -910,7 +910,7 @@ def main(argv=None):
             hints = sorted({(min(i, j), max(i, j)) for i, ls in enumerate(links) for j in ls})
             cross = cross_day_suspects(records, until.strftime("%Y-%m-%d"))
             stats["repeat_suspects"] = len(cross)
-            drops = llm.dedupe(records, recent_items(3), [(records[i]["id"], records[j]["id"]) for i, j in hints],
+            drops = llm.dedupe(records, recent_items(7), [(records[i]["id"], records[j]["id"]) for i, j in hints],
                                cross=cross)
         except Exception as e:
             log.error("중복 점검 실패(건너뜀): %s", e)
