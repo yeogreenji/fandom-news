@@ -27,7 +27,7 @@
   "repeat_suspects": 0,
   "repeat_dropped": 0,
   "same_day_dropped": 0,
-  "kept": 19
+  "kept": 18
  },
  "ai": {
   "calls": 33,
@@ -47,25 +47,6 @@
   "seconds": 878
  },
  "items": [
-  {
-   "id": "34137cf9423a",
-   "title": "리센느, MMA 본상 탈락에도 글로벌 TOP10 투표 1위…지드래곤에 13%p 앞서",
-   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16264727",
-   "press": "톱스타뉴스",
-   "pub_date": "2026-10-31T19:22:00+09:00",
-   "date_label": "26.10.31",
-   "section": "fandom_music",
-   "subsection": "fan_platform",
-   "importance": 3,
-   "kind": "news",
-   "must_include": false,
-   "summary": "걸그룹 리센느가 '2026 멜론뮤직어워드(MMA 2026)' 일반 TOP10 본상 선정에서 제외된 가운데, 신설된 글로벌 TOP10 팬 투표에서 1위를 기록하고 있다. 일반 TOP10 투표에서 117만 표 이상을 얻었음에도 음원 성적(60%)과 심사 평가(20%)의 반영으로 최종 선정되지 못했던 리센느는 10월 30일부터 시작된 글로벌 TOP10 부문에서 28%의 득표율로 선두를 달리는 중이다. 글로벌 TOP10은 발매 시기 제한 없이 2026년 5월부터 10월까지의 글로벌-K 차트 누적 성적 60%, 심사 평가 20%, 팬 투표 20%를 합산해 최종 10팀을 가린다. 특히 이번 투표는 국내의 경우 멜론, 해외의 경우 카카오엔터테인먼트의 글로벌 팬 플랫폼 베리즈(Berriz)를 통해 각각 50%씩 반영되는 방식으로 11월 13일까지 진행된다.",
-   "reason": "경쟁 팬 플랫폼 베리즈 투표 운영 현황",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 1
-  },
   {
    "id": "49ada8ff99e7",
    "title": "트와이스 정연, 소속사 이적 후 개인 위버스 오픈…\"우리 자주 만나요\"",
@@ -868,7 +849,16 @@
    "stage": "수동 점검",
    "reason": "AI 영상 제작 도구 활용 사례(제외 기준)",
    "section": "ent_content"
+  },
+  {
+   "title": "리센느, MMA 본상 탈락에도 글로벌 TOP10 투표 1위…지드래곤에 13%p 앞서",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16264727",
+   "press": "톱스타뉴스",
+   "pub_date": "2026-10-31T19:22:00+09:00",
+   "stage": "수동 점검",
+   "reason": "아티스트 개인 순위 기사(MMA 베리즈 투표 방식은 10/29 게재)",
+   "section": "fandom_music"
   }
  ],
- "manual_review": "2026-11-01 수동 점검: 4건 제외"
+ "manual_review": "2026-11-01 수동 점검: 4건 제외 / 1건 제외"
 }

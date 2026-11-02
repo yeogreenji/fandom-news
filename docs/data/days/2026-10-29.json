@@ -27,7 +27,7 @@
   "ai_sec": 1016,
   "repeat_dropped": 1,
   "same_day_dropped": 0,
-  "kept": 26
+  "kept": 24
  },
  "ai": {
   "calls": 47,
@@ -103,29 +103,10 @@
    "cluster_size": 1
   },
   {
-   "id": "04eef94aa0c7",
-   "title": "[e스포츠 Pick] 2027 VCT 퍼시픽 개편안 공개…SWC2026 글로벌 팬덤과 함께한 10년",
-   "url": "https://www.lcnews.co.kr/news/articleView.html?idxno=210456",
-   "press": "라이센스뉴스",
-   "pub_date": "2026-10-28T16:50:00+09:00",
-   "date_label": "26.10.28",
-   "section": "fandom_music",
-   "subsection": "fan_platform",
-   "importance": 3,
-   "kind": "news",
-   "must_include": false,
-   "summary": "라이엇 게임즈가 2027년 발로란트 챔피언스 투어(VCT) 퍼시픽 리그의 세부 운영안을 공개한 가운데, 한국에서는 T1과 젠지가 파트너 팀에 포함되어 최소 2028년까지 리그와 함께한다. 2027년 VCT 퍼시픽은 킥오프와 컵스, 마스터스, 챔피언스로 이어지는 구조로 운영되며, 비파트너 팀을 위한 공개 예선 진출 경로와 대회 참가 고정 지원금 제도가 확대된다. 한편 컴투스는 서머너즈 워 월드 아레나 챔피언십 2026의 10회차를 맞아 글로벌 캐스터들의 의견을 바탕으로 대회가 이어온 경쟁력과 팬덤의 성장 과정을 소개했다. SWC2026 월드 파이널은 오는 11월 14일 서울 KBS 아레나에서 개최되어 각 지역 본선을 통과한 선수들이 경쟁을 펼친다.",
-   "reason": "VCT 퍼시픽 2027 개편안 및 e스포츠 팬덤 성장세 발표",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 1
-  },
-  {
    "id": "c198e83f4661",
    "title": "데뷔 전 先 소통 행보…'슈퍼 루키' 원더어택, 11월 2일 베리즈 입점",
    "url": "http://www.celuvmedia.com/article.php?aid=1793152875529933007",
-   "press": "www.celuvmedia.com",
+   "press": "셀럽미디어",
    "pub_date": "2026-10-28T11:10:00+09:00",
    "date_label": "26.10.28",
    "section": "fandom_music",
@@ -182,7 +163,7 @@
    "id": "b1582db190f3",
    "title": "사운드리퍼블리카, 새 포털 '스튜디오' 다음달 공개",
    "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=279805",
-   "press": "Businesskorea",
+   "press": "비즈니스코리아",
    "pub_date": "2026-10-28T09:16:00+09:00",
    "date_label": "26.10.28",
    "section": "fandom_music",
@@ -272,25 +253,6 @@
    "series": null,
    "lang": "ko",
    "cluster_size": 1
-  },
-  {
-   "id": "3b904aae6cc1",
-   "title": "콘콘, 캐릭터 IP 3종 추가…유니버스존 굿즈 사업 확대",
-   "url": "https://www.public25.com/news/articleView.html?idxno=57349",
-   "press": "퍼블릭타임스",
-   "pub_date": "2026-10-28T09:50:00+09:00",
-   "date_label": "26.10.28",
-   "section": "ent_content",
-   "subsection": "fandom_commerce",
-   "importance": 3,
-   "kind": "news",
-   "must_include": false,
-   "summary": "콘콘은 인스타그램에서 팬덤을 확보한 캐릭터 IP '깡지', '네모 자란 일기', '쉿나만봐' 3종을 자사 IP 매니지먼트 사업인 유니버스존에 영입했다고 28일 밝혔다. 세 IP의 인스타그램 팔로워는 총 13만 명을 상회하며, 이모티콘 세계관형 캐릭터부터 일상 웹툰과 유머 콘텐츠까지 다양한 장르를 포함한다. '깡지'는 12종의 캐릭터가 등장하며 팔로워 6만4000명을 보유했고, '네모 자란 일기'는 토끼 캐릭터의 일상툰으로 팔로워 3만 명을 모았다. '쉿나만봐'는 직장인 공감 개그로 팔로워 약 4만 명을 확보했다. 신규 IP 3종은 오는 11월부터 유니버스존 온라인 팝업을 통해 굿즈를 순차 공개한다. 콘콘은 굿즈 올인원 플랫폼 '오즈의제작소' 인프라와 데이터를 바탕으로 유망 캐릭터를 발굴해 오고 있으며, '안경만두', '꺅두기'에 이어 '아따맘마', '로보카폴리' 등과 계약을 맺고 IP 포트폴리오를 지속 확장하고 있다.",
-   "reason": "캐릭터 IP 영입 및 굿즈 사업 확대",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 2
   },
   {
    "id": "8269fdcd00cb",
@@ -1495,7 +1457,25 @@
    "stage": "수동 점검",
    "reason": "AI 섹션 한도: SaaS 관련 기사(오라클)로 교체",
    "section": "ai_tech"
+  },
+  {
+   "title": "[e스포츠 Pick] 2027 VCT 퍼시픽 개편안 공개…SWC2026 글로벌 팬덤과 함께한 10년",
+   "url": "https://www.lcnews.co.kr/news/articleView.html?idxno=210456",
+   "press": "라이센스뉴스",
+   "pub_date": "2026-10-28T16:50:00+09:00",
+   "stage": "수동 점검",
+   "reason": "e스포츠 리그 운영 개편(팬 비즈니스 내용 없음, T1·젠지 이름만 언급)",
+   "section": "fandom_music"
+  },
+  {
+   "title": "콘콘, 캐릭터 IP 3종 추가…유니버스존 굿즈 사업 확대",
+   "url": "https://www.public25.com/news/articleView.html?idxno=57349",
+   "press": "퍼블릭타임스",
+   "pub_date": "2026-10-28T09:50:00+09:00",
+   "stage": "수동 점검",
+   "reason": "캐릭터 굿즈 사업 단신(팬덤 산업 의미 약함)",
+   "section": "ent_content"
   }
  ],
- "manual_review": "2026-10-29 수동 점검: 3건 제외, 1건 추가(AI 음악 정책), 중요도 1건 조정 / 3건 추가(디어유, MBW DistroKid, 오라클)"
+ "manual_review": "2026-10-29 수동 점검: 3건 제외, 1건 추가(AI 음악 정책), 중요도 1건 조정 / 3건 추가(디어유, MBW DistroKid, 오라클) / 2건 제외, 매체명 수정"
 }
