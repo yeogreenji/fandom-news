@@ -4,6 +4,7 @@ from __future__ import annotations
 from urllib.parse import urlparse
 
 DOMAIN_PRESS = {
+    "celuvmedia.com": "셀럽미디어", "businesskorea.co.kr": "비즈니스코리아", "segye.com": "세계일보",
     "dispatch.co.kr": "디스패치", "sentv.co.kr": "서울경제TV", "dealsite.co.kr": "딜사이트",
     "musicbusinessworldwide.com": "Music Business Worldwide", "billboard.com": "Billboard",
     "itdaily.kr": "아이티데일리", "theguru.co.kr": "더구루", "insightkorea.co.kr": "인사이트코리아",
