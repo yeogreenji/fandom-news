@@ -405,8 +405,11 @@ def run_review(items: list[dict], cfg: dict) -> bool:
         return {}
 
     failed = []
-    for batch in _chunks(items, cfg["review_batch_size"]):
-        res = ask(batch)
+    # 판정 호출을 여러 개 동시에 보낸다(호출 1건이 40~50초씩 걸려 순서대로 하면 시간 예산 안에 다 못 봄)
+    batches = list(_chunks(items, cfg["review_batch_size"]))
+    with ThreadPoolExecutor(max_workers=max(1, cfg.get("review_workers", 3))) as ex:
+        results = list(ex.map(ask, batches))
+    for batch, res in zip(batches, results):
         for it in batch:
             it["review"] = res.get(it["id"])
             if it["review"] is None:

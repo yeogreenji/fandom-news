@@ -164,7 +164,7 @@ def _gemini(model: str, system: str, user: str, schema: dict, max_tokens: int) -
         STATS["calls"] += 1
         t0 = time.time()
         try:
-            r = requests.post(url, headers={"x-goog-api-key": key}, json=body, timeout=150)
+            r = requests.post(url, headers={"x-goog-api-key": key}, json=body, timeout=120)
         except requests.RequestException as e:
             log.warning("Gemini 연결 오류/시간 초과, 재시도 %d: %s", attempt + 1, e)
             STATS["errors"].append(f"연결 오류: {str(e)[:80]}")
