@@ -71,6 +71,27 @@
    "cluster_size": 1
   },
   {
+   "id": "106f1ac573f4",
+   "title": "이세영, 위버스 DM 오픈 예고…‘재혼 황후’ 공개 앞두고 팬 소통 확대",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16266175",
+   "press": "톱스타뉴스",
+   "pub_date": "2026-11-02T00:00:00+09:00",
+   "date_label": "26.11.02",
+   "section": "fandom_music",
+   "subsection": "fan_platform",
+   "importance": 3,
+   "kind": "news",
+   "must_include": false,
+   "summary": "배우 이세영이 위버스 DM을 통해 팬들과 새로운 소통에 나선다. 위버스 DM은 아티스트가 보내는 메시지를 받고 팬도 직접 답장을 보낼 수 있는 구독형 프라이빗 소통 서비스다. 이세영은 앞서 위버스 커뮤니티를 통해 소통을 이어왔으며, 지난 9월 17일부터는 디지털 멤버십도 운영하고 있다. 한편 이세영은 오는 11월 4일 공개되는 디즈니+ 오리지널 시리즈 '재혼 황후'에서 라스타 역으로 출연을 앞두고 있다. 해당 작품은 동대제국 황후 나비에가 이혼 후 재혼을 요구하며 벌어지는 로맨스 판타지 대서사극으로, 신민아, 주지훈, 이종석 등이 함께 호흡을 맞춘다. 조수원 PD가 연출한 총 10부작 시리즈로 4일 1~4회가 동시 공개된 뒤 매주 수요일 순차 공개될 예정이다.",
+   "reason": "위버스 DM 오픈 및 팬 소통 확대 소식",
+   "tags": [
+    "수동 추가"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
    "id": "9d27e16c1b17",
    "title": "\"음악판 깃허브\" 트랜지언트랩, 음원 협업 플랫폼 '믹스랩' 출시",
    "url": "https://www.mt.co.kr/industry/2026/11/02/2026110210001298294",
@@ -1081,15 +1102,6 @@
    "stage": "2차",
    "reason": "콘서트 티켓 예매 일정 안내 단신",
    "section": "ent_content"
-  },
-  {
-   "title": "이세영, 위버스 DM 오픈 예고…'재혼 황후' 공개 앞두고 팬 소통 확대",
-   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16266175",
-   "press": "톱스타뉴스",
-   "pub_date": "2026-11-02T14:56:00+09:00",
-   "stage": "2차",
-   "reason": "개별 아티스트 위버스 DM 입점 안내",
-   "section": "fandom_music"
   },
   {
    "title": "‘MMA 2026’ 부문별 순위 보니…플레이브·아이브·에스파 1위→하츠투하츠 역전",
