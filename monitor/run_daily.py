@@ -584,6 +584,40 @@ def rescue_own(items: list[dict], cfg: dict) -> int:
     return n
 
 
+def rescue_watch(items: list[dict], cfg: dict) -> int:
+    """빠뜨리지 말라고 정한 키워드(설정 watch_terms: 위버스·디어유 등) 기사가 2차에서 빠졌으면 한 번 더 판정.
+    같은 사안 중복·단순 시세 기사·이름만 같은 다른 회사(위버스브레인 등)는 그대로 제외한다."""
+    terms = cfg.get("watch_terms") or []
+    skip = cfg.get("watch_skip_terms") or []
+    if not terms:
+        return 0
+    def hit(it):
+        t = it.get("title", "")
+        return any(w in t for w in terms) and not any(s in t for s in skip)
+    cands = [it for it in items if (r := it.get("review")) is not None and not r.get("keep") and hit(it)
+             and not any(k in r.get("reason", "") for k in ("같은 사안", "중복", "시세", "부족"))]
+    if not cands:
+        return 0
+    note = ("이 기사들에는 빠뜨리지 말라고 정한 업계 키워드(위버스·디어유·케이타운포유·슈퍼팬 등)가 제목에 나온다. "
+            "기준상 이 키워드 기사는 이벤트·럭키드로우·팝업·입점(DM·커뮤니티 오픈) 안내·증권 리포트라도 포함한다. "
+            "해당 플랫폼·회사가 기사에 실제로 등장하면 keep=true로 두고, 그 플랫폼·회사 관련 내용을 중심으로 요약한다. "
+            "이름만 같은 다른 회사이거나 단순 주가 시세 기사면 keep=false를 유지한다.")
+    n = 0
+    for batch in _chunks(cands, 4):
+        try:
+            res = llm.review_batch(batch, cfg["max_body_chars"], note=note)
+        except Exception as e:
+            log.error("필수 키워드 재판정 실패(%d건): %s", len(batch), e)
+            continue
+        for it in batch:
+            r = res.get(it["id"])
+            if r and r.get("keep"):
+                it["review"] = r
+                n += 1
+                log.info("필수 키워드 기사 재판정 후 포함: %s", it.get("title", "")[:40])
+    return n
+
+
 def _is_own(it: dict) -> bool:
     t = it.get("triage") or {}
     return "own" in it.get("section_hints", []) or t.get("section") == "own"
@@ -603,7 +637,10 @@ def fix_summary_length(items: list[dict], cfg: dict, issues: dict | None = None)
         r = it["review"]
         lo, hi = _len_range(r.get("kind", "news"), cfg)
         n = len((r.get("summary") or "").strip())
-        return n < lo - tol or n > hi + tol or bool(re.search(r"습니다|니다\.|어요\.|에요\.", r.get("summary") or ""))
+        summ = r.get("summary") or ""
+        letters = re.findall(r"[A-Za-z가-힣]", summ)
+        not_korean = bool(letters) and sum(1 for c in letters if "가" <= c <= "힣") / len(letters) < 0.5
+        return n < lo - tol or n > hi + tol or not_korean or bool(re.search(r"습니다|니다\.|어요\.|에요\.", summ))
     targets = [it for it in items
                if (r := it.get("review")) and r.get("keep") and not r.get("no_ai")
                and r.get("kind") != "disclosure" and off(it)]
@@ -615,7 +652,7 @@ def fix_summary_length(items: list[dict], cfg: dict, issues: dict | None = None)
             for it in batch)
         try:
             res = llm.review_batch(batch, cfg["max_body_chars"], task="rewrite",
-                                   note="앞서 쓴 요약의 분량이나 문체(~했다 평서문)가 기준을 벗어났다. keep·섹션·중요도 판단은 그대로 두고 summary만 "
+                                   note="앞서 쓴 요약의 분량이나 문체(~했다 평서문), 언어(영문 기사도 요약은 반드시 한국어)가 기준을 벗어났다. keep·섹션·중요도 판단은 그대로 두고 summary만 "
                                         "목표 글자 수에 맞춰 다시 쓴다. 본문에 있는 사실만 쓰고, 분량을 채우려고 평가·전망·의미 부여 "
                                         "문장을 덧붙이지 않는다. 회사 간 관계(자회사·계열사·투자 등)는 본문에 그 표현이 있을 때만 쓴다. "
                                         "본문 사실이 모자라면 목표보다 짧아도 된다. " + guide)
@@ -878,6 +915,7 @@ def main(argv=None):
                      for it in overflow]
         if not quota_out:
             stats["own_rescued"] = rescue_own(to_review, cfg)
+            stats["watch_rescued"] = rescue_watch(to_review, cfg)
         stats["own_promoted"] = promote_own(to_review)
         # 요약 사실 검증 → 분량 보정 → 다시 검증 → 내용 부족 제외
         n1, issues = verify_summaries(to_review, cfg)
