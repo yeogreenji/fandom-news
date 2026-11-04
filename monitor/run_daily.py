@@ -518,6 +518,14 @@ def promote_own(items: list[dict]) -> int:
     moved = 0
     for it in items:
         r = it.get("review") or {}
+        # 자사로 분류됐는데 제목·요약·본문 어디에도 자사 이름이 없으면 오분류(예: ‘드림에이지’를 드림어스로 착각)
+        if r.get("keep") and r.get("section") == "own":
+            whole = it.get("title", "") + " " + (r.get("summary") or "") + " " + (it.get("body") or "")[:6000]
+            if not (_OWN_MENTION_RE.search(whole) or any(t.lower() in whole.lower() for t in _OWN_RELATED_TERMS)):
+                r["keep"] = False
+                r["reason"] = "자사 이름이 기사에 없음(자사 오분류)"
+                log.info("자사 오분류 제외: %s", it.get("title", "")[:40])
+                continue
         if not r.get("keep") or r.get("section") == "own":
             continue
         text = (it.get("title", "") + " " + (r.get("summary") or "")).lower()
