@@ -253,6 +253,8 @@ def priority_hit(it: dict, cfg: dict, title_only: bool = False) -> bool:
     """제목(또는 제목+요약문)에 핵심 경쟁·유통 플랫폼 키워드(settings의 priority_terms)가 있는지."""
     text = it.get("title", "") + ("" if title_only else " " + (it.get("description") or ""))
     text = text.replace(" ", "").lower()
+    for skip in cfg.get("watch_skip_terms") or []:   # 이름만 같은 다른 회사(위버스브레인 등)는 우선 키워드로 보지 않음
+        text = text.replace(skip.replace(" ", "").lower(), "")
     return any(t.replace(" ", "").lower() in text for t in cfg.get("priority_terms", []))
 
 
