@@ -29,7 +29,7 @@
   "repeat_suspects": 8,
   "repeat_dropped": 2,
   "same_day_dropped": 0,
-  "kept": 30
+  "kept": 18
  },
  "ai": {
   "calls": 71,
@@ -96,25 +96,6 @@
    "cluster_size": 2
   },
   {
-   "id": "c44e5c8c6f45",
-   "title": "위버스브레인, AI 솔루션 사업 본격화",
-   "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=879574",
-   "press": "한스경제",
-   "pub_date": "2026-11-04T10:26:00+09:00",
-   "date_label": "26.11.04",
-   "section": "fandom_music",
-   "subsection": "fan_platform",
-   "importance": 4,
-   "kind": "news",
-   "must_include": false,
-   "summary": "위버스브레인이 사람의 행동을 이끄는 AI 에이전트 플랫폼 에이전트맥스를 공개하고 외부 기업 대상 솔루션 공급 사업을 본격화한다. 위버스브레인은 서울 양재 엘타워에서 2027 테크데이 기자간담회를 열고 에이전트맥스를 선보였다. 회사는 이번 공개를 계기로 자사 서비스에서 검증한 AI 에이전트를 외부 기업에 공급할 계획이라고 밝혔다. 조세원 위버스브레인 대표는 기존 AI 에이전트는 사람의 일을 대신 처리하지만 공부, 구매 결정, 운동처럼 사람이 반드시 해야만 하는 일이 있다며 그러한 행동을 이끄는 것이 위버스브레인이 정의하는 AI 에이전트라고 말했다. 이날 간담회에서는 세일즈 에이전트 실시간 시연이 진행됐다. 김민삼 위버스브레인 AI랩 최고 인공지능 책임자는 관계사의 전기자전거 브랜드 홈페이지에서 에이전트가 고객의 구매 결정을 유도하는 과정을 시연했다. 어학 서비스로 출발한 위버스브레인은 자체 음성 AI 기술과 누적 행동 데이터를 바탕으로 사업 구조를 재편하고 있다.",
-   "reason": "위버스브레인 AI 에이전트 솔루션 사업 본격화",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 1
-  },
-  {
    "id": "446024aaa2fe",
    "title": "마인드로직 '블루밍톡', AI 아티스트 대화 100만건 돌파",
    "url": "https://www.epnc.co.kr/news/articleView.html?idxno=409272",
@@ -151,65 +132,6 @@
    "series": null,
    "lang": "ko",
    "cluster_size": 2
-  },
-  {
-   "id": "62a6b63a8e49",
-   "title": "[더벨][thebell note] 하이브의 인디아 드림",
-   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202610300948455240105810",
-   "press": "더벨",
-   "pub_date": "2026-11-04T14:58:00+09:00",
-   "date_label": "26.11.04",
-   "section": "fandom_music",
-   "subsection": "fan_platform",
-   "importance": 3,
-   "kind": "news",
-   "must_include": false,
-   "summary": "내년 3월에는 뉴델리에서 위버스콘 페스티벌을 연다. 하이브가 이 축제를 해외에서 여는 건 처음이다. 그런데 정작 인도 음악시장의 숫자는 초라하다. 현지 스트리밍 이용자는 1억7800만명에 달하지만 유료 가입자는 미미한 수준에 머무르고 있는 것으로 나타났다.",
-   "reason": "하이브 위버스콘 페스티벌 인도 개최 관련 단신",
-   "tags": [
-    "본문 미확보"
-   ],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 1
-  },
-  {
-   "id": "4320731bd46e",
-   "title": "엔하이픈 제이, 6개월 스토킹 당했다... 소속사 “무관용 원칙 강력 대응”",
-   "url": "https://www.insight.co.kr/news/580627",
-   "press": "인사이트",
-   "pub_date": "2026-11-04T15:28:00+09:00",
-   "date_label": "26.11.04",
-   "section": "fandom_music",
-   "subsection": "fan_platform",
-   "importance": 3,
-   "kind": "news",
-   "must_include": false,
-   "summary": "그룹 엔하이픈 멤버 제이가 악질 스토커로부터 심각한 사생활 침해를 당한 사실이 드러나면서 소속사가 강력한 법적 대응에 나섰다. 지난 3일 빌리프랩은 팬 소통 플랫폼 위버스를 통해 공식 입장을 발표하고 엔하이픈 멤버 제이에 대한 사생활 침해 및 스토킹 행위를 확인해 이미 형사 고소장을 제출했다고 밝혔다. 소속사는 통신 3사에 공문을 발송해 행위자의 신원을 파악하기 위한 협조를 요청한 상태다. 스토킹 행위는 지난해 6월부터 시작되었으며 행위자는 제이의 개인 연락처를 불법적으로 입수해 전화를 걸었고, 상품 안내를 명목으로 접근해 허위 정보로 추가 개인정보를 빼내려 시도했다. 제이가 더 이상 응답하지 않았음에도 행위자는 수차례에 걸쳐 지속적으로 연락을 시도했으며 통화 내용을 동의 없이 몰래 녹음한 뒤 SNS를 비롯한 여러 플랫폼에 무단으로 유포했다.",
-   "reason": "엔하이픈 제이 스토킹 피해 법적 대응",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 1
-  },
-  {
-   "id": "fbe280bfc7d3",
-   "title": "MMA2026, 이틀간 개최의 의미…팬들에게 더 넓어진 문",
-   "url": "https://www.mydaily.co.kr/page/view/2026110416503622675",
-   "press": "마이데일리",
-   "pub_date": "2026-11-04T16:54:00+09:00",
-   "date_label": "26.11.04",
-   "section": "fandom_music",
-   "subsection": "music_platform",
-   "importance": 4,
-   "kind": "news",
-   "must_include": false,
-   "summary": "국내 대중음악 시상식 멜론뮤직어워드가 사상 최초로 이틀간의 축제로 판을 대폭 키웠다. 카카오엔터테인먼트의 뮤직플랫폼 멜론은 오는 11월 14일과 15일 양일간 서울 고척스카이돔에서 'The 18th Melon Music Awards(MMA2026)'를 개최한다. 지난 2009년 첫 오프라인 시상식을 시작한 이래 줄곧 하루 단일 공연으로 치러졌던 MMA가 2-SHOW 체제를 도입한 것은 출범 18회 만에 처음이다. 이번 이틀 개최는 단순한 러닝타임 확장을 넘어선다. 무대에 오를 수 있는 아티스트의 폭이 대폭 넓어졌을 뿐만 아니라, 매년 피 튀기는 예매 전쟁 속에서 아쉬움을 삼켜야 했던 글로벌 팬들에게 현장 관람의 문턱을 활짝 열어주었다는 점에서 남다른 의미를 지닌다. 이는 올해 시상식의 메인 슬로건인 'K-POP CONNECT: The New Pulse'와도 궤를 같이한다.",
-   "reason": "멜론뮤직어워드 이틀 개최 및 베리즈 연계 투표 도입",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 1
   },
   {
    "id": "0b26f3238320",
@@ -250,44 +172,6 @@
    "cluster_size": 1
   },
   {
-   "id": "2c8051e217a5",
-   "title": "AI로 만든 노래, 이제 바이닐 음반으로 소장한다",
-   "url": "https://www.koreadaily.com/article/20261103205444598",
-   "press": "미주중앙일보 The Korea Daily",
-   "pub_date": "2026-11-04T13:56:00+09:00",
-   "date_label": "26.11.04",
-   "section": "fandom_music",
-   "subsection": "music_ai_rights",
-   "importance": 4,
-   "kind": "trend",
-   "must_include": false,
-   "summary": "최근 LA타임스의 보도에 따르면 AI 음악 기업 수노는 이용자가 생성한 음악을 바이닐 음반으로 제작해주는 수노 바이닐 서비스를 출시한다. 이용자는 수노 라이브러리에 저장된 곡 가운데 최대 46분 분량의 트랙을 선택할 수 있다. 앨범 표지는 직접 만든 이미지를 올리거나 수노 플랫폼에서 AI로 생성할 수 있으며 해당 이미지는 음반 재킷과 레이블 등에 사용된다. 음반은 지름 12인치 크기로 플라스틱의 일종인 PETG 소재로 제작되며 예상 가격은 배송비를 제외하고 약 45달러다. 정식 출시일과 제작 업체는 아직 공개되지 않았으며 수노는 현재 대기자 명단을 받고 있다. 이번 서비스는 바이닐 음반 시장이 다시 성장하는 가운데 나왔으며 음반산업협회에 따르면 지난해 국내 바이닐 음반 매출은 전년 대비 9% 이상 증가해 10억 달러를 넘어섰다. 2022년 설립된 수노는 AI 음악 생성 시장의 대표 기업으로 LA 베니스에도 사무실을 운영하고 있다. 지난 2월 유료 구독자가 200만 명을 넘어섰으며 연간 매출은 3억 달러에 이를 것으로 예상된다. 지난 6월에는 4억 달러 이상을 투자받으면서 기업가치가 54억 달러로 높아졌다.",
-   "reason": "AI 음악 기업 수노의 바이닐 음반 제작 서비스 출시",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 1
-  },
-  {
-   "id": "4bd18257e812",
-   "title": "에듀클라우드닷컴·KL매니지먼트, AI 음악으로 K문학 해외 홍보",
-   "url": "http://www.inews24.com/view/2022620",
-   "press": "아이뉴스24",
-   "pub_date": "2026-11-04T16:08:00+09:00",
-   "date_label": "26.11.04",
-   "section": "fandom_music",
-   "subsection": "music_ai_rights",
-   "importance": 4,
-   "kind": "news",
-   "must_include": false,
-   "summary": "AI 교육 콘텐츠 기업 에듀클라우드닷컴이 출판 저작권 에이전시 KL매니지먼트와 한국 문학 작품을 AI 음악으로 재해석해 해외 독자에게 알리는 콘텐츠 사업을 추진한다고 밝혔다. 양사는 최근 업무협약을 맺고 해외 판권 계약이 이뤄진 작품을 대상으로 영문 등 글로벌 홍보용 AI 음악을 제작하기로 했다. 작품 속 인물과 주요 장면, 메시지를 노래 가사와 테마곡으로 풀어내는 방식이다. 이번 협력의 핵심은 작품의 해외 홍보를 지원할 AI 음악 콘텐츠를 공동으로 만드는 데 있으며 신작에는 초기 관심을 높일 홍보 수단으로, 기존 작품에는 독자에게 다시 발견될 계기를 만드는 콘텐츠로 활용한다는 구상이다. 양사는 초·중·고교와 대학, 공공기관, 에듀테크 기업 등을 대상으로 한 소설 작가 발굴에도 협력한다. KL매니지먼트는 채식주의자 등의 해외 판권 판매 사례를 보유한 출판 저작권 에이전시이며 에듀클라우드닷컴은 AI 음악 제작 기술을 문학·출판 콘텐츠로 확장할 계획이다.",
-   "reason": "AI 음악 활용 문학 홍보 사업 추진",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 1
-  },
-  {
    "id": "4c1f7115ee05",
    "title": "뉴욕타임스와 오픈AI의 '저작권 전쟁'에 할리우드·음악계 참전 : AI 학습에 창작물 무단 사용 반대",
    "url": "https://www.huffingtonpost.kr/article/261811",
@@ -304,27 +188,6 @@
    "tags": [],
    "series": null,
    "lang": "ko",
-   "cluster_size": 1
-  },
-  {
-   "id": "1cb603922a3e",
-   "title": "Suno asks court to dismiss Jason Isbell’s right-of-publicity class action. It claims artist names are ‘shorthand’ for musical genres.",
-   "url": "https://www.musicbusinessworldwide.com/suno-asks-court-to-dismiss-jason-isbells-right-of-publicity-class-action-it-claims-artist-names-are-shorthand-for-musical-genres/",
-   "press": "Music Business Worldwide",
-   "pub_date": "2026-11-05T02:35:23+09:00",
-   "date_label": "26.11.05",
-   "section": "fandom_music",
-   "subsection": "music_ai_rights",
-   "importance": 4,
-   "kind": "news",
-   "must_include": false,
-   "summary": "수노가 제이슨 이즈벨과 다른 세 명의 뮤지션이 제기한 집단 소송 기각을 연방 판사에게 요청했다. AI 음악 회사는 보스턴 연방 법원에 제출한 동의서에서 뮤지션들의 퍼블리시티권 주장이 법적으로 성립하지 않는다고 주장했다. 사람들이 음악 스타일을 설명할 때 그들이 공연하는 장르의 약어로 아티스트 이름을 자주 사용한다는 것이다. 이 모션은 또한 수노의 공동 창립자이자 CEO인 마이키 슐먼의 8로그 게시물을 인용하며, 회사가 특정 아티스트나 저작권이 있는 노래에 대한 프롬프트를 허용한 적이 없다고 밝혔다. 유니버설 뮤직 그룹과 소니 뮤직 엔터테인먼트가 제기한 두 번째 저작권 소송에 대한 10월 답변에서 수노는 사용자가 아티스트 이름이 포함된 프롬프트를 제출하는 것을 이전에 방지했으며, 2026년 1월부터 사용자가 프롬프트에 아티스트 이름을 포함할 수 있다고 인정했다. 다만 그러한 프롬프트가 아티스트 이름을 먼저 스타일 설명으로 변환하지 않고 출력물을 생성하는 데 사용된다는 점은 부인했다.",
-   "reason": "수노 AI 음악 저작권 및 퍼블리시티권 소송 기각 요청",
-   "tags": [
-    "영문"
-   ],
-   "series": null,
-   "lang": "en",
    "cluster_size": 1
   },
   {
@@ -366,61 +229,23 @@
    "cluster_size": 1
   },
   {
-   "id": "81ad6d40533d",
-   "title": "[디페스타] \"GD·BTS·SKZ·CORTIS\"…'디아이콘', 오리진의 시작",
-   "url": "http://www.dispatch.co.kr/2350227",
-   "press": "디스패치",
-   "pub_date": "2026-11-04T10:27:00+09:00",
+   "id": "05d89613a709",
+   "title": "롯데월드타워 서울스카이, T1 협업 효과…젊은층 방문 비중 10%p 상승",
+   "url": "http://www.dailysmart.co.kr/news/articleView.html?idxno=131955",
+   "press": "스마트경제",
+   "pub_date": "2026-11-04T12:00:00+09:00",
    "date_label": "26.11.04",
    "section": "ent_content",
    "subsection": "fandom_commerce",
    "importance": 3,
    "kind": "news",
    "must_include": false,
-   "summary": "디스패치는 창간 15주년을 기념하는 프로젝트로 K팝 아티스트 48인의 예술전을 사진으로 재구성한 '디아이콘' 특별판 '디페스타 디 오리진 에디션'을 공개했다. 이번 에디션에는 지드래곤, 방탄소년단, 스트레이 키즈, 코르티스가 참여하여 각 팀의 독창적인 색깔과 세계관을 다채로운 화보와 기록물로 담아냈다. 지드래곤은 유일무이한 다면성을 8개의 독립된 방에서 표현했으며, 방탄소년단은 지나온 시간과 미래의 꿈을 조명했다. 스트레이 키즈는 멈추지 않는 열정을 끝없이 이어지는 회로 속에 펼쳤고, 코르티스는 트램펄린 위를 뛰어오르며 자유로운 순간을 포착했다. 개별 표지로 구성된 이번 에디션은 셀피 포토카드, 홀로그래픽 미니 포스트카드, 흑백 포트레이트가 담긴 폴디드 포토 등이 부록으로 제공되며 멤버들이 직접 쓴 메시지가 소장 가치를 더한다. '디아이콘' 디페스타 디 오리진 에디션 1차 라인업 예약 판매는 4일 오후 2시부터 오는 15일 오후 11시 59분까지 진행된다.",
-   "reason": "케이타운포유 등 주요 판매처 디아이콘 예약 판매",
    "tags": [],
    "series": null,
    "lang": "ko",
-   "cluster_size": 1
-  },
-  {
-   "id": "666ca7828275",
-   "title": "라이즈 팬들이 기다려 온 공식 솜인형 등장, '드리미즈' '위시니니' 이은 SM 남자 아이돌 IP 캐릭터 '리라니니' 공개",
-   "url": "https://gamefocus.co.kr/detail.php?number=180262",
-   "press": "GameFocus_Twit",
-   "pub_date": "2026-11-04T12:16:00+09:00",
-   "date_label": "26.11.04",
-   "section": "ent_content",
-   "subsection": "fandom_commerce",
-   "importance": 3,
-   "kind": "news",
-   "must_include": false,
-   "summary": "IPX가 SM엔터테인먼트 보이그룹 라이즈와 협업한 공식 캐릭터 IP '리라니니'를 최초로 공개했다. 리라니니는 멤버들의 개성을 담아 제작되었으며 정체불명의 빔을 맞아 작고 귀여운 모습으로 변신해 팬덤 브리즈를 찾아왔다는 연속형 스토리 빔맵 구성을 적용했다. IPX는 리라니니 공개와 함께 오는 6일까지 라인프렌즈 스퀘어 온라인몰에서 페이스 쿠션, 인형 키링 등 다양한 제품의 사전 예약 판매를 진행한다. 이를 시작으로 향후 글로벌 주요 도시에서 팝업을 전개하며 전 세계 팬들과의 접점을 확대해 나갈 계획이다.",
-   "reason": "엔터 IP 캐릭터 팝업 및 사전예약",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 1
-  },
-  {
-   "id": "5682bb77e0ac",
-   "title": "하이브 주가, 10%대↓... 증권가 전망은?",
-   "url": "https://www.ggilbo.com/news/articleView.html?idxno=1190960",
-   "press": "금강일보",
-   "pub_date": "2026-11-04T10:16:00+09:00",
-   "date_label": "26.11.04",
-   "section": "ent_content",
-   "subsection": "ent_biz",
-   "importance": 5,
-   "kind": "news",
-   "must_include": true,
-   "summary": "하이브 주가가 장중 10%대 하락세를 보이고 있는 가운데, 전날 발표한 올해 3분기 실적이 시장 전망치를 웃돌았으나 증권가에서는 목표주가를 하향 조정했다. 하이브는 연결 기준 올해 3분기 영업이익이 1885억원으로 지난해 같은 기간 대비 흑자 전환했다고 공시했으며, 이는 연합인포맥스가 집계한 시장 전망치인 1660억원을 13.6% 웃돌았다. 같은 기간 매출액은 1조5257억원으로 109.8% 증가했고 당기순이익은 113억원으로 흑자를 기록했다. 방탄소년단 월드투어 흥행에 힘입어 3분기 공연 매출은 7268억원으로 분기 기준 역대 최대치를 기록했으며, 음반·음원 부문은 2828억원의 매출을 올렸다. MD·라이선싱 부문은 3346억원을 기록하며 실적을 뒷받침했다. 삼성증권은 하이브가 3분기 호실적을 거뒀음에도 엔터테인먼트 업종 전반의 밸류에이션 하락을 반영해 레이블 가치 산정 배수를 기존 30배에서 27배로 낮추고 목표주가를 기존 28만원에서 23만5000원으로 하향 조정했다.",
-   "reason": "하이브 3분기 실적 및 위버스 플랫폼 경쟁력 분석",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 1
+   "cluster_size": 1,
+   "reason": "e스포츠 구단 T1 팬덤 협업 전시 성과",
+   "summary": "롯데월드타워 전망대 서울스카이가 e스포츠 구단 T1과의 협업을 통해 젊은 고객층을 확대하고 있다. 서울스카이는 글로벌 e스포츠 기업 T1 엔터테인먼트 & 스포츠와 공동으로 진행하는 ‘T1 IN THE SKY’ 전시를 오는 29일까지 운영한다고 4일 밝혔다. 이번 전시는 T1의 주요 활동과 역사를 소개하는 전시 공간을 비롯해 팬들이 기념사진을 촬영할 수 있는 ‘T1 레거시존’, 협업 상품 판매 공간 등으로 구성됐다. 시즌 개막부터 지난달 27일까지 서울스카이의 영어덜트 고객 비중은 약 36%로 지난해 같은 기간보다 10%포인트 상승했으며, 전시 한정 상품이 조기 품절되는 등 팬덤을 활용한 체험형 콘텐츠가 호응을 얻고 있다. 서울스카이는 이번 협업을 통해 기존 전망대 관람에 e스포츠 팬덤 콘텐츠와 한정판 상품을 접목하며 방문객의 체험 요소를 강화하고 있다."
   },
   {
    "id": "82701c6233b8",
@@ -460,6 +285,25 @@
     "name": "한국광고주협회 워크숍",
     "no": 4
    },
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "6bea35e00a0e",
+   "title": "톡비즈·커머스가 살린 카카오 3Q 실적… \"12월 카톡에 AI 심는다\"",
+   "url": "https://it.chosun.com/news/articleView.html?idxno=3000000000289",
+   "press": "IT조선",
+   "pub_date": "2026-11-05T08:56:00+09:00",
+   "date_label": "26.11.05",
+   "section": "ent_content",
+   "subsection": "ent_biz",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "카카오는 올해 3분기 연결 기준 매출이 2조 867억원으로 전년 동기 대비 6% 증가하고 영업이익은 2403억원으로 7% 늘었다고 공시했다. 엔터테인먼트 등 콘텐츠 부문의 매출 부진을 본업인 톡비즈 매출이 상쇄했으며, 톡비즈 광고·구독 매출과 커머스 매출이 각각 11%, 16% 증가했다. 특히 커머스 부문에서는 나에게 선물하기 자기구매 비중이 30% 수준까지 확대되며 거래액 성장을 이끌었다. 반면 뮤직 매출은 주요 아티스트의 앨범 발매와 대형 공연 감소로 10% 줄어들었다. 카카오는 오는 12월 카카오톡 내 AI 어시스턴트 카나나 스페이스 파일럿 서비스를 시작으로 AI 서비스 확장에 나선다.",
+   "reason": "카카오 3분기 실적 및 12월 AI 서비스 출시 계획",
+   "tags": [],
+   "series": null,
    "lang": "ko",
    "cluster_size": 1
   },
@@ -525,46 +369,6 @@
    "cluster_size": 6
   },
   {
-   "id": "37721668d776",
-   "title": "NCT WISH, 고척돔 콘서트 꽉 채운다…첫 입성 동시에 ‘전석 매진’",
-   "url": "https://www.mk.co.kr/article/12196228",
-   "press": "매일경제",
-   "pub_date": "2026-11-04T11:34:00+09:00",
-   "date_label": "26.11.04",
-   "section": "ent_content",
-   "subsection": "live_ticket",
-   "importance": 3,
-   "kind": "news",
-   "must_include": false,
-   "summary": "그룹 엔시티 위시(NCT WISH)가 내년 1월 15일부터 16일까지 양일간 서울 고척스카이돔에서 두 번째 콘서트 투어 서울 공연을 개최한다. 이번 공연은 엔시티 위시의 첫 고척돔 입성 무대로, 지난 2일 멜론 티켓을 통한 국내 선예매와 3일 글로벌 선예매에서 2회 공연 모두 전석 매진을 기록했다. 2025년 3월 핸드볼경기장을 시작으로 인스파이어 아레나, KSPO DOME에 이어 고척돔까지 공연 규모를 빠르게 확장하며 가파른 상승세를 입증했다. 한편 엔시티 위시는 지난 10월 발표한 네 번째 미니앨범 'I SPY'로 4연속 밀리언셀러를 달성한 바 있으며, 동명의 타이틀곡을 포함한 전곡 음원을 공개하며 활동을 이어가고 있다.",
-   "reason": "아이돌 고척돔 콘서트 전석 매진 및 티켓 플랫폼 소식",
-   "tags": [
-    "동일 보도 4건"
-   ],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 4
-  },
-  {
-   "id": "2ea38cd3a49e",
-   "title": "\"암표 말고 정가로 사세요\"…콘진원, 티켓 구매 인증하면 선물 쏜다",
-   "url": "https://www.slist.kr/news/articleView.html?idxno=779083",
-   "press": "싱글리스트",
-   "pub_date": "2026-11-05T07:38:00+09:00",
-   "date_label": "26.11.05",
-   "section": "ent_content",
-   "subsection": "live_ticket",
-   "importance": 3,
-   "kind": "news",
-   "must_include": false,
-   "summary": "문화체육관광부와 한국콘텐츠진흥원이 주최하고 한국대중음악공연산업협회가 참여하는 암표 근절 캠페인이 진행된다. 이번 행사는 공연과 스포츠 경기의 암표 거래를 막고 올바른 예매 문화를 정착시키기 위해 마련되었으며 공식 예매처에서 정가로 티켓을 구매한 관객에게 다양한 경품을 제공한다. 참여 대상은 올해 공식 예매처를 통해 직접 구매한 티켓으로 대중음악 공연이나 스포츠 경기를 관람한 사람이다. 참여를 원하는 관객은 콘진원 공식 인스타그램 계정을 팔로우하고 관람 인증 사진과 필수 해시태그를 게시한 뒤 캠페인 게시물에 댓글을 남기면 응모가 완료된다. 주최 측은 매주 약 80명을 선정해 모바일 기프티콘을 지급할 예정이다. 1차 선정자를 대상으로 공식 예매 내역을 확인한 뒤 최종 당첨자를 발표한다. 협회 측은 이번 캠페인을 통해 정가 예매를 실천한 관객들에게 감사를 전하고 건강한 티켓 예매 문화를 함께 만들어 가길 기대한다고 밝혔다. 관련 세부 내용과 당첨자 발표 일정은 콘진원 공식 인스타그램과 협회 홈페이지에서 확인할 수 있다.",
-   "reason": "공연 및 스포츠 암표 근절을 위한 정가 예매 인증 캠페인 소식",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 1
-  },
-  {
    "id": "c1c4a16aaa5b",
    "title": "광고 보면 구독료 싸게, 안 보면 더 비싸게…OTT의 두 갈래 전략",
    "url": "https://www.thepublic.kr/news/articleView.html?idxno=325145",
@@ -603,25 +407,6 @@
    "cluster_size": 1
   },
   {
-   "id": "ec27d75895dd",
-   "title": "[美중간선거] 빅테크 거액 낙선운동 무색…AI 규제론자들 잇단 당선",
-   "url": "https://www.yna.co.kr/view/AKR20261105023600091?input=1195m",
-   "press": "연합뉴스",
-   "pub_date": "2026-11-05T08:24:00+09:00",
-   "date_label": "26.11.05",
-   "section": "ai_tech",
-   "subsection": "ai_tech",
-   "importance": 4,
-   "kind": "trend",
-   "must_include": false,
-   "summary": "미국 중간선거에서 인공지능에 대한 강경한 규제 방침을 공약으로 내건 후보들이 연이어 당선되면서 트럼프 행정부의 AI 규제 완화 기조에 제동이 걸릴 가능성이 제기됐다. 미시간주 연방 상원의원 선거에서 승리한 민주당 압둘 엘사예드 후보는 AI 모델과 기업을 규제하고 새 안전장치를 마련할 때까지 개발을 중단하자는 제안을 내놨다. 콜로라도주에서는 AI 안전을 내건 슈퍼팩의 지원을 받아 연방 하원으로 진출한 매니 루티넬 후보가 주요 AI 모델 출시 전 독립적인 안전성 검토를 의무화하겠다고 공약했다. 캘리포니아주 제11선거구에서도 AI 투명성 법을 발의했던 스콧 위너 후보가 우세를 유지하고 있다. 벤처투자·AI 업계가 규제 완화 후보를 지원했으나 큰 효과를 거두지 못했으며, 이번 선거 결과로 주·연방 차원에서 대규모 법안이 쏟아져나올 것이라는 전망이 나온다. 연방 차원의 규제 법안은 대통령 거부권에 막힐 수 있으나, 연방 의회가 교착 상태에 빠지면 캘리포니아주의 움직임이 전 세계 AI를 좌우할 것이라는 분석도 제기된다.",
-   "reason": "미국 중간선거 AI 규제론자 당선 동향",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 2
-  },
-  {
    "id": "13d2393d5143",
    "title": "NH아문디운용 \"앤트로픽 상장, AI 투자 지평 넓힐 이정표\"",
    "url": "https://www.etoday.co.kr/news/view/2643884",
@@ -639,25 +424,6 @@
    "series": null,
    "lang": "ko",
    "cluster_size": 2
-  },
-  {
-   "id": "6bea35e00a0e",
-   "title": "톡비즈·커머스가 살린 카카오 3Q 실적… \"12월 카톡에 AI 심는다\"",
-   "url": "https://it.chosun.com/news/articleView.html?idxno=3000000000289",
-   "press": "IT조선",
-   "pub_date": "2026-11-05T08:56:00+09:00",
-   "date_label": "26.11.05",
-   "section": "ai_tech",
-   "subsection": "ai_tech",
-   "importance": 3,
-   "kind": "news",
-   "must_include": false,
-   "summary": "카카오는 올해 3분기 연결 기준 매출이 2조 867억원으로 전년 동기 대비 6% 증가하고 영업이익은 2403억원으로 7% 늘었다고 공시했다. 엔터테인먼트 등 콘텐츠 부문의 매출 부진을 본업인 톡비즈 매출이 상쇄했으며, 톡비즈 광고·구독 매출과 커머스 매출이 각각 11%, 16% 증가했다. 특히 커머스 부문에서는 나에게 선물하기 자기구매 비중이 30% 수준까지 확대되며 거래액 성장을 이끌었다. 반면 뮤직 매출은 주요 아티스트의 앨범 발매와 대형 공연 감소로 10% 줄어들었다. 카카오는 오는 12월 카카오톡 내 AI 어시스턴트 카나나 스페이스 파일럿 서비스를 시작으로 AI 서비스 확장에 나선다.",
-   "reason": "카카오 3분기 실적 및 12월 AI 서비스 출시 계획",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 1
   }
  ],
  "excluded": [
@@ -855,15 +621,6 @@
    "url": "https://www.dailian.co.kr/news/view/1710783/?sc=Naver",
    "press": "",
    "pub_date": "2026-11-05T08:52:00+09:00",
-   "stage": "1차",
-   "reason": "검토 한도 초과",
-   "section": "ent_content"
-  },
-  {
-   "title": "서울스카이, 'T1 IN THE SKY'로 e스포츠 팬덤 집결…영어덜트 취향 저격",
-   "url": "http://www.newsroad.co.kr/news/articleView.html?idxno=67016",
-   "press": "",
-   "pub_date": "2026-11-04T09:20:00+09:00",
    "stage": "1차",
    "reason": "검토 한도 초과",
    "section": "ent_content"
@@ -1920,6 +1677,124 @@
    "section": "ent_content",
    "stage": "선별",
    "reason": "게재 상한 30건 (중요도 3)"
+  },
+  {
+   "title": "위버스브레인, AI 솔루션 사업 본격화",
+   "url": "http://www.hansbiz.co.kr/news/articleView.html?idxno=879574",
+   "press": "한스경제",
+   "pub_date": "2026-11-04T10:26:00+09:00",
+   "stage": "수동 점검",
+   "reason": "위버스와 무관한 회사(위버스브레인 AI 솔루션)",
+   "section": "fandom_music"
+  },
+  {
+   "title": "[더벨][thebell note] 하이브의 인디아 드림",
+   "url": "https://www.thebell.co.kr/free/content/ArticleView.asp?key=202610300948455240105810",
+   "press": "더벨",
+   "pub_date": "2026-11-04T14:58:00+09:00",
+   "stage": "수동 점검",
+   "reason": "10/29 게재 사안 중복(위버스콘 인디아), 칼럼 단신",
+   "section": "fandom_music"
+  },
+  {
+   "title": "엔하이픈 제이, 6개월 스토킹 당했다... 소속사 “무관용 원칙 강력 대응”",
+   "url": "https://www.insight.co.kr/news/580627",
+   "press": "인사이트",
+   "pub_date": "2026-11-04T15:28:00+09:00",
+   "stage": "수동 점검",
+   "reason": "아티스트 개인 사건(스토킹 피해)",
+   "section": "fandom_music"
+  },
+  {
+   "title": "MMA2026, 이틀간 개최의 의미…팬들에게 더 넓어진 문",
+   "url": "https://www.mydaily.co.kr/page/view/2026110416503622675",
+   "press": "마이데일리",
+   "pub_date": "2026-11-04T16:54:00+09:00",
+   "stage": "수동 점검",
+   "reason": "10/31·11/3 시상식 사안 반복(MMA 이틀 개최)",
+   "section": "fandom_music"
+  },
+  {
+   "title": "AI로 만든 노래, 이제 바이닐 음반으로 소장한다",
+   "url": "https://www.koreadaily.com/article/20261103205444598",
+   "press": "미주중앙일보 The Korea Daily",
+   "pub_date": "2026-11-04T13:56:00+09:00",
+   "stage": "수동 점검",
+   "reason": "AI 음악 서비스 상품 출시(정책 내용 없음)",
+   "section": "fandom_music"
+  },
+  {
+   "title": "에듀클라우드닷컴·KL매니지먼트, AI 음악으로 K문학 해외 홍보",
+   "url": "http://www.inews24.com/view/2022620",
+   "press": "아이뉴스24",
+   "pub_date": "2026-11-04T16:08:00+09:00",
+   "stage": "수동 점검",
+   "reason": "AI 음악 활용 일반 협약(11/3 제외 사안)",
+   "section": "fandom_music"
+  },
+  {
+   "title": "Suno asks court to dismiss Jason Isbell’s right-of-publicity class action. It claims artist names are ‘shorthand’ for musical genres.",
+   "url": "https://www.musicbusinessworldwide.com/suno-asks-court-to-dismiss-jason-isbells-right-of-publicity-class-action-it-claims-artist-names-are-shorthand-for-musical-genres/",
+   "press": "Music Business Worldwide",
+   "pub_date": "2026-11-05T02:35:23+09:00",
+   "stage": "수동 점검",
+   "reason": "11/4 게재 사안 중복(수노 이스벨 소송 기각 요청, Billboard)",
+   "section": "fandom_music"
+  },
+  {
+   "title": "[디페스타] \"GD·BTS·SKZ·CORTIS\"…'디아이콘', 오리진의 시작",
+   "url": "http://www.dispatch.co.kr/2350227",
+   "press": "디스패치",
+   "pub_date": "2026-11-04T10:27:00+09:00",
+   "stage": "수동 점검",
+   "reason": "화보·사진집 판매 단신",
+   "section": "ent_content"
+  },
+  {
+   "title": "라이즈 팬들이 기다려 온 공식 솜인형 등장, '드리미즈' '위시니니' 이은 SM 남자 아이돌 IP 캐릭터 '리라니니' 공개",
+   "url": "https://gamefocus.co.kr/detail.php?number=180262",
+   "press": "GameFocus_Twit",
+   "pub_date": "2026-11-04T12:16:00+09:00",
+   "stage": "수동 점검",
+   "reason": "11/4 제외한 아티스트 캐릭터 굿즈 사안 재등장",
+   "section": "ent_content"
+  },
+  {
+   "title": "하이브 주가, 10%대↓... 증권가 전망은?",
+   "url": "https://www.ggilbo.com/news/articleView.html?idxno=1190960",
+   "press": "금강일보",
+   "pub_date": "2026-11-04T10:16:00+09:00",
+   "stage": "수동 점검",
+   "reason": "주가 기사(실적은 11/4 게재)",
+   "section": "ent_content"
+  },
+  {
+   "title": "NCT WISH, 고척돔 콘서트 꽉 채운다…첫 입성 동시에 ‘전석 매진’",
+   "url": "https://www.mk.co.kr/article/12196228",
+   "press": "매일경제",
+   "pub_date": "2026-11-04T11:34:00+09:00",
+   "stage": "수동 점검",
+   "reason": "콘서트 매진 단신",
+   "section": "ent_content"
+  },
+  {
+   "title": "\"암표 말고 정가로 사세요\"…콘진원, 티켓 구매 인증하면 선물 쏜다",
+   "url": "https://www.slist.kr/news/articleView.html?idxno=779083",
+   "press": "싱글리스트",
+   "pub_date": "2026-11-05T07:38:00+09:00",
+   "stage": "수동 점검",
+   "reason": "기관 캠페인·경품 이벤트 안내",
+   "section": "ent_content"
+  },
+  {
+   "title": "[美중간선거] 빅테크 거액 낙선운동 무색…AI 규제론자들 잇단 당선",
+   "url": "https://www.yna.co.kr/view/AKR20261105023600091?input=1195m",
+   "press": "연합뉴스",
+   "pub_date": "2026-11-05T08:24:00+09:00",
+   "stage": "수동 점검",
+   "reason": "해외 선거·정치 결과 AI 규제 기사(제외 기준)",
+   "section": "ai_tech"
   }
- ]
+ ],
+ "manual_review": "2026-11-05 수동 점검: 13건 제외, 1건 추가(T1 서울스카이), 분류 1건 수정"
 }
