@@ -56,7 +56,7 @@ triage_caps:
 # 빠뜨리지 말라고 정한 키워드(제목 기준) — 2차에서 빠지면 한 번 더 판정해 포함 여부를 다시 본다
 watch_terms: [위버스, 디어유, 케이타운포유, 슈퍼팬]
 watch_skip_terms: [위버스브레인]
-priority_terms: [위버스, 디어유, 베리즈, 케이타운포유, 슈퍼팬, 엠넷플러스, 노머스, 공식 캐릭터, AI 음악, AI 음원, AI 작곡, AI 가수, AI 커버, 수노, 유디오, Suno, Udio, AI music, AI-generated music]
+priority_terms: [위버스, 디어유, 베리즈, 케이타운포유, 슈퍼팬, 엠넷플러스, 노머스, 하이앤드, 팬딩, 공식 캐릭터, AI 음악, AI 음원, AI 작곡, AI 가수, AI 커버, 수노, 유디오, Suno, Udio, AI music, AI-generated music]
 # 위 키워드로 상한 밖에서 추가하는 최대 건수(제목에 키워드가 있는 기사부터)
 priority_max: 80
 
