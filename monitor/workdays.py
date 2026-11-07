@@ -22,6 +22,8 @@ def _kr(year: int):
 
 
 def is_workday(d: date, cfg: dict) -> bool:
+    if cfg.get("collect_every_day"):   # 주말·공휴일 포함 매일 수집
+        return True
     ds = d.isoformat()
     if ds in {str(x) for x in cfg.get("extra_workdays", []) or []}:
         return True
