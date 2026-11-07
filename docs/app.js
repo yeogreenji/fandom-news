@@ -266,8 +266,10 @@
     for (const [key, en] of SECTIONS) {
       const list = sortItems(p.rest.filter(i => i.section === key));
       if (!list.length) continue;
-      html += `<p style="margin:14px 0 8px"><b>[${esc(en)}]</b></p>`;
-      text += `[${en}]\n`;
+      if (state.withHeader) {   // 머리말 해제 시 [섹션명]도 빼고 기사만 복사
+        html += `<p style="margin:14px 0 8px"><b>[${esc(en)}]</b></p>`;
+        text += `[${en}]\n`;
+      }
       for (const it of list) {
         html += `<p style="margin:0 0 4px"><b><a href="${esc(it.url)}">${esc(it.title)}</a> [${esc(it.press)}] – ${esc(it.date_label)}</b></p>
           <p style="margin:0 0 14px">${md(it.summary)}</p>`;
@@ -275,8 +277,10 @@
       }
     }
     if (p.series.length) {
-      html += `<p style="margin:14px 0 8px"><b>[추가]</b></p>`;
-      text += `[추가]\n`;
+      if (state.withHeader) {
+        html += `<p style="margin:14px 0 8px"><b>[추가]</b></p>`;
+        text += `[추가]\n`;
+      }
       for (const s of p.series) {
         html += `<p style="margin:0 0 4px">${esc(s.press)} 시리즈 기획</p><p style="margin:0 0 14px">` +
           s.items.map(i => `<a href="${esc(i.url)}">${esc(i.title)}</a>`).join("<br>") + `</p>`;
