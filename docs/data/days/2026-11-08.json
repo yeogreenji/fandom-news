@@ -28,7 +28,7 @@
   "repeat_suspects": 11,
   "repeat_dropped": 5,
   "same_day_dropped": 1,
-  "kept": 9
+  "kept": 11
  },
  "ai": {
   "calls": 46,
@@ -207,6 +207,25 @@
    "cluster_size": 2
   },
   {
+   "id": "02ffa7870f87",
+   "title": "‘MLB 신화’ F&F의 K팝 도전 4년, ‘유니스’ 활동 종료에 완전 자본잠식",
+   "url": "https://bizhankook.com/articles/fnf-kpop-unis-disbandment-capital-impairment.html",
+   "press": "비즈한국",
+   "pub_date": "2026-11-06T10:36:00+09:00",
+   "date_label": "26.11.06",
+   "section": "ent_content",
+   "subsection": "ent_content",
+   "importance": 3,
+   "kind": "news",
+   "must_include": false,
+   "summary": "패션 기업 F&F는 2022년 자회사 F&F엔터테인먼트를 설립하고 패션 사업의 글로벌 브랜딩·마케팅 노하우를 K팝 산업에 접목하려 했다. 그러나 걸그룹 유니스가 활동을 종료하면서 소속 연예인은 아이돌그룹 아홉(AHOF)과 일부 배우뿐이고, 새 아이돌그룹 데뷔 소식도 아직 없다. F&F엔터테인먼트는 지난해 87억 원, 올해 상반기 21억 원의 영업손실을 냈고 상반기 매출은 12억 원으로 전년 같은 기간(19억 원)보다 약 38% 줄었다. 올해 6월 말 자본총액은 마이너스 278억 원으로 완전 자본잠식 상태이며, 자산총액 95억 원에 부채총액은 373억 원이다. 모회사 F&F도 중국 사업의 재고 조정과 환율 부담으로 매출 전망이 밝지 않다는 분석이 나온다.",
+   "reason": "비엔터 기업의 K팝 사업 진출·투자 성과와 재무 악화 사례(엔터 투자·사업 판단 참고)",
+   "tags": [],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
    "id": "dd0070d5c06e",
    "title": "구글, AI영상생성 모델 가격 인하···오픈AI 빠진 시장 공략",
    "url": "https://www.sisajournal-e.com/news/articleView.html?idxno=424854",
@@ -220,6 +239,25 @@
    "must_include": false,
    "summary": "구글이 15초 분량의 AI 영상 제작이 가능한 영상생성 모델 제미나이 옴니 1.2 플래시를 출시했다. 이번 모델은 720p 영상 기준 초당 0.07달러로 가격을 이전 버전보다 30% 낮추었으며, 해상도는 360p부터 4K까지 지원하고 대사와 음악, 효과음도 함께 생성한다. 또한 대화를 이어가며 원하는 부분만 수정할 수 있는 편집 방식이 도입되었고, 인물과 스타일 이미지를 참고자료로 활용해 영상 전반의 일관성을 유지할 수 있다. 구글은 이 모델을 광고 플랫폼 구글 애즈와 유튜브 쇼츠, 유튜브 크리에이트 등에 추가 비용 없이 적용하며 오픈AI가 축소한 영상생성 AI 시장 공략을 강화하고 있다.",
    "reason": "구글 AI 영상생성 모델 업데이트 및 광고·유튜브 생태계 적용",
+   "tags": [],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "eef90268ff7e",
+   "title": "챗GPT, 한국서 1800만명 넘게 쓴다…이용시간도 2배 급증",
+   "url": "http://inews24.com/view/2023796",
+   "press": "아이뉴스24",
+   "pub_date": "2026-11-08T15:31:00+09:00",
+   "date_label": "26.11.08",
+   "section": "ai_tech",
+   "subsection": "ai_tech",
+   "importance": 3,
+   "kind": "news",
+   "must_include": false,
+   "summary": "오픈AI의 챗GPT 국내 모바일 앱 월간 이용자 수가 지난달 1876만 명으로 처음 1800만 명을 넘어섰고, 1년 전보다 43.8% 늘었다. 지난달 총 사용시간은 약 5098만 시간으로 전년 동기(약 2383만 시간)보다 113.9% 증가했고, 1인당 월평균 사용시간도 110분에서 163분으로 늘었다. 앤트로픽 클로드 앱의 월간 이용자는 약 210만 명으로 1년 전(약 14만 명)의 15배 수준으로 늘며 국내 AI 앱 2위에 올랐다. 에이닷과 퍼플렉시티는 이용자가 줄었다.",
+   "reason": "국내 생성형 AI 앱 이용 규모·경쟁 구도 변화(AI & Tech 시장 지표)",
    "tags": [],
    "series": null,
    "lang": "ko",
@@ -579,15 +617,6 @@
    "section": "fandom_music"
   },
   {
-   "title": "챗GPT 국내 앱 이용자 1천800만명 첫 돌파…사용시간 2배로",
-   "url": "https://www.yna.co.kr/view/AKR20261106147600017?input=1195m",
-   "press": "연합뉴스",
-   "pub_date": "2026-11-08T07:37:00+09:00",
-   "stage": "2차",
-   "reason": "요약할 내용 부족(요약 208자)",
-   "section": "ai_tech"
-  },
-  {
    "title": "해외 ‘코리아시즌’ 주요 행사에 4만명 참여",
    "url": "https://www.naeil.com/news/read/607812?ref=naver",
    "press": "내일신문",
@@ -640,15 +669,6 @@
    "stage": "2차",
    "reason": "요약할 내용 부족(요약 207자)",
    "section": "fandom_music"
-  },
-  {
-   "title": "'MLB 신화' F&F의 K팝 도전 4년, '유니스' 활동 종료에 완전 자본잠식",
-   "url": "https://bizhankook.com/articles/fnf-kpop-unis-disbandment-capital-impairment.html",
-   "press": "비즈한국",
-   "pub_date": "2026-11-06T10:36:00+09:00",
-   "stage": "2차",
-   "reason": "요약할 내용 부족(요약 188자)",
-   "section": "ent_content"
   },
   {
    "title": "\"해외투자자, 반도체·소부장·K-콘텐츠·AI응용에 주목하라\"",
