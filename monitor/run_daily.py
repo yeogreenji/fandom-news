@@ -77,7 +77,13 @@ def recent_items(days: int = 3) -> list[dict]:
     """최근 며칠(오늘 이미 저장된 분 포함) 게재 기사."""
     out = []
     for p in _day_files()[-days:]:
-        out += read_json(p, {}).get("items", [])
+        data = read_json(p, {})
+        out += data.get("items", [])
+        for e in data.get("excluded", []):   # 수동으로 뺀 기사도 다시 실리지 않게 포함
+            if e.get("stage") == "수동":
+                out.append({"id": e.get("id") or e.get("url", ""), "title": e.get("title", ""), "url": e.get("url"),
+                            "press": e.get("press"), "pub_date": e.get("pub_date"), "section": e.get("section"),
+                            "summary": "", "tags": []})
     return out
 
 
