@@ -29,7 +29,7 @@
   "repeat_suspects": 10,
   "repeat_dropped": 1,
   "same_day_dropped": 0,
-  "kept": 30
+  "kept": 16
  },
  "ai": {
   "calls": 72,
@@ -98,86 +98,6 @@
    "cluster_size": 1
   },
   {
-   "id": "e9aa38b864d1",
-   "title": "로시, 세 가지 맛으로 돌아온다… 12일 새로운 사운드 담은 '알파벳 리믹스' 발매",
-   "url": "https://swtvnews.com/news/newsview.php?ncode=1065564257273756",
-   "press": "SWTV",
-   "pub_date": "2026-11-12T07:22:00+09:00",
-   "date_label": "26.11.12",
-   "section": "own",
-   "subsection": "own",
-   "importance": 5,
-   "kind": "news",
-   "must_include": false,
-   "summary": "로시가 지난 10월 발매한 EP 'FLAT'의 타이틀곡 'Alphabet'을 세 가지 버전으로 재해석한 리믹스 앨범 'Alphabet Remix'를 발매한다. 이번 앨범에는 'Alphabet (Highball Remix)', 'Alphabet (Bubblegum Remix)', 'Alphabet (Ice Cream Remix)' 등 세 트랙이 수록된다. 타이틀곡 'Alphabet (Highball Remix)'은 일본의 프로듀서 Fetus가 참여해 빠른 비트와 묵직한 베이스, 날카로운 신스를 활용해 클럽 사운드를 선보인다. 첫 번째 트랙 'Alphabet (Bubblegum Remix)'에는 MINIMONSTER가 참여해 원곡의 팝 멜로디에 브레이크비트 리듬과 다채로운 신스 사운드를 더했다. 마지막 트랙 'Alphabet (Ice Cream Remix)'에는 DJ 겸 프로듀서 mondaystudio가 참여해 하우스 리듬으로 재해석했다.",
-   "reason": "자사 음원 리믹스 앨범 발매 소식",
-   "tags": [
-    "자사 보도자료 추정"
-   ],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 1
-  },
-  {
-   "id": "60f678d7151a",
-   "title": "'K리그 최초' 울산 HD의 모든 걸 담았다! '43년의 보물창고' 구단 기록 아카이브 오픈…'AI 도입'",
-   "url": "https://www.sportschosun.com/football/2026-11-11/202611110100078430007284",
-   "press": "스포츠조선",
-   "pub_date": "2026-11-11T14:14:00+09:00",
-   "date_label": "26.11.11",
-   "section": "fandom_music",
-   "subsection": "fan_platform",
-   "importance": 4,
-   "kind": "news",
-   "must_include": false,
-   "summary": "울산 HD가 K리그 최초 구단 자체 기록 아카이브를 오픈했다. 울산은 과거부터 현재까지 구단 역사를 한눈에 볼 수 있는 울산 HD FC 아카이브를 열어 K리그 전통의 명가다운 행보를 이어간다. 올해로 창단 43주년을 맞은 울산은 이미 지난 9월 K리그 최초 아카이브를 구축해 1차 오픈을 진행했으며, 이번에 야심 차게 전면 개편해 더욱 업그레이드된 시스템을 선보였다. 이번 아카이브는 대회별, 시즌별, 구단 및 선수별 기록 등 카테고리를 세부화해 자세한 정보를 제공하며 사실상 울산만의 거대한 포털사이트 기능을 하게 된다. 가장 돋보이는 포인트는 압도적인 데이터의 양과 직관적인 시각화, 그리고 일반 팬과 미디어를 모두 만족시키는 이원화된 사용자 맞춤형 시스템이다. 팬들은 별도 로그인 없이 공개된 웹사이트 링크에 접속하는 것만으로도 구단의 방대한 역대 전적과 기록들을 손쉽게 찾아볼 수 있다. 경기 기록을 넘어 더욱 복합적이고 실시간 정보가 필요한 미디어 관계자들에게는 로그인을 통한 심화 기능이 제공된다.",
-   "reason": "스포츠 구단 아카이브 및 AI 플랫폼 도입",
-   "tags": [
-    "동일 보도 6건"
-   ],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 6
-  },
-  {
-   "id": "0640093134ba",
-   "title": "예능선 친근하게, 무대에선 매섭게…하츠웨이브, 데뷔 7개월 만에 장충으로",
-   "url": "https://sports.donga.com/ent/article/all/20261111/135004316/1",
-   "press": "동아일보",
-   "pub_date": "2026-11-11T09:53:00+09:00",
-   "date_label": "26.11.11",
-   "section": "fandom_music",
-   "subsection": "fan_platform",
-   "importance": 3,
-   "kind": "news",
-   "must_include": false,
-   "summary": "신인 밴드 하츠웨이브가 아이돌식 팬덤 전략과 음악적 실험을 결합해 활동 영역을 넓히고 있다. 웹예능과 커버 영상으로 멤버들의 개성을 알리면서, 장르를 넘나드는 라이브 무대로 밴드 본연의 매력을 발산하고 있다는 평가다. 지난 4월 데뷔한 하츠웨이브는 오는 28일 서울 장충체육관에서 첫 단독 팬콘서트를 개최한다. 데뷔 7개월 만에 수천 명 규모의 공연장에 입성하는 이들은 무려 20곡에 달하는 셋리스트를 준비하며 첫 단독 공연에 공을 들이고 있다. 이와 관련해 하츠웨이브는 최근 공식 SNS에 일부 곡명을 가린 셋리스트를 공개했다. 팬들이 직접 무대를 예상하고 듣고 싶은 신청곡을 댓글로 남기도록 유도하며, 공연 당일까지 궁금증을 자극하는 아이돌식 팬덤 소통 방식을 취했다. 멤버들의 개성을 알리는 자체 콘텐츠도 적극적으로 활용 중이다. 엑스디너리 히어로즈와 함께 출연한 웹예능은 유튜브 통합 조회수 약 200만 회를 기록했다. 무대 위 진지한 연주자의 모습뿐 아니라 멤버들의 유쾌한 예능감까지 드러내며 팬들과의 접점을 넓혔다.",
-   "reason": "신인 밴드 아이돌식 팬덤 소통 전략",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 1
-  },
-  {
-   "id": "4dcc3d08e723",
-   "title": "몬스타엑스, ‘더 엑스 : 넥서스’ 앙코르 콘서트 콘셉트 포토 공개",
-   "url": "https://sports.khan.co.kr/article/202611111557003?pt=nv",
-   "press": "스포츠경향",
-   "pub_date": "2026-11-11T15:58:00+09:00",
-   "date_label": "26.11.11",
-   "section": "fandom_music",
-   "subsection": "fan_platform",
-   "importance": 3,
-   "kind": "news",
-   "must_include": false,
-   "summary": "스타쉽엔터테인먼트는 공식 SNS 채널을 통해 몬스타엑스 월드 투어의 앙코르 콘서트 콘셉트 포토를 공개하고 향후 공연 일정을 알렸다. 이번 앙코르 공연은 오는 21일과 22일 인천 인스파이어 아레나를 시작으로 12월 8일과 9일 일본 요코하마 피아 아레나 MM에서 개최될 예정이다. 이번 앙코르 콘서트는 지난 1월 서울 KSPO DOME에서 시작해 아시아, 남미, 북미로 이어진 월드 투어의 여정을 집약한 무대가 될 전망이다. 그룹은 앞서 멕시코 공연 전석 매진을 기록하고 북미 투어에서 해외 주요 매체의 호평을 받는 등 글로벌 공연 강자로서의 저력을 입증했다. 또한 미니앨범 더 페이즈로 빌보드 메인 앨범 차트에 진입하고 타이틀곡 매직으로 지상파 음악방송 1위를 차지했으며, 최근 코리아 그랜드 뮤직 어워즈에서 베스트 그룹과 베스트 뮤직 트로피를 수상했다. 특히 22일 진행되는 공연은 엠넷플러스를 통해 온라인으로도 생중계되어 현장을 찾지 못하는 전 세계 팬들과 실시간으로 소통할 예정이다.",
-   "reason": "몬스타엑스 앙코르 콘서트 엠넷플러스 온라인 생중계 소식",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 1
-  },
-  {
    "id": "53df1bc9c7a9",
    "title": "\"멜론·티빙 따로 구독할 필요 없네\"…T우주서 월 6900원 결합상품 출시",
    "url": "https://www.newsis.com/view/NISX20261111_0003863702",
@@ -216,42 +136,23 @@
    "cluster_size": 1
   },
   {
-   "id": "d9f3869c5a16",
-   "title": "‘MMA 2026’ 투표 현황 보니…에스파 1위·BTS 2위→알파드라이브원 99만 표 돌파",
-   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16273642",
-   "press": "톱스타뉴스",
-   "pub_date": "2026-11-11T11:28:00+09:00",
+   "id": "92336e5552e1",
+   "title": "엔터테인먼트 앱 사용자 증가율 1위 스포티파이, 사용자 수는 유튜브가 압도",
+   "url": "https://platum.kr/archives/298338",
+   "press": "플래텀",
+   "pub_date": "2026-11-11T13:46:00+09:00",
    "date_label": "26.11.11",
    "section": "fandom_music",
    "subsection": "music_platform",
-   "importance": 3,
+   "importance": 4,
    "kind": "news",
    "must_include": false,
-   "summary": "2026 멜론뮤직어워드(MMA 2026) 부문별 투표 마감을 앞두고 투표 현황이 공개됐다. 올해의 앨범 부문에서는 에스파의 LEMONADE - The 2nd Album이 47만 2226표로 1위를 기록 중이며 방탄소년단이 2위를 차지했다. 올해의 신인 부문에서는 알파드라이브원이 99만 7297표로 1위를 유지하고 있다. 올해의 아티스트 부문에서는 플레이브가 69만 3775표로 1위를 차지했으며 엔시티 위시와 방탄소년단이 그 뒤를 이었다. 올해의 베스트송 부문에서는 아이브의 BANG BANG이 선두를 달리고 있다. 글로벌 TOP10 부문에서는 리센느가 90만 7464표로 1위를 유지하고 있으며 지드래곤과 엔시티 위시가 상위권을 기록했다. 글로벌 TOP10 부문은 국내 멜론과 해외 베리즈에서 각각 투표가 진행되며 두 플랫폼의 투표 결과를 1대 1 비율로 합산해 최종 반영한다. MMA 2026은 서울 고척스카이돔에서 개최되며 멜론과 웨이브를 통해 온라인 생중계된다.",
-   "reason": "멜론 MMA 투표 현황 및 글로벌 베리즈 플랫폼 언급",
+   "summary": "앱·결제 데이터 분석 기업 와이즈앱·리테일이 한국인 스마트폰 사용자를 표본 조사한 결과, 지난 10월 국내 엔터테인먼트 앱 가운데 사용자가 가장 가파르게 늘어난 앱은 스포티파이였다. 스포티파이의 10월 월간 활성 사용자 수(MAU)는 727만 명으로 1년 전보다 71.3% 늘었고, 증가율 2위인 블록 블라스트(24.4%)와 세 배 가까이 차이가 난다. 사용자 수로는 유튜브가 4625만 명으로 가장 많았고 인스타그램이 2878만 명으로 뒤를 이었다. 6위부터는 유튜브 뮤직(917만 명), 로블록스(858만 명), 쿠팡플레이(839만 명), 스포티파이(727만 명), 티빙(671만 명)이 이어졌다. 조사 대상은 동영상·숏폼, 모바일 게임, 웹툰·웹소설, 음악, AI 캐릭터·아바타 채팅, OTT, 사진·영상 편집, 도서, 팬덤 플랫폼 업종의 앱이다.",
+   "reason": "음악 플랫폼 경쟁 구도(스포티파이 국내 MAU 급증, 유튜브뮤직 비교) — 선별 단계에서 대표 기사가 누락되어 수동 추가",
    "tags": [],
    "series": null,
    "lang": "ko",
    "cluster_size": 1
-  },
-  {
-   "id": "d44f3113ad83",
-   "title": "티오더, 음악 투표 3주 만에 19만건…주문 연계 서비스 확대",
-   "url": "http://www.kdfnews.com/news/articleView.html?idxno=190788",
-   "press": "한국면세뉴스",
-   "pub_date": "2026-11-11T14:12:00+09:00",
-   "date_label": "26.11.11",
-   "section": "fandom_music",
-   "subsection": "music_platform",
-   "importance": 3,
-   "kind": "news",
-   "must_include": false,
-   "summary": "테이블오더 기업 티오더의 실시간 음악 투표 서비스 '티오더 AI 픽'이 출시 약 3주 만에 누적 투표 19만5000여건을 기록했다. 서비스는 지난달 10일 시작됐으며 첫날에만 3만6000여건의 투표가 이뤄졌다. 이용 시간은 저녁 시간대에 집중되어 전체 투표의 68%가 오후 5~11시에 발생했고, 금요일과 토요일 투표가 전체의 55%를 차지했다. 최다 득표곡은 소연의 '퇴사할게여'였으며 로제의 'toxic till the end'와 'APT.'가 뒤를 이었다. 티오더는 이달 중 투표 방식을 기존 테이블 단위에서 '주문 1건당 하트 1개'로 개편할 예정이다. 주문할 때마다 투표 기회를 제공해 고객 참여와 추가 주문을 연결한다는 구상이다. 티오더는 별도 앱 없이 매장 방문객이 음악 투표에 참여하도록 한 데 이어, 주문 횟수에 따라 투표 기회를 제공하는 방식을 준비하고 있다.",
-   "reason": "티오더 실시간 음악 투표 서비스 이용 현황 및 확대 계획",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 2
   },
   {
    "id": "788b8c0008fb",
@@ -288,28 +189,6 @@
    "reason": "케이타운포유 멜버른 한류박람회 참가 및 해외 공략",
    "tags": [],
    "series": null,
-   "lang": "ko",
-   "cluster_size": 1
-  },
-  {
-   "id": "b96fd4433f07",
-   "title": "A2O 라이트 'NEON' 뮤직100 15일 연속 1위…AI 가수 머무르 20.2점 차 추격, 리센느 10곡 진입 [뮤직100]",
-   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16274393",
-   "press": "톱스타뉴스",
-   "pub_date": "2026-11-12T07:48:00+09:00",
-   "date_label": "26.11.12",
-   "section": "fandom_music",
-   "subsection": "music_ai_rights",
-   "importance": 4,
-   "kind": "trend",
-   "must_include": false,
-   "summary": "에이오오 라이트의 데뷔곡 'NEON'이 국내 음원 종합차트에서 15일 연속 1위를 유지한 가운데 AI 음악 프로젝트 머무르의 곡이 2위로 추격하며 경쟁 구도를 형성했다. 'NEON'은 멜론, 바이브, 스포티파이, 벅스 등 여러 플랫폼의 상위권에 올랐으나 일본 오리콘 주간 스트리밍 차트에서는 순위가 하락했다. 머무르의 '꿈꾸던 어른이 되었나요?'는 생성형 인공지능을 활용해 제작된 음악 프로젝트로 소개되며 기존 가수와 같은 차트에서 경쟁하는 양상을 보였다. 리센느는 여러 곡을 상위권에 올리며 뮤지션100 차트 1위를 기록하는 등 아티스트 전체 순위에서 강세를 나타냈다. 이번 결과는 국내 종합차트와 해외 스트리밍 차트의 흐름이 다르게 나타날 수 있음을 보여주는 사례로 볼 수 있다.",
-   "reason": "AI 음악 프로젝트와 주요 음원 플랫폼 차트 동향",
-   "tags": [],
-   "series": {
-    "name": "뮤직1",
-    "no": 0
-   },
    "lang": "ko",
    "cluster_size": 1
   },
@@ -354,84 +233,6 @@
    "cluster_size": 1
   },
   {
-   "id": "1fe2b070f908",
-   "title": "\"명품도 아닌데 44만원이라니\"…2030 푹 빠진 '뜻밖의 상품'",
-   "url": "https://www.hankyung.com/article/202611119396i",
-   "press": "한국경제",
-   "pub_date": "2026-11-11T09:53:00+09:00",
-   "date_label": "26.11.11",
-   "section": "ent_content",
-   "subsection": "fandom_commerce",
-   "importance": 4,
-   "kind": "trend",
-   "must_include": false,
-   "summary": "일본의 인기 캐릭터 치이카와가 국내에서 선풍적인 인기를 끌면서 관련 상품 가격이 치솟고 있다. 손바닥만 한 캐릭터 키링이 44만원에 거래되는가 하면, 관련 검색량은 한 달 새 14배로 뛰었다. 일상에서는 지출을 줄이면서도 좋아하는 캐릭터나 스타를 위해서는 아낌없이 지갑을 여는 소비문화가 확산하고 있다는 분석이다. 11일 한정판 거래 플랫폼 크림이 발표한 월간 패션 트렌드 리포트에 따르면 지난달 1~14일 크림 내 치이카와 검색량은 전월 같은 기간보다 1304% 급증했다. 치이카와는 먼가 작고 귀여운 녀석이라는 뜻으로, 일본에서 탄생한 캐릭터다. 귀여운 외모와 독특한 세계관을 앞세워 국내에서도 두꺼운 팬덤을 형성하고 있다. 최근에는 극장판 흥행까지 더해지며 인기가 더욱 높아졌다. 지난 9월 30일 개봉한 극장판 치이카와 인어 섬의 비밀은 이달 4일까지 누적 관객 262만명을 끌어모았다. 인기는 관련 상품 거래로도 이어졌다. 딸기 찹쌀떡으로 변신한 캐릭터 상품 치이카와 다 함께 가장 마스코트 딸기 다이후쿠 랏코는 지난달 15일 기준 크림 급상승 키링 순위 1위에 올랐다. 특히 화려한 일본 갸루 스타일로 꾸민 치이카와 × 9090 마스코트 키링 우사기는 최고 44만원에 거래됐다. 발매가의 약 17배에 달하는 가격이다. 캐릭터에 대한 애정과 희소성이 맞물리면서 높은 웃돈이 붙은 것이다.",
-   "reason": "팬덤 소비 성향 및 굿즈 분석",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 1
-  },
-  {
-   "id": "b9f945030cd4",
-   "title": "딜리버드코리아, 멜버른 한류박람회서 '역직구 체험 부스' 운영",
-   "url": "http://www.apparelnews.co.kr/news/news_view/?idx=228903",
-   "press": "어패럴뉴스",
-   "pub_date": "2026-11-11T13:04:00+09:00",
-   "date_label": "26.11.11",
-   "section": "ent_content",
-   "subsection": "fandom_commerce",
-   "importance": 3,
-   "kind": "news",
-   "must_include": false,
-   "summary": "딜리버드코리아는 마켓컬리, 유나이티드보더스, 케이타운포유와 함께 멜버른 한류박람회 역직구관에 참가했다. 부스에서는 비원츠, 글래쉬, 투비건, 더셀랩, 모니 등 국내 뷰티 및 라이프스타일 브랜드 상품을 선보이며 현장 방문객들을 맞이했다.",
-   "reason": "핵심 경쟁사인 케이타운포유의 역직구 박람회 참가",
-   "tags": [
-    "본문 미확보"
-   ],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 1
-  },
-  {
-   "id": "c0b155c1b767",
-   "title": "투모로우바이투게더, 미니 9집 ‘PERFECT STORM’ 팝업 스토어 오픈",
-   "url": "https://sports.khan.co.kr/article/202611111540003?pt=nv",
-   "press": "스포츠경향",
-   "pub_date": "2026-11-11T15:42:00+09:00",
-   "date_label": "26.11.11",
-   "section": "ent_content",
-   "subsection": "fandom_commerce",
-   "importance": 3,
-   "kind": "news",
-   "must_include": false,
-   "summary": "투모로우바이투게더는 오는 17일부터 22일까지 하이브 용산 사옥에서 미니 9집 'PERFECT STORM' 발매 기념 팝업스토어를 개최한다. 타이틀곡 'Angel Bite' 뮤직비디오의 주요 요소를 활용한 공간으로 팝업이 꾸며지며 콘셉트 포토에 등장한 글라이더 키링, 반다나, 스마트톡 등 다양한 상품을 선보인다. 머치 구매 금액에 따라 오프라인 팝업 한정 엽서를 증정하며 앨범 구매 시 럭키드로우에 참여할 수 있다. 이번 팝업은 글로벌 슈퍼팬 플랫폼 위버스의 '위버스 스팟' 서비스로 사전 예약 후 입장할 수 있다. 그룹은 오는 16일 신보를 발매한 후 롯데월드 어드벤처에서 팬들을 초청하는 행사를 진행할 예정이다.",
-   "reason": "위버스 플랫폼 기반의 아티스트 팝업스토어 운영 소식",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 1
-  },
-  {
-   "id": "74384141e11c",
-   "title": "이세계아이돌·이브닛 등 28명 집결…SOOP, 'AGF 2026' 버추얼 라인업 공개",
-   "url": "https://www.gamechosun.co.kr/webzine/article/view.php?no=227476",
-   "press": "게임조선",
-   "pub_date": "2026-11-11T20:42:00+09:00",
-   "date_label": "26.11.11",
-   "section": "ent_content",
-   "subsection": "fandom_commerce",
-   "importance": 3,
-   "kind": "news",
-   "must_include": false,
-   "summary": "에스오오피가 오는 12월 열리는 에이지에프 2026에 참여하는 버추얼 스트리머 전체 라인업을 공개했다. 이번 행사에는 이세계아이돌과 이브닛을 비롯해 총 28명의 버추얼 스트리머가 참여해 팬들을 만날 예정이다. 에스오오피는 참가를 기념해 스트리머들의 개성을 담은 개인 및 단체 굿즈를 선보인다. 또한 여러 버추얼 스트리머가 함께 참여한 에이지에프 2026 기념 특별 음원도 공개할 계획이다. 부스에서 진행되는 세부 프로그램과 현장 이벤트는 공식 방송국과 에스엔에스를 통해 순차적으로 안내된다. 이번 행사는 오는 12월 4일부터 3일간 경기 고양시 일산 킨텍스에서 개최된다.",
-   "reason": "SOOP의 AGF 2026 버추얼 스트리머 라인업 및 굿즈·음원 공개 소식",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 1
-  },
-  {
    "id": "d994030e5ad0",
    "title": "“‘BTS·세븐틴 없다’는 착각…하이브, 2028년 사상 최대 실적 이미 예약됐다”",
    "url": "https://www.newsquest.co.kr/news/articleView.html?idxno=304753",
@@ -470,27 +271,6 @@
    "cluster_size": 1
   },
   {
-   "id": "92227d5c95f5",
-   "title": "JYP엔터, 美 타임지 선정 '2027년 지속가능 성장기업'⋯韓 기업 1위",
-   "url": "https://www.etoday.co.kr/news/view/2646765",
-   "press": "이투데이",
-   "pub_date": "2026-11-11T11:10:00+09:00",
-   "date_label": "26.11.11",
-   "section": "ent_content",
-   "subsection": "ent_biz",
-   "importance": 3,
-   "kind": "news",
-   "must_include": false,
-   "summary": "JYP엔터테인먼트가 미국 타임지 선정 2027년 세계 최고의 지속가능 성장기업에서 3년 연속 국내 1위에 올랐다. 타임과 독일 시장분석기업 스태티스타가 발표한 결과에 따르면 JYP엔터는 전 세계 500개의 기업 중 한국 1위, 세계 15위에 올랐으며 점수 91.41점을 획득했다. 2025년부터 올해 발표된 2027년까지 3년 연속 국내 1위를 기록했다. 타임과 스태티스타는 기업의 매출 성장과 재무 안전성, 환경 영향 등을 동일한 비율로 합산해 최종 순위를 결정한다. JYP엔터는 2022년 국내 엔터테인먼트사 중 최초로 RE100 이행을 포함한 지속가능경영보고서를 발행했으며 올해 6월 다섯 번째 보고서를 발간했다. 또한 MSCI와 한국ESG기준원 평가에서 우수 등급을 획득하는 등 ESG 경영 역량을 인정받고 있다.",
-   "reason": "JYP엔터 타임지 선정 지속가능 성장기업 국내 1위",
-   "tags": [
-    "동일 보도 4건"
-   ],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 4
-  },
-  {
    "id": "60d59fd4a1c4",
    "title": "메이크어스, AI 활용해 음악 콘텐츠 촬영부터 마스터링까지 제작 공정 자동화 추진",
    "url": "https://biz.chosun.com/industry/business_info/2026/11/11/RFCNHM2V55AHXPYPGR3L6QXXV4/?utm_source=naver&utm_medium=original&utm_campaign=biz",
@@ -523,25 +303,6 @@
    "must_include": false,
    "summary": "문화체육관광부가 한국저작권위원회와 함께 12일 앰배서더 서울 풀만 호텔에서 생성형 인공지능과 저작권을 주제로 '서울 저작권 포럼'을 진행한다. 행사는 저작권 법·제도의 최신 흐름을 국제적으로 짚는 자리로, 올해는 생성형 AI가 촉발한 쟁점을 중점적으로 다룬다. AI 학습과 산출 과정에서 창작자 보호와 정당한 보상, 산업 발전이 현안으로 떠오름에 따라 앞서가는 나라들의 법·판례 동향을 공유하고 상생 방안을 찾는다. 행사는 미국·중국·한국의 저작권 정책 대응을 살피는 발표로 시작하며, 스티븐 텝 센티널 월드와이드 대표이사, 천 샤오링 화동정법대학 교수, 박현성 문체부 저작권정책과장이 발표에 나선다. 이어 업계와 학계는 각자의 관점에서 AI와 저작권의 상생 방안을 이야기하며, 구글 변호사와 서강대 교수, 뉴튠 대표 등이 참여해 종합토론을 진행한다.",
    "reason": "생성형 AI와 저작권 국제 포럼 개최 소식으로 음악 AI 저작권 정책 반영",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 1
-  },
-  {
-   "id": "4bf32d2b3c4c",
-   "title": "\"10번의 도전, 세계를 잇는 무대\"…컴투스 SWC, 역대 챔피언이 말하는 10년의 지속성",
-   "url": "https://www.youthdaily.co.kr/news/article.html?no=229666",
-   "press": "청년일보",
-   "pub_date": "2026-11-11T10:00:00+09:00",
-   "date_label": "26.11.11",
-   "section": "ent_content",
-   "subsection": "ent_market",
-   "importance": 3,
-   "kind": "news",
-   "must_include": false,
-   "summary": "컴투스의 글로벌 e스포츠 대회 서머너즈 워 월드 아레나 챔피언십이 출범 10회차를 맞았다. 14일 서울 KBS아레나에서 열리는 월드 파이널을 앞두고 역대 챔피언들은 매년 달라지는 전략과 예측하기 어려운 승부가 대회의 장기 흥행 비결이라고 밝혔다. 우승 이후에도 대다수 챔피언이 재도전에 나서거나 해설자로 참여하며 새로운 경쟁 구도를 만들고 있다. 코로나19 팬데믹 당시 온라인 개최 상황에서도 실시간 반응과 커뮤니티 댓글을 통해 글로벌 팬덤의 존재감이 이어졌다. 선수들의 경쟁과 세계 각지의 팬들이 참여하는 구조가 대회를 지속적인 e스포츠 브랜드로 자리 잡게 했다.",
-   "reason": "컴투스 SWC 10주년 및 e스포츠 글로벌 팬덤 분석",
    "tags": [],
    "series": null,
    "lang": "ko",
@@ -607,27 +368,6 @@
    "cluster_size": 2
   },
   {
-   "id": "535227093818",
-   "title": "EU, 온라인 중독성·다크패턴 등 정조준…'디지털공정법' 공개",
-   "url": "https://www.yna.co.kr/view/AKR20261112001500098?input=1195m",
-   "press": "연합뉴스",
-   "pub_date": "2026-11-12T01:04:00+09:00",
-   "date_label": "26.11.12",
-   "section": "ai_tech",
-   "subsection": "ai_tech",
-   "importance": 4,
-   "kind": "news",
-   "must_include": false,
-   "summary": "유럽연합 집행위원회가 소비자들이 과도하게 온라인을 이용하도록 유도하는 다크 패턴 등 불공정한 디지털 거래 관행을 억제하기 위한 새 법안 디지털 공정법 초안을 공개했다. 초안에 따르면 이용자들은 강박적이거나 과도한 온라인 이용을 유도하는 기능을 직접 차단할 수 있게 되며, 규정을 위반하는 기업에는 전 세계 연간 매출액의 최대 6퍼센트에 해당하는 벌금이 부과될 수 있다. 이번 규제로 구글의 유튜브, 인스타그램, 틱톡 등 대형 소셜미디어 기업뿐 아니라 전자상거래 서비스와 인공지능 챗봇도 상당한 영향을 받을 것으로 예상된다. 이번 법안은 향후 유럽의회 의원들과 개별 국가들의 협상과 승인을 거쳐야 한다.",
-   "reason": "EU의 다크패턴 및 온라인 중독성 규제 '디지털공정법' 초안 공개",
-   "tags": [
-    "동일 보도 3건"
-   ],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 3
-  },
-  {
    "id": "445a74970dfd",
    "title": "앤트로픽 클로드, 국내 기업 계정 100여개 정보 노출",
    "url": "https://www.econovill.com/news/articleView.html?idxno=756925",
@@ -645,25 +385,6 @@
    "series": null,
    "lang": "ko",
    "cluster_size": 1
-  },
-  {
-   "id": "662053c55950",
-   "title": "[마켓 브리핑] 우려에서 구원투수로…코어위브 호실적에 증시 호재",
-   "url": "https://biz.sbs.co.kr/article_hub/20000345844?division=NAVER",
-   "press": "SBS",
-   "pub_date": "2026-11-12T07:35:00+09:00",
-   "date_label": "26.11.12",
-   "section": "ai_tech",
-   "subsection": "ai_tech",
-   "importance": 4,
-   "kind": "news",
-   "must_include": false,
-   "summary": "AI 투자 우려의 진원지였던 코어위브가 예상을 웃도는 3분기 실적을 공개하고 자금 조달 구조가 개선되고 있음을 강조해 AI 투자 지속가능성에 대한 우려를 완화시켰다. 코어위브 CEO는 2027년까지 고객 수요가 데이터센터 공급 여력의 10배에 달한다고 밝혔으며, 기존 주식 매도 계획을 중단한다고 밝힌 뒤 주가가 급등했다. 앤트로픽 IPO에 대한 기관투자자들의 주문량이 공급 가능한 주식 수를 몇 배나 웃돌며 기업가치를 1조 5천억 달러 이상으로 끌어올리는 방안이 논의되고 있다. 오픈AI는 3분기 매출이 100억 달러로 전 분기 대비 약 50% 증가하며 가파른 성장세를 나타냈다. 반도체 부문에서는 마이크론과 AMD 등이 강세를 보였고, 알파벳은 AI 컴퓨팅 인프라 자금 조달을 위해 채권 발행을 추진하는 것으로 알려졌다. 이러한 빅테크 실적과 AI 인프라 수요 호조는 글로벌 AI 시장의 성장 잠재력이 여전히 탄탄하다는 점을 증명하는 움직임으로 볼 수 있다.",
-   "reason": "AI 인프라 및 주요 빅테크 실적과 앤트로픽 IPO 관련 동향",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 2
   }
  ],
  "excluded": [
@@ -1131,15 +852,6 @@
    "url": "https://www.news1.kr/it-science/mobile/6350423",
    "press": "",
    "pub_date": "2026-11-11T14:19:00+09:00",
-   "stage": "1차",
-   "reason": "같은 사안 대표 기사로 검토",
-   "section": "fandom_music"
-  },
-  {
-   "title": "엔터테인먼트 앱 사용자 증가율 1위 스포티파이, 사용자 수는 유튜브가...",
-   "url": "https://platum.kr/archives/298338",
-   "press": "",
-   "pub_date": "2026-11-11T13:46:00+09:00",
    "stage": "1차",
    "reason": "같은 사안 대표 기사로 검토",
    "section": "fandom_music"
@@ -1917,6 +1629,141 @@
    "section": "ai_tech",
    "stage": "2차",
    "reason": "섹션 한도 초과"
+  },
+  {
+   "title": "로시, 세 가지 맛으로 돌아온다… 12일 새로운 사운드 담은 '알파벳 리믹스' 발매",
+   "url": "https://swtvnews.com/news/newsview.php?ncode=1065564257273756",
+   "press": "SWTV",
+   "pub_date": "2026-11-12T07:22:00+09:00",
+   "stage": "수동",
+   "reason": "기준 미달(수동 제외)",
+   "section": "own"
+  },
+  {
+   "title": "'K리그 최초' 울산 HD의 모든 걸 담았다! '43년의 보물창고' 구단 기록 아카이브 오픈…'AI 도입'",
+   "url": "https://www.sportschosun.com/football/2026-11-11/202611110100078430007284",
+   "press": "스포츠조선",
+   "pub_date": "2026-11-11T14:14:00+09:00",
+   "stage": "수동",
+   "reason": "기준 미달(수동 제외)",
+   "section": "fandom_music"
+  },
+  {
+   "title": "예능선 친근하게, 무대에선 매섭게…하츠웨이브, 데뷔 7개월 만에 장충으로",
+   "url": "https://sports.donga.com/ent/article/all/20261111/135004316/1",
+   "press": "동아일보",
+   "pub_date": "2026-11-11T09:53:00+09:00",
+   "stage": "수동",
+   "reason": "기준 미달(수동 제외)",
+   "section": "fandom_music"
+  },
+  {
+   "title": "몬스타엑스, ‘더 엑스 : 넥서스’ 앙코르 콘서트 콘셉트 포토 공개",
+   "url": "https://sports.khan.co.kr/article/202611111557003?pt=nv",
+   "press": "스포츠경향",
+   "pub_date": "2026-11-11T15:58:00+09:00",
+   "stage": "수동",
+   "reason": "기준 미달(수동 제외)",
+   "section": "fandom_music"
+  },
+  {
+   "title": "‘MMA 2026’ 투표 현황 보니…에스파 1위·BTS 2위→알파드라이브원 99만 표 돌파",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16273642",
+   "press": "톱스타뉴스",
+   "pub_date": "2026-11-11T11:28:00+09:00",
+   "stage": "수동",
+   "reason": "기준 미달(수동 제외)",
+   "section": "fandom_music"
+  },
+  {
+   "title": "티오더, 음악 투표 3주 만에 19만건…주문 연계 서비스 확대",
+   "url": "http://www.kdfnews.com/news/articleView.html?idxno=190788",
+   "press": "한국면세뉴스",
+   "pub_date": "2026-11-11T14:12:00+09:00",
+   "stage": "수동",
+   "reason": "기준 미달(수동 제외)",
+   "section": "fandom_music"
+  },
+  {
+   "title": "A2O 라이트 'NEON' 뮤직100 15일 연속 1위…AI 가수 머무르 20.2점 차 추격, 리센느 10곡 진입 [뮤직100]",
+   "url": "https://www.topstarnews.net/news/articleView.html?idxno=16274393",
+   "press": "톱스타뉴스",
+   "pub_date": "2026-11-12T07:48:00+09:00",
+   "stage": "수동",
+   "reason": "기준 미달(수동 제외)",
+   "section": "fandom_music"
+  },
+  {
+   "title": "\"명품도 아닌데 44만원이라니\"…2030 푹 빠진 '뜻밖의 상품'",
+   "url": "https://www.hankyung.com/article/202611119396i",
+   "press": "한국경제",
+   "pub_date": "2026-11-11T09:53:00+09:00",
+   "stage": "수동",
+   "reason": "기준 미달(수동 제외)",
+   "section": "ent_content"
+  },
+  {
+   "title": "딜리버드코리아, 멜버른 한류박람회서 '역직구 체험 부스' 운영",
+   "url": "http://www.apparelnews.co.kr/news/news_view/?idx=228903",
+   "press": "어패럴뉴스",
+   "pub_date": "2026-11-11T13:04:00+09:00",
+   "stage": "수동",
+   "reason": "기준 미달(수동 제외)",
+   "section": "ent_content"
+  },
+  {
+   "title": "투모로우바이투게더, 미니 9집 ‘PERFECT STORM’ 팝업 스토어 오픈",
+   "url": "https://sports.khan.co.kr/article/202611111540003?pt=nv",
+   "press": "스포츠경향",
+   "pub_date": "2026-11-11T15:42:00+09:00",
+   "stage": "수동",
+   "reason": "기준 미달(수동 제외)",
+   "section": "ent_content"
+  },
+  {
+   "title": "이세계아이돌·이브닛 등 28명 집결…SOOP, 'AGF 2026' 버추얼 라인업 공개",
+   "url": "https://www.gamechosun.co.kr/webzine/article/view.php?no=227476",
+   "press": "게임조선",
+   "pub_date": "2026-11-11T20:42:00+09:00",
+   "stage": "수동",
+   "reason": "기준 미달(수동 제외)",
+   "section": "ent_content"
+  },
+  {
+   "title": "JYP엔터, 美 타임지 선정 '2027년 지속가능 성장기업'⋯韓 기업 1위",
+   "url": "https://www.etoday.co.kr/news/view/2646765",
+   "press": "이투데이",
+   "pub_date": "2026-11-11T11:10:00+09:00",
+   "stage": "수동",
+   "reason": "기준 미달(수동 제외)",
+   "section": "ent_content"
+  },
+  {
+   "title": "\"10번의 도전, 세계를 잇는 무대\"…컴투스 SWC, 역대 챔피언이 말하는 10년의 지속성",
+   "url": "https://www.youthdaily.co.kr/news/article.html?no=229666",
+   "press": "청년일보",
+   "pub_date": "2026-11-11T10:00:00+09:00",
+   "stage": "수동",
+   "reason": "기준 미달(수동 제외)",
+   "section": "ent_content"
+  },
+  {
+   "title": "EU, 온라인 중독성·다크패턴 등 정조준…'디지털공정법' 공개",
+   "url": "https://www.yna.co.kr/view/AKR20261112001500098?input=1195m",
+   "press": "연합뉴스",
+   "pub_date": "2026-11-12T01:04:00+09:00",
+   "stage": "수동",
+   "reason": "기준 미달(수동 제외)",
+   "section": "ai_tech"
+  },
+  {
+   "title": "[마켓 브리핑] 우려에서 구원투수로…코어위브 호실적에 증시 호재",
+   "url": "https://biz.sbs.co.kr/article_hub/20000345844?division=NAVER",
+   "press": "SBS",
+   "pub_date": "2026-11-12T07:35:00+09:00",
+   "stage": "수동",
+   "reason": "기준 미달(수동 제외)",
+   "section": "ai_tech"
   }
  ]
 }
