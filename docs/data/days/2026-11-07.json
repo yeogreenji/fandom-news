@@ -217,25 +217,6 @@
    "cluster_size": 1
   },
   {
-   "id": "94bc616b50f5",
-   "title": "CJ ENM, 3분기 매출 1조1904억원…티빙 흑자 전환에도 음악·커머스 수익성 부담",
-   "url": "http://www.biztribune.co.kr/news/articleView.html?idxno=362064",
-   "press": "비즈트리뷴",
-   "pub_date": "2026-11-06T15:04:00+09:00",
-   "date_label": "26.11.06",
-   "section": "ent_content",
-   "subsection": "ent_biz",
-   "importance": 4,
-   "kind": "trend",
-   "must_include": false,
-   "summary": "CJ ENM이 연결기준 2026년 3분기 매출 1조1904억원, 영업이익 221억원을 기록했다. 티빙 광고 매출 증가와 해외 콘텐츠 판매 확대에 힘입어 미디어플랫폼 부문이 흑자 전환했으나, 음악과 커머스 부문은 투자 부담으로 수익성이 엇갈렸다. 미디어플랫폼 매출은 전년 동기 대비 10.0% 증가한 3518억원, 영업이익은 59억원을 거뒀다. 티빙 광고 매출은 42.1% 늘었으며 KBO 경기 편성 감소와 콘텐츠 공백 속에서도 가입자 증가세를 유지했다. 영화·드라마 부문은 매출 2853억원, 영업이익 155억원을 기록했다. 반면 음악 부문은 매출이 3.6% 늘어난 2044억원을 달성했음에도 73억원의 영업손실을 냈다. INI와 JO1의 글로벌 투어 및 음반 판매가 외형을 견인했으나 신규 아티스트 육성과 엠넷플러스 오리지널 IP 투자가 비용 부담으로 작용했다. KCON LA 2026에는 14만명이 방문했으나 즉각적인 수익 개선으로 이어지지 못했다. 커머스 부문 매출은 3489억원, 영업이익은 67억원을 기록했다. 모바일 콘텐츠 커머스 취급고가 104% 증가했으나 크리에이터 비즈니스 플랫폼 온트너 구축 등 신규 투자로 영업이익은 줄었다.",
-   "reason": "CJ ENM 3분기 실적 및 부문별 세부 분석",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 1
-  },
-  {
    "id": "9e7e55bbaf42",
    "title": "너무 많이 알아서 문제? 오픈AI 똑똑한 비서가 불안한 이유",
    "url": "https://www.fortunekorea.co.kr/news/articleView.html?idxno=54664",
@@ -1393,6 +1374,15 @@
    "section": "ent_content",
    "stage": "수동",
    "reason": "기준 미달(수동 제외)"
+  },
+  {
+   "title": "CJ ENM, 3분기 매출 1조1904억원…티빙 흑자 전환에도 음악·커머스 수익성 부담",
+   "url": "http://www.biztribune.co.kr/news/articleView.html?idxno=362064",
+   "press": "비즈트리뷴",
+   "pub_date": "2026-11-06T15:04:00+09:00",
+   "section": "ent_content",
+   "stage": "담당자",
+   "reason": "담당자 제외: 같은 실적 발표 3번째 기사(2건까지)"
   }
  ]
 }

@@ -134,25 +134,6 @@
    "cluster_size": 2
   },
   {
-   "id": "0b26f3238320",
-   "title": "리센느, 'With' 들으며 달린다…지니뮤직X런데이 러닝 챌린지 참여",
-   "url": "https://www.slist.kr/news/articleView.html?idxno=779152",
-   "press": "싱글리스트",
-   "pub_date": "2026-11-05T09:00:00+09:00",
-   "date_label": "26.11.05",
-   "section": "fandom_music",
-   "subsection": "music_platform",
-   "importance": 3,
-   "kind": "news",
-   "must_include": false,
-   "summary": "걸그룹 리센느가 새 앨범 발매를 맞아 팬들과 함께하는 러닝 챌린지를 진행한다. KT지니뮤직과 운동 애플리케이션 런데이는 5일 리센느와 협업한 'Run With You' 챌린지를 시작한다고 밝혔다. 이번 행사는 리센느의 네 번째 미니앨범 'PULSE' 발매와 연계해 마련됐다. 오는 22일까지 런데이 앱 내 '지니와 함께 뮤직런'에서 참여할 수 있다. 참가자들은 신보 타이틀곡 'With'를 비롯한 리센느의 노래 7곡을 들으며 달리기를 즐길 수 있다. 멤버 전원이 직접 녹음한 러닝 코칭 음성과 응원 메시지도 제공된다. 타이틀곡 'With'는 오랫동안 꿈꿔온 상대를 향해 달려가는 순간을 표현한 노래다. 잔잔한 도입부에서 강렬한 후렴으로 이어지는 구성이 특징이다. 참여자를 위한 이벤트도 마련됐다. 챌린지를 완료하고 인스타그램에 인증한 이용자 가운데 추첨을 통해 리센느 사인 티셔츠와 앨범, 커피 기프티콘 등을 증정한다.",
-   "reason": "지니뮤직 러닝 챌린지 이벤트",
-   "tags": [],
-   "series": null,
-   "lang": "ko",
-   "cluster_size": 1
-  },
-  {
    "id": "fe998bd99404",
    "title": "[기획] 걸그룹 베스티, AI 음원 홍수 속 11년 만의 차트 반란",
    "url": "https://www.nbntv.co.kr/news/articleView.html?idxno=4026944",
@@ -1794,6 +1775,15 @@
    "stage": "수동 점검",
    "reason": "해외 선거·정치 결과 AI 규제 기사(제외 기준)",
    "section": "ai_tech"
+  },
+  {
+   "title": "리센느, 'With' 들으며 달린다…지니뮤직X런데이 러닝 챌린지 참여",
+   "url": "https://www.slist.kr/news/articleView.html?idxno=779152",
+   "press": "싱글리스트",
+   "pub_date": "2026-11-05T09:00:00+09:00",
+   "section": "fandom_music",
+   "stage": "담당자",
+   "reason": "담당자 제외: 음원 플랫폼 제휴 이벤트성 공지"
   }
  ],
  "manual_review": "2026-11-05 수동 점검: 13건 제외, 1건 추가(T1 서울스카이), 분류 1건 수정"
