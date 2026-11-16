@@ -149,6 +149,27 @@
    "cluster_size": 1
   },
   {
+   "id": "870f6fb05176",
+   "title": "KT지니뮤직 3분기 영업익 39억9400만원…29.93% 감소",
+   "url": "https://www.vegannews.co.kr/news/article.html?no=404210",
+   "press": "",
+   "pub_date": "2026-11-12T22:52:00+09:00",
+   "date_label": "26.11.12",
+   "section": "fandom_music",
+   "subsection": "music_platform",
+   "importance": 3,
+   "kind": "news",
+   "must_include": false,
+   "summary": "KT지니뮤직의 3분기 영업이익이 39억9400만원으로 29.93% 감소했다.",
+   "reason": "KT지니뮤직 3분기 영업익 29.93% 감소",
+   "tags": [
+    "수동 추가"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
    "id": "179ecc1ee6d7",
    "title": "NVIDIA’s venture arm asks court to block UMG and Sony’s demand for testimony in Suno lawsuit, calling itself a ‘passive minority investor’",
    "url": "https://www.musicbusinessworldwide.com/nvidias-venture-arm-asks-court-to-block-umg-and-sonys-demand-for-testimony-in-suno-lawsuit-calling-itself-a-passive-minority-investor/",
@@ -635,15 +656,6 @@
    "stage": "1차",
    "reason": "같은 사안 대표 기사로 검토",
    "section": "ai_tech"
-  },
-  {
-   "title": "KT지니뮤직 3분기 영업익 39억9400만원…29.93% 감소",
-   "url": "https://www.vegannews.co.kr/news/article.html?no=404210",
-   "press": "",
-   "pub_date": "2026-11-12T22:52:00+09:00",
-   "stage": "1차",
-   "reason": "같은 사안 대표 기사로 검토",
-   "section": "fandom_music"
   },
   {
    "title": "루닛 수익성 개선 속도…3분기 EBITDA 손실 77% 줄였다",

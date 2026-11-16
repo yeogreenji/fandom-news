@@ -168,6 +168,27 @@
    "cluster_size": 6
   },
   {
+   "id": "3e53d6caf1dc",
+   "title": "하이브 3Q 최대 실적 썼지만… 오프라인 쏠림에 위버스 결제액은 19% 뚝",
+   "url": "https://it.chosun.com/news/articleView.html?idxno=3000000000170",
+   "press": "",
+   "pub_date": "2026-11-03T17:38:00+09:00",
+   "date_label": "26.11.03",
+   "section": "fandom_music",
+   "subsection": "fan_platform",
+   "importance": 3,
+   "kind": "news",
+   "must_include": false,
+   "summary": "하이브가 3분기 최대 실적을 기록했지만, 오프라인 쏠림 속에 위버스 결제액은 19% 감소했다.",
+   "reason": "하이브 3분기 최대 실적, 위버스 결제액 19% 감소",
+   "tags": [
+    "수동 추가"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
    "id": "3c2add862a9c",
    "title": "Warner Music Buys Back Part of German Distributor Zebralution, Expanding Reach in Europe",
    "url": "https://www.billboard.com/pro/warner-music-group-buys-back-distributor-zebralution/",
@@ -890,15 +911,6 @@
    "url": "https://news.dealsitetv.com/articles/177978",
    "press": "",
    "pub_date": "2026-11-03T17:54:00+09:00",
-   "stage": "1차",
-   "reason": "같은 사안 대표 기사로 검토",
-   "section": "ent_content"
-  },
-  {
-   "title": "하이브 3Q 최대 실적 썼지만… 오프라인 쏠림에 위버스 결제액은 19% 뚝",
-   "url": "https://it.chosun.com/news/articleView.html?idxno=3000000000170",
-   "press": "",
-   "pub_date": "2026-11-03T17:38:00+09:00",
    "stage": "1차",
    "reason": "같은 사안 대표 기사로 검토",
    "section": "ent_content"

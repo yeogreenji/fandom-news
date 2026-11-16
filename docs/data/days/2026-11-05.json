@@ -405,6 +405,27 @@
    "series": null,
    "lang": "ko",
    "cluster_size": 2
+  },
+  {
+   "id": "1b58233c77a4",
+   "title": "쇼피파이 매출 32% 증가…판매자 거래액은 1191억 달러",
+   "url": "http://coinreaders.com/267377",
+   "press": "코인리더스",
+   "pub_date": "2026-11-04T11:42:00+09:00",
+   "date_label": "26.11.04",
+   "section": "ai_tech",
+   "subsection": "ai_tech",
+   "importance": 3,
+   "kind": "news",
+   "must_include": false,
+   "summary": "쇼피파이의 매출이 32% 증가했고, 판매자 거래액은 1191억 달러로 집계됐다.",
+   "reason": "쇼피파이 3분기 실적, 매출 32% 증가",
+   "tags": [
+    "수동 추가"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
   }
  ],
  "excluded": [
@@ -1397,15 +1418,6 @@
    "stage": "2차",
    "reason": "일반 기업용 AI 솔루션 플랫폼 출시",
    "section": "ai_tech"
-  },
-  {
-   "title": "쇼피파이 매출 32% 증가…판매자 거래액은 1191억 달러",
-   "url": "http://coinreaders.com/267377",
-   "press": "코인리더스",
-   "pub_date": "2026-11-04T11:42:00+09:00",
-   "stage": "2차",
-   "reason": "일반 이커머스 플랫폼 실적 발표",
-   "section": "ent_content"
   },
   {
    "title": "한진 훗타운, 11월 직구 배송비 최대 50% 할인",

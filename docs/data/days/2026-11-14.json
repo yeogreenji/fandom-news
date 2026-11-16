@@ -71,6 +71,27 @@
  },
  "items": [
   {
+   "id": "3dbbedf118e7",
+   "title": "이승철, 데뷔 40년 만에 팬클럽 ‘패밀리’ 출범…비스테이지서 만난다",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=01338246645645720&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "press": "이데일리",
+   "pub_date": "2026-11-14T05:47:00+09:00",
+   "date_label": "26.11.14",
+   "section": "own",
+   "subsection": "own",
+   "importance": 5,
+   "kind": "news",
+   "must_include": true,
+   "summary": "가수 이승철이 데뷔 40년 만에 팬클럽 ‘패밀리’를 출범한다. **팬클럽은 비스테이지에서 팬들과 만난다.**",
+   "reason": "비스테이지 이승철 팬클럽 ‘패밀리’ 출범",
+   "tags": [
+    "수동 추가"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
    "id": "631286a6ce38",
    "title": "타이탄콘텐츠 첫 버추얼 보이그룹 'WINKX', 27일 데뷔 확정",
    "url": "https://www.nc.press/news/articleView.html?idxno=630948",
@@ -123,6 +144,27 @@
    "summary": "엠넷은 지난해 4편에 달했던 TV 경연 프로그램을 올해 절반인 2편으로 줄이는 대신, 자체 플랫폼 엠넷플러스의 오리지널 콘텐츠 투자를 늘리며 무게추를 옮겼다. 지난 1월 쇼미더머니12는 티빙과 공동 제작해 TV와 OTT의 시너지를 꾀했고 스트릿 월드 파이터 : 디렉터스 워는 댄서의 기량에 퍼포먼스 디렉터의 연출 대결을 더해 포맷 변주를 시도했다. 엠넷플러스는 올해 상반기 워너원의 재결합을 담은 워너원고를 비롯해 숨바꼭질2, IDOL'S TABLE 등 아티스트의 일상과 팬 소통에 초점을 맞춘 오리지널 콘텐츠를 잇달아 선보였다. 엠넷플러스는 지난해 기준 누적 가입자 4000만 명, 월간 활성 이용자 2000만 명을 넘어섰으며 전체 트래픽의 약 80%가 해외에서 발생하고 있다. 내년 2027년 방송을 목표로 슈퍼스타K를 약 11년 만에 재개하고 글로벌 걸그룹 오디션 걸스플래닛2027도 준비 중이다.",
    "reason": "엠넷플러스 플랫폼 전략 및 오디션 확대",
    "tags": [],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
+   "id": "dc6bc6d7ddfa",
+   "title": "연말 종료 바이브… 내 재생목록, 다른 음악 앱으로 옮기려면",
+   "url": "https://it.chosun.com/news/articleView.html?idxno=3000000001015",
+   "press": "",
+   "pub_date": "2026-11-14T05:00:00+09:00",
+   "date_label": "26.11.14",
+   "section": "fandom_music",
+   "subsection": "music_platform",
+   "importance": 3,
+   "kind": "news",
+   "must_include": false,
+   "summary": "바이브가 연말 서비스를 종료하면서, 이용자가 재생목록을 다른 음악 앱으로 옮기는 방법이 안내됐다.",
+   "reason": "바이브 연말 서비스 종료, 재생목록 이전 방법",
+   "tags": [
+    "수동 추가"
+   ],
    "series": null,
    "lang": "ko",
    "cluster_size": 1
@@ -1156,15 +1198,6 @@
    "section": "ai_tech"
   },
   {
-   "title": "연말 종료 바이브… 내 재생목록, 다른 음악 앱으로 옮기려면",
-   "url": "https://it.chosun.com/news/articleView.html?idxno=3000000001015",
-   "press": "",
-   "pub_date": "2026-11-14T05:00:00+09:00",
-   "stage": "1차",
-   "reason": "같은 사안 대표 기사로 검토",
-   "section": "fandom_music"
-  },
-  {
    "title": "법률사무소 클라비스, 연말 콘서트 티켓 양도 사기 피해자 법률지원",
    "url": "https://www.lawissue.co.kr/view.php?ud=20261113091120173537600e7ec7_12",
    "press": "",
@@ -1640,15 +1673,6 @@
    "section": "ent_content",
    "stage": "중복",
    "reason": "같은 사안: 하이브, 글로벌 리더 80여명 한자리에…중장기 성장 전략 논의"
-  },
-  {
-   "title": "이승철, 데뷔 40년 만에 팬클럽 ‘패밀리’ 출범…비스테이지서 만난다",
-   "url": "https://www.edaily.co.kr/News/Read?newsId=01338246645645720&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-   "press": "이데일리",
-   "pub_date": "2026-11-14T05:47:00+09:00",
-   "section": "own",
-   "stage": "중복",
-   "reason": "최근 게재분과 같은 사안: 비마이프렌즈, 이승철 팬클럽 모집"
   },
   {
    "title": "플로, 루시와 함께 신곡 응원 이벤트",
