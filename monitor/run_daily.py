@@ -152,6 +152,13 @@ def drop_repeats(records: list[dict], day: str, days: int = 4) -> dict[str, str]
         need = 8 if r.get("section") == "own" else 13
         for j, p in enumerate(recent):
             if len({w for w in toks[i] & toks[len(records) + j] if df[w] <= lim}) >= need:
+                # 자사는 같은 형식의 보도자료(예: 플로 응원권 이벤트)가 아티스트만 바꿔 반복되므로
+                # 제목의 고유명사(아티스트·고객사·행사명)가 하나도 안 겹치면 다른 사안으로 본다
+                if r.get("section") == "own" and p.get("section") == "own":
+                    shared = {w for w in topic_tokens(r["title"]) & topic_tokens(p["title"])
+                              if w not in _OWN_GENERIC and not w.isdigit()}
+                    if not shared:
+                        continue
                 out[r["id"]] = p["title"]
                 break
         else:
@@ -702,8 +709,9 @@ def drop_thin_summaries(items: list[dict], cfg: dict, tried: set) -> int:
     floor, dropped = cfg.get("summary_drop_below", 250), 0
     for it in items:
         r = it.get("review") or {}
-        if not r.get("keep") or it["id"] not in tried or _is_own(it) or r.get("must_include") \
-                or priority_hit(it, cfg):
+        if not r.get("keep") or _is_own(it) or r.get("must_include"):
+            continue
+        if it["id"] not in tried and priority_hit(it, cfg, title_only=True):
             continue
         n = len((r.get("summary") or "").strip())
         if n < floor:
@@ -921,8 +929,12 @@ def main(argv=None):
         # 1차에서 중요도가 높게 나온 후보는 게재 건수와 관계없이 본문 검토(상한 넘어도 실을 기사 찾기)
         pmax = cfg.get("priority_review_max", 12)
         if not quota_out and overflow and pmax:
-            pri = [it for it in overflow if it["triage"].get("prio", it["triage"].get("importance", 0)) >= 4
-                   and not it["triage"].get("mate")][:pmax]
+            cand = [it for it in overflow if not it["triage"].get("mate")
+                    and (it["triage"].get("prio", it["triage"].get("importance", 0)) >= 4
+                         or (it["triage"].get("decision") != "exclude" and priority_hit(it, cfg, title_only=True)))]
+            cand.sort(key=lambda it: (not priority_hit(it, cfg, title_only=True),
+                                      -it["triage"].get("prio", it["triage"].get("importance", 0))))
+            pri = cand[:pmax]
             if pri:
                 ids = {it["id"] for it in pri}
                 overflow = [it for it in overflow if it["id"] not in ids]
