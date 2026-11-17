@@ -632,6 +632,27 @@
    "cluster_size": 4
   },
   {
+   "id": "ce6b163e2fdf",
+   "title": "티빙, 광고 매출 42% 늘어도 적자…팬덤으로 돌파구 찾는다",
+   "url": "https://www.newswhoplus.com/news/articleView.html?idxno=74250",
+   "press": "뉴스후플러스",
+   "pub_date": "2026-11-17T00:00:00+09:00",
+   "date_label": "26.11.17",
+   "section": "ent_content",
+   "subsection": "video_platform",
+   "importance": 4,
+   "kind": "trend",
+   "must_include": false,
+   "summary": "티빙이 광고사업과 해외 콘텐츠 유통을 확대하고 KBO·트로트·힙합 등 팬층이 뚜렷한 콘텐츠를 앞세워 수익성 개선에 나섰다. 올해 2분기 출범 후 첫 분기 흑자를 냈지만 3분기 다시 적자로 돌아서면서 1~3분기 누적 영업손실은 204억원을 기록했다. 개인정보 유출 보상비용의 추가 반영도 앞두고 있어 구독·광고 매출 성장으로 비용 부담을 얼마나 감당할 수 있을지가 관건이다. 티빙의 광고 매출은 올해 1분기 전년 동기 대비 35.3%, 2분기 52.2%, 3분기 42.1% 증가했으며, KBO 포스트시즌 특화 광고상품과 협찬·가상광고를 강화한다는 계획이다. 해외 유통사업도 일본 디즈니+, 아태지역 HBO Max에 이어 중동·북아프리카 샤히드에 브랜드관을 열며 유통망을 넓혔다. 또한 KBO 팬덤중계, 중장년층을 겨냥한 트로트 콘텐츠 가왕쇼, 대탈출 시리즈와 랩:퍼블릭 등 팬덤을 공략하는 콘텐츠를 강화하고, 24시간 커뮤니티 팬톡을 도입해 이용자 소통과 참여를 확대하고 있다.",
+   "reason": "티빙의 팬덤 콘텐츠 전략 및 수익성 분석",
+   "tags": [
+    "수동 추가"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
    "id": "7e617de1e751",
    "title": "\"AI 숏폼 크리에이터 모여라\" 스푼랩스 비글루, 2차 숏드라마 페스티벌 개최",
    "url": "https://www.techm.kr/news/articleView.html?idxno=157379",
@@ -1126,15 +1147,6 @@
    "url": "https://www.mt.co.kr/entertainment/2026/11/16/2026111619341680240",
    "press": "",
    "pub_date": "2026-11-16T20:03:00+09:00",
-   "stage": "1차",
-   "reason": "같은 사안 대표 기사로 검토",
-   "section": "ent_content"
-  },
-  {
-   "title": "티빙, 광고 매출 42% 늘어도 적자…팬덤으로 돌파구 찾는다",
-   "url": "https://www.newswhoplus.com/news/articleView.html?idxno=74250",
-   "press": "",
-   "pub_date": "2026-11-17T05:00:00+09:00",
    "stage": "1차",
    "reason": "같은 사안 대표 기사로 검토",
    "section": "ent_content"
