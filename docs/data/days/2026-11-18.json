@@ -605,6 +605,27 @@
    "cluster_size": 1
   },
   {
+   "id": "147bf372d046",
+   "title": "AI가 대신 쇼핑하고 결제한다…오픈AI ‘챗GPT 월렛’ 공개 | 미주중앙일보",
+   "url": "https://www.koreadaily.com/article/20261116185016237",
+   "press": "미주중앙일보 The Korea Daily",
+   "pub_date": "2026-11-17T00:00:00+09:00",
+   "date_label": "26.11.17",
+   "section": "ai_tech",
+   "subsection": "ai_tech",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "오픈AI가 아메리칸익스프레스, 마스터카드, 비자와 협력해 챗GPT의 AI 에이전트를 통해 상품 검색부터 결제까지 지원하는 '챗GPT 월렛'을 출시했다. 개인 AI 에이전트 '닷츠(dots)'가 이용자를 대신해 상품을 찾고 구매하는 구조로, 이용자가 크레딧카드 정보를 한 번 등록한 후 상품 추천을 받아 최종 보안 인증을 거쳐 승인하는 방식이다. 보안을 위해 AI 에이전트가 실제 카드 정보에 직접 접근하지 못하도록 카드 결제 네트워크가 일회성 결제 토큰을 생성해 제공한다. 기존 카드의 포인트 적립과 소비자 보호 혜택은 그대로 유지된다. 서비스는 우선 18세 이상 챗GPT 프로 유료 가입자를 대상으로 제공되며, 초기에는 별도 수수료를 받지 않고 가맹점 및 결제업체와의 협력 관계 구축에 주력할 방침이다. 한편 유통업계에서는 AI 에이전트의 상거래 접근을 두고 우려도 이어져 유나이티드항공과 아마존 등이 외부 AI 에이전트의 예약 및 구매를 차단·제한하고 있다.",
+   "reason": "오픈AI 챗GPT 월렛 공개 및 커머스 에이전트 확장",
+   "tags": [
+    "수동 추가"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
    "id": "0fd72c86a1e7",
    "title": "\"직장인들 근무시간에 몰래 딴짓했는데\"…오히려 반기는 기업 [박한신의 테크+]",
    "url": "https://www.hankyung.com/article/202611171694i",
@@ -1381,15 +1402,6 @@
    "url": "https://www.financialpost.co.kr/news/articleView.html?idxno=301403",
    "press": "",
    "pub_date": "2026-11-17T11:04:00+09:00",
-   "stage": "1차",
-   "reason": "같은 사안 대표 기사로 검토",
-   "section": "ai_tech"
-  },
-  {
-   "title": "AI가 대신 쇼핑하고 결제한다…오픈AI ‘챗GPT 월렛’ 공개",
-   "url": "https://www.koreadaily.com/article/20261116185016237",
-   "press": "",
-   "pub_date": "2026-11-17T11:52:00+09:00",
    "stage": "1차",
    "reason": "같은 사안 대표 기사로 검토",
    "section": "ai_tech"
