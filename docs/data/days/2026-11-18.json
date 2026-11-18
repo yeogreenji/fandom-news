@@ -603,6 +603,27 @@
    "cluster_size": 1
   },
   {
+   "id": "15c26507fb39",
+   "title": "오픈AI, GPT-6.2 아스트라·솔 출시…API 가격 최대 20% 인하 - IT조선",
+   "url": "https://it.chosun.com/news/articleView.html?idxno=3000000001267",
+   "press": "IT조선",
+   "pub_date": "2026-11-18T00:00:00+09:00",
+   "date_label": "26.11.18",
+   "section": "ai_tech",
+   "subsection": "ai_tech",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "오픈AI가 전문 업무와 코딩 성능을 강화한 인공지능 모델 ‘GPT-6.2 아스트라’와 ‘GPT-6.2 솔’을 공개했다. 아스트라는 복잡한 추론과 문서·프레젠테이션 제작, 소프트웨어 개발, 과학 연구 등 전문 업무에 특화한 최상위 모델이며, 솔은 일반 코딩과 AI 에이전트 업무를 저렴하게 처리하는 데 초점을 맞췄다. 자체 평가 결과 아스트라는 ‘에이전츠 라스트 이그잼’에서 기존 GPT-6 아스트라보다 5.2%포인트, 클로드 페이블 5.2보다 5.5%포인트 높은 성적을 냈고 작업당 비용은 대폭 줄였다. 솔 역시 ‘프런티어코드 2.0’에서 아스트라와 유사한 코딩 성능을 보이면서 작업 비용은 5분의 1 수준으로 낮췄다. API 가격은 아스트라가 100만토큰당 입력 8달러, 출력 40달러로 전작 대비 20% 인하됐으며, 솔은 기존 가격을 유지한다. 보안 평가에서 사이버보안 역량이 최고 위험 등급에 도달함에 따라 고위험 요청 제한과 모델 감시도 강화했다. 두 모델은 챗GPT 워크와 코덱스, 오픈AI API를 통해 제공된다.",
+   "reason": "오픈AI 신규 모델 출시 및 API 가격 인하",
+   "tags": [
+    "수동 추가"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
    "id": "6a53d13c841c",
    "title": "사이오닉에이아이, 조직 지식 공유하는 기업용 AI 에이전트 ‘스톰 에이전트’ 선봬",
    "url": "https://www.epnc.co.kr/news/articleView.html?idxno=409860",
@@ -1375,15 +1396,6 @@
    "url": "https://www.ddaily.co.kr/page/view/2026111712480963397",
    "press": "",
    "pub_date": "2026-11-17T13:26:00+09:00",
-   "stage": "1차",
-   "reason": "같은 사안 대표 기사로 검토",
-   "section": "ai_tech"
-  },
-  {
-   "title": "오픈AI, GPT-6.2 아스트라·솔 출시…API 가격 최대 20% 인하",
-   "url": "https://it.chosun.com/news/articleView.html?idxno=3000000001267",
-   "press": "",
-   "pub_date": "2026-11-18T08:34:00+09:00",
    "stage": "1차",
    "reason": "같은 사안 대표 기사로 검토",
    "section": "ai_tech"
