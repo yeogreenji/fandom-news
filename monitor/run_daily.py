@@ -931,9 +931,22 @@ def main(argv=None):
         # 1차에서 중요도가 높게 나온 후보는 게재 건수와 관계없이 본문 검토(상한 넘어도 실을 기사 찾기)
         pmax = cfg.get("priority_review_max", 12)
         if not quota_out and overflow and pmax:
-            cand = [it for it in overflow if not it["triage"].get("mate")
-                    and (it["triage"].get("prio", it["triage"].get("importance", 0)) >= 4
-                         or (it["triage"].get("decision") != "exclude" and priority_hit(it, cfg, title_only=True)))]
+            # 핵심 경쟁·유통 플랫폼 키워드 기사는 '같은 사안 mate' 표시가 있어도 대표로 검토한다
+            # (대표 기사가 목록에 없어 통째로 빠지는 일 방지). 같은 사안 묶음당 1건만.
+            cand = [it for it in overflow
+                    if (not it["triage"].get("mate")
+                        and it["triage"].get("prio", it["triage"].get("importance", 0)) >= 4)
+                    or (it["triage"].get("decision") != "exclude" and priority_hit(it, cfg, title_only=True))]
+            _seen_rep: set = set()
+            _uniq = []
+            for it in sorted(cand, key=lambda x: (not priority_hit(x, cfg, title_only=True))):
+                rid = it["triage"].get("rep_id") if it["triage"].get("mate") else None
+                if rid and rid in _seen_rep:
+                    continue
+                if rid:
+                    _seen_rep.add(rid)
+                _uniq.append(it)
+            cand = _uniq
             cand.sort(key=lambda it: (not priority_hit(it, cfg, title_only=True),
                                       -it["triage"].get("prio", it["triage"].get("importance", 0))))
             pri = cand[:pmax]
@@ -944,6 +957,30 @@ def main(argv=None):
                 quota_out = run_review(pri, cfg)
                 to_review += pri
                 stats["priority_review"] = len(pri)
+        # 고아 mate 구제: 대표 기사가 본문 검토를 받지 않았는데 '같은 사안 대표 기사로 검토'로 빠진 기사는
+        # 사실상 아무도 검토하지 않은 것이므로 묶음당 1건씩 검토한다(경쟁 플랫폼·자사 우선)
+        if not quota_out and overflow:
+            reviewed_ids = {it["id"] for it in to_review}
+            orphans = [it for it in overflow if it["triage"].get("mate")
+                       and it["triage"].get("rep_id") not in reviewed_ids
+                       and it["triage"].get("decision") != "exclude"]
+            orphans.sort(key=lambda it: (not priority_hit(it, cfg), -it["triage"].get("prio", it["triage"].get("importance", 0))))
+            picked, used_rep = [], set()
+            for it in orphans:
+                rid = it["triage"].get("rep_id")
+                if rid in used_rep:
+                    continue
+                used_rep.add(rid)
+                picked.append(it)
+                if len(picked) >= cfg.get("orphan_review_max", 15):
+                    break
+            if picked:
+                ids = {it["id"] for it in picked}
+                overflow = [it for it in overflow if it["id"] not in ids]
+                log.info("대표 기사가 검토되지 않은 같은 사안 기사 %d건을 대신 검토", len(picked))
+                quota_out = run_review(picked, cfg)
+                to_review += picked
+                stats["orphan_review"] = len(picked)
         excluded += [excluded_record(it, "1차", "같은 사안 대표 기사로 검토" if it["triage"].get("mate") else "검토 한도 초과")
                      for it in overflow]
         if not quota_out:
