@@ -981,6 +981,22 @@ def main(argv=None):
                 quota_out = run_review(picked, cfg)
                 to_review += picked
                 stats["orphan_review"] = len(picked)
+        # 1차에서 '포함/보류, 중요도 3 이상'으로 판단했는데 한도 때문에 본문 검토를 못 받은 기사는 버리지 않고
+        # 남은 시간 안에서 더 검토한다(찾기로 한 기사가 한도 때문에 빠지는 것 방지). 자사·경쟁 플랫폼 키워드 우선.
+        if not quota_out and overflow:
+            worth = [it for it in overflow if it["triage"].get("decision") != "exclude"
+                     and it["triage"].get("importance", 0) >= cfg.get("min_importance", 3)
+                     and it["triage"].get("ai")]
+            worth.sort(key=lambda it: ("own" not in it["section_hints"], not priority_hit(it, cfg),
+                                       -it["triage"].get("prio", it["triage"].get("importance", 0))))
+            more = worth[:cfg.get("overflow_review_max", 30)]
+            if more:
+                ids = {it["id"] for it in more}
+                overflow = [it for it in overflow if it["id"] not in ids]
+                log.info("한도 초과였던 중요 후보 %d건 추가 검토", len(more))
+                quota_out = run_review(more, cfg)
+                to_review += more
+                stats["overflow_review"] = len(more)
         excluded += [excluded_record(it, "1차", "같은 사안 대표 기사로 검토" if it["triage"].get("mate") else "검토 한도 초과")
                      for it in overflow]
         if not quota_out:

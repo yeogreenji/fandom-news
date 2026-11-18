@@ -79,6 +79,8 @@ must_include_overflow: 10
 priority_review_max: 30
 # 대표 기사가 검토되지 않은 '같은 사안' 기사를 대신 검토하는 최대 묶음 수
 orphan_review_max: 15
+# 1차에서 중요도 3 이상이었는데 검토 한도에 걸린 기사를 추가로 본문 검토하는 최대 건수
+overflow_review_max: 30
 # 섹션별 최소 본문 검토 건수(다른 섹션에 밀려 통째로 빠지지 않게)
 review_reserve:
   ai_tech: 8
