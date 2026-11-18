@@ -269,6 +269,27 @@
    "cluster_size": 1
   },
   {
+   "id": "9e89639f8190",
+   "title": "애플TV에서 팟캐스트 공짜로 본다…애플, 유튜브·스포티파이에 도전장",
+   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=715904",
+   "press": "디지털투데이",
+   "pub_date": "2026-11-17T00:00:00+09:00",
+   "date_label": "26.11.17",
+   "section": "fandom_music",
+   "subsection": "global_music",
+   "importance": 3,
+   "kind": "news",
+   "must_include": false,
+   "summary": "애플이 동영상 스트리밍 플랫폼 애플TV에 비디오 팟캐스트 전용 섹션을 추가하며 유튜브와 스포티파이 등과의 콘텐츠 경쟁에 나섰다. 애플은 배포한 iOS 27.3 두 번째 개발자 베타에서 애플TV 앱의 비디오 팟캐스트 기능을 시험하기 시작했으며, 기존 애플 팟캐스트 앱의 동영상 콘텐츠를 애플TV 앱에서도 볼 수 있게 지원한다. 정식 도입 후에는 애플TV 4K, 아이폰, 아이패드, 맥 및 지원 스마트TV 등에서 애플TV 유료 구독 없이도 무료로 시청할 수 있다. 제작자 역시 별도 절차 없이 배포 범위를 넓히며 기존 광고 운영과 수익화 권한을 유지하고 앱 간 재생 기록 동기화도 지원된다. 스포티파이가 지난해 tvOS 앱으로 비디오 팟캐스트를 확대하고 유튜브와 넷플릭스 등도 비디오 팟캐스트를 강화하는 가운데 애플도 거실 TV 환경으로 기능을 넓히고 있다. 다만 해당 서비스는 미국, 영국, 캐나다, 호주, 멕시코 5개국에서 우선 제공되며 한국 출시 일정은 공개되지 않았다.",
+   "reason": "담당자 지정 기사(애플TV 팟캐스트 경쟁)",
+   "tags": [
+    "수동 추가"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
    "id": "72d14bf2d51f",
    "title": "웨이브 'MMA2026' 이틀 연속 라이브 채널 1위…'4K 다시보기·아티스트 클립' 호평",
    "url": "https://www.newsworks.co.kr/news/articleView.html?idxno=903296",
@@ -1432,15 +1453,6 @@
    "stage": "1차",
    "reason": "같은 사안 대표 기사로 검토",
    "section": "ai_tech"
-  },
-  {
-   "title": "애플TV에서 팟캐스트 공짜로 본다…애플, 유튜브·스포티파이에 도전장",
-   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=715904",
-   "press": "",
-   "pub_date": "2026-11-17T09:34:00+09:00",
-   "stage": "1차",
-   "reason": "같은 사안 대표 기사로 검토",
-   "section": "fandom_music"
   },
   {
    "title": "[비즈피플] \"부동산 개발 사업성 검토를 소프트웨어로\"…석혜주 인리얼...",
