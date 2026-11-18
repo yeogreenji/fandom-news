@@ -288,6 +288,27 @@
    "cluster_size": 1
   },
   {
+   "id": "b8ed3940b71b",
+   "title": "Universal and Sony fight Suno’s bid to freeze second lawsuit, warning its latest AI models could escape scrutiny until at least 2028 - Music Business Worldwide",
+   "url": "https://www.musicbusinessworldwide.com/universal-and-sony-fight-sunos-bid-to-freeze-second-lawsuit-warning-its-latest-ai-models-could-escape-scrutiny-until-at-least-2028/",
+   "press": "Music Business Worldwide",
+   "pub_date": "2026-11-17T00:00:00+09:00",
+   "date_label": "26.11.17",
+   "section": "fandom_music",
+   "subsection": "music_ai_rights",
+   "importance": 5,
+   "kind": "news",
+   "must_include": true,
+   "summary": "유니버설 뮤직 그룹과 소니 뮤직 엔터테인먼트가 AI 음악 기업 수노를 상대로 제기한 두 번째 저작권 소송의 전면 중단 요구에 강력하게 반발하고 나섰다. 법원에 제출된 문건에 따르면, 양사는 수노가 제기한 소송 중단 신청이 받아들여질 경우 2025년과 2026년에 출시된 새로운 AI 모델에 대한 독립적인 검증이 최소 2028년까지 지연될 수 있다고 경고했다. 수노는 첫 번째 소송의 약식판결 결과가 나올 때까지 두 번째 소송을 멈춰달라고 요구했으나, 대형 음반사들은 최신 모델과 라이선스 및 사업 행위에 대한 증거 수집이 중단되어서는 안 된다고 맞서고 있다. 이번 공방은 AI 음악 기업의 저작권 침해 혐의와 라이선스 범위에 대한 사법적 판단 주기를 둘러싸고 글로벌 음악 산업 전반에 큰 파장을 미칠 것으로 분석된다.",
+   "reason": "유니버셜과 소니의 수노 상대 저작권 소송",
+   "tags": [
+    "수동 추가"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
    "id": "edde38bd8b20",
    "title": "태연→나연, 5일째 1위 'AI 보컬' 머무르 넘을까 [MD뮤직]",
    "url": "https://www.mydaily.co.kr/page/view/2026111800074046188",
@@ -856,15 +877,6 @@
    "url": "https://www.hankyung.com/article/202611171245i",
    "press": "",
    "pub_date": "2026-11-17T10:11:00+09:00",
-   "stage": "1차",
-   "reason": "같은 사안 대표 기사로 검토",
-   "section": "fandom_music"
-  },
-  {
-   "title": "Universal and Sony fight Suno’s bid to freeze second lawsuit, warning its latest AI models could escape scrutiny until at least 2028",
-   "url": "https://www.musicbusinessworldwide.com/universal-and-sony-fight-sunos-bid-to-freeze-second-lawsuit-warning-its-latest-ai-models-could-escape-scrutiny-until-at-least-2028/",
-   "press": "Music Business Worldwide",
-   "pub_date": "2026-11-18T02:53:09+09:00",
    "stage": "1차",
    "reason": "같은 사안 대표 기사로 검토",
    "section": "fandom_music"
