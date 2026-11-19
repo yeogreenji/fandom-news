@@ -363,6 +363,27 @@
    "cluster_size": 1
   },
   {
+   "id": "1314dd93294f",
+   "title": "카페24, 부산서 이커머스·물류·금융 전략 공유 행사 개최",
+   "url": "https://www.lawissue.co.kr/view.php?ud=20261118155943513204ead0791_12",
+   "press": "로이슈",
+   "pub_date": "2026-11-18T00:00:00+09:00",
+   "date_label": "26.11.18",
+   "section": "ent_content",
+   "subsection": "fandom_commerce",
+   "importance": 3,
+   "kind": "news",
+   "must_include": false,
+   "summary": "카페24는 부산에서 온라인 쇼핑몰 구축과 운영, 상품 소싱, 마케팅, 고객 응대 등 전자상거래 사업 전반에 관한 내용을 다루는 이커머스 및 물류, 금융 전략 공유 행사를 개최한다. 이번 행사에는 DHL코리아와 부산은행이 참여해 국제 배송 체계, 통관, 수출입 실무와 환율 동향, 수출금융 활용 방안 등을 주제로 강연을 진행하며, 강연 종료 후에는 상품 조달과 판로 확대, 물류 운영, 금융 서비스 활용 등 사업 현장에서 발생하는 실무 과제에 대한 분야별 전문가 상담 프로그램이 마련된다. 회사 측은 온라인 사업 운영 과정에서 필요한 주요 분야를 중심으로 실무 정보를 전달할 예정이라고 설명했다.",
+   "reason": "카페24 이커머스 전략 행사 개최 소식",
+   "tags": [
+    "수동 추가"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
    "id": "b1812c595da4",
    "title": "사방넷, 알림톡 기능 강화… \"오픈마켓 고객 접점 넓혀\"",
    "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=281606",
@@ -1319,15 +1340,6 @@
    "pub_date": "2026-11-18T13:53:00+09:00",
    "stage": "2차",
    "reason": "실존-버추얼 아이돌 협업 싱글 발매 단신",
-   "section": "ent_content"
-  },
-  {
-   "title": "카페24, 부산서 이커머스·물류·금융 전략 공유 행사 개최",
-   "url": "https://www.lawissue.co.kr/view.php?ud=20261118155943513204ead0791_12",
-   "press": "로이슈",
-   "pub_date": "2026-11-18T16:02:00+09:00",
-   "stage": "2차",
-   "reason": "엔터 팬덤과 무관한 이커머스 행사",
    "section": "ent_content"
   },
   {
