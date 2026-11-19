@@ -131,6 +131,27 @@
    "cluster_size": 1
   },
   {
+   "id": "fbe727ac3fcf",
+   "title": "공연장 차면 호텔도 웃는다…K팝 팬, 일반 관광객보다 44% 더 썼다-키움 - 머니투데이",
+   "url": "https://www.mt.co.kr/stock/2026/11/18/2026111809355319903",
+   "press": "머니투데이",
+   "pub_date": "2026-11-18T00:00:00+09:00",
+   "date_label": "26.11.18",
+   "section": "fandom_music",
+   "subsection": "fan_platform",
+   "importance": 4,
+   "kind": "trend",
+   "must_include": false,
+   "summary": "키움증권은 17일 발표한 산업 전망 리포트를 통해 내년 국내 엔터 4사의 합산 영업이익이 올해보다 51.8% 늘어난 1조125억원에 달할 것으로 전망했다. 하이브, 에스엠, JYP, 와이지엔터테인먼트 등 엔터 4사는 데뷔 4년차 아이돌의 대거 진입으로 공연 체급을 키우며 수익성이 개선될 것으로 예상됐다. 특히 K팝 콘서트를 보러 한국을 찾은 외국인은 일반 방한객보다 평균 2.6일 더 머물고 여행 경비를 44% 더 썼으며, 이러한 팬덤 소비는 호텔과 카지노 등 레저 업종의 동반 성장으로 이어질 것으로 분석됐다.",
+   "reason": "K팝 투어와 팬덤 소비가 엔터사 및 관광·레저 실적에 미치는 영향을 분석한 리포트",
+   "tags": [
+    "수동 추가"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
    "id": "82336ae4c717",
    "title": "[뉴스워커_CJ ENM] 아이브 공연 34개 지역서 시청권 구매…엠넷플러스 글로벌 이용 확대",
    "url": "https://www.newsworker.co.kr/news/articleView.html?idxno=514709",
@@ -1059,15 +1080,6 @@
    "url": "http://www.osen.co.kr/article/G1112911657",
    "press": "",
    "pub_date": "2026-11-18T11:28:00+09:00",
-   "stage": "1차",
-   "reason": "같은 사안 대표 기사로 검토",
-   "section": "ent_content"
-  },
-  {
-   "title": "공연장 차면 호텔도 웃는다…K팝 팬, 일반 관광객보다 44% 더 썼다-키움",
-   "url": "https://www.mt.co.kr/stock/2026/11/18/2026111809355319903",
-   "press": "",
-   "pub_date": "2026-11-18T09:37:00+09:00",
    "stage": "1차",
    "reason": "같은 사안 대표 기사로 검토",
    "section": "ent_content"
