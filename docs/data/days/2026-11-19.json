@@ -579,6 +579,27 @@
    "cluster_size": 1
   },
   {
+   "id": "6b1c3a370349",
+   "title": "구글, 세계 3위 성능 '제미나이 4 네온' 출시…작업 비용 32% 절감 - AI타임스",
+   "url": "https://www.aitimes.com/news/articleView.html?idxno=217546",
+   "press": "AI타임스",
+   "pub_date": "2026-11-19T00:00:00+09:00",
+   "date_label": "26.11.19",
+   "section": "ai_tech",
+   "subsection": "ai_tech",
+   "importance": 4,
+   "kind": "news",
+   "must_include": false,
+   "summary": "구글이 최상위 모델에 준하는 성능을 유지하면서 복잡한 업무 처리 비용을 낮춘 '제미나이 4 네온'을 출시했다. 네온은 복잡한 작업에 특화된 카본과 일상 업무를 처리하는 하이드로젠 사이에 위치해 높은 추론 성능과 비용 효율성을 동시에 확보했다. 아티피셜 애널리시스 지능지수 평가에서 최고 추론 단계 기준 61점을 받아 클로드 페이블 5.2, GPT-6.2 아스트라에 이어 3위를 기록했다. 기본 설정 기준 작업당 비용은 카본 대비 32% 낮고, 재피어 오토메이션벤치에서는 56.3%의 성공률로 1위에 올랐다. 코딩 에이전트 지수 58.6점, 터미널벤치 4.1에서 65.2%를 기록하는 등 코딩 성능도 대폭 개선됐다. 네온은 장시간 실행되는 AI 에이전트 작업에 맞춰 여러 하위 작업을 병렬 지휘하는 오케스트레이터 역할을 수행할 수 있다. 최대 100만 토큰 컨텍스트를 지원하며 API 가격은 입력 100만 토큰당 3달러, 출력 15달러로 책정됐다.",
+   "reason": "구글 신규 고효율 AI 모델 출시",
+   "tags": [
+    "수동 추가"
+   ],
+   "series": null,
+   "lang": "ko",
+   "cluster_size": 1
+  },
+  {
    "id": "c72bf18fecac",
    "title": "UMG and Sony withdraw DistroKid subpoena motion in Suno case after distributor produces AI-detection documents",
    "url": "https://www.musicbusinessworldwide.com/umg-and-sony-withdraw-distrokid-subpoena-motion-in-suno-case-after-distributor-produces-ai-detection-documents/",
@@ -1815,15 +1836,6 @@
    "section": "ent_content",
    "stage": "중복",
    "reason": "같은 날 같은 사안: 한국 진출 5년 디즈니플러스 “K콘텐츠 투자 늘리겠다”"
-  },
-  {
-   "title": "구글, 세계 3위 성능 '제미나이 4 네온' 출시…작업 비용 32% 절감",
-   "url": "https://www.aitimes.com/news/articleView.html?idxno=217546",
-   "press": "AI타임스",
-   "pub_date": "2026-11-19T08:40:00+09:00",
-   "section": "ai_tech",
-   "stage": "2차",
-   "reason": "섹션 한도 초과"
   },
   {
    "title": "젠슨 황 사태에 MS \"엔비디아 대체재 찾는 고객사 늘어날듯\"",
