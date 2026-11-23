@@ -723,6 +723,26 @@ def drop_thin_summaries(items: list[dict], cfg: dict, tried: set) -> int:
     return dropped
 
 
+def to_curly_quotes(s: str) -> str:
+    """직선 따옴표(' ")를 둥근따옴표(‘ ’ “ ”)로 바꾼다. 영단어 속 아포스트로피는 ’."""
+    out, dq, sq = [], False, False
+    for i, c in enumerate(s):
+        if c == '"':
+            out.append("”" if dq else "“")
+            dq = not dq
+        elif c == "'":
+            prev = s[i - 1] if i > 0 else " "
+            nxt = s[i + 1] if i + 1 < len(s) else " "
+            if prev.isalnum() and nxt.isalnum():
+                out.append("’")
+            else:
+                out.append("’" if sq else "‘")
+                sq = not sq
+        else:
+            out.append(c)
+    return "".join(out)
+
+
 def trim_long_summaries(items: list[dict], cfg: dict) -> int:
     """다시 써도 목표보다 길면 뒤 문장부터 잘라 상한에 맞춤(요약은 중요한 내용이 앞에 오므로)."""
     tol, trimmed = cfg.get("summary_len_tolerance", 20), 0
@@ -1011,6 +1031,10 @@ def main(argv=None):
             stats["summary_fixed"], tried = res["fixed"], res["tried"]
         n2, _ = verify_summaries(to_review, cfg)
         stats["summary_trimmed"] = trim_long_summaries(to_review, cfg)
+        for _it in to_review:  # 요약의 직선 따옴표 → 둥근따옴표
+            _r = _it.get("review") or {}
+            if _r.get("summary"):
+                _r["summary"] = to_curly_quotes(_r["summary"])
         stats["unsupported_removed"] = n1 + n2
         stats["summary_thin_dropped"] = drop_thin_summaries(to_review, cfg, tried)
         stats["ai_sec"] = round(time.time() - ai_start)
