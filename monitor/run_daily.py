@@ -595,7 +595,7 @@ def rescue_own(items: list[dict], cfg: dict) -> int:
         return 0
     note = ("이 기사들에는 자사(비마이프렌즈·비스테이지·드림어스컴퍼니·플로)가 나온다. 기준상 자사는 단순 언급이라도 "
             "주가·증권 기사나 경품·응모·할인 이벤트 공지가 아니면 포함한다. 해당하면 keep=true, section=own으로 두고 "
-            "기사 내용을 요약하되 자사가 나오는 문장을 넣고 핵심 1~2문장만 **굵게** 표시한다. '○일 밝혔다' 같은 발표 시점 문장은 넣지 않는다. 이벤트 공지·주가 기사면 keep=false를 유지한다.")
+            "기사 내용을 요약하되 자사가 나오는 문장을 넣고 가장 중요한 문장 1개만 **굵게** 표시한다. '○일 밝혔다' 같은 발표 시점 문장은 넣지 않는다. 이벤트 공지·주가 기사면 keep=false를 유지한다.")
     n = 0
     for batch in _chunks(cands, 4):
         try:
@@ -723,6 +723,40 @@ def drop_thin_summaries(items: list[dict], cfg: dict, tried: set) -> int:
     return dropped
 
 
+_BOLD_RE = re.compile(r"\*\*(.+?)\*\*", re.S)
+_END_RE = re.compile(r"다\.(?=[\s”’]|$)")
+
+
+def ensure_one_bold(summary: str) -> str:
+    """요약에 가장 중요한 문장 1개만 **굵게** 되도록 정리한다. 여러 개면 첫 번째만 남기고, 없으면 핵심 문장을 골라 굵게 한다."""
+    spans = list(_BOLD_RE.finditer(summary))
+    if len(spans) == 1:
+        return summary
+    if len(spans) > 1:
+        first = spans[0]
+        return summary[:first.end()] + _BOLD_RE.sub(lambda m: m.group(1), summary[first.end():])
+    # 굵게가 없으면: 숫자·핵심 사실어가 든 문장을 고르고, 없으면 첫 문장
+    sents, pos = [], 0
+    for m in _END_RE.finditer(summary):
+        sents.append((pos, m.end()))
+        pos = m.end()
+    if pos < len(summary.rstrip()):
+        sents.append((pos, len(summary.rstrip())))
+    if not sents:
+        return summary
+    words = ("출시", "인수", "투자", "제휴", "실적", "개편", "도입", "발표", "공개", "계약", "확대")
+
+    def score(se):
+        t = summary[se[0]:se[1]]
+        return (2 if re.search(r"\d", t) else 0) + sum(1 for w in words if w in t)
+
+    a, b = max(sents[:6], key=lambda se: (score(se), -se[0]))
+    seg = summary[a:b]
+    core = seg.strip()
+    start = a + seg.index(core)
+    return summary[:start] + "**" + core + "**" + summary[start + len(core):]
+
+
 def to_curly_quotes(s: str) -> str:
     """직선 따옴표(' ")를 둥근따옴표(‘ ’ “ ”)로 바꾼다. 영단어 속 아포스트로피는 ’."""
     out, dq, sq = [], False, False
@@ -733,7 +767,7 @@ def to_curly_quotes(s: str) -> str:
         elif c == "'":
             prev = s[i - 1] if i > 0 else " "
             nxt = s[i + 1] if i + 1 < len(s) else " "
-            if prev.isalnum() and nxt.isalnum():
+            if prev.isascii() and prev.isalnum() and nxt.isascii() and nxt.isalnum():
                 out.append("’")
             else:
                 out.append("’" if sq else "‘")
@@ -1034,7 +1068,7 @@ def main(argv=None):
         for _it in to_review:  # 요약의 직선 따옴표 → 둥근따옴표
             _r = _it.get("review") or {}
             if _r.get("summary"):
-                _r["summary"] = to_curly_quotes(_r["summary"])
+                _r["summary"] = to_curly_quotes(ensure_one_bold(_r["summary"]))
         stats["unsupported_removed"] = n1 + n2
         stats["summary_thin_dropped"] = drop_thin_summaries(to_review, cfg, tried)
         stats["ai_sec"] = round(time.time() - ai_start)
