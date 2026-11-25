@@ -65,5 +65,7 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs
+      - name: Wait for artifact
+        run: sleep 20
       - id: pages
         uses: actions/deploy-pages@v4
