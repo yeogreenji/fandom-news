@@ -1,7 +1,5 @@
 name: Deploy site
 
-# 담당자가 docs 폴더 파일(날짜 데이터·화면 파일)을 직접 올리거나 고치면 바로 사이트에 다시 배포한다.
-# 자동 수집(Daily monitor)이 끝날 때만 배포되던 것을 보완. 수동 실행: Actions → Deploy site → Run workflow
 on:
   push:
     branches: [main]
@@ -31,5 +29,7 @@ jobs:
       - uses: actions/upload-pages-artifact@v4
         with:
           path: docs
+      - name: Wait for artifact
+        run: sleep 20
       - id: pages
         uses: actions/deploy-pages@v4
